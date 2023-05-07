@@ -1,12 +1,32 @@
-class Solution:
-    def longestObstacleCourseAtEachPosition(self, nums: List[int]) -> List[int]:
+class Solution {
+    public int[] longestObstacleCourseAtEachPosition(int[] ob) {
+        int[] lis = new int[ob.length];
+        Arrays.fill(lis,Integer.MAX_VALUE);
+        int[] ans = new int[ob.length];
         
-        LIS = [float("inf")] * len(nums)
-        lengths = []
+        int index = 0;
+        for(int i = 0; i<ob.length; i++){
+            int idx = binarySearch(lis,ob[i]);
+            lis[idx] = ob[i];
+            ans[index++] = idx + 1;
+        }
         
-        for num in nums:
-            idx = bisect.bisect_left(LIS, num + 1)
-            LIS[idx] = num
-            lengths.append(idx+1)
+        return ans;
+    }
+    
+    int binarySearch(int[] lis, int targ){
+        int low = 0;
+        int high = lis.length-1;
+        while(low<=high){
+            int mid = (low+high) >> 1;
             
-        return lengths
+            if(lis[mid]<=targ){
+                low = mid + 1;
+            } else{
+                high = mid - 1;
+            }
+        }
+        
+        return low;
+    }
+}
