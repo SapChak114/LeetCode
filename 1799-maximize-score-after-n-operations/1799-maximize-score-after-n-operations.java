@@ -1,18 +1,45 @@
 class Solution {
-    int gcd(int a, int b) { return b == 0 ? a : gcd(b, a % b); }
-int dfs(int[] n, int[][] dp, int i, int mask) {
-    if (i > n.length / 2)
-        return 0;
-    if (dp[i][mask] == 0)
-        for (int j = 0; j < n.length; ++j)
-            for (int k = j + 1; k < n.length; ++k) {
-                int new_mask = (1 << j) + (1 << k);
-                if ((mask & new_mask) == 0)
-                    dp[i][mask] = Math.max(dp[i][mask], i * gcd(n[j], n[k]) + dfs(n, dp, i + 1, mask + new_mask));
+    public int maxScore(int[] nums) {
+        int n = nums.length;
+        int terminal_state = (1 << n) - 1;
+
+        Map<Integer, Integer> cache = new HashMap<>();
+
+        return dfs(0, nums, terminal_state, cache);
+    }
+
+    private int dfs(int state, int[] nums, int terminal_state, Map<Integer, Integer> cache) {
+        if (state == terminal_state) {
+            return 0;
+        }
+
+        if (cache.containsKey(state)) {
+            return cache.get(state);
+        }
+
+        int op = Integer.bitCount(state) / 2 + 1;
+        int score = 0;
+
+        for (int i = 0; i < nums.length; i++) {
+            if (((state >> i) & 1) == 1) continue;
+
+            for (int j = i + 1; j < nums.length; j++) {
+                if (((state >> j) & 1) == 1) continue;
+
+                int new_state = state | (1 << i) | (1 << j);
+                score = Math.max(score,
+                        op * gcd(nums[i], nums[j]) +
+                                dfs(new_state, nums, terminal_state, cache));
             }
-    return dp[i][mask];
-}
-int maxScore(int[] n) {
-    return dfs(n, new int[n.length / 2 + 1][1 << n.length], 1, 0);
-}
+        }
+
+        cache.put(state, score);
+
+        return cache.get(state);
+    }
+
+    private int gcd(int a, int b) {
+        if (b == 0) return a;
+        return gcd(b, a % b);
+    }
 }
