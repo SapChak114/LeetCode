@@ -18,13 +18,9 @@ class Solution {
             temp=temp.next;
             count++;
         }
-        int n=k;
+        while((count-- - k)!=0) t1 = t1.next;
         k--;
         while(k--!=0) t2 = t2.next;
-        while((count-n)!=0){
-            t1 = t1.next;
-            count--;
-        }
         
         int t = t2.val;
         t2.val = t1.val;
