@@ -19,13 +19,10 @@ class Solution {
             slow.next = prev;
             prev = slow;
             slow = temp;
-            //System.out.println(slow.val+" "+prev.val);
         }
-        //System.out.println();
         int res = Integer.MIN_VALUE;
         
         while(slow!=null){
-            //System.out.println(slow.val+" "+prev.val);
             res = Math.max(res,(slow.val+prev.val));
             slow = slow.next;
             prev = prev.next;
