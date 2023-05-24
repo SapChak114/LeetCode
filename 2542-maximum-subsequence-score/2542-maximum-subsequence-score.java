@@ -1,39 +1,43 @@
+class Pair{
+    int num1;
+    int num2;
+    
+    public Pair(int num1, int num2){
+        this.num1 = num1;
+        this.num2 = num2;
+    }
+}
 class Solution {
-    public:
-    long long maxScore(vector<int>& nums1, vector<int>& nums2, int k) {
+    public long maxScore(int[] num1, int[] num2, int k) {
+        List<Pair> list = new ArrayList<>();
         
-       vector<pair<int, int>> p ;
-        
-        for(int i = 0 ; i<nums1.size() ; i++)
-        {
-            p.push_back({nums2[i] , nums1[i]});
+        for(int i = 0; i<num1.length; i++){
+            list.add(new Pair(num1[i],num2[i]));
         }
         
-        sort(p.rbegin() , p.rend());
+        Collections.sort(list,new Comparator<Pair>(){
+            public int compare(Pair a, Pair b){
+                return Integer.compare(b.num2,a.num2);
+            }
+        });
         
-        long long ans  = 0;
-        long long sum  = 0;
-        priority_queue<int> pq;
-        for(int i = 0 ; i<k-1 ; i++)
-        {
-            sum += p[i].second;
-            pq.push(-p[i].second);
+        long currentSum = 0;
+        long ans = 0;
+        PriorityQueue<Integer> q = new PriorityQueue<>();
+        for(int i = 0; i<k-1; i++){
+            currentSum += list.get(i).num1;
+            q.add(list.get(i).num1);
         }
-
-        for(int i = k-1 ; i<nums1.size() ; i++)
-        {
-
-            sum += p[i].second;
-            pq.push(-p[i].second);
-            
-            ans = max(ans, sum * p[i].first );
-
-            sum += pq.top();
-            pq.pop();
+        
+        for(int i = k-1; i<num1.length; i++){
+            currentSum += list.get(i).num1;
+            q.add(list.get(i).num1);
+            ans = Math.max(ans,currentSum*list.get(i).num2);
+            currentSum -= q.poll();
         }
         
         return ans;
         
-        
     }
-};
+    
+}
