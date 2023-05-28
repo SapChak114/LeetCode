@@ -1,20 +1,16 @@
 class Solution {
     public int maxProfit(int[] prices) {
+        //Kadane's Algo
         
         int max = 0;
-        int l = 0, r = 1;
-        while(r<prices.length){
-            
-            if(prices[l]<prices[r]){
-                max = Math.max(max,prices[r]-prices[l]);
-            } else{
-                l = r;
-            }
-            
-            r++;
+        int maxSoFar = 0;
+        
+        for(int i = 1; i<prices.length; i++){
+            max = Math.max(0,max += prices[i]-prices[i-1]);
+            maxSoFar = Math.max(maxSoFar,max);
         }
         
-        return max;
+        return maxSoFar;
     }
     
 }
