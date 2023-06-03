@@ -35,9 +35,7 @@ class Solution {
         
         for(int i = 0; i<li.size(); i++){
             dfs(map,manager,li.get(i),informTime,t);
-            if(maxTime<t){
-                maxTime=t;
-            }
+            maxTime = Math.max(maxTime,t);
         }
         
     }
