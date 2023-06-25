@@ -1,31 +1,20 @@
 class Solution {
-    int bisectLeft(List<Integer> nums, int targ){
-        int l = 0, r = nums.size();
-        
-        while(l<r){
-            int mid = (l+r)/2;
-            
-            if(nums.get(mid)<targ){
-                l = mid+1;
-            } else{
-                r = mid;        
-            }
-        }
-        
-        return l;
-    }
-    
     public int lengthOfLIS(int[] nums) {
-        List<Integer> res = new ArrayList<>();
+        int n = nums.length;
+        int[] dp = new int[n];
+        Arrays.fill(dp,1);
         
-        for(int num : nums){
-            int idx = bisectLeft(res,num);
-            if(idx==res.size()){
-                res.add(num);
+        for(int right = 0; right<n; right++){
+            for(int left = 0; left<right; left++){
+                if(nums[left]<nums[right]){
+                    dp[right] = Math.max(dp[right],1+dp[left]);
+                }
             }
-            res.set(idx,num);
         }
         
-        return res.size();
+        int max = 0;
+        for(int d : dp) max = Math.max(max,d);
+        
+        return max;
     }
 }
