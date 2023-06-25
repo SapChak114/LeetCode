@@ -23,8 +23,7 @@ class Solution {
         for(int i = 0; i<locs.length; i++){
             if(i==idx) continue;
             int need = Math.abs(locs[i]-locs[idx]);
-            ways += dfs(i,fuel-need);
-            ways %= mod;
+            ways = (ways + dfs(i,fuel-need))%mod;
         }
         
         map.put(key,ways);
