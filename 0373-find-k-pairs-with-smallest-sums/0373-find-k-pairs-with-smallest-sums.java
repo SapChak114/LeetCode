@@ -36,16 +36,16 @@ class Solution {
                 }
             }
         }
-        
-        while(k-- > 0 && !pq.isEmpty()){
-            Pair p = pq.poll();
+        PriorityQueue<Pair> qp = new PriorityQueue<>(pq);
+        while(k-- > 0 && !qp.isEmpty()){
+            Pair p = qp.poll();
             List<Integer> li = new ArrayList<>();
             li.add(p.elem1);
             li.add(p.elem2);
             res.add(li);
         }
-        Collections.sort(res, (o1, o2) -> ((o1.get(0)+o1.get(1)) > (o2.get(0)+o2.get(1))) ? -1 :
-                                       ((o1.get(0)+o1.get(1)) < (o2.get(0)+o2.get(1))) ? 1 : 0);
+        // Collections.sort(res, (o1, o2) -> ((o1.get(0)+o1.get(1)) > (o2.get(0)+o2.get(1))) ? -1 :
+        //                                ((o1.get(0)+o1.get(1)) < (o2.get(0)+o2.get(1))) ? 1 : 0);
         return res;
     }
 }
