@@ -1,66 +1,61 @@
-class DSU {
-    int[] root, size;
-    
-    public DSU(int n) {
-        root = new int[n];
-        for (int i = 0; i < n; i++) {
-            root[i] = i;
-        }
-        size = new int[n];
-        Arrays.fill(size, 1);
-    }
-    
-    public int find(int x) {
-        if (root[x] != x) {
-            root[x] = find(root[x]);
-        }
-        return root[x];
-    }
-    
-    public void union(int x, int y) {
-        int rootX = find(x);
-        int rootY = find(y);
-        if (rootX == rootY) {
-            return;
-        }
-        
-        if (size[rootX] > size[rootY]) {
-            int tmp = rootX;
-            rootX = rootY;
-            rootY = tmp;
-        }
-        root[rootX] = rootY;
-        size[rootY] += size[rootX];
-    }
-}
-
 class Solution {
+    int row;
+    int col;
+    int[][] cells;
+    int[] dirX = {0,1,0,-1};
+    int[] dirY = {1,0,-1,0};
     public int latestDayToCross(int row, int col, int[][] cells) {
-        DSU dsu = new DSU(row * col + 2);
-        int[][] grid = new int[row][col];
-        int[][] directions = {{0, 1}, {0, -1}, {1, 0}, {-1, 0}, {1, 1}, {1, -1}, {-1, 1}, {-1, -1}};
+        this.cells = cells;
+        this.row=row;
+        this.col=col;
         
-        for (int i = 0; i < row * col; ++i) {
-            int r = cells[i][0] - 1, c = cells[i][1] - 1;
-            grid[r][c] = 1;
-            int index1 = r * col + c + 1;
-            for (int[] d : directions) {
-                int newR = r + d[0], newC = c + d[1];
-                int index2 = newR * col + newC + 1;
-                if (newR >= 0 && newR < row && newC >= 0 && newC < col && grid[newR][newC] == 1) {
-                    dsu.union(index1, index2);
-                }
-            }
-            if (c == 0) {
-                dsu.union(0, index1);
-            }
-            if (c == col - 1) {
-                dsu.union(row * col + 1, index1);
-            }
-            if (dsu.find(0) == dsu.find(row * col + 1)) {
-                return i;
+        int left = 1, right = cells.length;
+        int mid;
+        int ans = 0;
+        while(left<=right){
+            mid = left + (right-left)/2;
+            //System.out.println(mid);
+            if(canCross(mid)){
+                ans = mid;
+                left = mid + 1;
+            } else{
+                right = mid - 1;
             }
         }
-        return -1;
+        
+        return ans;
+    }
+    
+    boolean canCross(int day){
+        int[][] grid = new int[row][col];
+        
+        for(int i = 0; i<day; i++){
+            grid[cells[i][0]-1][cells[i][1]-1]=1;
+        }
+        
+        for(int i = 0; i<col; i++){
+            if(grid[0][i]==0 && dfs(grid,0,i)){
+                return true;
+            }
+        }
+        
+        return false;
+    }
+    
+    boolean dfs(int[][] grid, int r, int c){
+        if(r==row-1){
+            return true;
+        }
+        
+        grid[r][c]=-1;
+        
+        for(int i = 0; i<dirX.length; i++){
+            int x = r + dirX[i];
+            int y = c + dirY[i];
+            if(x<0 || x>=grid.length || y<0 || y>=grid[0].length || grid[x][y]!=0) continue;
+            if(dfs(grid,x,y)) return true;
+        }
+        
+        return false;
     }
 }
