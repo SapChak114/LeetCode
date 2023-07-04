@@ -5,7 +5,6 @@ class Solution {
         int total = n;
             
         while(i<n){
-            System.out.println(total);
             if(ratings[i-1]==ratings[i]){
                 i++;
                 continue;
