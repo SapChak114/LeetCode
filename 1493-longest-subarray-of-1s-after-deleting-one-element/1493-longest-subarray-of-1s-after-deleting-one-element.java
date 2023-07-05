@@ -11,10 +11,10 @@ class Solution {
                 zeros -= nums[start]==0?1:0;
                 start++;
             }
-            
             res = Math.max(res,i-start);
         }
         
         return res;
     }
+    
 }
