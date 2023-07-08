@@ -6,7 +6,7 @@ class Solution {
             map.put(key.charAt(i),map.getOrDefault(key.charAt(i),0)+1);
         }
         
-        int left = 0, res = 0;
+        int left = 0, res = k;
         for(int i = k; i<key.length(); i++){
             map.put(key.charAt(i),map.getOrDefault(key.charAt(i),0)+1);
             
@@ -18,6 +18,6 @@ class Solution {
             res = Math.max(res,i-left+1);
         }
         
-        return res==0?k:res;
+        return res;
     }
 }
