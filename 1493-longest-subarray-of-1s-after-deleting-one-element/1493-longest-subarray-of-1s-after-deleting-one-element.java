@@ -1,20 +1,22 @@
 class Solution {
     public int longestSubarray(int[] nums) {
-        int start = 0;
-        int n = nums.length;
-        int zeros = 0;
-        int res = 0;
-        for(int i = 0; i<n; i++){
-            zeros += nums[i]==0?1:0;
+        int res = 0, n = nums.length;
+        int left = 0, right = 0;
+        Map<Integer,Integer> map = new HashMap<>();
+        
+        while(right<n){
+            map.put(nums[right],map.getOrDefault(nums[right],0)+1);
             
-            while(zeros>1){
-                zeros -= nums[start]==0?1:0;
-                start++;
+            while(map.getOrDefault(0,0)>1){
+                map.put(nums[left],map.getOrDefault(nums[left],0)-1);
+                left++;
             }
-            res = Math.max(res,i-start);
+            
+            res = Math.max(res,right-left);
+            
+            right++;
         }
         
         return res;
     }
-    
 }
