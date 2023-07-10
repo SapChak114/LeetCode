@@ -1,40 +1,41 @@
-public class Solution {
-    public boolean isPresent(String bigWord, Map<String, Integer> counterd, int length) {
-        int n = bigWord.length();
-        Map<String, Integer> counterb = new HashMap<>();
-
-        for (int start = 0; start < n; start += length) {
-            String word = bigWord.substring(start, start + length);
-            counterb.put(word, counterb.getOrDefault(word, 0) + 1);
-        }
-
-        return counterb.equals(counterd);
-    }
-
+class Solution {
     public List<Integer> findSubstring(String s, String[] words) {
-        int bigLength = 0;
-        for (String word : words) {
-            bigLength += word.length();
+        Map<String,Integer> map = new HashMap<>();
+        int bigWord = 0;
+        
+        for(int i = 0; i<words.length; i++){
+            map.put(words[i],map.getOrDefault(words[i],0)+1);
+            bigWord += words[i].length();
         }
-        int length = words[0].length();
+        
         int n = s.length();
-        Map<String, Integer> counterd = new HashMap<>();
-        for (String word : words) {
-            counterd.put(word, counterd.getOrDefault(word, 0) + 1);
-        }
-        List<Integer> ans = new ArrayList<>();
-
-        for (int i = 0; i < n; i++) {
-            if (i + bigLength > n) {
-                break;
-            }
-            String bigWord = s.substring(i, i + bigLength);
-
-            if (isPresent(bigWord, counterd, length)) {
-                ans.add(i);
+        int len = words[0].length();
+        
+        List<Integer> list = new ArrayList<>();
+        
+        for(int i = 0; i<n; i++){
+            if(i + bigWord > n) break;
+            
+            String word = s.substring(i,i+bigWord);
+            if(isPresent(word,map,len)){
+                list.add(i);
             }
         }
-
-        return ans;
+        
+        return list;
+    }
+    
+    boolean isPresent(String bigWord, Map<String,Integer> map, int len){
+        
+        int n = bigWord.length();
+        
+        Map<String,Integer> newMap = new HashMap<>();
+        
+        for(int i = 0; i<n; i += len){
+            String word = bigWord.substring(i,i+len);
+            newMap.put(word,newMap.getOrDefault(word,0)+1);
+        }
+        
+        return map.equals(newMap);
     }
 }
