@@ -1,48 +1,36 @@
 class Solution {
     public List<Integer> eventualSafeNodes(int[][] graph) {
         int n = graph.length;
-        int[] indegree = new int[n];
-        List<List<Integer>> adj = new ArrayList<>();
-
-        for(int i = 0; i < n; i++) {
-            adj.add(new ArrayList<>());
-        }
-
-        for (int i = 0; i < n; i++) {
-            for (int node : graph[i]) {
-                adj.get(node).add(i);
-                indegree[i]++;
+        int[] inDegree = new int[n];
+        List<Integer>[] adj = new ArrayList[n];
+        for(int i = 0; i<n; i++) adj[i]=new ArrayList<>();
+        
+        for(int i = 0; i<n; i++){
+            for(int x : graph[i]){
+                inDegree[i]++;
+                adj[x].add(i);
             }
         }
-
+        
         Queue<Integer> q = new LinkedList<>();
-        // Push all the nodes with indegree zero in the queue.
-        for (int i = 0; i < n; i++) {
-            if (indegree[i] == 0) {
+        for(int i = 0; i<n; i++){
+            if(inDegree[i]==0){
                 q.add(i);
             }
         }
-
-        boolean[] safe = new boolean[n];
-        while (!q.isEmpty()) {
-            int node = q.poll();
-            safe[node] = true;
-
-            for (int neighbor : adj.get(node)) {
-                // Delete the edge "node -> neighbor".
-                indegree[neighbor]--;
-                if (indegree[neighbor] == 0) {
-                    q.add(neighbor);
+        
+        List<Integer> res = new ArrayList<>();
+        while(!q.isEmpty()){
+            int p = q.poll();
+            res.add(p);
+            for(int x : adj[p]){
+                if(--inDegree[x]==0){
+                    q.add(x);
                 }
             }
         }
-
-        List<Integer> safeNodes = new ArrayList<>();
-        for (int i = 0; i < n; i++) {
-            if (safe[i]) {
-                safeNodes.add(i);
-            }
-        }
-        return safeNodes;
+        
+        Collections.sort(res);
+        return res;
     }
 }
