@@ -1,24 +1,16 @@
 class Solution {
     public int jump(int[] nums) {
-        int n = nums.length;
+        int currEnd = 0, maxEnd = 0, n = nums.length, jump = 0;
         
-        int[] dp = new int[n];
-        
-        Arrays.fill(dp,(int)1e5);
-        
-        dp[0] = 0;
         for(int i = 0; i<n-1; i++){
-            if(i+nums[i]>=n-1){
-                dp[n-1] = Math.min(dp[n-1],dp[i]+1);
-                break;
-            }
-            
-            for(int j = i+1; j<=nums[i]+i; j++){
-                dp[j] = Math.min(dp[j],dp[i]+1);
+            maxEnd = Math.max(maxEnd,i+nums[i]);
+            if(i==currEnd){
+                currEnd = maxEnd;
+                jump++;
             }
         }
         
-        return dp[n-1];
+        return jump;
     }
     
 }
