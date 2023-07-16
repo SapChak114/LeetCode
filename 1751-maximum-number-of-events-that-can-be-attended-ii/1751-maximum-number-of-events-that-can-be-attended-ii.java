@@ -1,9 +1,12 @@
 class Solution {
     private int[][] events;
     private int n;
-    private Map<String,Integer> map;
+    private int[][] dp;
     public int maxValue(int[][] events, int k) {
-        map = new HashMap<>();
+        dp = new int[events.length+1][k+1];
+        for(int[] d : dp){
+            Arrays.fill(d,-1);
+        }
         Arrays.sort(events,(a,b)->a[0]-b[0]);
         this.events=events;
         this.n=events.length;
@@ -16,7 +19,7 @@ class Solution {
         }
         String key = index+"-"+k;
         
-        if(map.containsKey(key)) return map.get(key);
+        if(dp[index][k]!=-1) return dp[index][k];
         
         int dont = dfs(index+1,k);
         int value = events[index][2];
@@ -24,7 +27,7 @@ class Solution {
         int idx = bs(events,end);
         int take = value + dfs(idx,k-1);
         
-        map.put(key,Math.max(dont,take));
+        dp[index][k]=Math.max(dont,take);
         
         return Math.max(dont,take);
     }
