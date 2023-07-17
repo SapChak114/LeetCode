@@ -9,69 +9,49 @@
  */
 class Solution {
     public List<Integer> distanceK(TreeNode root, TreeNode target, int k) {
-        Map<TreeNode,TreeNode> parentTrack = new HashMap<>();
-        //markParent(root,parentTrack);
-        markParent(root,parentTrack,null);
+        Map<TreeNode,TreeNode> parent = new HashMap<>();
+        findParent(parent,root,null);    
         
         Queue<TreeNode> q = new LinkedList<>();
-        Map<TreeNode,Boolean> vis = new HashMap<>();
-        int count = 0;
         q.add(target);
+        int count = 0;
+        Map<TreeNode,Boolean> vis = new HashMap<>();
         vis.put(target,true);
-        
         while(!q.isEmpty()){
             int size = q.size();
             if(count++ == k) break;
             
             for(int i = 0; i<size; i++){
-                TreeNode current = q.poll();
-                
-                if(current.left!=null && vis.get(current.left)==null){
-                    q.add(current.left);
-                    vis.put(current.left,true);
+                TreeNode n = q.poll();
+                if(n.left!=null && vis.get(n.left)==null){
+                    vis.put(n.left,true);
+                    q.add(n.left);
                 }
-                if(current.right!=null && vis.get(current.right)==null){
-                    q.add(current.right);
-                    vis.put(current.right,true);
+                if(n.right!=null && vis.get(n.right)==null){
+                    vis.put(n.right,true);
+                    q.add(n.right);
                 }
-                if(parentTrack.get(current)!=null && vis.get(parentTrack.get(current))==null){
-                    q.add(parentTrack.get(current));
-                    vis.put(parentTrack.get(current),true);
+                if(parent.get(n)!=null && vis.get(parent.get(n))==null){
+                    vis.put(parent.get(n),true);
+                    q.add(parent.get(n));
                 }
             }
         }
         
-        List<Integer> res = new ArrayList<>();
+        List<Integer> list = new ArrayList<>();
+        
         while(!q.isEmpty()){
-            res.add(q.poll().val);
+            list.add(q.poll().val);
         }
         
-        return res;
+        return list;
     }
     
-    void markParent(TreeNode root, Map<TreeNode,TreeNode> parentTrack){
-        Queue<TreeNode> q = new LinkedList<>();
-        
-        q.add(root);
-        while(!q.isEmpty()){
-            TreeNode node = q.poll();
-            if(node.left!=null){
-                parentTrack.put(node.left,node);
-                q.add(node.left);
-            }
-            if(node.right!=null){
-                parentTrack.put(node.right,node);
-                q.add(node.right);
-            }
-        }
-        
-    }
-    
-    void markParent(TreeNode node, Map<TreeNode,TreeNode> parentTrack, TreeNode parent){
+    void findParent(Map<TreeNode,TreeNode> fp, TreeNode node, TreeNode parent){
         if(node!=null){
-            parentTrack.put(node,parent);
-            markParent(node.left,parentTrack,node);
-            markParent(node.right,parentTrack,node);
-        } 
+            fp.put(node,parent);
+            findParent(fp,node.left,node);
+            findParent(fp,node.right,node);
+        }
     }
 }
