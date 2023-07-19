@@ -1,74 +1,40 @@
 class LRUCache {
     
-    class Node{
-        int key;
-        int val;
-        Node next;
-        Node prev;
-        
-        public Node(int key, int val){
-            this.key=key;
-            this.val=val;
-        }    
-    }
-    
-    Map<Integer,Node> m = new HashMap<>();
-    Node head = new Node(-1,-1);
-    Node tail = new Node(-1,-1);
+    Map<Integer,Integer> map;
     int cap;
     
     public LRUCache(int capacity) {
-        this.cap=capacity;
-        head.next=tail;
-        tail.prev=head;
+        map = new LinkedHashMap<>(capacity);
+        cap = capacity;    
     }
     
-    public void delNode(Node delNode){
-        Node next = delNode.next;
-        Node prev = delNode.prev;
-        
-        prev.next = next;
-        next.prev = prev;
-    }
-    
-    public void addNode(Node newNode){
-        Node temp = head.next;
-        
-        newNode.next = temp;
-        newNode.prev = head;
-        
-        head.next = newNode;
-        temp.prev = newNode;
-        
-    }
     public int get(int key) {
-        if(m.containsKey(key)){
-            Node node = m.get(key);
-            int ans = node.val;
-            
-            m.remove(key);
-            delNode(node);
-            addNode(node);
-            m.put(key,head.next);
-            return ans;
+        Integer val = map.get(key);
+        if(val==null){
+            return -1;
+        } else{
+            map.remove(key);
+            map.put(key,val);
+            return val;
         }
-        return -1;
     }
     
     public void put(int key, int value) {
-        if(m.containsKey(key)){
-            Node node = m.get(key);
-            m.remove(key);
-            delNode(node);
+        Integer val = map.get(key);
+        if(val!=null){
+            map.remove(key);
+            map.put(key,value);
+        } else {
+            if(map.size()==cap){
+                Integer last = null;
+                for(int k : map.keySet()){
+                    last = k;
+                    break;
+                }
+                map.remove(last);
+            }
+            map.put(key,value);
         }
-        
-        if(m.size()==cap){
-            m.remove(tail.prev.key);
-            delNode(tail.prev);
-        }
-        
-        addNode(new Node(key,value));
-        m.put(key,head.next);
     }
 }
 
