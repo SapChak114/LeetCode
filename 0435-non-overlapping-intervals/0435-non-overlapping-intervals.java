@@ -4,9 +4,9 @@ class Solution {
         
         int count = 0, prev = Integer.MIN_VALUE, n = in.length;
         
-        for(int i = 0; i<n; i++){
-            int x = in[i][0];
-            int y = in[i][1];
+        for(int[] i : in){
+            int x = i[0];
+            int y = i[1];
             
             if(prev<=x){
                 prev = y;
