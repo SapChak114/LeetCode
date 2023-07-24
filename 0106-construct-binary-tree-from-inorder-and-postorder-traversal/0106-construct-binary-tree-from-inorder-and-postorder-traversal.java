@@ -13,39 +13,28 @@
  *     }
  * }
  */
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
 class Solution {
+    Map<Integer,Integer> map;
     public TreeNode buildTree(int[] inorder, int[] postorder) {
-        List<Integer> inorderList = new ArrayList<>();
-        List<Integer> postorderList = new ArrayList<>();
-
-        for (int num : inorder) {
-            inorderList.add(num);
+        map = new HashMap<>();
+        for(int i=0; i<inorder.length; i++){
+            map.put(inorder[i],i);
         }
-
-        for (int num : postorder) {
-            postorderList.add(num);
-        }
-
-        return buildTreeHelper(inorderList, postorderList);
+        return build(postorder,0,postorder.length-1,inorder,0,inorder.length-1);
     }
-
-    TreeNode buildTreeHelper(List<Integer> inorder, List<Integer> postorder) {
-        int n = inorder.size();
-        int m = postorder.size();
-        if (n == 0 || m == 0)
+    
+    TreeNode build(int[] post,int postStart, int postEnd, int[] in, int inStart, int inEnd){
+        if(inStart>inEnd || (postStart>postEnd)){
             return null;
-
-        TreeNode root = new TreeNode(postorder.get(m - 1));
-        int mid = inorder.indexOf(root.val);
-
-        root.left = buildTreeHelper(inorder.subList(0, mid), postorder.subList(0, mid));
-        root.right = buildTreeHelper(inorder.subList(mid + 1, n), postorder.subList(mid, m - 1));
-
+        }
+        int root_val = post[postEnd];
+        int idx = map.get(root_val);
+        int length = idx - inStart;
+        TreeNode root = new TreeNode(in[idx]);
+        
+        root.left = build(post,postStart,postStart+length-1,in,inStart,idx-1);
+        root.right = build(post,postStart+length,postEnd-1,in,idx+1,inEnd);
+        
         return root;
     }
-
 }
