@@ -4,13 +4,17 @@ class Solution {
         
         while(l<r){
             int mid = l + (r-l)/2;
-            double totalTime = 0;
+            
+            double time = 0;
             for(int d : dist){
-                if(totalTime>(int)totalTime) totalTime = (double)((int)totalTime+1);
-                totalTime += ((double)d)/((double)mid);
+                if(time>(int)time) time = (double)((int)time+1);
+                time += ((double)d)/((double)mid);
             }
-            if(totalTime>hour) l = mid+1;
-            else r = mid;
+            if(time>hour){
+                l = mid + 1;
+            } else{
+                r = mid;
+            }
         }
         
         return l==10000007?-1:l;
