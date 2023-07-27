@@ -9,7 +9,7 @@
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
 <img alt="" src="https://assets.leetcode.com/uploads/2022/01/06/example1-fit.png" style="width: 762px; height: 150px;">
-<pre style="position: relative;"><strong>Input:</strong> n = 2, batteries = [3,3,3]
+<pre><strong>Input:</strong> n = 2, batteries = [3,3,3]
 <strong>Output:</strong> 4
 <strong>Explanation:</strong> 
 Initially, insert battery 0 into the first computer and battery 1 into the second computer.
@@ -18,18 +18,18 @@ At the end of the third minute, battery 0 is drained, and you need to remove it 
 By the end of the fourth minute, battery 1 is also drained, and the first computer is no longer running.
 We can run the two computers simultaneously for at most 4 minutes, so we return 4.
 
-<div class="open_grepper_editor" title="Edit &amp; Save To Grepper"></div></pre>
+</pre>
 
 <p><strong class="example">Example 2:</strong></p>
 <img alt="" src="https://assets.leetcode.com/uploads/2022/01/06/example2.png" style="width: 629px; height: 150px;">
-<pre style="position: relative;"><strong>Input:</strong> n = 2, batteries = [1,1,1,1]
+<pre><strong>Input:</strong> n = 2, batteries = [1,1,1,1]
 <strong>Output:</strong> 2
 <strong>Explanation:</strong> 
 Initially, insert battery 0 into the first computer and battery 2 into the second computer. 
 After one minute, battery 0 and battery 2 are drained so you need to remove them and insert battery 1 into the first computer and battery 3 into the second computer. 
 After another minute, battery 1 and battery 3 are also drained so the first and second computers are no longer running.
 We can run the two computers simultaneously for at most 2 minutes, so we return 2.
-<div class="open_grepper_editor" title="Edit &amp; Save To Grepper"></div></pre>
+</pre>
 
 <p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>
