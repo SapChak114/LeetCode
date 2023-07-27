@@ -20,16 +20,4 @@ class Solution {
         return left;
     }
     
-    boolean check(long mins, int[] batteries, int n) {
-        long total = 0;
-        long computers = 0;
-        for (int time : batteries) {
-            total += time;
-            if (total >= mins) {
-                computers++;
-                total -= mins;
-            }
-        }
-        return computers >= n;
-    }
 }
