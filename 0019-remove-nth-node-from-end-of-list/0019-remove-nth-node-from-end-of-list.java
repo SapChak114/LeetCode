@@ -19,14 +19,12 @@ class Solution {
         }
         if(count==1) return null;
         if(n==count) return head.next;
-        System.out.println(count+" "+n);
         ListNode prev = null;
         while(temp!=null){
             prev = temp;
             temp = temp.next;
             t++;
             if(t==(count-n+1)){
-                System.out.println(prev.val+" "+temp.val);
                 prev.next = temp.next;
                 break;
             }
