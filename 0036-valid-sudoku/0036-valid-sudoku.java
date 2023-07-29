@@ -39,7 +39,6 @@ class Solution {
         }
         count = 0;
         for(int i = 0; i<9; i++){
-            System.out.println(board[row][i]);
             if(board[row][i]==elem){
                 count++;
             }
