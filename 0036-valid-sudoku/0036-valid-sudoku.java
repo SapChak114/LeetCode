@@ -1,57 +1,61 @@
 class Solution {
+    char[][] board;
     public boolean isValidSudoku(char[][] board) {
-        return solve(board, 0);
+        this.board = board;
+        return sudoku(0);
     }
-
-    boolean solve(char[][] a, int pos) {
-        if (pos == 81) {
+    
+    boolean sudoku(int pos){
+        if(pos==81){
             return true;
         }
-
-        int row = pos / 9;
-        int col = pos % 9;
-
-        if (a[row][col] != '.' && isValid(a,a[row][col],pos)) {
-            boolean ans = solve(a,pos+1);
-            return ans;
-        } else if(a[row][col]=='.') {
-            // for (char c = '1'; c <= '9'; c++) {
-            //     if (isValid(a, c, pos)) {
-            //         a[row][col] = c;
-            //         if (solve(a, pos + 1))
-            //             return true;
-            //         a[row][col] = '.';
-            //     }
-            // }
-            return solve(a,pos+1);
+        int row = pos/9;
+        int col = pos%9;
+        
+        if(board[row][col]!='.' && check(row,col,board[row][col],pos)){
+            return sudoku(pos+1);
+        }
+        else if(board[row][col]=='.'){
+            return sudoku(pos+1);
         }
         
         return false;
     }
-
-    boolean isValid(char[][] a, char c, int pos) {
-        int row = pos / 9;
-        int col = pos % 9;
-        int rowStart = (row / 3) * 3;
-        int colStart = (col / 3) * 3;
-
-        for (int i = rowStart; i < rowStart + 3; i++) {
-            for (int j = colStart; j < colStart + 3; j++) {
-                if (a[i][j] == c && (i!=row || j!=col))
-                    return false;
+    
+    boolean check(int row, int col, char elem, int pos){
+        
+        int r = pos/9;
+        int c = pos%9;
+        
+        int rowCell = (r/3)*3;
+        int colCell = (c/3)*3;
+        
+        int count = 0;
+        for(int i = 0; i<9; i++){
+            if(board[i][col]==elem){
+                count++;
+            }
+            if(count>1) return false;
+        }
+        count = 0;
+        for(int i = 0; i<9; i++){
+            System.out.println(board[row][i]);
+            if(board[row][i]==elem){
+                count++;
+            }
+            if(count>1) return false;
+        }
+        
+        count = 0;
+        for(int i = rowCell; i<rowCell+3; i++){
+            for(int j = colCell; j<colCell+3; j++){
+                if(board[i][j]==elem){
+                    count++;
+                }
+                if(count>1) return false;
             }
         }
-
-        for (int i = 0; i < 9; i++) {
-            if (a[i][col] == c && i!=row)
-                return false;
-        }
-
-        for (int j = 0; j < 9; j++) {
-            if (a[row][j] == c && j!=col)
-                return false;
-        }
-
+        
         return true;
     }
 }
