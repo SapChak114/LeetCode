@@ -21,7 +21,6 @@ class Solution {
         
         Collections.sort(res,(a,b)->Integer.compare(a.get(0),b.get(0)));
         
-        System.out.println(res);
         int i = 0;
         while(i<res.size()){
             start = res.get(i).get(0);
@@ -39,7 +38,6 @@ class Solution {
             ans.add(al);
             
         }
-        System.out.println(ans);
         int[][] an = new int[ans.size()][2];
         
         for(i = 0; i<an.length; i++){
