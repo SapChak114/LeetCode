@@ -17,7 +17,7 @@ class Solution {
     public List<Integer> rightSideView(TreeNode root) {
         if(root==null) return new ArrayList<>();
         Queue<TreeNode> q = new LinkedList<>();
-        List<List<Integer>> list = new ArrayList<>();
+        List<Integer> ans = new ArrayList<>();
         
         q.add(root);
         
@@ -36,12 +36,7 @@ class Solution {
                     q.add(node.right);
                 }
             }
-            list.add(li);
-        }
-        
-        List<Integer> ans = new ArrayList<>();
-        for(int i = 0; i<list.size(); i++){
-            ans.add(list.get(i).get(list.get(i).size()-1));
+            ans.add(li.get(li.size()-1));
         }
         
         return ans;
