@@ -3,6 +3,9 @@ class Solution {
     public int minMutation(String startGene, String endGene, String[] bank) {
         genes = new HashSet<>();
         for(String b : bank) genes.add(b);
+        if(!genes.contains(endGene)){
+            return -1;
+        }
         
         Queue<String> queue = new LinkedList<>();
         Queue<Integer> levels = new LinkedList<>();
