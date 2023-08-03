@@ -3,8 +3,9 @@ class Solution {
     Map<Character,String> map;
     char[] ch;
     public List<String> letterCombinations(String digits) {
-        if(digits.isEmpty()) return new ArrayList<String>();
+        if(digits.isEmpty()) return new ArrayList<>();
         ls = new ArrayList<>();
+        
         map = new HashMap<>();
         map.put('2',"abc");
         map.put('3',"def");
@@ -19,12 +20,13 @@ class Solution {
         return ls;
     }
     
-    void dfs(int i, String digits){
+    void dfs(int i, String combi){
         if(i==ch.length){
-            ls.add(digits);
+            ls.add(combi);
             return;
         }
         
-        for(char c : map.get(ch[i]).toCharArray()) dfs(i+1,digits+""+c);
+        for(char c : map.get(ch[i]).toCharArray()) dfs(i+1,combi+""+c);
     }
+    
 }
