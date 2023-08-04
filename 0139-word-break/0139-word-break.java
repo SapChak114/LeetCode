@@ -1,13 +1,13 @@
 class Solution {
     Set<String> vis;
-    Map<Integer,Boolean> dp;
+    Boolean[] dp;
     String s;
     int n;
     public boolean wordBreak(String s, List<String> wordDict) {
         vis = new HashSet<>(wordDict);
-        dp = new HashMap<>();
         this.s = s;
         this.n = s.length();
+        this.dp = new Boolean[n+1];
         return rec(0);
     }
     
@@ -16,7 +16,7 @@ class Solution {
             return true;
         }
         
-        if(dp.containsKey(idx)) return dp.get(idx);
+        if(dp[idx]!=null) return dp[idx];
         
         boolean canBreak = false;
         
@@ -26,9 +26,7 @@ class Solution {
                 canBreak = canBreak || rec(i);
             }
         }
-        
-        dp.put(idx,canBreak);
-        
-        return canBreak;
+
+        return dp[idx] = canBreak;
     }
 }
