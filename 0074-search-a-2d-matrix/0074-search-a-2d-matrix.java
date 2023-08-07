@@ -24,7 +24,7 @@ class Solution {
                  r = mid;
              }
          }
-         if(arr[l]==targ) return true;
-         return false;
+         
+         return arr[l]==targ;
      }
 }
