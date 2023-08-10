@@ -1,15 +1,17 @@
 class Solution {
     public boolean search(int[] nums, int target) {
         int l = 0, r = nums.length-1;
-        Arrays.sort(nums);
         while(l<=r){
             int mid = l + (r-l)/2;
             
             if(nums[mid]==target){
                 return true;
             }
-            
-            else if(nums[mid]>target){
+            if(nums[mid]==nums[l]){
+                l++;
+                continue;
+            }
+            else if(nums[mid]>nums[l]){
                 if(target>=nums[l] && target<=nums[mid]){
                     r = mid - 1;
                 } else{
