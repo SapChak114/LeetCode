@@ -1,13 +1,13 @@
 class Solution {
     int[] coins;
-    Map<String,Integer> map;
+    Integer[][] dp;
     public int change(int amount, int[] coins) {
-        this.map = new HashMap<>();
-        this.coins=coins;
-        return dfs(0,amount);
+        dp = new Integer[coins.length+1][amount+1];
+        this.coins = coins;
+        return dfs(0,amount);    
     }
     
-    int dfs(int idx,int amount){
+    int dfs(int idx, int amount){
         if(amount<0){
             return 0;
         }
@@ -19,15 +19,12 @@ class Solution {
                 return 0;
             }
         }
-        String key = idx+","+amount;
-        
-        if(map.containsKey(key)) return map.get(key);
+        if(dp[idx][amount]!=null) return dp[idx][amount];
         
         int take = dfs(idx,amount-coins[idx]);
         int dont = dfs(idx+1,amount);
         
-        map.put(key,(take+dont));
-        
-        return take+dont;
+        return dp[idx][amount] = take + dont;
+            
     }
 }
