@@ -21,10 +21,14 @@ class Solution {
         }
         if(dp[idx][amount]!=null) return dp[idx][amount];
         
+        if(coins[idx]<=amount){
         int take = dfs(idx,amount-coins[idx]);
         int dont = dfs(idx+1,amount);
         
         return dp[idx][amount] = take + dont;
+        } else{
+            return dp[idx][amount] = dfs(idx+1,amount);
+        }
             
     }
 }
