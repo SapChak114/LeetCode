@@ -1,28 +1,62 @@
 class Solution {
+    Boolean[] dp;
     public boolean validPartition(int[] nums) {
+        dp = new Boolean[nums.length+1];
+        return isValid(nums,0);
+    }
+   
+    boolean isValid(int[] nums, int idx){
         int n = nums.length;
-        boolean[] dp = new boolean[3];
-        dp[0] = true;
-
-        // Determine if prefix array nums[0 ~ i] has a valid partition
-        for (int i = 0; i < n; i++) {
-            int dpIndex = i + 1;
-            boolean ans = false;
-
-            // Check 3 possibilities
-            if (i > 0 && nums[i] == nums[i - 1]) {
-                ans |= dp[(dpIndex - 2) % 3];
-            }
-            if (i > 1 && nums[i] == nums[i - 1] && nums[i] == nums[i - 2]) {
-                ans |= dp[(dpIndex - 3) % 3];
-            }
-            if (i > 1 && nums[i] == nums[i - 1] + 1 && nums[i] == nums[i - 2] + 2) {
-                ans |= dp[(dpIndex - 3) % 3];
-            }
-
-            dp[dpIndex % 3] = ans;
+        if(idx>=n){
+            return true;
         }
-
-        return dp[n % 3];
+        if(nums.length<1){
+            return false;
+        }
+        
+        if(dp[idx]!=null) return dp[idx];
+        
+        List<Integer> sub1 = new ArrayList<>();
+        for(int k = idx; k<idx+2 && k<n; k++){
+            sub1.add(nums[k]);
+        }
+        
+        List<Integer> sub2 = new ArrayList<>();
+        for(int k = idx; k<idx+3 && k<n; k++){
+            sub2.add(nums[k]);
+        }
+        
+        if(check(sub1) && isValid(nums,idx+2)){
+            return dp[idx]=true;
+        }
+        if(check(sub2) && isValid(nums,idx+3)){
+            return dp[idx]=true;
+        }
+        
+        return dp[idx]=false;
+    }
+    
+    boolean check(List<Integer> nums){
+        int n = nums.size();
+        int[] num = new int[n];
+        
+        for(int k = 0; k<n; k++){
+            num[k] = nums.get(k);
+        }
+        
+        if(n==2 && num[0]==num[1]) {
+            return true;
+        } 
+        else if(n==3){ 
+            if(num[0]==num[1] && num[1]==num[2]){
+                return true;
+            } 
+            else if(num[1]==num[0]+1 && num[2]==num[1]+1){
+                return true;
+            }
+        } else{
+            return false;
+        }
+        return false;
     }
 }
