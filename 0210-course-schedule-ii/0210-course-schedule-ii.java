@@ -1,11 +1,9 @@
 class Solution {
-    List<Integer> ans;
-    public int[] findOrder(int num, int[][] pre) {
-        ans = new ArrayList<>();
-        List<Integer>[] adjList = new ArrayList[num];
-        int[] vis = new int[num];
+    public int[] findOrder(int numCourses, int[][] pre) {
         
-        for(int i = 0; i<num; i++) adjList[i] = new ArrayList<>();
+        List<Integer>[] adjList = new ArrayList[numCourses];
+        
+        for(int i = 0; i<numCourses; i++) adjList[i] = new ArrayList<>();
         
         for(int i = 0; i<pre.length; i++){
             int u = pre[i][0];
@@ -14,29 +12,64 @@ class Solution {
             adjList[u].add(v);
         }
         
-        for(int i = 0; i<num; i++){
-            if(vis[i]==0){
-                if(dfs(vis,adjList,i)) return new int[]{};
+        if(checkCycle(adjList)){
+            return new int[]{};
+        }
+        
+        boolean[] vis = new boolean[numCourses];
+        List<Integer> ans = new ArrayList<>();
+        for(int i = 0; i<numCourses; i++){
+            if(!vis[i]){
+                dfs(i,vis,adjList,ans);
             }
         }
+        
         int[] res = new int[ans.size()];
-        for(int i = 0; i<ans.size(); i++){
-            res[i]=ans.get(i);
+        
+        for(int i = 0; i<res.length; i++){
+            res[i] = ans.get(i);
         }
         
         return res;
     }
     
-    boolean dfs(int[] vis, List<Integer>[] adjList, int node){
+    void dfs(int node, boolean[] vis, List<Integer>[] adjList, List<Integer> ans){
+        
+        vis[node] = true;
+        
+        for(int n : adjList[node]){
+            if(!vis[n]){
+                dfs(n,vis,adjList,ans);
+            }
+        }
+        
+        ans.add(node);
+    }
+    
+    boolean checkCycle(List<Integer>[] adjList){
+        int[] vis = new int[adjList.length];
+        
+        for(int i = 0; i<adjList.length; i++){
+            if(vis[i]==0){
+                if(dfsc(i,vis,adjList)) return true;
+            }
+        }
+        
+        return false;
+    }
+    
+    boolean dfsc(int node, int[] vis, List<Integer>[] adjList){
         vis[node] = 1;
         
         for(int n : adjList[node]){
             if(vis[n]==0){
-                if(dfs(vis,adjList,n)) return true;
+                if(dfsc(n,vis,adjList)) return true;
             }
-            else if(vis[n]==1) return true;
+            else if(vis[n]==1){
+                return true;
+            }
         }
-        ans.add(node);
+        
         vis[node] = 2;
         
         return false;
