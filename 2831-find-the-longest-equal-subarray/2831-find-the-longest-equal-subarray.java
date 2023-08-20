@@ -9,8 +9,9 @@ class Solution {
             map.put(nums.get(r),map.getOrDefault(nums.get(r),0)+1);
             freq.put(map.get(nums.get(r)),freq.getOrDefault(map.get(nums.get(r)),0)+1);
             
-            //if(map.get(nums.get(r))>1){
-                freq.put(map.get(nums.get(r))-1,freq.getOrDefault(map.get(nums.get(r))-1,0)-1);
+            // if(map.get(nums.get(r))>1){
+            //     freq.put(map.get(nums.get(r))-1,freq.getOrDefault(map.get(nums.get(r))-1,0)-1);
+            // }
             
             int rem = r-l+1 - freq.firstKey();
             
