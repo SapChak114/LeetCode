@@ -1,39 +1,42 @@
 class Solution {
-    int[] dirX = {0,1,0,-1};
-    int[] dirY = {1,0,-1,0};
+    int[] dirX = {0, 1, 0, -1};
+    int[] dirY = {1, 0, -1, 0};
+
     public boolean exist(char[][] board, String word) {
         int n = board.length;
         int m = board[0].length;
-        
-        boolean[][] vis = new boolean[n][m];
-        for(int i = 0; i<n; i++){
-            for(int j = 0; j<m; j++){
-                if(!vis[i][j] && dfs(i,j,board,word,""+board[i][j],vis)) return true;        
+
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                if (dfs(i, j, 0, board, word)) {
+                    return true;
+                }
             }
         }
-        
+
         return false;
     }
-    
-    boolean dfs(int i, int j, char[][] board, String word, String ans, boolean[][] vis){
-        if(ans.length()==word.length()){
-            if(ans.equals(word)){
-                return true;
-            }
+
+    boolean dfs(int i, int j, int pos, char[][] board, String word) {
+        if (pos == word.length()) {
+            return true;
+        }
+        
+        if (i < 0 || i >= board.length || j < 0 || j >= board[0].length || board[i][j] != word.charAt(pos)) {
             return false;
         }
-        vis[i][j] = true;
+
+        char original = board[i][j];
+        board[i][j] = '#';  // Mark the cell as visited
         
-         for(int k = 0; k<dirX.length; k++){
-             int newi = i+dirX[k];
-             int newj = j+dirY[k];
-             if(newi>=board.length || newi<0 || newj>=board[0].length || newj<0 || vis[newi][newj]){
-                    continue;
-             }
-             if(dfs(newi,newj,board,word,ans+board[newi][newj],vis)) return true;
-         }
-        vis[i][j] = false;
-        
+        for (int k = 0; k < 4; k++) {
+            if (dfs(i + dirX[k], j + dirY[k], pos + 1, board, word)) {
+                return true;
+            }
+        }
+
+        board[i][j] = original;  // Restore the cell
+
         return false;
     }
 }
