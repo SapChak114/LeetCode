@@ -1,36 +1,34 @@
 class Solution {
     public String reorganizeString(String s) {
-        StringBuilder st = new StringBuilder(s);
-        String out = check(st);
-        if(out.isEmpty()){
-            return check(st.reverse());
-        } else{
-            return out;
+        int[] freq = new int[26];
+        
+        for(char c : s.toCharArray()){
+            freq[c-'a']++;
         }
         
-    }
-    
-    String check(StringBuilder st){
+        PriorityQueue<int[]> maxHeap = new PriorityQueue<>((a,b) -> b[1]-a[1]);
         
-        for(int i = 1; i<st.length(); i++){
-            char prev = st.charAt(i-1);
-            char now =st.charAt(i);
-            if(prev==now){
-                int j = 0;
-                for(j = i+1; j<st.length(); j++){
-                    if(st.charAt(j)!=now){
-                        char jth = st.charAt(j);
-                        st.setCharAt(j,now);
-                        st.setCharAt(i,jth);
-                        break;
-                    }
-                }
-                if(j==st.length()){
-                    return "";
-                }
+        for(int i = 0; i<freq.length; i++){
+            if(freq[i]>0){
+                maxHeap.add(new int[]{i,freq[i]});
             }
         }
         
-        return st.toString();
+        StringBuilder st = new StringBuilder();
+        
+        int[] prev = new int[2];
+        while(!maxHeap.isEmpty()){
+            int[] now = maxHeap.poll();
+            st.append((char)(now[0]+'a'));
+            
+            if(prev[1]>0){
+                maxHeap.add(new int[]{prev[0],prev[1]});
+            }
+            
+            prev = new int[]{now[0],--now[1]};
+            
+        }
+        
+        return st.length()!=s.length()?"":st.toString();
     }
 }
