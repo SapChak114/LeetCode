@@ -19,16 +19,14 @@ class Solution {
         
         if(dp[i][j][k]!=null) return dp[i][j][k];
         
-        if(i<s1.length() && j<s2.length() && s1.charAt(i)==s3.charAt(k) && s2.charAt(j)==s3.charAt(k)){
-            return dp[i][j][k] = rec(i+1,j,k+1) || rec(i,j+1,k+1);
-        }
-        else if(i<s1.length() && s1.charAt(i)==s3.charAt(k)){
-            return dp[i][j][k] = rec(i+1,j,k+1);
+        boolean ans = false;
+        if(i<s1.length() && s1.charAt(i)==s3.charAt(k)){
+            ans = ans | rec(i+1,j,k+1);
         } 
-        else if(j<s2.length() && s2.charAt(j)==s3.charAt(k)){
-            return dp[i][j][k] = rec(i,j+1,k+1);
+        if(j<s2.length() && s2.charAt(j)==s3.charAt(k)){
+            ans = ans | rec(i,j+1,k+1);
         }
         
-        return dp[i][j][k] = false;
+        return dp[i][j][k] = ans;
     }
 }
