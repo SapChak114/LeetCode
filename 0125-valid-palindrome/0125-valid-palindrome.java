@@ -5,10 +5,9 @@ class Solution {
         while(start<=end){
             char startChar = s.charAt(start);
             char endChar = s.charAt(end);
-            
             if(!Character.isLetterOrDigit(startChar)){
                 start++;
-            } 
+            }
             else if(!Character.isLetterOrDigit(endChar)){
                 end--;
             } 
@@ -20,7 +19,6 @@ class Solution {
                 end--;
             }
         }
-        
         return true;
     }
 }
