@@ -23,8 +23,8 @@ class Solution {
             }
         }
         
-        if(yCount==n) return n;
-        if(nCount==n) return 0;
+        // if(yCount==n) return n;
+        // if(nCount==n) return 0;
         
         int minLoss = Integer.MAX_VALUE;
         int minIndex = n;
