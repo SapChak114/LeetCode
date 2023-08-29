@@ -1,28 +1,47 @@
 class Solution {
-    public int bestClosingTime(String customers) {
-        // Start with closing at hour 0 and assume the current penalty is 0.
-        int minPenalty = 0, curPenalty = 0;
-        int earliestHour = 0;
-
-        for (int i = 0; i < customers.length(); i++) {
-            char ch = customers.charAt(i);
+    public int bestClosingTime(String cust) {
+        int n = cust.length();
+        int[] suffixY = new int[n];
+        int[] preN = new int[n];
+        int yCount = 0;
+        int nCount = 0;
+        
+        if(cust.charAt(n-1)=='Y') suffixY[n-1] = 1;
+        if(cust.charAt(0)=='N') preN[0] = 1;
+        
+        for(int i = 0; i<n; i++){
+            if(cust.charAt(i)=='Y') yCount++;
+            if(cust.charAt(i)=='N') nCount++;
             
-            // If status in hour i is 'Y', moving it to open hours decrement
-            // penalty by 1. Otherwise, moving 'N' to open hours increment
-            // penatly by 1.
-            if (ch == 'Y') {
-                curPenalty--;
-            } else {
-                curPenalty++;
-            }
-
-            // Update earliestHour if a smaller penatly is encountered.
-            if (curPenalty < minPenalty) {
-                earliestHour = i + 1;
-                minPenalty = curPenalty;
+            if(i!=0){
+                int isY = 0;
+                int isN = 0;
+                if(cust.charAt(n-i-1)=='Y') isY = 1;
+                if(cust.charAt(i)=='N') isN = 1;
+                suffixY[n-i-1] = suffixY[n-i] + isY;
+                preN[i] = preN[i-1] + isN;
             }
         }
-
-        return earliestHour;
+        
+        if(yCount==n) return n;
+        if(nCount==n) return 0;
+        
+        int minLoss = Integer.MAX_VALUE;
+        int minIndex = n;
+        
+        for(int i = 0; i<=n; i++){
+            int yGonnaMiss = i==n?0:suffixY[i];
+            int nOccuredTillNow = i==0?0:preN[i-1];
+            //System.out.println(" i: "+i+" y: "+yGonnaMiss+" n: "+nOccuredTillNow);
+            int currLoss = yGonnaMiss + nOccuredTillNow;
+            if(currLoss<minLoss){
+                //System.out.println(" i: "+i+" currLoss: "+currLoss+" minLoss: "+minLoss);
+                minLoss = currLoss;
+                minIndex = i;
+            }
+        }
+        
+        return minIndex;
+        
     }
 }
