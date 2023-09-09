@@ -1,26 +1,23 @@
 class Solution {
-    Map<Integer,Integer> map;
     int[] nums;
+    Integer[] dp;
     public int combinationSum4(int[] nums, int target) {
-        this.map = new HashMap<>();
-        this.nums = nums;
-        return dfs(target);
+        dp = new Integer[target+1];
+        this.nums=nums;
+        return rec(target);
     }
     
-    int dfs(int target){
-        if(target<0) return 0;
-        if(target==0) return 1; 
+    int rec(int sum){
+        if(sum==0) return 1;
+        if(sum<0) return 0;
         
-        int key = target;
-        if(map.containsKey(key)) return map.get(key);
+        if(dp[sum]!=null) return dp[sum];
         
-        int ways = 0;
-        for(int i = 0; i < nums.length; i++){
-            ways += dfs(target - nums[i]);
+        int ans = 0;
+        for(int i = 0; i<nums.length; i++){
+            ans += rec(sum - nums[i]);
         }
         
-        map.put(key,ways);
-        
-        return ways;
+        return dp[sum] = ans;
     }
 }
