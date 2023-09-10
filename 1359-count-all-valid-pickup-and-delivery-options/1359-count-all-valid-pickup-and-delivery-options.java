@@ -33,8 +33,8 @@ class Solution {
             return dp.get(key);
         }
 
-        long temp = (pickup * rec(pickup - 1, drop, dp)) % mod;
-        temp += ((drop - pickup) * rec(pickup, drop - 1, dp)) % mod;
+        long temp = pickup * rec(pickup - 1, drop, dp);
+        temp += (drop - pickup) * rec(pickup, drop - 1, dp);
         temp %= mod;
 
         dp.put(key, temp);
