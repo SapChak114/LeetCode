@@ -1,33 +1,43 @@
 class Solution {
-    int mod = (int)1e9 + 7;
-    Integer[][] dp;
+//     int mod = (int)10e9 + 7;
 //     public int countOrders(int n) {
 //         long ans = 1;
 //         for(int i = 1; i<=n*2; i++){
 //             ans *= i;
-//             if(i%2==0) ans /= 2;
+//             if(i%2==0){
+//                 ans /= 2;
+//             }
 //             ans %= mod;
 //         }
         
 //         return (int)ans;
 //     }
-    public int countOrders(int n) {
-        dp=new Integer[n+1][n+1];
-        return rec(n,n);
-    }
     
-    int rec(int pickup, int drop){
-        if(pickup<0 || drop<pickup || drop<0){
-            return 0;
+    private static final long mod = 1000000007; // Define mod as a static global variable
+
+    public int countOrders(int n) {
+        Map<String, Long> dp = new HashMap<>();
+        return (int)rec(n, n, dp);
+    }
+
+    long rec(long pickup, long drop, Map<String, Long> dp) {
+        if (pickup < 0 || drop < pickup || drop < 0) {
+            return 0L;
         }
-        if(pickup==0 && drop==0){
-            return 1;
+        if (pickup == 0 && drop == 0) {
+            return 1L;
         }
-        if(dp[pickup][drop]!=null) return dp[pickup][drop];
-        long temp = (1L*(pickup%mod)*(rec(pickup-1,drop)%mod))%mod;
-        temp += ((1L*(drop-pickup)%mod)*(rec(pickup,drop-1))%mod)%mod;
-        temp %=mod;
-        return dp[pickup][drop] = (int)temp;
-        
+
+        String key = pickup + "," + drop;
+        if (dp.containsKey(key)) {
+            return dp.get(key);
+        }
+
+        long temp = (pickup * rec(pickup - 1, drop, dp)) % mod;
+        temp += ((drop - pickup) * rec(pickup, drop - 1, dp)) % mod;
+        temp %= mod;
+
+        dp.put(key, temp);
+        return temp;
     }
 }
