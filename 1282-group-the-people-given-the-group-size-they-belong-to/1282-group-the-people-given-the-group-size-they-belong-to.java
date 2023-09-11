@@ -8,9 +8,10 @@ class Solution {
             if (!map.containsKey(groupSizes[i])) {
                 map.put(groupSizes[i], new ArrayList<>());
             }
-            map.get(groupSizes[i]).add(i);
-            if(map.get(groupSizes[i]).size()==groupSizes[i]){
-                ans.add(map.get(groupSizes[i]));
+            List<Integer> li = map.get(groupSizes[i]);
+            li.add(i);
+            if(li.size()==groupSizes[i]){
+                ans.add(li);
                 map.remove(groupSizes[i]);
             }
         }
