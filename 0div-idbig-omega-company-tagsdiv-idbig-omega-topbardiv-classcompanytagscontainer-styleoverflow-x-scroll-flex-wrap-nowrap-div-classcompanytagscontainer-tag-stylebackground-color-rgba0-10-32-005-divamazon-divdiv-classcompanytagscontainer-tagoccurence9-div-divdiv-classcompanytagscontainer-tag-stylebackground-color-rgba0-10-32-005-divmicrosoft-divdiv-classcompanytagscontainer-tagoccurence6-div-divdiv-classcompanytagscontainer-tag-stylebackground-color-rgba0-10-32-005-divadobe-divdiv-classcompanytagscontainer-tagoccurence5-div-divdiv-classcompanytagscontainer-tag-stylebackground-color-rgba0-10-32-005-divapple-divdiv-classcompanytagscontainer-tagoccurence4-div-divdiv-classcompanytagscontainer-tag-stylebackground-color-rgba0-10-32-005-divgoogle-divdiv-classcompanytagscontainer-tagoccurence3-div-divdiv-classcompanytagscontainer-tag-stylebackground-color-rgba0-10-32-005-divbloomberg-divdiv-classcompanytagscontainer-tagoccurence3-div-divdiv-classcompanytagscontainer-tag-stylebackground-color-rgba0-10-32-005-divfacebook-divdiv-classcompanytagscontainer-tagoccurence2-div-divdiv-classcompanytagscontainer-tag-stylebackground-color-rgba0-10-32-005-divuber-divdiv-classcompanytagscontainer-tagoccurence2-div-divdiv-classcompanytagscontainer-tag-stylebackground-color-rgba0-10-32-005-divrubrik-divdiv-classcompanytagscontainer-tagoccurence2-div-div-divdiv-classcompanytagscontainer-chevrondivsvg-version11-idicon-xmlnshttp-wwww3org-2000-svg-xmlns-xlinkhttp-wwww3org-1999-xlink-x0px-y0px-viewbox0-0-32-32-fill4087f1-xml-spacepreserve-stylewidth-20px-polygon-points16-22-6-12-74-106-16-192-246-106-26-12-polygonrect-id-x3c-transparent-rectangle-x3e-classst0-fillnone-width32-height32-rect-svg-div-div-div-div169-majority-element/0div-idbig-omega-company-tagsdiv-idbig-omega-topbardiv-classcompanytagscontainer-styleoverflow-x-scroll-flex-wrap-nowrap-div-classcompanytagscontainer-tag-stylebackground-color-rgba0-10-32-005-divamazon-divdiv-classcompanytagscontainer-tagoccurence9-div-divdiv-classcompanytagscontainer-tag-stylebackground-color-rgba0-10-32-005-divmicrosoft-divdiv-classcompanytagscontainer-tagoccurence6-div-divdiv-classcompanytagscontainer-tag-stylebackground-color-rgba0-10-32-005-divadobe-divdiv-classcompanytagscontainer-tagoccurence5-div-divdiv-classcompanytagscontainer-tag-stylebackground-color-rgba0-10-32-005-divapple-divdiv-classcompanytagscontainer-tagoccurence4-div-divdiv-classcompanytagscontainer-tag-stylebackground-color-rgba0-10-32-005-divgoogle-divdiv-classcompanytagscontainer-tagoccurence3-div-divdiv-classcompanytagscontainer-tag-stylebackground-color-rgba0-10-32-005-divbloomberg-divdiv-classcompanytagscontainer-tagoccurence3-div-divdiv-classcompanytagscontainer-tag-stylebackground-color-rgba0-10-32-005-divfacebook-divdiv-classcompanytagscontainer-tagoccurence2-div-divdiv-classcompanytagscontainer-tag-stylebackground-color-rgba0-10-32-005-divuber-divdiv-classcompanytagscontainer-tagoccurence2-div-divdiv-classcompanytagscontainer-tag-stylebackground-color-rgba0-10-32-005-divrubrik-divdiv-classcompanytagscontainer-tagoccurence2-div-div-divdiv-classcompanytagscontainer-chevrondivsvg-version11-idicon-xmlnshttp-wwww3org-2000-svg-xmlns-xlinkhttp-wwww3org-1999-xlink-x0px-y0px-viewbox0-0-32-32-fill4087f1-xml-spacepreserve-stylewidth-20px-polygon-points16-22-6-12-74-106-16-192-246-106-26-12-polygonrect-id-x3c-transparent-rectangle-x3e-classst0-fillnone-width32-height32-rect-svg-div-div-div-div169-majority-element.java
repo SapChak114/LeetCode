@@ -1,13 +1,13 @@
 class Solution {
     public int majorityElement(int[] nums) {
-        int count = 0, majority = 0;
+        int c = 0, m= 0;
         
         for(int n : nums){
-            if(count==0) majority = n;
-            if(majority==n) count++;
-            else count--;
+            if(c==0) m=n;
+            if(m==n) c++;
+            else c--;
         }
         
-        return majority;
+        return m;
     }
 }
