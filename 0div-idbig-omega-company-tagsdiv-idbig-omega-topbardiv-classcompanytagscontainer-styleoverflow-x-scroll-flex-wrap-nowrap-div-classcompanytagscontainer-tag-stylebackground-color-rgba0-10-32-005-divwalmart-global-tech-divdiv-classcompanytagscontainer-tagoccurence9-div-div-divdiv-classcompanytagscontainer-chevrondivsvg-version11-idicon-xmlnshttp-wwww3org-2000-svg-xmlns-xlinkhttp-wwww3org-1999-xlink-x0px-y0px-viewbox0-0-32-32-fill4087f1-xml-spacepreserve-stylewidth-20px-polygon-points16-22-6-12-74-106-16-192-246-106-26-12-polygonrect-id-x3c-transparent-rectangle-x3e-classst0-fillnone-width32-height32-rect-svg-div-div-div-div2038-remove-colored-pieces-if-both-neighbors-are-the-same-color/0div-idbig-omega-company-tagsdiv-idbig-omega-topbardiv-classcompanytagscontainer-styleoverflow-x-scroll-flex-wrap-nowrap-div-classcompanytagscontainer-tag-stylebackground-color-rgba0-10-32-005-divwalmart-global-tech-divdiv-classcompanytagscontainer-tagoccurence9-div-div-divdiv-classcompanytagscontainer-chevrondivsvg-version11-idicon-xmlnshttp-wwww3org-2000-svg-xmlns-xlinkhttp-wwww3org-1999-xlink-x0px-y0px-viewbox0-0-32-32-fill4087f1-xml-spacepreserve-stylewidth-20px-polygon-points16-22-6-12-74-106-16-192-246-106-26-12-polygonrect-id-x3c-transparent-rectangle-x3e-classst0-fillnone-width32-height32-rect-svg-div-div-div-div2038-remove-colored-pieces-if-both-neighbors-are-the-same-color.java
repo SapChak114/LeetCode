@@ -6,13 +6,10 @@ class Solution {
         for(int i = 0; i<n; i++){
             char ch = c.charAt(i);
             
-            if(i!=0 && i!=n-1 && ch=='A' && c.charAt(i-1)=='A' && c.charAt(i+1)=='A'){
-                al++;
-            }
+            if(i!=0 && i!=n-1 && ch=='A' && c.charAt(i-1)=='A' && c.charAt(i+1)=='A') al++;
             
-            else if(i!=0 && i!=n-1 && ch=='B' && c.charAt(i-1)=='B' && c.charAt(i+1)=='B'){
-                bob++;
-            }
+            else if(i!=0 && i!=n-1 && ch=='B' && c.charAt(i-1)=='B' && c.charAt(i+1)=='B') bob++;
+            
         }
         return al>bob;
     }
