@@ -16,12 +16,12 @@
  * }
  */
 public class NestedIterator implements Iterator<Integer> {
-    List<Integer> ans;
+    List<Integer> flatList;
     List<NestedInteger> nl;
     int id;
     
     public NestedIterator(List<NestedInteger> nestedList) {
-        ans = new ArrayList<>();
+        flatList = new ArrayList<>();
         id = 0;
         nl = new ArrayList<>();
         flatten(nestedList);
@@ -29,18 +29,18 @@ public class NestedIterator implements Iterator<Integer> {
 
     @Override
     public Integer next() {
-        return ans.get(id++); 
+        return flatList.get(id++); 
     }
 
     @Override
     public boolean hasNext() {
-        return id<ans.size();
+        return id<flatList.size();
     }
     
     void flatten(List<NestedInteger> li){
         for(int i = 0; i<li.size(); i++){
             if(li.get(i).isInteger()){
-                ans.add(li.get(i).getInteger());
+                flatList.add(li.get(i).getInteger());
                 continue;
             }
             flatten(li.get(i).getList());
