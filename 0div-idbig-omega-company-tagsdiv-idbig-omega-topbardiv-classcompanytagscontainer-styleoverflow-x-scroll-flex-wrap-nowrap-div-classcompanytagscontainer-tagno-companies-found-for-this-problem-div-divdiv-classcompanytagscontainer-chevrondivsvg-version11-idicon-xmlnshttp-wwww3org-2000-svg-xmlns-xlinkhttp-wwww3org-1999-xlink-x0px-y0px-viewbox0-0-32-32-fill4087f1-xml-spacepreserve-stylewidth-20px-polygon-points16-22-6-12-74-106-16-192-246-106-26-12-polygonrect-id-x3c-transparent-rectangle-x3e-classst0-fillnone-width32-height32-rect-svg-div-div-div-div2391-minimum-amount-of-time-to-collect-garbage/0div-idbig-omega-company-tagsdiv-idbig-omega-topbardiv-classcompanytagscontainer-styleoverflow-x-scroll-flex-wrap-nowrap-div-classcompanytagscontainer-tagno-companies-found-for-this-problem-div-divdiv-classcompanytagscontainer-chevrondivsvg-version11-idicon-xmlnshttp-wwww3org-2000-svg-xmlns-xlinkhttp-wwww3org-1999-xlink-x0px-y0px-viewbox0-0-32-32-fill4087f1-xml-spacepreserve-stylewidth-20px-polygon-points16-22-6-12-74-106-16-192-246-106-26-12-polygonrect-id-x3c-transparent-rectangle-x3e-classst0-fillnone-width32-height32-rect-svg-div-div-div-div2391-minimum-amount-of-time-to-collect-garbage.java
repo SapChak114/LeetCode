@@ -1,33 +1,44 @@
-class Solution {
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class Solution {
     public int garbageCollection(String[] garbage, int[] travel) {
-        // Array to store the prefix sum in travel.
-        int[] prefixSum = new int[travel.length + 1];
-        prefixSum[1] = travel[0];
-        for (int i = 1; i < travel.length; i++) {
-            prefixSum[i + 1] = prefixSum[i] + travel[i];
-        }
+        return f("M", garbage, travel) + f("P", garbage, travel) + f("G", garbage, travel);
+    }
 
-        // Map to store garbage type to the last house index.
-        Map<Character, Integer>garbageLastPos = new HashMap<Character, Integer>();
-
-        // Map to store the total count of each type of garbage in all houses.
-        Map<Character, Integer>garbageCount = new HashMap<Character, Integer>();
+    private int[] getA(String gtype, String[] garbage) {
+        int[] A = new int[garbage.length];
         for (int i = 0; i < garbage.length; i++) {
-            for (char c : garbage[i].toCharArray()) {
-                garbageLastPos.put(c, i);
-                garbageCount.put(c, garbageCount.getOrDefault(c, 0) + 1);
-            }
+            A[i] = countOccurrences(garbage[i], gtype);
         }
 
-        String garbageTypes = "MPG";
-        int ans = 0;
-        for (char c : garbageTypes.toCharArray()) {
-            // Add only if there is at least one unit of this garbage.
-            if (garbageCount.containsKey(c)) {
-                ans += prefixSum[garbageLastPos.get(c)] + garbageCount.get(c);
-            }
+        int lastIndex = A.length - 1;
+        while (lastIndex >= 0 && A[lastIndex] == 0) {
+            lastIndex--;
         }
 
-        return ans;
+        return Arrays.copyOfRange(A, 0, lastIndex + 1);
+    }
+
+    private int countOccurrences(String str, String target) {
+        int count = 0;
+        int index = str.indexOf(target);
+        while (index != -1) {
+            count++;
+            index = str.indexOf(target, index + 1);
+        }
+        return count;
+    }
+
+    private int f(String gtype, String[] garbage, int[] travel) {
+        int[] A = getA(gtype, garbage);
+        int time = 0;
+        for (int i = 0; i < A.length; i++) {
+            time += A[i];
+            if (i != A.length - 1) {
+                time += travel[i];
+            }
+        }
+        return time;
     }
 }
