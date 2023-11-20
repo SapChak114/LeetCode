@@ -1,35 +1,39 @@
-import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.List;
 
-public class Solution {
+class Solution {
     public int garbageCollection(String[] garbage, int[] travel) {
         return f("M", garbage, travel) + f("P", garbage, travel) + f("G", garbage, travel);
     }
-
+    
     private int[] getA(String gtype, String[] garbage) {
         int[] A = new int[garbage.length];
         for (int i = 0; i < garbage.length; i++) {
-            A[i] = countOccurrences(garbage[i], gtype);
+            A[i] = countOccurrences(gtype, garbage[i]);
+        }
+        
+        int endIndex = A.length - 1;
+        while (endIndex >= 0 && A[endIndex] == 0) {
+            endIndex--;
         }
 
-        int lastIndex = A.length - 1;
-        while (lastIndex >= 0 && A[lastIndex] == 0) {
-            lastIndex--;
+        int[] trimmedA = new int[endIndex + 1];
+        if (endIndex >= 0) {
+            System.arraycopy(A, 0, trimmedA, 0, endIndex + 1);
         }
-
-        return Arrays.copyOfRange(A, 0, lastIndex + 1);
+        
+        return trimmedA;
     }
-
-    private int countOccurrences(String str, String target) {
+    
+    private int countOccurrences(String gtype, String house) {
         int count = 0;
-        int index = str.indexOf(target);
-        while (index != -1) {
-            count++;
-            index = str.indexOf(target, index + 1);
+        for (int i = 0; i < house.length(); i++) {
+            if (house.charAt(i) == gtype.charAt(0)) {
+                count++;
+            }
         }
         return count;
     }
-
+    
     private int f(String gtype, String[] garbage, int[] travel) {
         int[] A = getA(gtype, garbage);
         int time = 0;
