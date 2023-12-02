@@ -1,22 +1,19 @@
 class Solution {
     public int countCharacters(String[] words, String chars) {
-        Map<Character,Integer> map = new HashMap<>();
-        for(char c : chars.toCharArray()) map.put(c,map.getOrDefault(c,0)+1);
+        int[] counts = new int[26];
+        for(char c : chars.toCharArray()) counts[c-'a']++;
         
         int ans = 0;
         for(String w : words){
-            int wl = w.length();
-            int count = 0;
-            Map<Character,Integer> map2 = new HashMap<>(map);
-            for(char c : w.toCharArray()){
-                if(map2.containsKey(c)) {
-                    int freq = map2.get(c);
-                    map2.put(c,--freq);
-                    if(freq==0) map2.remove(c);
-                    count++;
-                }
+            int[] check = new int[26];
+            boolean flag = true;
+            for(char c : w.toCharArray()) check[c-'a']++;
+            
+            for(int i = 0; i<check.length; i++){
+                if(counts[i]<check[i]) flag = false;
             }
-            if(count == wl) ans += wl;
+            
+            if(flag) ans += w.length();
         }
         
         return ans;
