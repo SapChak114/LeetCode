@@ -1,21 +1,18 @@
 class Solution {
     public String largestGoodInteger(String num) {
-        char[] charArr = num.toCharArray();
-        String ans = "";
-        int count = 1;
-        for(int i = 1; i<charArr.length; i++){
-            if(charArr[i-1]==charArr[i]){
-                count++;
-            } else{
-                count = 1;
-            }
-            if(count==3 && (ans.isEmpty() || Integer.valueOf(""+charArr[i])>Integer.valueOf(ans))){
-                ans =""+charArr[i];
+        char[] digits = num.toCharArray();
+        StringBuilder ansBuilder = new StringBuilder();
+        int consecutiveCount = 1;
+
+        for (int i = 1; i < digits.length; i++) {
+            consecutiveCount = (digits[i - 1] == digits[i]) ? ++consecutiveCount : 1;
+
+            if (consecutiveCount == 3 && (ansBuilder.length() == 0 || Integer.parseInt(String.valueOf(digits[i])) > Integer.parseInt(ansBuilder.toString()))) {
+                ansBuilder.setLength(0);  // Clear previous content
+                ansBuilder.append(digits[i]);
             }
         }
-        
-        ans += ans+""+ans;
-        
-        return ans;
+
+        return ansBuilder.toString() + ansBuilder.toString() + ansBuilder.toString();
     }
 }
