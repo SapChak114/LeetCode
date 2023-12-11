@@ -3,9 +3,7 @@ class Solution {
        int count = 1, maxCount = 0, n = arr.length, ans = 0;
         
         for (int i = 1; i < arr.length; i++) {
-            // count = (arr[i] == arr[i - 1]) ? count + 1 : 1;
-            if(arr[i]==arr[i-1]) count++;
-            else count = 1;
+            count = (arr[i] == arr[i - 1]) ? count + 1 : 1;
             if (count > maxCount) {
                 maxCount = count;
                 ans = arr[i];
