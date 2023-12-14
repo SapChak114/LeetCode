@@ -2,8 +2,6 @@ class Solution {
     public int[][] onesMinusZeros(int[][] grid) {
         int n = grid.length, m = grid[0].length;
         
-        int[][] res = new int[n][m];
-        
         int[] rowOnes = new int[n];
         int[] colOnes = new int[m];
         
@@ -27,10 +25,10 @@ class Solution {
         
         for(int row = 0; row<n; row++){
             for(int col = 0; col<m; col++){
-                res[row][col] = rowOnes[row] + colOnes[col] - rowZeros[row] - colZeros[col];
+                grid[row][col] = rowOnes[row] + colOnes[col] - rowZeros[row] - colZeros[col];
             }
         }
         
-        return res;
+        return grid;
     }
 }
