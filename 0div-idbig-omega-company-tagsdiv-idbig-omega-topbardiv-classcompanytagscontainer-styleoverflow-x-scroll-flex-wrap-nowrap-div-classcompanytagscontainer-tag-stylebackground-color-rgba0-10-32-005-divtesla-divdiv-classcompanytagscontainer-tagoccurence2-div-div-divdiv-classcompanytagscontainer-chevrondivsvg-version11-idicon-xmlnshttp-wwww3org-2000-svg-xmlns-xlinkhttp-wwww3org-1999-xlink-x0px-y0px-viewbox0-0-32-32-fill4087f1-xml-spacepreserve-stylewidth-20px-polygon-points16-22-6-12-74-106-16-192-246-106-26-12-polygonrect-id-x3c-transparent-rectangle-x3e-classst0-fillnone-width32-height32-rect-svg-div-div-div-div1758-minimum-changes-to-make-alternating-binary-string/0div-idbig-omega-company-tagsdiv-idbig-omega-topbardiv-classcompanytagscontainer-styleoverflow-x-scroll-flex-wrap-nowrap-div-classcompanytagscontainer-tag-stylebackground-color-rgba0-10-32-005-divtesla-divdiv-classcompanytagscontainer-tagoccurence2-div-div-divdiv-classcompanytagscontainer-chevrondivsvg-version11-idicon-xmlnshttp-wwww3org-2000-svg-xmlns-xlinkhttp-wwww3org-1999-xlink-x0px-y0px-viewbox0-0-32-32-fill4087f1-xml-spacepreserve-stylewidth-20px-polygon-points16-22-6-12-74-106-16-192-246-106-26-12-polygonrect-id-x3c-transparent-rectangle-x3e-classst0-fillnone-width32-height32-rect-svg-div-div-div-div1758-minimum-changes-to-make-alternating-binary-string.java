@@ -1,19 +1,25 @@
 class Solution {
     public int minOperations(String s) {
-        int start0 = 0, n = s.length();
+        int count0 = 0, count1 = 0, n = s.length();
         
         for(int i = 0; i<n; i++){
+            char c = s.charAt(i);
+            
             if(i%2==0){
-                if(s.charAt(i)=='1'){
-                    start0++;
+                if(c=='0'){
+                    count1++;
+                } else{
+                    count0++;
                 }
             } else{
-                if(s.charAt(i)=='0'){
-                    start0++;
+                if(c=='1'){
+                    count1++;
+                } else{
+                    count0++;
                 }
             }
         }
         
-        return Math.min(start0,n-start0);
+        return Math.min(count0,count1);
     }
 }
