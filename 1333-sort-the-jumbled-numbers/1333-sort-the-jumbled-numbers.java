@@ -1,17 +1,14 @@
 class Solution {
-
     public int[] sortJumbled(int[] mapping, int[] nums) {
         ArrayList<Integer[]> storePairs = new ArrayList<>();
 
         for (int i = 0; i < nums.length; ++i) {
-            // Convert current value to string
             String number = Integer.toString(nums[i]);
             String formed = "";
             for (int j = 0; j < number.length(); ++j) {
                 formed = formed +
                 Integer.toString(mapping[number.charAt(j) - '0']);
             }
-            // Store the mapped value.
             int mappedValue = Integer.parseInt(formed);
             // Push a pair consisting of mapped value and original value's index.
             storePairs.add(new Integer[] { mappedValue, i });
