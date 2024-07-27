@@ -5,22 +5,14 @@ class Solution {
 
         int n = cp.length;
         for (int i = 0; i<n; i++) {
-            String[] splittedVal = cp[i].split(" ");
-            String times = splittedVal[0];
-            String domain = splittedVal[1];
-            int m = domain.length();
-
+            String[] splittedVal = cp[i].split("\\s");
+            int times = Integer.parseInt(splittedVal[0]);
+            String[] domains = splittedVal[1].split("\\.");
+            int m = domains.length;
+            String curr = "";
             for (int j = m-1; j>=0; j--) {
-                if (domain.charAt(j) == '.') {
-                    String subDomain = domain.substring(j+1);
-                    int count = seen.getOrDefault(subDomain, 0);
-                    int totalCount = count + Integer.valueOf(times);
-                    seen.put(subDomain, totalCount);
-                } else if (j == 0) {
-                    int count = seen.getOrDefault(domain, 0);
-                    int totalCount = count + Integer.valueOf(times);
-                    seen.put(domain, totalCount);
-                }
+                curr = domains[j] + (curr.isEmpty() ? "" : ".") + curr;
+                seen.put(curr, seen.getOrDefault(curr, 0) + times);
             }
         }
 
