@@ -15,6 +15,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0295-find-median-from-data-stream](https://github.com/SapChak114/LeetCode/tree/master/0295-find-median-from-data-stream) |
+| [0778-reorganize-string](https://github.com/SapChak114/LeetCode/tree/master/0778-reorganize-string) |
 | [0948-sort-an-array](https://github.com/SapChak114/LeetCode/tree/master/0948-sort-an-array) |
 | [1333-sort-the-jumbled-numbers](https://github.com/SapChak114/LeetCode/tree/master/1333-sort-the-jumbled-numbers) |
 ## Divide and Conquer
@@ -25,6 +26,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0295-find-median-from-data-stream](https://github.com/SapChak114/LeetCode/tree/master/0295-find-median-from-data-stream) |
+| [0778-reorganize-string](https://github.com/SapChak114/LeetCode/tree/master/0778-reorganize-string) |
 | [0948-sort-an-array](https://github.com/SapChak114/LeetCode/tree/master/0948-sort-an-array) |
 ## Merge Sort
 |  |
@@ -41,6 +43,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Counting Sort
 |  |
 | ------- |
+| [0778-reorganize-string](https://github.com/SapChak114/LeetCode/tree/master/0778-reorganize-string) |
 | [0829-subdomain-visit-count](https://github.com/SapChak114/LeetCode/tree/master/0829-subdomain-visit-count) |
 | [0948-sort-an-array](https://github.com/SapChak114/LeetCode/tree/master/0948-sort-an-array) |
 ## Dynamic Programming
@@ -68,10 +71,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Hash Table
 |  |
 | ------- |
+| [0778-reorganize-string](https://github.com/SapChak114/LeetCode/tree/master/0778-reorganize-string) |
 | [0829-subdomain-visit-count](https://github.com/SapChak114/LeetCode/tree/master/0829-subdomain-visit-count) |
 ## String
 |  |
 | ------- |
+| [0778-reorganize-string](https://github.com/SapChak114/LeetCode/tree/master/0778-reorganize-string) |
 | [0829-subdomain-visit-count](https://github.com/SapChak114/LeetCode/tree/master/0829-subdomain-visit-count) |
 | [3235-minimum-cost-to-convert-string-i](https://github.com/SapChak114/LeetCode/tree/master/3235-minimum-cost-to-convert-string-i) |
 ## Linked List
@@ -146,4 +151,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1243-sum-of-nodes-with-even-valued-grandparent](https://github.com/SapChak114/LeetCode/tree/master/1243-sum-of-nodes-with-even-valued-grandparent) |
+## Greedy
+|  |
+| ------- |
+| [0778-reorganize-string](https://github.com/SapChak114/LeetCode/tree/master/0778-reorganize-string) |
 <!---LeetCode Topics End-->
