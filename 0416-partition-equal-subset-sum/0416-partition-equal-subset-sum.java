@@ -11,10 +11,10 @@ class Solution {
         boolean[] dp = new boolean[targ+1];
         dp[0] = true;
         for (int num : nums) {
-             boolean[] prev = Arrays.copyOf(dp, dp.length);
+            //boolean[] prev = Arrays.copyOf(dp, dp.length);
             for (int i = targ; i>=num; i--) {
-                boolean dont = prev[i];
-                boolean take = prev[i-num];
+                boolean dont = dp[i];
+                boolean take = dp[i-num];
                 dp[i] = take | dont;
             }
         }
