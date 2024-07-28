@@ -11,6 +11,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0718-maximum-length-of-repeated-subarray](https://github.com/SapChak114/LeetCode/tree/master/0718-maximum-length-of-repeated-subarray) |
 | [0829-subdomain-visit-count](https://github.com/SapChak114/LeetCode/tree/master/0829-subdomain-visit-count) |
 | [0948-sort-an-array](https://github.com/SapChak114/LeetCode/tree/master/0948-sort-an-array) |
+| [1171-shortest-path-in-binary-matrix](https://github.com/SapChak114/LeetCode/tree/master/1171-shortest-path-in-binary-matrix) |
 | [1333-sort-the-jumbled-numbers](https://github.com/SapChak114/LeetCode/tree/master/1333-sort-the-jumbled-numbers) |
 | [3235-minimum-cost-to-convert-string-i](https://github.com/SapChak114/LeetCode/tree/master/3235-minimum-cost-to-convert-string-i) |
 ## Sorting
@@ -119,6 +120,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0200-number-of-islands](https://github.com/SapChak114/LeetCode/tree/master/0200-number-of-islands) |
 | [0207-course-schedule](https://github.com/SapChak114/LeetCode/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/SapChak114/LeetCode/tree/master/0210-course-schedule-ii) |
+| [1171-shortest-path-in-binary-matrix](https://github.com/SapChak114/LeetCode/tree/master/1171-shortest-path-in-binary-matrix) |
 | [1243-sum-of-nodes-with-even-valued-grandparent](https://github.com/SapChak114/LeetCode/tree/master/1243-sum-of-nodes-with-even-valued-grandparent) |
 ## Topological Sort
 |  |
@@ -133,6 +135,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0200-number-of-islands](https://github.com/SapChak114/LeetCode/tree/master/0200-number-of-islands) |
+| [1171-shortest-path-in-binary-matrix](https://github.com/SapChak114/LeetCode/tree/master/1171-shortest-path-in-binary-matrix) |
 ## Sliding Window
 |  |
 | ------- |
