@@ -9,32 +9,26 @@ class Solution {
         Queue<int[]> q = new LinkedList<>();
         boolean[][] vis = new boolean[n][m];
         
-        q.add(new int[]{0,0});
+        q.add(new int[]{0, 0, 1});
         vis[0][0] = true;
 
-        int ans = 0;
         while (!q.isEmpty()) {
-            int size = q.size();
-            ans++;
+            int[] currPos = q.poll();
 
-            for (int i = 0; i<size; i++) {
-                int[] currPos = q.poll();
+            if (currPos[0] == n-1 && currPos[1] == m-1) {
+                return currPos[2];
+            }
 
-                if (currPos[0] == n-1 && currPos[1] == m-1) {
-                    return ans;
+            for (int d = 0; d < dirX.length; d++) {
+                int newX = dirX[d] + currPos[0];
+                int newY = dirY[d] + currPos[1];
+
+                if (newX < 0 || newX >= n || newY < 0 || newY >= m || vis[newX][newY] || grid[newX][newY] == 1) {
+                    continue;
                 }
 
-                for (int d = 0; d < dirX.length; d++) {
-                    int newX = dirX[d] + currPos[0];
-                    int newY = dirY[d] + currPos[1];
-
-                    if (newX < 0 || newX >= n || newY < 0 || newY >= m || vis[newX][newY] || grid[newX][newY] == 1) {
-                        continue;
-                    }
-
-                    vis[newX][newY] = true;
-                    q.add(new int[]{newX, newY});
-                }
+                vis[newX][newY] = true;
+                q.add(new int[]{newX, newY, currPos[2]+1});
             }
         }
 
