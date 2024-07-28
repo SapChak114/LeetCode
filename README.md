@@ -91,6 +91,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0097-interleaving-string](https://github.com/SapChak114/LeetCode/tree/master/0097-interleaving-string) |
+| [0394-decode-string](https://github.com/SapChak114/LeetCode/tree/master/0394-decode-string) |
 | [0415-add-strings](https://github.com/SapChak114/LeetCode/tree/master/0415-add-strings) |
 | [0778-reorganize-string](https://github.com/SapChak114/LeetCode/tree/master/0778-reorganize-string) |
 | [0829-subdomain-visit-count](https://github.com/SapChak114/LeetCode/tree/master/0829-subdomain-visit-count) |
@@ -113,10 +114,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0234-palindrome-linked-list](https://github.com/SapChak114/LeetCode/tree/master/0234-palindrome-linked-list) |
+| [0394-decode-string](https://github.com/SapChak114/LeetCode/tree/master/0394-decode-string) |
 ## Recursion
 |  |
 | ------- |
 | [0234-palindrome-linked-list](https://github.com/SapChak114/LeetCode/tree/master/0234-palindrome-linked-list) |
+| [0394-decode-string](https://github.com/SapChak114/LeetCode/tree/master/0394-decode-string) |
 ## Depth-First Search
 |  |
 | ------- |
