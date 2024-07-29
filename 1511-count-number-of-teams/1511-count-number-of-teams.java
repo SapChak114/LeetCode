@@ -1,8 +1,7 @@
 class Solution {
     public int numTeams(int[] rating) {
-        int n = rating.length;
+        int n = rating.length, ans = 0;
 
-        int ans = 0;
         for (int i = 0; i<n; i++) {
             for (int j = i+1; j<n; j++) {
                 for (int k = j+1; k<n; k++) {
@@ -13,7 +12,7 @@ class Solution {
                 }
             }
         }
-
+        
         return ans;
     }
 }
