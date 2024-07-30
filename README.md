@@ -65,6 +65,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0718-maximum-length-of-repeated-subarray](https://github.com/SapChak114/LeetCode/tree/master/0718-maximum-length-of-repeated-subarray) |
 | [1456-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance](https://github.com/SapChak114/LeetCode/tree/master/1456-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance) |
 | [1511-count-number-of-teams](https://github.com/SapChak114/LeetCode/tree/master/1511-count-number-of-teams) |
+| [1756-minimum-deletions-to-make-string-balanced](https://github.com/SapChak114/LeetCode/tree/master/1756-minimum-deletions-to-make-string-balanced) |
 ## Graph
 |  |
 | ------- |
@@ -102,6 +103,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0778-reorganize-string](https://github.com/SapChak114/LeetCode/tree/master/0778-reorganize-string) |
 | [0829-subdomain-visit-count](https://github.com/SapChak114/LeetCode/tree/master/0829-subdomain-visit-count) |
 | [0965-unique-email-addresses](https://github.com/SapChak114/LeetCode/tree/master/0965-unique-email-addresses) |
+| [1756-minimum-deletions-to-make-string-balanced](https://github.com/SapChak114/LeetCode/tree/master/1756-minimum-deletions-to-make-string-balanced) |
 | [3235-minimum-cost-to-convert-string-i](https://github.com/SapChak114/LeetCode/tree/master/3235-minimum-cost-to-convert-string-i) |
 ## Linked List
 |  |
@@ -121,6 +123,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0234-palindrome-linked-list](https://github.com/SapChak114/LeetCode/tree/master/0234-palindrome-linked-list) |
 | [0394-decode-string](https://github.com/SapChak114/LeetCode/tree/master/0394-decode-string) |
+| [1756-minimum-deletions-to-make-string-balanced](https://github.com/SapChak114/LeetCode/tree/master/1756-minimum-deletions-to-make-string-balanced) |
 ## Recursion
 |  |
 | ------- |
