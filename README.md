@@ -22,6 +22,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1511-count-number-of-teams](https://github.com/SapChak114/LeetCode/tree/master/1511-count-number-of-teams) |
 | [1556-make-two-arrays-equal-by-reversing-subarrays](https://github.com/SapChak114/LeetCode/tree/master/1556-make-two-arrays-equal-by-reversing-subarrays) |
 | [1615-range-sum-of-sorted-subarray-sums](https://github.com/SapChak114/LeetCode/tree/master/1615-range-sum-of-sorted-subarray-sums) |
+| [1691-minimum-number-of-days-to-disconnect-island](https://github.com/SapChak114/LeetCode/tree/master/1691-minimum-number-of-days-to-disconnect-island) |
 | [2163-kth-distinct-string-in-an-array](https://github.com/SapChak114/LeetCode/tree/master/2163-kth-distinct-string-in-an-array) |
 | [2255-minimum-swaps-to-group-all-1s-together-ii](https://github.com/SapChak114/LeetCode/tree/master/2255-minimum-swaps-to-group-all-1s-together-ii) |
 | [2727-number-of-senior-citizens](https://github.com/SapChak114/LeetCode/tree/master/2727-number-of-senior-citizens) |
@@ -168,6 +169,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0543-diameter-of-binary-tree](https://github.com/SapChak114/LeetCode/tree/master/0543-diameter-of-binary-tree) |
 | [0999-regions-cut-by-slashes](https://github.com/SapChak114/LeetCode/tree/master/0999-regions-cut-by-slashes) |
 | [1243-sum-of-nodes-with-even-valued-grandparent](https://github.com/SapChak114/LeetCode/tree/master/1243-sum-of-nodes-with-even-valued-grandparent) |
+| [1691-minimum-number-of-days-to-disconnect-island](https://github.com/SapChak114/LeetCode/tree/master/1691-minimum-number-of-days-to-disconnect-island) |
 ## Breadth-First Search
 |  |
 | ------- |
@@ -178,6 +180,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0999-regions-cut-by-slashes](https://github.com/SapChak114/LeetCode/tree/master/0999-regions-cut-by-slashes) |
 | [1171-shortest-path-in-binary-matrix](https://github.com/SapChak114/LeetCode/tree/master/1171-shortest-path-in-binary-matrix) |
 | [1243-sum-of-nodes-with-even-valued-grandparent](https://github.com/SapChak114/LeetCode/tree/master/1243-sum-of-nodes-with-even-valued-grandparent) |
+| [1691-minimum-number-of-days-to-disconnect-island](https://github.com/SapChak114/LeetCode/tree/master/1691-minimum-number-of-days-to-disconnect-island) |
 | [2171-second-minimum-time-to-reach-destination](https://github.com/SapChak114/LeetCode/tree/master/2171-second-minimum-time-to-reach-destination) |
 ## Topological Sort
 |  |
@@ -197,6 +200,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0870-magic-squares-in-grid](https://github.com/SapChak114/LeetCode/tree/master/0870-magic-squares-in-grid) |
 | [0999-regions-cut-by-slashes](https://github.com/SapChak114/LeetCode/tree/master/0999-regions-cut-by-slashes) |
 | [1171-shortest-path-in-binary-matrix](https://github.com/SapChak114/LeetCode/tree/master/1171-shortest-path-in-binary-matrix) |
+| [1691-minimum-number-of-days-to-disconnect-island](https://github.com/SapChak114/LeetCode/tree/master/1691-minimum-number-of-days-to-disconnect-island) |
 ## Sliding Window
 |  |
 | ------- |
@@ -272,4 +276,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0014-longest-common-prefix](https://github.com/SapChak114/LeetCode/tree/master/0014-longest-common-prefix) |
+## Strongly Connected Component
+|  |
+| ------- |
+| [1691-minimum-number-of-days-to-disconnect-island](https://github.com/SapChak114/LeetCode/tree/master/1691-minimum-number-of-days-to-disconnect-island) |
 <!---LeetCode Topics End-->
