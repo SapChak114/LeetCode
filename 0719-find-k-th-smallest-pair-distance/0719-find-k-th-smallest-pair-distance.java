@@ -1,39 +1,35 @@
 class Solution {
-
+    int[] nums;
     public int smallestDistancePair(int[] nums, int k) {
-        int arrayLength = nums.length;
+        int n = nums.length;
+        int l = 0, r = Arrays.stream(nums).max().getAsInt();
+        this.nums = nums;
+        Arrays.sort(nums);
 
-        // Find the maximum element in the array
-        int maxElement = Integer.MIN_VALUE;
-        for (int num : nums) {
-            maxElement = Math.max(maxElement, num);
-        }
+        while (l < r) {
+            int mid = l + (r-l)/2;
+            int pairs = helper(mid);
 
-        // Initialize a bucket array to store counts of each distance
-        int[] distanceBucket = new int[maxElement + 1];
-
-        // Populate the bucket array with counts of each distance
-        for (int i = 0; i < arrayLength; ++i) {
-            for (int j = i + 1; j < arrayLength; ++j) {
-                // Compute the distance between nums[i] and nums[j]
-                int distance = Math.abs(nums[i] - nums[j]);
-
-                // Increment the count for this distance in the bucket
-                ++distanceBucket[distance];
+            if (pairs >= k) {
+                r = mid;
+            } else {
+                l = mid + 1;
             }
         }
 
-        // Find the k-th smallest distance
-        for (int dist = 0; dist <= maxElement; ++dist) {
-            // Reduce k by the number of pairs with the current distance
-            k -= distanceBucket[dist];
+        return r;
+    }
 
-            // If k is less than or equal to 0, return the current distance
-            if (k <= 0) {
-                return dist;
+    int helper(int dist) {
+        int l = 0, res = 0;
+
+        for (int r = 0; r<nums.length; r++) {
+            while (nums[r] - nums[l] > dist) {
+                l++;
             }
+            res += r-l;
         }
 
-        return -1; // Return -1 if no distance found, should not reach here
+        return res;
     }
 }
