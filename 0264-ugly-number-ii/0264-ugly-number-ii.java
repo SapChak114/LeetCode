@@ -1,31 +1,30 @@
 class Solution {
     public int nthUglyNumber(int n) {
-        int[] uglyNumbers = new int[n];
-        uglyNumbers[0] = 1; // The first ugly number is 1
+        int two = 2, three = 3, five = 5;
+        int i2 = 0, i3 = 0, i5 = 0;
 
-        int i2 = 0, i3 = 0, i5 = 0; // indices for multiples of 2, 3, 5
-        int nextMultipleOf2 = 2;
-        int nextMultipleOf3 = 3;
-        int nextMultipleOf5 = 5;
+        int[] res = new int[n];
+        res[0] = 1;
+        for (int i = 1; i<n; i++) {
+            int min = Math.min(two, Math.min(three, five));
+            res[i] = min;
 
-        for (int i = 1; i < n; i++) {
-            int nextUglyNumber = Math.min(nextMultipleOf2, Math.min(nextMultipleOf3, nextMultipleOf5));
-            uglyNumbers[i] = nextUglyNumber;
-
-            if (nextUglyNumber == nextMultipleOf2) {
+            if (min == two) {
                 i2++;
-                nextMultipleOf2 = uglyNumbers[i2] * 2;
+                two = res[i2] * 2;
             }
-            if (nextUglyNumber == nextMultipleOf3) {
+
+            if (min == three) {
                 i3++;
-                nextMultipleOf3 = uglyNumbers[i3] * 3;
+                three = res[i3] * 3;
             }
-            if (nextUglyNumber == nextMultipleOf5) {
+
+            if (min == five) {
                 i5++;
-                nextMultipleOf5 = uglyNumbers[i5] * 5;
+                five = res[i5] * 5;
             }
         }
-        
-        return uglyNumbers[n - 1];
+
+        return res[n-1];
     }
 }
