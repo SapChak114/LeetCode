@@ -40,6 +40,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0215-kth-largest-element-in-an-array](https://github.com/SapChak114/LeetCode/tree/master/0215-kth-largest-element-in-an-array) |
+| [0242-valid-anagram](https://github.com/SapChak114/LeetCode/tree/master/0242-valid-anagram) |
 | [0295-find-median-from-data-stream](https://github.com/SapChak114/LeetCode/tree/master/0295-find-median-from-data-stream) |
 | [0719-find-k-th-smallest-pair-distance](https://github.com/SapChak114/LeetCode/tree/master/0719-find-k-th-smallest-pair-distance) |
 | [0778-reorganize-string](https://github.com/SapChak114/LeetCode/tree/master/0778-reorganize-string) |
@@ -128,6 +129,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0037-sudoku-solver](https://github.com/SapChak114/LeetCode/tree/master/0037-sudoku-solver) |
 | [0146-lru-cache](https://github.com/SapChak114/LeetCode/tree/master/0146-lru-cache) |
 | [0160-intersection-of-two-linked-lists](https://github.com/SapChak114/LeetCode/tree/master/0160-intersection-of-two-linked-lists) |
+| [0242-valid-anagram](https://github.com/SapChak114/LeetCode/tree/master/0242-valid-anagram) |
 | [0264-ugly-number-ii](https://github.com/SapChak114/LeetCode/tree/master/0264-ugly-number-ii) |
 | [0778-reorganize-string](https://github.com/SapChak114/LeetCode/tree/master/0778-reorganize-string) |
 | [0829-subdomain-visit-count](https://github.com/SapChak114/LeetCode/tree/master/0829-subdomain-visit-count) |
@@ -142,6 +144,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0014-longest-common-prefix](https://github.com/SapChak114/LeetCode/tree/master/0014-longest-common-prefix) |
 | [0097-interleaving-string](https://github.com/SapChak114/LeetCode/tree/master/0097-interleaving-string) |
+| [0242-valid-anagram](https://github.com/SapChak114/LeetCode/tree/master/0242-valid-anagram) |
 | [0273-integer-to-english-words](https://github.com/SapChak114/LeetCode/tree/master/0273-integer-to-english-words) |
 | [0394-decode-string](https://github.com/SapChak114/LeetCode/tree/master/0394-decode-string) |
 | [0415-add-strings](https://github.com/SapChak114/LeetCode/tree/master/0415-add-strings) |
