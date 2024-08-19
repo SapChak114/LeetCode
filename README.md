@@ -95,6 +95,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0322-coin-change](https://github.com/SapChak114/LeetCode/tree/master/0322-coin-change) |
 | [0337-house-robber-iii](https://github.com/SapChak114/LeetCode/tree/master/0337-house-robber-iii) |
 | [0416-partition-equal-subset-sum](https://github.com/SapChak114/LeetCode/tree/master/0416-partition-equal-subset-sum) |
+| [0650-2-keys-keyboard](https://github.com/SapChak114/LeetCode/tree/master/0650-2-keys-keyboard) |
 | [0718-maximum-length-of-repeated-subarray](https://github.com/SapChak114/LeetCode/tree/master/0718-maximum-length-of-repeated-subarray) |
 | [1196-filling-bookcase-shelves](https://github.com/SapChak114/LeetCode/tree/master/1196-filling-bookcase-shelves) |
 | [1456-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance](https://github.com/SapChak114/LeetCode/tree/master/1456-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance) |
@@ -295,6 +296,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0264-ugly-number-ii](https://github.com/SapChak114/LeetCode/tree/master/0264-ugly-number-ii) |
 | [0273-integer-to-english-words](https://github.com/SapChak114/LeetCode/tree/master/0273-integer-to-english-words) |
 | [0415-add-strings](https://github.com/SapChak114/LeetCode/tree/master/0415-add-strings) |
+| [0650-2-keys-keyboard](https://github.com/SapChak114/LeetCode/tree/master/0650-2-keys-keyboard) |
 | [0870-magic-squares-in-grid](https://github.com/SapChak114/LeetCode/tree/master/0870-magic-squares-in-grid) |
 ## Simulation
 |  |
