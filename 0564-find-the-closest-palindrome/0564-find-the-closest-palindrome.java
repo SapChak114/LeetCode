@@ -5,9 +5,9 @@ class Solution {
         long half = Long.parseLong(n.substring(0, mid+1));
 
         List<Long> candidates = new ArrayList<>();
-        candidates.add(findPallindrome(half, len%2 == 0));
-        candidates.add(findPallindrome(half+1l, len%2 == 0));
-        candidates.add(findPallindrome(half-1l, len%2 == 0));
+        candidates.add(findPallindrome(half, len%2 == 1));
+        candidates.add(findPallindrome(half+1l, len%2 == 1));
+        candidates.add(findPallindrome(half-1l, len%2 == 1));
         candidates.add((long) (Math.pow(10l, len) + 1l));
         candidates.add((long) (Math.pow(10l, len - 1l) - 1l));
 
@@ -26,10 +26,10 @@ class Solution {
         return String.valueOf(ans);
     }
 
-    long findPallindrome(long leftPart, boolean isEven) {
+    long findPallindrome(long leftPart, boolean isOdd) {
         long fullNum = leftPart;
 
-        if (!isEven) {
+        if (isOdd) {
             leftPart /= 10;
         }
 
