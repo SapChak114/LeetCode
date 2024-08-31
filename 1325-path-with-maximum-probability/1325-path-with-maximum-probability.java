@@ -45,6 +45,6 @@ class Solution {
             }
         }
 
-        return 0d;
+        return maxProb[end_node];
     }
 }
