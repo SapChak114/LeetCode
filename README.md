@@ -8,6 +8,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0037-sudoku-solver](https://github.com/SapChak114/LeetCode/tree/master/0037-sudoku-solver) |
 | [0040-combination-sum-ii](https://github.com/SapChak114/LeetCode/tree/master/0040-combination-sum-ii) |
 | [0045-jump-game-ii](https://github.com/SapChak114/LeetCode/tree/master/0045-jump-game-ii) |
+| [0049-group-anagrams](https://github.com/SapChak114/LeetCode/tree/master/0049-group-anagrams) |
 | [0054-spiral-matrix](https://github.com/SapChak114/LeetCode/tree/master/0054-spiral-matrix) |
 | [0055-jump-game](https://github.com/SapChak114/LeetCode/tree/master/0055-jump-game) |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/SapChak114/LeetCode/tree/master/0122-best-time-to-buy-and-sell-stock-ii) |
@@ -46,6 +47,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Sorting
 |  |
 | ------- |
+| [0049-group-anagrams](https://github.com/SapChak114/LeetCode/tree/master/0049-group-anagrams) |
 | [0215-kth-largest-element-in-an-array](https://github.com/SapChak114/LeetCode/tree/master/0215-kth-largest-element-in-an-array) |
 | [0242-valid-anagram](https://github.com/SapChak114/LeetCode/tree/master/0242-valid-anagram) |
 | [0295-find-median-from-data-stream](https://github.com/SapChak114/LeetCode/tree/master/0295-find-median-from-data-stream) |
@@ -147,6 +149,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/SapChak114/LeetCode/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0037-sudoku-solver](https://github.com/SapChak114/LeetCode/tree/master/0037-sudoku-solver) |
+| [0049-group-anagrams](https://github.com/SapChak114/LeetCode/tree/master/0049-group-anagrams) |
 | [0146-lru-cache](https://github.com/SapChak114/LeetCode/tree/master/0146-lru-cache) |
 | [0160-intersection-of-two-linked-lists](https://github.com/SapChak114/LeetCode/tree/master/0160-intersection-of-two-linked-lists) |
 | [0242-valid-anagram](https://github.com/SapChak114/LeetCode/tree/master/0242-valid-anagram) |
@@ -165,6 +168,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/SapChak114/LeetCode/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0014-longest-common-prefix](https://github.com/SapChak114/LeetCode/tree/master/0014-longest-common-prefix) |
+| [0049-group-anagrams](https://github.com/SapChak114/LeetCode/tree/master/0049-group-anagrams) |
 | [0097-interleaving-string](https://github.com/SapChak114/LeetCode/tree/master/0097-interleaving-string) |
 | [0242-valid-anagram](https://github.com/SapChak114/LeetCode/tree/master/0242-valid-anagram) |
 | [0273-integer-to-english-words](https://github.com/SapChak114/LeetCode/tree/master/0273-integer-to-english-words) |
