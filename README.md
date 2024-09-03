@@ -102,6 +102,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0055-jump-game](https://github.com/SapChak114/LeetCode/tree/master/0055-jump-game) |
 | [0097-interleaving-string](https://github.com/SapChak114/LeetCode/tree/master/0097-interleaving-string) |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/SapChak114/LeetCode/tree/master/0122-best-time-to-buy-and-sell-stock-ii) |
+| [0124-binary-tree-maximum-path-sum](https://github.com/SapChak114/LeetCode/tree/master/0124-binary-tree-maximum-path-sum) |
 | [0221-maximal-square](https://github.com/SapChak114/LeetCode/tree/master/0221-maximal-square) |
 | [0264-ugly-number-ii](https://github.com/SapChak114/LeetCode/tree/master/0264-ugly-number-ii) |
 | [0322-coin-change](https://github.com/SapChak114/LeetCode/tree/master/0322-coin-change) |
@@ -218,6 +219,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Depth-First Search
 |  |
 | ------- |
+| [0124-binary-tree-maximum-path-sum](https://github.com/SapChak114/LeetCode/tree/master/0124-binary-tree-maximum-path-sum) |
 | [0145-binary-tree-postorder-traversal](https://github.com/SapChak114/LeetCode/tree/master/0145-binary-tree-postorder-traversal) |
 | [0200-number-of-islands](https://github.com/SapChak114/LeetCode/tree/master/0200-number-of-islands) |
 | [0207-course-schedule](https://github.com/SapChak114/LeetCode/tree/master/0207-course-schedule) |
@@ -298,6 +300,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0109-convert-sorted-list-to-binary-search-tree](https://github.com/SapChak114/LeetCode/tree/master/0109-convert-sorted-list-to-binary-search-tree) |
+| [0124-binary-tree-maximum-path-sum](https://github.com/SapChak114/LeetCode/tree/master/0124-binary-tree-maximum-path-sum) |
 | [0145-binary-tree-postorder-traversal](https://github.com/SapChak114/LeetCode/tree/master/0145-binary-tree-postorder-traversal) |
 | [0337-house-robber-iii](https://github.com/SapChak114/LeetCode/tree/master/0337-house-robber-iii) |
 | [0543-diameter-of-binary-tree](https://github.com/SapChak114/LeetCode/tree/master/0543-diameter-of-binary-tree) |
@@ -308,6 +311,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0109-convert-sorted-list-to-binary-search-tree](https://github.com/SapChak114/LeetCode/tree/master/0109-convert-sorted-list-to-binary-search-tree) |
+| [0124-binary-tree-maximum-path-sum](https://github.com/SapChak114/LeetCode/tree/master/0124-binary-tree-maximum-path-sum) |
 | [0145-binary-tree-postorder-traversal](https://github.com/SapChak114/LeetCode/tree/master/0145-binary-tree-postorder-traversal) |
 | [0337-house-robber-iii](https://github.com/SapChak114/LeetCode/tree/master/0337-house-robber-iii) |
 | [0543-diameter-of-binary-tree](https://github.com/SapChak114/LeetCode/tree/master/0543-diameter-of-binary-tree) |
