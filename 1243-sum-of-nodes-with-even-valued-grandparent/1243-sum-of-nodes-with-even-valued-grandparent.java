@@ -17,18 +17,20 @@ class Solution {
     int sum;
     public int sumEvenGrandparent(TreeNode root) {
         this.sum = 0;
-        preorder(root, null, null);
+        preOrder(root, null, null);
         return this.sum;
     }
 
-    void preorder(TreeNode root, TreeNode parent, TreeNode grandParent) {
-        if (root == null) {
+    void preOrder(TreeNode node, TreeNode parent, TreeNode grandParent) {
+        if (node == null) {
             return;
         }
+
         if (grandParent != null && grandParent.val % 2 == 0) {
-            sum += root.val;
+            this.sum += node.val;
         }
-        preorder(root.left, root, parent);
-        preorder(root.right, root, parent);
+
+        preOrder(node.left, node, parent);
+        preOrder(node.right, node, parent);
     }
 }
