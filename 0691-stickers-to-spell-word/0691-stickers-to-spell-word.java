@@ -1,72 +1,55 @@
-import java.util.*;
-
-public class Solution {
-
-    private Map<String, Integer> dp;
-    private List<Map<Character, Integer>> stickCount;
+class Solution {
+    List<Map<Character, Integer>> stickerCount;
+    Map<String, Integer> dp;
 
     public int minStickers(String[] stickers, String target) {
-        // Initialize the sticker character counts
-        stickCount = new ArrayList<>();
-        for (String s : stickers) {
-            Map<Character, Integer> countMap = new HashMap<>();
-            for (char c : s.toCharArray()) {
-                countMap.put(c, countMap.getOrDefault(c, 0) + 1);
+        stickerCount = new ArrayList<>();
+        dp = new HashMap<>();
+
+        for (String st : stickers) {
+            Map<Character, Integer> map = new HashMap<>();
+            for (char c : st.toCharArray()) {
+                map.put(c, map.getOrDefault(c, 0) + 1);
             }
-            stickCount.add(countMap);
+            stickerCount.add(map);
         }
 
-        // Initialize the memoization map
-        dp = new HashMap<>();
-        dp.put("", 0);  // Base case: 0 stickers are needed for an empty target
+        dp.put("", 0);
+        int res = dfs(target);
 
-        // Start the recursive DFS from the full target string
-        int result = dfs(target);
-
-        // Return the result (if impossible, return -1)
-        return result == (int)1e9+7 ? -1 : result;
+        return res != (int)1e9 + 7 ? res : -1;
     }
 
-    // DFS helper method
-    private int dfs(String t) {
-        // Check if the result for this target subsequence is already computed
+    int dfs(String t) {
         if (dp.containsKey(t)) {
             return dp.get(t);
         }
 
-        // Result starts as infinite (because we are looking for the minimum)
-        int res = (int)1e9+7;
-
-        // Try to use each sticker to reduce the target
-        for (Map<Character, Integer> sticker : stickCount) {
-            // If the first character of the target doesn't exist in the current sticker, skip it
-            if (!sticker.containsKey(t.charAt(0))) {
+        int res = (int)1e9 + 7;
+        for (Map<Character, Integer> st : stickerCount) {
+            if (!st.containsKey(t.charAt(0))) {
                 continue;
             }
 
-            // Build the new target string (remaining part)
-            StringBuilder remainT = new StringBuilder();
-            Map<Character, Integer> tempSticker = new HashMap<>(sticker);
+            StringBuilder rem = new StringBuilder();
+            Map<Character, Integer> cpSt = new HashMap<>(st);
 
             for (char c : t.toCharArray()) {
-                if (tempSticker.getOrDefault(c, 0) > 0) {
-                    tempSticker.put(c, tempSticker.get(c) - 1);
+                if (cpSt.getOrDefault(c, 0) > 0) {
+                    cpSt.put(c, cpSt.get(c) - 1);
                 } else {
-                    remainT.append(c);
+                    rem.append(c);
                 }
             }
 
-            // Recursive DFS call for the remaining target
-            if (remainT.length() != 0) {
-                res = Math.min(res, 1 + dfs(remainT.toString()));
+            if (rem.length() != 0) {
+                res = Math.min(res, 1 + dfs(rem.toString()));
             } else {
-                res = Math.min(res, 1);  // If no remaining characters, at least one sticker was used
+                res = Math.min(res, 1);
             }
         }
 
-        // Store the result in the memoization map
         dp.put(t, res);
         return res;
     }
-
 }
