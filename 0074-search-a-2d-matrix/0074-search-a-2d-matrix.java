@@ -1,30 +1,24 @@
 class Solution {
     public boolean searchMatrix(int[][] matrix, int target) {
-        for(int[] arr : matrix){
-            if(bs(arr,target)){
+        int rows = matrix.length;
+        int cols = matrix[0].length;
+
+        int left = 0;
+        int right = rows * cols - 1;
+
+        while (left <= right) {
+            int mid = (left + right) >> 1;
+            int midVal = matrix[mid/cols][mid%cols];
+
+            if (midVal == target) {
                 return true;
+            } else if (midVal < target) {
+                left = mid + 1;
+            } else {
+                right = mid - 1;
             }
         }
+
         return false;
     }
-    
-    
-     boolean bs(int[] arr, int targ){
-         int l = 0, r = arr.length-1;
-         
-         while(l<r){
-             int mid = l + (r-l)/2;
-             
-             if(arr[mid]==targ){
-                 return true;
-             }
-             else if(arr[mid]<targ){
-                 l = mid + 1;
-             } else {
-                 r = mid;
-             }
-         }
-         
-         return arr[l]==targ;
-     }
 }
