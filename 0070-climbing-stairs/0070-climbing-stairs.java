@@ -1,16 +1,21 @@
 class Solution {
     Integer[] dp;
     public int climbStairs(int n) {
-        dp = new Integer[n+1];
-        return rec(n,n);
+        this.dp = new Integer[n+1];
+        return climb(n);
     }
-    
-    int rec(int n, int idx){
-        if(idx==0 || idx==1){
+
+    int climb(int n) {
+        if (n == 0) {
             return 1;
         }
-        if(dp[idx]!=null) return dp[idx];
-        
-        return dp[idx] = rec(n,idx-2) + rec(n,idx-1);
+        if (n < 0) {
+            return 0;
+        }
+        if (dp[n] != null) {
+            return dp[n];
+        }
+
+        return dp[n] = climb(n-1) + climb(n-2);
     }
 }
