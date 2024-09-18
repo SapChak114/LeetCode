@@ -120,6 +120,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Dynamic Programming
 |  |
 | ------- |
+| [0005-longest-palindromic-substring](https://github.com/SapChak114/LeetCode/tree/master/0005-longest-palindromic-substring) |
 | [0045-jump-game-ii](https://github.com/SapChak114/LeetCode/tree/master/0045-jump-game-ii) |
 | [0055-jump-game](https://github.com/SapChak114/LeetCode/tree/master/0055-jump-game) |
 | [0070-climbing-stairs](https://github.com/SapChak114/LeetCode/tree/master/0070-climbing-stairs) |
@@ -201,6 +202,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/SapChak114/LeetCode/tree/master/0003-longest-substring-without-repeating-characters) |
+| [0005-longest-palindromic-substring](https://github.com/SapChak114/LeetCode/tree/master/0005-longest-palindromic-substring) |
 | [0014-longest-common-prefix](https://github.com/SapChak114/LeetCode/tree/master/0014-longest-common-prefix) |
 | [0049-group-anagrams](https://github.com/SapChak114/LeetCode/tree/master/0049-group-anagrams) |
 | [0097-interleaving-string](https://github.com/SapChak114/LeetCode/tree/master/0097-interleaving-string) |
@@ -242,6 +244,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Two Pointers
 |  |
 | ------- |
+| [0005-longest-palindromic-substring](https://github.com/SapChak114/LeetCode/tree/master/0005-longest-palindromic-substring) |
 | [0027-remove-element](https://github.com/SapChak114/LeetCode/tree/master/0027-remove-element) |
 | [0088-merge-sorted-array](https://github.com/SapChak114/LeetCode/tree/master/0088-merge-sorted-array) |
 | [0160-intersection-of-two-linked-lists](https://github.com/SapChak114/LeetCode/tree/master/0160-intersection-of-two-linked-lists) |
