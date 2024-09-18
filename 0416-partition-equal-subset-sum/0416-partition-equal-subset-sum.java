@@ -1,54 +1,44 @@
-import java.util.Arrays;
-
 class Solution {
-
     public boolean canPartition(int[] nums) {
         int n = nums.length;
+
         int sum = Arrays.stream(nums).sum();
-        
-        // If the sum is odd, it cannot be partitioned into two equal subsets
+
         if (sum % 2 != 0) {
             return false;
         }
-        
-        // Target sum is half of the total sum
+
         int target = sum / 2;
-        
-        // Create a DP table initialized to -1 (not computed)
+
         int[][] dp = new int[n][target + 1];
-        for (int[] row : dp) {
-            Arrays.fill(row, -1);
+        for (int[] d : dp) {
+            Arrays.fill(d, -1);
         }
-        
-        return canPartitionHelper(target, nums, n - 1, dp);
+
+        return dfs(nums, target, dp, n-1);
     }
 
-    private boolean canPartitionHelper(int k, int[] arr, int i, int[][] dp) {
-        // Base case: If no more elements to pick and k is not 0, return false
-        if (i < 0 && k != 0) {
+    boolean dfs(int[] nums, int targ, int[][] dp, int idx) {
+        if (idx < 0 && targ != 0) {
             return false;
         }
-        
-        // Base case: If only one element left, check if it equals k
-        if (i == 0) {
-            return arr[i] == k;
+
+        if (idx == 0) {
+            return nums[idx] == targ;
         }
 
-        // Check if the result is already computed
-        if (dp[i][k] != -1) {
-            return dp[i][k] == 1;
+        if (dp[idx][targ] != -1) {
+            return dp[idx][targ] == 1;
         }
 
-        // Recursively check if we can take the current element or not
         boolean take = false;
-        if (arr[i] <= k) {
-            take = canPartitionHelper(k - arr[i], arr, i - 1, dp);
+        if (nums[idx] <= targ) {
+            take = dfs(nums, targ - nums[idx], dp, idx - 1);
         }
-        boolean notTake = canPartitionHelper(k, arr, i - 1, dp);
+        boolean dont = dfs(nums, targ, dp, idx - 1);
 
-        // Store the result in the DP table
-        dp[i][k] = (take || notTake) ? 1 : 0;
-        
-        return dp[i][k] == 1;
+        dp[idx][targ] = (take || dont) ? 1 : 0;
+
+        return dp[idx][targ] == 1;
     }
 }
