@@ -1,23 +1,29 @@
 class Solution {
+    int n, m;
+    int[][] obs;
     Integer[][] dp;
-    public int uniquePathsWithObstacles(int[][] grid) {
-        dp = new Integer[grid.length+1][grid[0].length+1];
-        return rec(grid,0,0);
+    public int uniquePathsWithObstacles(int[][] obs) {
+        this.n = obs.length;
+        this.m = obs[0].length;
+        this.obs = obs;
+        this.dp = new Integer[this.n][this.m];
+
+        return unique(0, 0);
     }
-    
-    int rec(int[][] grid, int i, int j){
-        if(i==grid.length-1 && j==grid[0].length-1 && grid[i][j]!=1){
+
+    int unique(int i, int j) {
+        if (i == n-1 && j == m-1 && obs[i][j] == 0) {
             return 1;
         }
-        
-        if(i>=grid.length || j>= grid[0].length || grid[i][j]==1){
+
+        if (i >= n || j >= m || obs[i][j] == 1) {
             return 0;
         }
-        
-        if(dp[i][j]!=null){
+
+        if (dp[i][j] != null) {
             return dp[i][j];
         }
-        
-        return dp[i][j] = rec(grid,i+1,j) + rec(grid,i,j+1);
+
+        return dp[i][j] = unique(i+1, j) + unique(i, j+1);
     }
 }
