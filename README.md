@@ -275,6 +275,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Depth-First Search
 |  |
 | ------- |
+| [0098-validate-binary-search-tree](https://github.com/SapChak114/LeetCode/tree/master/0098-validate-binary-search-tree) |
 | [0124-binary-tree-maximum-path-sum](https://github.com/SapChak114/LeetCode/tree/master/0124-binary-tree-maximum-path-sum) |
 | [0145-binary-tree-postorder-traversal](https://github.com/SapChak114/LeetCode/tree/master/0145-binary-tree-postorder-traversal) |
 | [0200-number-of-islands](https://github.com/SapChak114/LeetCode/tree/master/0200-number-of-islands) |
@@ -361,6 +362,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Tree
 |  |
 | ------- |
+| [0098-validate-binary-search-tree](https://github.com/SapChak114/LeetCode/tree/master/0098-validate-binary-search-tree) |
 | [0109-convert-sorted-list-to-binary-search-tree](https://github.com/SapChak114/LeetCode/tree/master/0109-convert-sorted-list-to-binary-search-tree) |
 | [0124-binary-tree-maximum-path-sum](https://github.com/SapChak114/LeetCode/tree/master/0124-binary-tree-maximum-path-sum) |
 | [0145-binary-tree-postorder-traversal](https://github.com/SapChak114/LeetCode/tree/master/0145-binary-tree-postorder-traversal) |
@@ -374,6 +376,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Binary Tree
 |  |
 | ------- |
+| [0098-validate-binary-search-tree](https://github.com/SapChak114/LeetCode/tree/master/0098-validate-binary-search-tree) |
 | [0109-convert-sorted-list-to-binary-search-tree](https://github.com/SapChak114/LeetCode/tree/master/0109-convert-sorted-list-to-binary-search-tree) |
 | [0124-binary-tree-maximum-path-sum](https://github.com/SapChak114/LeetCode/tree/master/0124-binary-tree-maximum-path-sum) |
 | [0145-binary-tree-postorder-traversal](https://github.com/SapChak114/LeetCode/tree/master/0145-binary-tree-postorder-traversal) |
@@ -405,6 +408,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Binary Search Tree
 |  |
 | ------- |
+| [0098-validate-binary-search-tree](https://github.com/SapChak114/LeetCode/tree/master/0098-validate-binary-search-tree) |
 | [0109-convert-sorted-list-to-binary-search-tree](https://github.com/SapChak114/LeetCode/tree/master/0109-convert-sorted-list-to-binary-search-tree) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/SapChak114/LeetCode/tree/master/0789-kth-largest-element-in-a-stream) |
 ## Math
