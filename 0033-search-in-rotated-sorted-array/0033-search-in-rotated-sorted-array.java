@@ -1,7 +1,6 @@
 class Solution {
     public int search(int[] nums, int target) {
         int n = nums.length;
-
         int l = 0, r = n-1;
 
         while (l <= r) {
@@ -18,7 +17,7 @@ class Solution {
                     l = mid + 1;
                 }
             } else {
-                if (target > nums[mid] && target <= nums[r]) {
+                if (target <= nums[r] && target > nums[mid]) {
                     l = mid + 1;
                 } else {
                     r = mid - 1;
