@@ -13,6 +13,7 @@ class Solution {
         if (l1 == null) {
             return l2;
         }
+
         if (l2 == null) {
             return l1;
         }
