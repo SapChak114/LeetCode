@@ -1,19 +1,18 @@
 class Solution {
-    int[][] dp;
+    Integer[][] dp;
     String s;
+    int n;
     public String longestPalindrome(String s) {
-        int n = s.length();
         this.s = s;
-        this.dp = new int[n+1][n+1];
-        for (int[] d : dp) {
-            Arrays.fill(d, -1);
-        }
-        dfs (0, n-1);
+        this.n = s.length();
+        this.dp = new Integer[n+1][n+1];
+
+        dfs(0, n-1);
         int max = 0, start = 0;
 
         for (int i = 0; i<n; i++) {
             for (int j = n-1; j>=i; j--) {
-                if (dp[i][j] == 1 && j-i+1 > max) {
+                if (dp[i][j] != null && dp[i][j] == 1 && j-i+1 > max) {
                     max = j-i+1;
                     start = i;
                 }
@@ -23,7 +22,7 @@ class Solution {
         return s.substring(start, start + max);
     }
 
-    int dfs (int i, int j) {
+    int dfs(int i, int j) {
         if (i == j) {
             return dp[i][j] = 1;
         }
@@ -32,7 +31,7 @@ class Solution {
             return 1;
         }
 
-        if (dp[i][j] != -1) {
+        if (dp[i][j] != null) {
             return dp[i][j];
         }
 
