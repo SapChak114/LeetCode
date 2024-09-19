@@ -5,14 +5,14 @@ class Solution {
         int l = 0, r = n-1;
 
         while (l <= r) {
-            int mid = (l+r) >> 1;
+            int mid = (l + r) >> 1;
 
             if (nums[mid] == target) {
                 return mid;
             }
 
             if (nums[l] <= nums[mid]) {
-                if (target >= nums[l] && nums[mid] > target) {
+                if (target >= nums[l] && target < nums[mid]) {
                     r = mid - 1;
                 } else {
                     l = mid + 1;
