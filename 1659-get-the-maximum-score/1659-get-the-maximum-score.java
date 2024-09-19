@@ -30,10 +30,6 @@ class Solution {
             s2 += nums2[j++];
         }
 
-        while (i < n) {
-            s1 += nums1[i++];
-        }
-
         res += Math.max(s1, s2);
         res %= MOD;
 
