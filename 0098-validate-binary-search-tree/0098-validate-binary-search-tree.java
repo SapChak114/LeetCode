@@ -15,28 +15,26 @@
  */
 class Solution {
     public boolean isValidBST(TreeNode root) {
-        return check(root, null, null);
+        return find(root, null, null);
     }
 
-    private boolean check(TreeNode root, Integer left, Integer right) {
+    boolean find(TreeNode root, Integer left, Integer right) {
         if (root == null) {
             return true;
         }
 
-        int val = root.val;
-
-        if (left != null && val <= left) {
-            return false;
-        }
-        if (right != null && val >= right) {
+        if (left != null && root.val <= left) {
             return false;
         }
 
-        if (!check(root.right, val, right)) {
+        if (right != null && root.val >= right) {
             return false;
         }
 
-        if (!check(root.left, left, val)) {
+        if (!(find(root.right, root.val, right))) {
+            return false;
+        }
+        if (!(find(root.left, left, root.val))) {
             return false;
         }
 
