@@ -15,32 +15,32 @@
  */
 class Solution {
     int count;
-    List<Long> list;
+    List<Long> sums;
     public int pathSum(TreeNode root, int targetSum) {
         this.count = 0;
-        this.list = new ArrayList<>();
-        getSum(root, targetSum);
+        this.sums = new ArrayList<>();
+        findSum(root, targetSum);
         return this.count;
     }
 
-    void getSum(TreeNode root, long sum) {
+    void findSum(TreeNode root, int targetSum) {
         if (root == null) {
             return;
         }
 
-        list.add((long)root.val);
+        sums.add((long)root.val);
 
-        getSum(root.left, sum);
-        getSum(root.right, sum);
+        findSum(root.left, targetSum);
+        findSum(root.right, targetSum);
 
         long temp = 0;
-        for (int i = list.size()-1; i>=0; i--) {
-            temp += list.get(i);
-            if (temp == sum) {
+        for (int i = sums.size()-1; i>=0; i--) {
+            temp += sums.get(i);
+            if (temp == targetSum) {
                 count++;
             }
         }
 
-        list.remove(list.size()-1);
+        sums.remove(sums.size()-1);
     }
 }
