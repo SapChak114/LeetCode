@@ -24,7 +24,7 @@ class Solution {
         }
 
         if (idx == 0) {
-            return nums[idx] == 1;
+            return nums[idx] == targ;
         }
 
         if (dp[idx][targ] != -1) {
