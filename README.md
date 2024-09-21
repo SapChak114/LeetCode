@@ -10,6 +10,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0034-find-first-and-last-position-of-element-in-sorted-array](https://github.com/SapChak114/LeetCode/tree/master/0034-find-first-and-last-position-of-element-in-sorted-array) |
 | [0037-sudoku-solver](https://github.com/SapChak114/LeetCode/tree/master/0037-sudoku-solver) |
 | [0040-combination-sum-ii](https://github.com/SapChak114/LeetCode/tree/master/0040-combination-sum-ii) |
+| [0042-trapping-rain-water](https://github.com/SapChak114/LeetCode/tree/master/0042-trapping-rain-water) |
 | [0045-jump-game-ii](https://github.com/SapChak114/LeetCode/tree/master/0045-jump-game-ii) |
 | [0049-group-anagrams](https://github.com/SapChak114/LeetCode/tree/master/0049-group-anagrams) |
 | [0054-spiral-matrix](https://github.com/SapChak114/LeetCode/tree/master/0054-spiral-matrix) |
@@ -130,6 +131,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0005-longest-palindromic-substring](https://github.com/SapChak114/LeetCode/tree/master/0005-longest-palindromic-substring) |
+| [0042-trapping-rain-water](https://github.com/SapChak114/LeetCode/tree/master/0042-trapping-rain-water) |
 | [0045-jump-game-ii](https://github.com/SapChak114/LeetCode/tree/master/0045-jump-game-ii) |
 | [0055-jump-game](https://github.com/SapChak114/LeetCode/tree/master/0055-jump-game) |
 | [0063-unique-paths-ii](https://github.com/SapChak114/LeetCode/tree/master/0063-unique-paths-ii) |
@@ -266,6 +268,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0005-longest-palindromic-substring](https://github.com/SapChak114/LeetCode/tree/master/0005-longest-palindromic-substring) |
 | [0027-remove-element](https://github.com/SapChak114/LeetCode/tree/master/0027-remove-element) |
+| [0042-trapping-rain-water](https://github.com/SapChak114/LeetCode/tree/master/0042-trapping-rain-water) |
 | [0088-merge-sorted-array](https://github.com/SapChak114/LeetCode/tree/master/0088-merge-sorted-array) |
 | [0160-intersection-of-two-linked-lists](https://github.com/SapChak114/LeetCode/tree/master/0160-intersection-of-two-linked-lists) |
 | [0234-palindrome-linked-list](https://github.com/SapChak114/LeetCode/tree/master/0234-palindrome-linked-list) |
@@ -276,6 +279,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Stack
 |  |
 | ------- |
+| [0042-trapping-rain-water](https://github.com/SapChak114/LeetCode/tree/master/0042-trapping-rain-water) |
 | [0145-binary-tree-postorder-traversal](https://github.com/SapChak114/LeetCode/tree/master/0145-binary-tree-postorder-traversal) |
 | [0234-palindrome-linked-list](https://github.com/SapChak114/LeetCode/tree/master/0234-palindrome-linked-list) |
 | [0394-decode-string](https://github.com/SapChak114/LeetCode/tree/master/0394-decode-string) |
@@ -543,4 +547,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0214-shortest-palindrome](https://github.com/SapChak114/LeetCode/tree/master/0214-shortest-palindrome) |
+## Monotonic Stack
+|  |
+| ------- |
+| [0042-trapping-rain-water](https://github.com/SapChak114/LeetCode/tree/master/0042-trapping-rain-water) |
 <!---LeetCode Topics End-->
