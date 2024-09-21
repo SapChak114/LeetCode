@@ -1,20 +1,22 @@
 class Solution {
-    public int trap(int[] height) {
-        int n = height.length;
-        int l = 0, r = n-1, min = Integer.MAX_VALUE, max = Integer.MIN_VALUE, water = 0;
-        
-        while(l<r){
-            min = Math.min(height[r],height[l]);
-            if(height[l]<height[r]){
+    public int trap(int[] h) {
+        int n = h.length;
+
+        int l = 0, r = n-1, ans = 0, maxOfMin = Integer.MIN_VALUE;
+
+        while (l <= r) {
+            int min = Math.min(h[l], h[r]);
+            
+            if (h[l] < h[r]) {
                 l++;
-            } else{
+            } else {
                 r--;
             }
-            
-            max = Math.max(max,min);
-            water += max-min;
+
+            maxOfMin = Math.max(maxOfMin, min);
+            ans += maxOfMin - min;
         }
-        
-        return water;
+
+        return ans;
     }
 }
