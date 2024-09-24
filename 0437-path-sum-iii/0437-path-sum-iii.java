@@ -19,24 +19,24 @@ class Solution {
     public int pathSum(TreeNode root, int targetSum) {
         this.count = 0;
         this.sums = new ArrayList<>();
-        findSum(root, targetSum);
+        rec(root, targetSum);
         return this.count;
     }
 
-    void findSum(TreeNode root, int targetSum) {
+    void rec(TreeNode root, int targ) {
         if (root == null) {
             return;
         }
 
         sums.add((long)root.val);
 
-        findSum(root.left, targetSum);
-        findSum(root.right, targetSum);
+        rec(root.left, targ);
+        rec(root.right, targ);
 
-        long temp = 0;
+        long sum = 0;
         for (int i = sums.size()-1; i>=0; i--) {
-            temp += sums.get(i);
-            if (temp == targetSum) {
+            sum += sums.get(i);
+            if (sum == targ) {
                 count++;
             }
         }
