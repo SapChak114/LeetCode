@@ -6,23 +6,22 @@ class Solution {
             freq.put(word, freq.getOrDefault(word, 0) + 1);
         }
 
-        List<String> res = new ArrayList<>();
-
         PriorityQueue<String> pq = new PriorityQueue<>((a, b) -> freq.get(a) == freq.get(b) ? b.compareTo(a) : freq.get(a) - freq.get(b));
 
-        for (String word : freq.keySet()) {
-            pq.add(word);
+        for (Map.Entry<String, Integer> e : freq.entrySet()) {
+            pq.add(e.getKey());
             if (pq.size() > k) {
                 pq.poll();
             }
         }
 
+        List<String> ans = new ArrayList<>();
         while (!pq.isEmpty()) {
-            res.add(pq.poll());
+            ans.add(pq.poll());
         }
 
-        Collections.reverse(res);
+        Collections.reverse(ans);
 
-        return res;
+        return ans;
     }
 }
