@@ -3,19 +3,18 @@ class Solution {
         int rows = matrix.length;
         int cols = matrix[0].length;
 
-        int left = 0, right = (rows * cols) - 1;
+        int l = 0, r = (rows * cols) - 1;
 
-        while (left <= right) {
-            int mid = (left + right) >> 1;
-            int val = matrix[mid/cols][mid%cols];
-
+        while (l <= r) {
+            int mid = (l + r) >> 1;
+            int val = matrix[mid / cols][mid % cols];
 
             if (val == target) {
                 return true;
             } else if (val < target) {
-                left = mid + 1;
+                l = mid + 1;
             } else {
-                right = mid - 1;
+                r = mid - 1;
             }
         }
 
