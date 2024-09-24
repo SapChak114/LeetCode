@@ -5,10 +5,9 @@ class Solution {
     public int minFallingPathSum(int[][] matrix) {
         this.n = matrix.length;
         this.m = matrix[0].length;
-
         this.matrix = matrix;
 
-        this.dp = new Integer[n+1][m+1];
+        this.dp = new Integer[n][m];
 
         int ans = (int)1e9 + 7;
         for (int i = 0; i<m; i++) {
@@ -24,13 +23,13 @@ class Solution {
         }
 
         if (c < 0 || c == m) {
-            return (int)1e9 + 7;
+            return (int) 1e9 + 7;
         }
 
         if (dp[r][c] != null) {
             return dp[r][c];
         }
 
-        return dp[r][c] = matrix[r][c] + Math.min(dfs(r+1, c - 1), Math.min(dfs(r+1,c), dfs(r+1, c+1)));
+        return dp[r][c] = matrix[r][c] + Math.min(dfs(r + 1, c - 1), Math.min(dfs(r + 1, c), dfs(r + 1, c + 1)));
     }
 }
