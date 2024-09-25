@@ -3,22 +3,22 @@ class Solution {
         int n = nums.length;
 
         int sum = Arrays.stream(nums).sum();
-
         if (sum % 2 != 0) {
             return false;
         }
 
         int targ = sum / 2;
 
-        int[][] dp = new int[n][targ + 1];
+        int[][] dp = new int[n][targ+1];
+
         for (int[] d : dp) {
             Arrays.fill(d, -1);
         }
 
-        return dfs(nums, dp, targ, n - 1);
+        return dfs(nums, targ, dp, n-1);
     }
 
-    boolean dfs(int[] nums, int[][] dp, int targ, int idx) {
+    boolean dfs (int[] nums, int targ, int[][] dp, int idx) {
         if (idx < 0 && targ != 0) {
             return false;
         }
@@ -33,10 +33,10 @@ class Solution {
 
         boolean take = false;
         if (nums[idx] <= targ) {
-            take = dfs(nums, dp, targ - nums[idx], idx - 1);
+            take = dfs(nums, targ - nums[idx], dp, idx - 1);
         }
 
-        boolean dont = dfs(nums, dp, targ, idx - 1);
+        boolean dont = dfs(nums, targ, dp, idx - 1);
 
         dp[idx][targ] = (take || dont) ? 1 : 0;
 
