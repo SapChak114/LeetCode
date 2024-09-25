@@ -15,10 +15,10 @@
  */
 class Solution {
     public boolean isValidBST(TreeNode root) {
-        return find(root, null, null);
+        return validate(root, null, null);
     }
 
-    boolean find(TreeNode root, Integer left, Integer right) {
+    boolean validate(TreeNode root, Integer left, Integer right) {
         if (root == null) {
             return true;
         }
@@ -31,10 +31,11 @@ class Solution {
             return false;
         }
 
-        if (!(find(root.right, root.val, right))) {
+        if (!validate(root.right, root.val, right)) {
             return false;
         }
-        if (!(find(root.left, left, root.val))) {
+
+        if (!validate(root.left, left, root.val)) {
             return false;
         }
 
