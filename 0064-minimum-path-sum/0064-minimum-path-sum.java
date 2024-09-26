@@ -1,21 +1,21 @@
 class Solution {
     Integer[][] dp;
-    int n, m;
     int[][] grid;
+    int n, m;
     public int minPathSum(int[][] grid) {
         this.n = grid.length;
         this.m = grid[0].length;
-        this.dp = new Integer[this.n][this.m];
         this.grid = grid;
-
-        return dfs(0, 0);
+        this.dp = new Integer[this.n][this.m];
+        return rec(0, 0);
     }
 
-    int dfs(int i, int j) {
-        if (j == m - 1 && i == n - 1) {
+    int rec(int i, int j) {
+        if (i == n-1 && j == m-1) {
             return grid[i][j];
         }
-        if (i >= n || j>= m) {
+
+        if (i >= n || j >= m) {
             return (int)1e9 + 7;
         }
 
@@ -23,6 +23,6 @@ class Solution {
             return dp[i][j];
         }
 
-        return dp[i][j] = Math.min(dfs(i+1, j), dfs(i, j + 1)) + grid[i][j];
+        return dp[i][j] = Math.min(rec(i+1, j), rec(i, j + 1)) + grid[i][j];
     }
 }
