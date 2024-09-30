@@ -60,6 +60,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1435-xor-queries-of-a-subarray](https://github.com/SapChak114/LeetCode/tree/master/1435-xor-queries-of-a-subarray) |
 | [1458-sort-integers-by-the-number-of-1-bits](https://github.com/SapChak114/LeetCode/tree/master/1458-sort-integers-by-the-number-of-1-bits) |
 | [1478-maximum-number-of-events-that-can-be-attended](https://github.com/SapChak114/LeetCode/tree/master/1478-maximum-number-of-events-that-can-be-attended) |
+| [1497-design-a-stack-with-increment-operation](https://github.com/SapChak114/LeetCode/tree/master/1497-design-a-stack-with-increment-operation) |
 | [1511-count-number-of-teams](https://github.com/SapChak114/LeetCode/tree/master/1511-count-number-of-teams) |
 | [1556-make-two-arrays-equal-by-reversing-subarrays](https://github.com/SapChak114/LeetCode/tree/master/1556-make-two-arrays-equal-by-reversing-subarrays) |
 | [1615-range-sum-of-sorted-subarray-sums](https://github.com/SapChak114/LeetCode/tree/master/1615-range-sum-of-sorted-subarray-sums) |
@@ -341,6 +342,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0394-decode-string](https://github.com/SapChak114/LeetCode/tree/master/0394-decode-string) |
 | [0776-n-ary-tree-postorder-traversal](https://github.com/SapChak114/LeetCode/tree/master/0776-n-ary-tree-postorder-traversal) |
 | [1320-remove-all-adjacent-duplicates-in-string-ii](https://github.com/SapChak114/LeetCode/tree/master/1320-remove-all-adjacent-duplicates-in-string-ii) |
+| [1497-design-a-stack-with-increment-operation](https://github.com/SapChak114/LeetCode/tree/master/1497-design-a-stack-with-increment-operation) |
 | [1756-minimum-deletions-to-make-string-balanced](https://github.com/SapChak114/LeetCode/tree/master/1756-minimum-deletions-to-make-string-balanced) |
 ## Recursion
 |  |
@@ -446,6 +448,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0731-my-calendar-ii](https://github.com/SapChak114/LeetCode/tree/master/0731-my-calendar-ii) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/SapChak114/LeetCode/tree/master/0789-kth-largest-element-in-a-stream) |
 | [0859-design-circular-deque](https://github.com/SapChak114/LeetCode/tree/master/0859-design-circular-deque) |
+| [1497-design-a-stack-with-increment-operation](https://github.com/SapChak114/LeetCode/tree/master/1497-design-a-stack-with-increment-operation) |
 ## Data Stream
 |  |
 | ------- |
