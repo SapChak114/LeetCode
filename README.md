@@ -68,6 +68,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1620-check-if-array-pairs-are-divisible-by-k](https://github.com/SapChak114/LeetCode/tree/master/1620-check-if-array-pairs-are-divisible-by-k) |
 | [1659-get-the-maximum-score](https://github.com/SapChak114/LeetCode/tree/master/1659-get-the-maximum-score) |
 | [1691-minimum-number-of-days-to-disconnect-island](https://github.com/SapChak114/LeetCode/tree/master/1691-minimum-number-of-days-to-disconnect-island) |
+| [1694-make-sum-divisible-by-p](https://github.com/SapChak114/LeetCode/tree/master/1694-make-sum-divisible-by-p) |
 | [1786-count-the-number-of-consistent-strings](https://github.com/SapChak114/LeetCode/tree/master/1786-count-the-number-of-consistent-strings) |
 | [2006-find-the-student-that-will-replace-the-chalk](https://github.com/SapChak114/LeetCode/tree/master/2006-find-the-student-that-will-replace-the-chalk) |
 | [2035-count-sub-islands](https://github.com/SapChak114/LeetCode/tree/master/2035-count-sub-islands) |
@@ -257,6 +258,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1473-find-the-longest-substring-containing-vowels-in-even-counts](https://github.com/SapChak114/LeetCode/tree/master/1473-find-the-longest-substring-containing-vowels-in-even-counts) |
 | [1556-make-two-arrays-equal-by-reversing-subarrays](https://github.com/SapChak114/LeetCode/tree/master/1556-make-two-arrays-equal-by-reversing-subarrays) |
 | [1620-check-if-array-pairs-are-divisible-by-k](https://github.com/SapChak114/LeetCode/tree/master/1620-check-if-array-pairs-are-divisible-by-k) |
+| [1694-make-sum-divisible-by-p](https://github.com/SapChak114/LeetCode/tree/master/1694-make-sum-divisible-by-p) |
 | [1786-count-the-number-of-consistent-strings](https://github.com/SapChak114/LeetCode/tree/master/1786-count-the-number-of-consistent-strings) |
 | [2163-kth-distinct-string-in-an-array](https://github.com/SapChak114/LeetCode/tree/master/2163-kth-distinct-string-in-an-array) |
 | [2755-extra-characters-in-a-string](https://github.com/SapChak114/LeetCode/tree/master/2755-extra-characters-in-a-string) |
@@ -594,6 +596,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1240-stone-game-ii](https://github.com/SapChak114/LeetCode/tree/master/1240-stone-game-ii) |
 | [1435-xor-queries-of-a-subarray](https://github.com/SapChak114/LeetCode/tree/master/1435-xor-queries-of-a-subarray) |
 | [1473-find-the-longest-substring-containing-vowels-in-even-counts](https://github.com/SapChak114/LeetCode/tree/master/1473-find-the-longest-substring-containing-vowels-in-even-counts) |
+| [1694-make-sum-divisible-by-p](https://github.com/SapChak114/LeetCode/tree/master/1694-make-sum-divisible-by-p) |
 | [2006-find-the-student-that-will-replace-the-chalk](https://github.com/SapChak114/LeetCode/tree/master/2006-find-the-student-that-will-replace-the-chalk) |
 ## Game Theory
 |  |
