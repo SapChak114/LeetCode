@@ -2,14 +2,13 @@ class MedianFinder {
     PriorityQueue<Integer> leftMax;
     PriorityQueue<Integer> rightMin;
     public MedianFinder() {
-        this.leftMax = new PriorityQueue<>((a, b) -> b-a);
-        this.rightMin = new PriorityQueue<>((a, b) -> a- b);
+        this.leftMax = new PriorityQueue<>(Collections.reverseOrder());
+        this.rightMin = new PriorityQueue<>();
     }
     
     public void addNum(int num) {
-        leftMax.add(num);
+        this.leftMax.add(num);
         rightMin.add(leftMax.poll());
-
         if (leftMax.size() < rightMin.size()) {
             leftMax.add(rightMin.poll());
         }
@@ -18,9 +17,8 @@ class MedianFinder {
     public double findMedian() {
         if (leftMax.size() > rightMin.size()) {
             return leftMax.peek();
-        } else {
-            return (leftMax.peek() + rightMin.peek()) / 2.0;
         }
+        return (leftMax.peek() + rightMin.peek()) / 2.0;
     }
 }
 
