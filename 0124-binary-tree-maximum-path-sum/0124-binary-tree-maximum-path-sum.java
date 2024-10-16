@@ -29,8 +29,7 @@ class Solution {
         int left = Math.max(0, dfs(root.left));
         int right = Math.max(0, dfs(root.right));
 
-        ans = Math.max(ans, root.val + left + right);
-
+        this.ans = Math.max(ans, root.val + left + right);
         return Math.max(left, right) + root.val;
     }
 }
