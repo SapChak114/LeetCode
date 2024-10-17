@@ -545,6 +545,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0179-largest-number](https://github.com/SapChak114/LeetCode/tree/master/0179-largest-number) |
 | [0624-maximum-distance-in-arrays](https://github.com/SapChak114/LeetCode/tree/master/0624-maximum-distance-in-arrays) |
 | [0632-smallest-range-covering-elements-from-k-lists](https://github.com/SapChak114/LeetCode/tree/master/0632-smallest-range-covering-elements-from-k-lists) |
+| [0670-maximum-swap](https://github.com/SapChak114/LeetCode/tree/master/0670-maximum-swap) |
 | [0778-reorganize-string](https://github.com/SapChak114/LeetCode/tree/master/0778-reorganize-string) |
 | [0890-lemonade-change](https://github.com/SapChak114/LeetCode/tree/master/0890-lemonade-change) |
 | [0902-minimum-number-of-refueling-stops](https://github.com/SapChak114/LeetCode/tree/master/0902-minimum-number-of-refueling-stops) |
@@ -588,6 +589,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0564-find-the-closest-palindrome](https://github.com/SapChak114/LeetCode/tree/master/0564-find-the-closest-palindrome) |
 | [0592-fraction-addition-and-subtraction](https://github.com/SapChak114/LeetCode/tree/master/0592-fraction-addition-and-subtraction) |
 | [0650-2-keys-keyboard](https://github.com/SapChak114/LeetCode/tree/master/0650-2-keys-keyboard) |
+| [0670-maximum-swap](https://github.com/SapChak114/LeetCode/tree/master/0670-maximum-swap) |
 | [0796-reaching-points](https://github.com/SapChak114/LeetCode/tree/master/0796-reaching-points) |
 | [0856-consecutive-numbers-sum](https://github.com/SapChak114/LeetCode/tree/master/0856-consecutive-numbers-sum) |
 | [0870-magic-squares-in-grid](https://github.com/SapChak114/LeetCode/tree/master/0870-magic-squares-in-grid) |
