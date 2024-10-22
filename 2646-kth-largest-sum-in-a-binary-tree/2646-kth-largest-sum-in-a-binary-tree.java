@@ -18,7 +18,7 @@ class Solution {
         Map<Integer, Long> map = new HashMap<>();
         dfs(root, map, 0);
 
-        System.out.println(map);
+    
         List<Long> ans = new ArrayList<>(map.values());
         Collections.sort(ans, Collections.reverseOrder());
         if (ans.size() >= k) {
