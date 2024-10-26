@@ -1,52 +1,64 @@
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode() {}
+ *     TreeNode(int val) { this.val = val; }
+ *     TreeNode(int val, TreeNode left, TreeNode right) {
+ *         this.val = val;
+ *         this.left = left;
+ *         this.right = right;
+ *     }
+ * }
+ */
 class Solution {
-
     public TreeNode replaceValueInTree(TreeNode root) {
-        if (root == null) return root;
-
         Queue<TreeNode> nodeQueue = new LinkedList<>();
-        nodeQueue.offer(root);
-        List<Integer> levelSums = new ArrayList<>();
+        List<Integer> listSum = new ArrayList<>();
 
-        // First BFS: Calculate sum of nodes at each level
+        nodeQueue.add(root);
+
         while (!nodeQueue.isEmpty()) {
+            int size = nodeQueue.size();
             int levelSum = 0;
-            int levelSize = nodeQueue.size();
-            for (int i = 0; i < levelSize; ++i) {
-                TreeNode currentNode = nodeQueue.poll();
-                levelSum += currentNode.val;
-                if (currentNode.left != null) nodeQueue.offer(currentNode.left);
-                if (currentNode.right != null) nodeQueue.offer(
-                    currentNode.right
-                );
+
+            for (int i = 0; i<size; i++) {
+                TreeNode node = nodeQueue.poll();
+                levelSum += node.val;
+
+                if (node.left != null) {
+                    nodeQueue.add(node.left);
+                }
+                if (node.right != null) {
+                    nodeQueue.add(node.right);
+                }
             }
-            levelSums.add(levelSum);
+            listSum.add(levelSum);
         }
 
-        // Second BFS: Update each node's value to sum of its cousins
-        nodeQueue.offer(root);
-        int levelIndex = 1;
-        root.val = 0; // Root has no cousins
+        nodeQueue.add(root);
+        root.val = 0;
+        int level = 1;
+
         while (!nodeQueue.isEmpty()) {
-            int levelSize = nodeQueue.size();
-            for (int i = 0; i < levelSize; ++i) {
-                TreeNode currentNode = nodeQueue.poll();
+            int size = nodeQueue.size();
+            for (int i = 0; i<size; i++) {
+                TreeNode node = nodeQueue.poll();
+                int siblingsSum = (node.left != null ? node.left.val : 0) + (node.right != null ? node.right.val : 0);
 
-                int siblingSum =
-                    (currentNode.left != null ? currentNode.left.val : 0) +
-                    (currentNode.right != null ? currentNode.right.val : 0);
-
-                if (currentNode.left != null) {
-                    currentNode.left.val = levelSums.get(levelIndex) -
-                    siblingSum;
-                    nodeQueue.offer(currentNode.left);
+                if (node.left != null) {
+                    node.left.val = listSum.get(level) - siblingsSum;
+                    nodeQueue.add(node.left);
                 }
-                if (currentNode.right != null) {
-                    currentNode.right.val = levelSums.get(levelIndex) -
-                    siblingSum;
-                    nodeQueue.offer(currentNode.right);
+
+                if (node.right != null) {
+                    node.right.val = listSum.get(level) - siblingsSum;
+                    nodeQueue.add(node.right);
                 }
             }
-            ++levelIndex;
+            level++;
         }
 
         return root;
