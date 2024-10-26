@@ -26,10 +26,10 @@ class Solution {
             return false;
         }
         
-        boolean res1 = flipTree(root1.left, root2.left) && flipTree(root1.right, root2.right);
-        boolean res2 = flipTree(root1.left, root2.right) && flipTree(root1.right, root2.left);
+        boolean notFlip = flipTree(root1.left, root2.left) && flipTree(root1.right, root2.right);
+        boolean flip = flipTree(root1.left, root2.right) && flipTree(root1.right, root2.left);
         
-        return res1 | res2;
+        return flip | notFlip;
     }
 
 }
