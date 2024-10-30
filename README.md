@@ -74,6 +74,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1659-get-the-maximum-score](https://github.com/SapChak114/LeetCode/tree/master/1659-get-the-maximum-score) |
 | [1691-minimum-number-of-days-to-disconnect-island](https://github.com/SapChak114/LeetCode/tree/master/1691-minimum-number-of-days-to-disconnect-island) |
 | [1694-make-sum-divisible-by-p](https://github.com/SapChak114/LeetCode/tree/master/1694-make-sum-divisible-by-p) |
+| [1766-minimum-number-of-removals-to-make-mountain-array](https://github.com/SapChak114/LeetCode/tree/master/1766-minimum-number-of-removals-to-make-mountain-array) |
 | [1786-count-the-number-of-consistent-strings](https://github.com/SapChak114/LeetCode/tree/master/1786-count-the-number-of-consistent-strings) |
 | [1923-sentence-similarity-iii](https://github.com/SapChak114/LeetCode/tree/master/1923-sentence-similarity-iii) |
 | [2006-find-the-student-that-will-replace-the-chalk](https://github.com/SapChak114/LeetCode/tree/master/2006-find-the-student-that-will-replace-the-chalk) |
@@ -220,6 +221,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1511-count-number-of-teams](https://github.com/SapChak114/LeetCode/tree/master/1511-count-number-of-teams) |
 | [1659-get-the-maximum-score](https://github.com/SapChak114/LeetCode/tree/master/1659-get-the-maximum-score) |
 | [1756-minimum-deletions-to-make-string-balanced](https://github.com/SapChak114/LeetCode/tree/master/1756-minimum-deletions-to-make-string-balanced) |
+| [1766-minimum-number-of-removals-to-make-mountain-array](https://github.com/SapChak114/LeetCode/tree/master/1766-minimum-number-of-removals-to-make-mountain-array) |
 | [2067-maximum-number-of-points-with-cost](https://github.com/SapChak114/LeetCode/tree/master/2067-maximum-number-of-points-with-cost) |
 | [2586-longest-square-streak-in-an-array](https://github.com/SapChak114/LeetCode/tree/master/2586-longest-square-streak-in-an-array) |
 | [2755-extra-characters-in-a-string](https://github.com/SapChak114/LeetCode/tree/master/2755-extra-characters-in-a-string) |
@@ -256,6 +258,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0729-my-calendar-i](https://github.com/SapChak114/LeetCode/tree/master/0729-my-calendar-i) |
 | [0731-my-calendar-ii](https://github.com/SapChak114/LeetCode/tree/master/0731-my-calendar-ii) |
 | [1615-range-sum-of-sorted-subarray-sums](https://github.com/SapChak114/LeetCode/tree/master/1615-range-sum-of-sorted-subarray-sums) |
+| [1766-minimum-number-of-removals-to-make-mountain-array](https://github.com/SapChak114/LeetCode/tree/master/1766-minimum-number-of-removals-to-make-mountain-array) |
 | [2006-find-the-student-that-will-replace-the-chalk](https://github.com/SapChak114/LeetCode/tree/master/2006-find-the-student-that-will-replace-the-chalk) |
 | [2586-longest-square-streak-in-an-array](https://github.com/SapChak114/LeetCode/tree/master/2586-longest-square-streak-in-an-array) |
 ## Hash Table
@@ -594,6 +597,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1304-longest-happy-string](https://github.com/SapChak114/LeetCode/tree/master/1304-longest-happy-string) |
 | [1478-maximum-number-of-events-that-can-be-attended](https://github.com/SapChak114/LeetCode/tree/master/1478-maximum-number-of-events-that-can-be-attended) |
 | [1659-get-the-maximum-score](https://github.com/SapChak114/LeetCode/tree/master/1659-get-the-maximum-score) |
+| [1766-minimum-number-of-removals-to-make-mountain-array](https://github.com/SapChak114/LeetCode/tree/master/1766-minimum-number-of-removals-to-make-mountain-array) |
 | [2095-minimum-number-of-swaps-to-make-the-string-balanced](https://github.com/SapChak114/LeetCode/tree/master/2095-minimum-number-of-swaps-to-make-the-string-balanced) |
 | [2488-divide-intervals-into-minimum-number-of-groups](https://github.com/SapChak114/LeetCode/tree/master/2488-divide-intervals-into-minimum-number-of-groups) |
 | [2616-maximal-score-after-applying-k-operations](https://github.com/SapChak114/LeetCode/tree/master/2616-maximal-score-after-applying-k-operations) |
