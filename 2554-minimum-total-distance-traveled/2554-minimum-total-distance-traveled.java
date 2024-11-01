@@ -1,44 +1,41 @@
 class Solution {
+    Long[][] dp;
+    List<Integer> robot;
+    int[][] factory;
+    long max = (long)1e12+8;
+    public long minimumTotalDistance(List<Integer> robot, int[][] factory) {
+        this.robot = robot;
+        this.factory = factory;
+        this.dp = new Long[this.robot.size()][this.factory.length];
 
-    public long minimumTotalDistance(List<Integer> robots, int[][] factories) {
-        // Sort robots and factories by position
-        Collections.sort(robots);
-        Arrays.sort(factories, Comparator.comparingInt(a -> a[0]));
+        Collections.sort(robot);
+        Arrays.sort(factory, (a,b) -> a[0]-b[0]);
 
-        // Flatten factory positions according to their capacities
-        List<Integer> factoryPositions = new ArrayList<>();
-        for (int[] factory : factories) {
-            for (int i = 0; i < factory[1]; i++) {
-                factoryPositions.add(factory[0]);
-            }
+        return dfs(robot.size()-1, factory.length-1);
+    }
+
+    long dfs(int roboIdx, int facIdx) {
+        if (roboIdx < 0) {
+            return 0;
+        }
+        if (facIdx < 0) {
+            return max;
+        }
+        if (dp[roboIdx][facIdx] != null) {
+            return dp[roboIdx][facIdx];
         }
 
-        int robotCount = robots.size(), factoryCount = factoryPositions.size();
-        long[] next = new long[factoryCount + 1];
-        long[] current = new long[factoryCount + 1];
+        long dont = dfs(roboIdx, facIdx - 1);
 
-        // Fill DP table using two rows for optimization
-        for (int i = robotCount - 1; i >= 0; i--) {
-            // No factories left case
-            if (i != robotCount - 1) next[factoryCount] = (long) 1e12;
-            // Initialize current row
-            current[factoryCount] = (long) 1e12;
-
-            for (int j = factoryCount - 1; j >= 0; j--) {
-                // Assign current robot to current factory
-                long assign =
-                    Math.abs((long) robots.get(i) - factoryPositions.get(j)) +
-                    next[j + 1];
-                // Skip current factory for this robot
-                long skip = current[j + 1];
-                // Take the minimum option
-                current[j] = Math.min(assign, skip);
+        long take = dont;
+        if (factory[facIdx][1] > 0) {
+            long dist = 0;
+            for (int i = 0; i<factory[facIdx][1] && (roboIdx - i) >= 0; i++) {
+                dist += Math.abs(robot.get(roboIdx - i) - factory[facIdx][0]);
+                take = Math.min(take, dist + dfs(roboIdx - i - 1, facIdx - 1));
             }
-            // Move to next robot
-            System.arraycopy(current, 0, next, 0, factoryCount + 1);
         }
-
-        // Return minimum distance starting from the first robot
-        return current[0];
+        
+        return dp[roboIdx][facIdx] = take;
     }
 }
