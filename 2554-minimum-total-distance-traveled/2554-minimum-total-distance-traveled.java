@@ -1,15 +1,14 @@
 class Solution {
-    Long[][] dp;
     List<Integer> robot;
     int[][] factory;
-    long max = (long)1e12+8;
+    Long[][] dp;
+    long max = (long)1e12 + 8;
     public long minimumTotalDistance(List<Integer> robot, int[][] factory) {
+        Collections.sort(robot);
+        Arrays.sort(factory, (a,b) -> a[0] - b[0]);
         this.robot = robot;
         this.factory = factory;
-        this.dp = new Long[this.robot.size()][this.factory.length];
-
-        Collections.sort(robot);
-        Arrays.sort(factory, (a,b) -> a[0]-b[0]);
+        this.dp = new Long[robot.size()][factory.length];
 
         return dfs(robot.size()-1, factory.length-1);
     }
@@ -26,14 +25,14 @@ class Solution {
         }
 
         long dont = dfs(roboIdx, facIdx - 1);
-
         long take = dont;
         long dist = 0;
+        
         for (int i = 0; i<factory[facIdx][1] && (roboIdx - i) >= 0; i++) {
-            dist += Math.abs(robot.get(roboIdx - i) - factory[facIdx][0]);
+            dist += Math.abs(robot.get(roboIdx-i) - factory[facIdx][0]);
             take = Math.min(take, dist + dfs(roboIdx - i - 1, facIdx - 1));
         }
-        
+
         return dp[roboIdx][facIdx] = take;
     }
 }
