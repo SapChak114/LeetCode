@@ -1,8 +1,7 @@
 class Solution {
     public String makeFancyString(String s) {
-        char[] ch = s.toCharArray();
-        if (ch.length < 3) {
-            return new String(ch);
+        if (s.length() < 3) {
+            return s;
         }
 
         StringBuilder sb = new StringBuilder(s);
