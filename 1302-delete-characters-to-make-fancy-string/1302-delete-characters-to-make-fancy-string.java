@@ -12,10 +12,6 @@ class Solution {
                 i--;
             }
         }   
-        int n = sb.length();
-        if (sb.length() >= 3 && sb.charAt(n-1) == sb.charAt(n-2) && sb.charAt(n-3) == sb.charAt(n-2)) {
-            sb.deleteCharAt(n-3);
-        }
 
         return sb.toString();
     }
