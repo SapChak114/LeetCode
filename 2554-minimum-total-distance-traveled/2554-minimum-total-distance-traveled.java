@@ -28,12 +28,10 @@ class Solution {
         long dont = dfs(roboIdx, facIdx - 1);
 
         long take = dont;
-        if (factory[facIdx][1] > 0) {
-            long dist = 0;
-            for (int i = 0; i<factory[facIdx][1] && (roboIdx - i) >= 0; i++) {
-                dist += Math.abs(robot.get(roboIdx - i) - factory[facIdx][0]);
-                take = Math.min(take, dist + dfs(roboIdx - i - 1, facIdx - 1));
-            }
+        long dist = 0;
+        for (int i = 0; i<factory[facIdx][1] && (roboIdx - i) >= 0; i++) {
+            dist += Math.abs(robot.get(roboIdx - i) - factory[facIdx][0]);
+            take = Math.min(take, dist + dfs(roboIdx - i - 1, facIdx - 1));
         }
         
         return dp[roboIdx][facIdx] = take;
