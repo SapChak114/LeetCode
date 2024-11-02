@@ -1,54 +1,46 @@
 class Solution {
-
-    // The three possible directions for the next column.
-    private final int[] dirs = { -1, 0, 1 };
-
+    int[][] moves = {{-1, 1},{0, 1}, {1, 1}};
+    int[][] grid;
+    Integer[][] dp;
     public int maxMoves(int[][] grid) {
-        int M = grid.length, N = grid[0].length;
-
-        Queue<int[]> q = new LinkedList<>();
-        boolean[][] vis = new boolean[M][N];
-
-        // Enqueue the cells in the first column.
-        for (int i = 0; i < M; i++) {
-            vis[i][0] = true;
-            q.offer(new int[] { i, 0, 0 });
+        this.grid = grid;
+        int n = grid.length, m = grid[0].length;
+        int max = 0;
+        this.dp = new Integer[n][m];
+        
+        for (int i = 0; i<n; i++) {
+            max = Math.max(max, dfs(i, 0));
         }
 
+        return max;
+    }
+
+    int dfs(int i, int j) {
+        if (i == grid.length || j == grid[0].length) {
+            return 0;
+        }
+        if (dp[i][j] != null) {
+            return dp[i][j];
+        }
+        //System.out.println("Integer . Max "+Integer.MAX_VALUE);
         int maxMoves = 0;
-        while (!q.isEmpty()) {
-            int sz = q.size();
-
-            while (sz-- > 0) {
-                int[] v = q.poll();
-
-                // Current cell with the number of moves made so far.
-                int row = v[0], col = v[1], count = v[2];
-
-                maxMoves = Math.max(maxMoves, count);
-
-                for (int dir : dirs) {
-                    // Next cell after the move.
-                    int newRow = row + dir, newCol = col + 1;
-
-                    // If the next cell isn't visited yet and is greater than
-                    // the current cell value, add it to the queue with the
-                    // incremented move count.
-                    if (
-                        newRow >= 0 &&
-                        newCol >= 0 &&
-                        newRow < M &&
-                        newCol < N &&
-                        !vis[newRow][newCol] &&
-                        grid[row][col] < grid[newRow][newCol]
-                    ) {
-                        vis[newRow][newCol] = true;
-                        q.offer(new int[] { newRow, newCol, count + 1 });
-                    }
-                }
+        for (int a = 0; a<moves.length; a++) {
+            int x = i + moves[a][0];
+            int y = j + moves[a][1];
+            if (check(i, j, x, y)) {
+                //System.out.println("i "+i+" j "+j+" x "+x+" y "+y+
+                //" grid a "+grid[i][j]+" grid b "+grid[x][y]);
+                maxMoves = Math.max(maxMoves, 1 + dfs(x, y));
             }
         }
 
-        return maxMoves;
+        return dp[i][j] = maxMoves;
+    }
+
+    boolean check(int a, int b, int c, int d) {
+        if (c < 0 || c >= grid.length || d < 0 || d >= grid[0].length || grid[a][b] >= grid[c][d]) {
+            return false;
+        }
+        return true;
     }
 }
