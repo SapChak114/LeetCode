@@ -22,14 +22,11 @@ class Solution {
         if (dp[i][j] != null) {
             return dp[i][j];
         }
-        //System.out.println("Integer . Max "+Integer.MAX_VALUE);
         int maxMoves = 0;
         for (int a = 0; a<moves.length; a++) {
             int x = i + moves[a][0];
             int y = j + moves[a][1];
             if (check(i, j, x, y)) {
-                //System.out.println("i "+i+" j "+j+" x "+x+" y "+y+
-                //" grid a "+grid[i][j]+" grid b "+grid[x][y]);
                 maxMoves = Math.max(maxMoves, 1 + dfs(x, y));
             }
         }
