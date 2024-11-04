@@ -1,31 +1,22 @@
 class Solution {
-
     public String compressedString(String word) {
-        StringBuilder comp = new StringBuilder("");
+        StringBuilder sb = new StringBuilder();
 
-        // pos tracks our position in the input string
         int pos = 0;
 
-        // Process until we reach end of string
         while (pos < word.length()) {
-            int consecutiveCount = 0;
-
+            int count = 0;
             char currentChar = word.charAt(pos);
 
-            // Count consecutive occurrences (maximum 9)
-            while (
-                pos < word.length() &&
-                consecutiveCount < 9 &&
-                word.charAt(pos) == currentChar
-            ) {
-                consecutiveCount++;
+            while (pos < word.length() && count < 9 
+            && word.charAt(pos) == currentChar) {
                 pos++;
+                count++;
             }
 
-            // Append count followed by character to result
-            comp.append(consecutiveCount).append(currentChar);
+            sb.append(count).append(currentChar);
         }
 
-        return comp.toString();
+        return sb.toString();
     }
 }
