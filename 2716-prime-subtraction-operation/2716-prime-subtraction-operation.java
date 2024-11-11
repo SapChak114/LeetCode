@@ -1,42 +1,54 @@
-public class Solution {
+class Solution {
+    public boolean primeSubOperation(int[] nums) {
+        if (checkIncreasing(nums)) {
+            return true;
+        }
 
-    public boolean checkPrime(int x) {
-        for (int i = 2; i <= Math.sqrt(x); i++) {
-            if (x % i == 0) {
+        int n = nums.length;
+        for (int i = 0; i<n; i++) {
+            int elem = nums[i];
+            int prime = findPrime(nums[i], (i == 0 ? 0 : nums[i-1]));
+            nums[i] = elem - prime;
+            if (checkIncreasing(nums)) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    boolean checkIncreasing(int[] nums) {
+        int n = nums.length;
+        for (int i = 1; i<n; i++) {
+            if (nums[i - 1] >= nums[i]) {
                 return false;
             }
         }
         return true;
     }
 
-    public boolean primeSubOperation(int[] nums) {
-        for (int i = 0; i < nums.length; i++) {
-            int bound;
-            // In case of first index, we need to find the largest prime less than nums[0].
-            if (i == 0) {
-                bound = nums[0];
-            } else {
-                // Otherwise, we need to find the largest prime, that makes the current element closest to the previous element.
-                bound = nums[i] - nums[i - 1];
+    int findPrime(int end, int prev) {
+        for (int num = end-1; num >= 0; num--) {
+            if ((end - num) > prev && isPrime(num)) {
+                //System.out.println("prime "+num);
+                return num;
             }
+        }
 
-            // If the bound is less than or equal to 0, then the array cannot be made strictly increasing.
-            if (bound <= 0) {
+        return 0;
+    }
+
+    boolean isPrime(int num) {
+        if (num <= 1) {
+            return false;
+        }
+
+        for (int i = 2; i*i <= num; i++) {
+            if (num % i == 0) {
                 return false;
             }
-
-            // Find the largest prime less than bound.
-            int largestPrime = 0;
-            for (int j = bound - 1; j >= 2; j--) {
-                if (checkPrime(j)) {
-                    largestPrime = j;
-                    break;
-                }
-            }
-
-            // Subtract this value from nums[i].
-            nums[i] = nums[i] - largestPrime;
         }
+
         return true;
     }
 }
