@@ -47,6 +47,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0859-design-circular-deque](https://github.com/SapChak114/LeetCode/tree/master/0859-design-circular-deque) |
 | [0870-magic-squares-in-grid](https://github.com/SapChak114/LeetCode/tree/master/0870-magic-squares-in-grid) |
 | [0890-lemonade-change](https://github.com/SapChak114/LeetCode/tree/master/0890-lemonade-change) |
+| [0892-shortest-subarray-with-sum-at-least-k](https://github.com/SapChak114/LeetCode/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
 | [0902-minimum-number-of-refueling-stops](https://github.com/SapChak114/LeetCode/tree/master/0902-minimum-number-of-refueling-stops) |
 | [0906-walking-robot-simulation](https://github.com/SapChak114/LeetCode/tree/master/0906-walking-robot-simulation) |
 | [0948-sort-an-array](https://github.com/SapChak114/LeetCode/tree/master/0948-sort-an-array) |
@@ -160,6 +161,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0692-top-k-frequent-words](https://github.com/SapChak114/LeetCode/tree/master/0692-top-k-frequent-words) |
 | [0778-reorganize-string](https://github.com/SapChak114/LeetCode/tree/master/0778-reorganize-string) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/SapChak114/LeetCode/tree/master/0789-kth-largest-element-in-a-stream) |
+| [0892-shortest-subarray-with-sum-at-least-k](https://github.com/SapChak114/LeetCode/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
 | [0902-minimum-number-of-refueling-stops](https://github.com/SapChak114/LeetCode/tree/master/0902-minimum-number-of-refueling-stops) |
 | [0948-sort-an-array](https://github.com/SapChak114/LeetCode/tree/master/0948-sort-an-array) |
 | [1304-longest-happy-string](https://github.com/SapChak114/LeetCode/tree/master/1304-longest-happy-string) |
@@ -276,6 +278,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0719-find-k-th-smallest-pair-distance](https://github.com/SapChak114/LeetCode/tree/master/0719-find-k-th-smallest-pair-distance) |
 | [0729-my-calendar-i](https://github.com/SapChak114/LeetCode/tree/master/0729-my-calendar-i) |
 | [0731-my-calendar-ii](https://github.com/SapChak114/LeetCode/tree/master/0731-my-calendar-ii) |
+| [0892-shortest-subarray-with-sum-at-least-k](https://github.com/SapChak114/LeetCode/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
 | [1615-range-sum-of-sorted-subarray-sums](https://github.com/SapChak114/LeetCode/tree/master/1615-range-sum-of-sorted-subarray-sums) |
 | [1679-shortest-subarray-to-be-removed-to-make-array-sorted](https://github.com/SapChak114/LeetCode/tree/master/1679-shortest-subarray-to-be-removed-to-make-array-sorted) |
 | [1766-minimum-number-of-removals-to-make-mountain-array](https://github.com/SapChak114/LeetCode/tree/master/1766-minimum-number-of-removals-to-make-mountain-array) |
@@ -543,6 +546,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0567-permutation-in-string](https://github.com/SapChak114/LeetCode/tree/master/0567-permutation-in-string) |
 | [0632-smallest-range-covering-elements-from-k-lists](https://github.com/SapChak114/LeetCode/tree/master/0632-smallest-range-covering-elements-from-k-lists) |
 | [0718-maximum-length-of-repeated-subarray](https://github.com/SapChak114/LeetCode/tree/master/0718-maximum-length-of-repeated-subarray) |
+| [0892-shortest-subarray-with-sum-at-least-k](https://github.com/SapChak114/LeetCode/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
 | [2255-minimum-swaps-to-group-all-1s-together-ii](https://github.com/SapChak114/LeetCode/tree/master/2255-minimum-swaps-to-group-all-1s-together-ii) |
 | [3380-shortest-subarray-with-or-at-least-k-ii](https://github.com/SapChak114/LeetCode/tree/master/3380-shortest-subarray-with-or-at-least-k-ii) |
 | [3522-find-the-power-of-k-size-subarrays-i](https://github.com/SapChak114/LeetCode/tree/master/3522-find-the-power-of-k-size-subarrays-i) |
@@ -727,6 +731,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0209-minimum-size-subarray-sum](https://github.com/SapChak114/LeetCode/tree/master/0209-minimum-size-subarray-sum) |
 | [0560-subarray-sum-equals-k](https://github.com/SapChak114/LeetCode/tree/master/0560-subarray-sum-equals-k) |
 | [0731-my-calendar-ii](https://github.com/SapChak114/LeetCode/tree/master/0731-my-calendar-ii) |
+| [0892-shortest-subarray-with-sum-at-least-k](https://github.com/SapChak114/LeetCode/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
 | [1016-subarray-sums-divisible-by-k](https://github.com/SapChak114/LeetCode/tree/master/1016-subarray-sums-divisible-by-k) |
 | [1240-stone-game-ii](https://github.com/SapChak114/LeetCode/tree/master/1240-stone-game-ii) |
 | [1435-xor-queries-of-a-subarray](https://github.com/SapChak114/LeetCode/tree/master/1435-xor-queries-of-a-subarray) |
@@ -780,10 +785,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0239-sliding-window-maximum](https://github.com/SapChak114/LeetCode/tree/master/0239-sliding-window-maximum) |
 | [0387-first-unique-character-in-a-string](https://github.com/SapChak114/LeetCode/tree/master/0387-first-unique-character-in-a-string) |
 | [0859-design-circular-deque](https://github.com/SapChak114/LeetCode/tree/master/0859-design-circular-deque) |
+| [0892-shortest-subarray-with-sum-at-least-k](https://github.com/SapChak114/LeetCode/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
 ## Monotonic Queue
 |  |
 | ------- |
 | [0239-sliding-window-maximum](https://github.com/SapChak114/LeetCode/tree/master/0239-sliding-window-maximum) |
+| [0892-shortest-subarray-with-sum-at-least-k](https://github.com/SapChak114/LeetCode/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
 ## Enumeration
 |  |
 | ------- |
