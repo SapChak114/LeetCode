@@ -1,42 +1,64 @@
 class Solution {
     public List<String> fullJustify(String[] words, int maxWidth) {
-        int index = 0;
-        int n = words.length;
-        
-        List<String> res = new ArrayList<>();
-        while(index < n){
-            List<String> str = new ArrayList<>();
-            int i = 0;
-            int charCount=0;
-            while(index<n && i+words[index].length() <= maxWidth){
-                charCount += words[index].length();
-                i += words[index].length()+1;
-                str.add(words[index++]);
+        List<List<String>> wordLine = new ArrayList<>();
+        for(int i = 0; i<words.length;){
+            List<String> word = new ArrayList<>();
+            int size = 0;
+            while(i < words.length && size + words[i].length() <= maxWidth){
+                word.add(words[i]);
+                size += words[i++].length() + 1;
             }
-            int spaces = maxWidth - charCount;
-            int idx = 0;
-            while(index!=n && spaces-- >0){
-                str.set(idx,str.get(idx)+" ");
-                idx = str.size()==1?0:(idx+1)%(str.size()-1);
-            }
-            if(index==n){
-                for(int j = 0; j<str.size()-1; j++){
-                    str.set(j,str.get(j)+" ");
-                }
-                spaces = spaces-str.size() + 1;
-                //System.out.println(spaces+" "+charCount);
-                while(spaces-- >0){
-                    str.set(str.size()-1,str.get(str.size()-1)+" ");
-                }
-            }
-            String st = "";
-            for(int j = 0; j<str.size(); j++){
-                st += str.get(j);
-            }
-            
-            res.add(st);
+            wordLine.add(word);
         }
-        
-        return res;
+
+        int i = 0;
+        List<String> ans = new ArrayList<>();
+        while(i < wordLine.size()-1){
+            
+            List<String> word = wordLine.get(i++);
+            int arrLen = word.size();
+            int lineLen = String.join("", word).length();
+            int spaces = maxWidth - lineLen;
+
+            int equalSpaces = arrLen > 1 ? spaces / (arrLen-1) : 0;
+            int extraSpaces = arrLen > 1 ? spaces % (arrLen-1) : spaces;
+
+            StringBuilder sb = new StringBuilder();
+            for(int j = 0; j<arrLen; j++){
+                sb.append(word.get(j));
+
+                if(j == arrLen-1 && sb.length() == maxWidth){
+                    continue;
+                }
+
+                if(extraSpaces > 0){
+                    if(j == arrLen-1){
+                        sb.append(" ".repeat(extraSpaces));
+                    } else {
+                        sb.append(" ".repeat(equalSpaces+1));
+                    }
+                    extraSpaces--;
+                } else{
+                    sb.append(" ".repeat(equalSpaces));
+                }
+            }
+            ans.add(sb.toString());
+        }
+
+        List<String> lastLine = wordLine.get(wordLine.size()-1);
+        StringBuilder sb = new StringBuilder();
+        for(i = 0; i<lastLine.size(); i++){
+            String word = lastLine.get(i);
+            sb.append(word);
+            
+            if(i == lastLine.size()-1){
+                sb.append(" ".repeat(maxWidth-sb.length()));
+                break;
+            }
+            sb.append(" ");
+        }
+        ans.add(sb.toString());
+
+        return ans;
     }
 }
