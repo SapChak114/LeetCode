@@ -14,7 +14,7 @@ class Solution {
                 left = right;
                 currMin = currMax = nums[right];
 
-                while (left > 0 && Math.abs(nums[left-1] - nums[right]) <= 2) {
+                while (Math.abs(nums[left-1] - nums[right]) <= 2) {
                     left--;
                     currMin = Math.min(currMin, nums[left]);
                     currMax = Math.max(currMax, nums[left]);
