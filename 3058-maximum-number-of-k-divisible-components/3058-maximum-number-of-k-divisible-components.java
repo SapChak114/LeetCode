@@ -1,6 +1,6 @@
 class Solution {
     int n;
-    long k;
+    int k;
     List<Integer>[] adjList;
     int[] values;
     int ans;
@@ -27,8 +27,8 @@ class Solution {
         return ans;
     }
 
-    long dfs(int u, int p) {
-        long uVal = values[u];
+    int dfs(int u, int p) {
+        int uVal = values[u];
 
         for (int v : adjList[u]) {
             if (v == p) {
@@ -42,6 +42,6 @@ class Solution {
             ans++;
         }
 
-        return uVal;
+        return uVal % k;
     }
 }
