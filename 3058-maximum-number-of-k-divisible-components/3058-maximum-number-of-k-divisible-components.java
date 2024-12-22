@@ -1,72 +1,47 @@
 class Solution {
+    int n;
+    long k;
+    List<Integer>[] adjList;
+    int[] values;
+    int ans;
+    public int maxKDivisibleComponents(int n, int[][] edges, int[] values, int k) {
+        this.n = n;
+        this.k = k;
+        this.values = values;
+        this.adjList = new ArrayList[n];
+        this.ans = 0;
 
-    public int maxKDivisibleComponents(
-        int n,
-        int[][] edges,
-        int[] values,
-        int k
-    ) {
-        if (n < 2) return 1; // Handle the base case where the graph has fewer than 2 nodes.
-
-        int componentCount = 0;
-        List<List<Integer>> graph = new ArrayList<>();
-        int[] inDegree = new int[n];
-
-        // Build the graph and calculate in-degrees
         for (int i = 0; i < n; i++) {
-            graph.add(new ArrayList<>()); // Initialize the adjacency list for each node.
-        }
-        for (int[] edge : edges) {
-            int node1 = edge[0], node2 = edge[1];
-            graph.get(node1).add(node2);
-            graph.get(node2).add(node1);
-            inDegree[node1]++;
-            inDegree[node2]++;
+            adjList[i] = new ArrayList<>();
         }
 
-        // Convert values to long to prevent overflow
-        long[] longValues = new long[n];
-        for (int i = 0; i < n; i++) {
-            longValues[i] = values[i];
+        for (int i = 0; i<edges.length; i++) {
+            int u = edges[i][0];
+            int v = edges[i][1];
+
+            adjList[u].add(v);
+            adjList[v].add(u);
         }
 
-        // Initialize the queue with nodes having in-degree of 1 (leaf nodes)
-        Queue<Integer> queue = new LinkedList<>();
-        for (int node = 0; node < n; node++) {
-            if (inDegree[node] == 1) {
-                queue.offer(node);
-            }
-        }
+        dfs(0, -1);
+        return ans;
+    }
 
-        while (!queue.isEmpty()) {
-            int currentNode = queue.poll();
-            inDegree[currentNode]--;
+    long dfs(int u, int p) {
+        long uVal = values[u];
 
-            long addValue = 0;
-
-            // Check if the current node's value is divisible by k
-            if (longValues[currentNode] % k == 0) {
-                componentCount++;
-            } else {
-                addValue = longValues[currentNode];
+        for (int v : adjList[u]) {
+            if (v == p) {
+                continue;
             }
 
-            // Propagate the value to the neighbor nodes
-            for (int neighborNode : graph.get(currentNode)) {
-                if (inDegree[neighborNode] == 0) {
-                    continue;
-                }
-
-                inDegree[neighborNode]--;
-                longValues[neighborNode] += addValue;
-
-                // If the neighbor node's in-degree becomes 1, add it to the queue
-                if (inDegree[neighborNode] == 1) {
-                    queue.offer(neighborNode);
-                }
-            }
+            uVal += dfs(v, u);
         }
 
-        return componentCount;
+        if (uVal % k == 0) {
+            ans++;
+        }
+
+        return uVal;
     }
 }
