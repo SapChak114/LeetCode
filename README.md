@@ -61,6 +61,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1002-maximum-width-ramp](https://github.com/SapChak114/LeetCode/tree/master/1002-maximum-width-ramp) |
 | [1016-subarray-sums-divisible-by-k](https://github.com/SapChak114/LeetCode/tree/master/1016-subarray-sums-divisible-by-k) |
 | [1055-pairs-of-songs-with-total-durations-divisible-by-60](https://github.com/SapChak114/LeetCode/tree/master/1055-pairs-of-songs-with-total-durations-divisible-by-60) |
+| [1063-best-sightseeing-pair](https://github.com/SapChak114/LeetCode/tree/master/1063-best-sightseeing-pair) |
 | [1147-flip-columns-for-maximum-number-of-equal-rows](https://github.com/SapChak114/LeetCode/tree/master/1147-flip-columns-for-maximum-number-of-equal-rows) |
 | [1171-shortest-path-in-binary-matrix](https://github.com/SapChak114/LeetCode/tree/master/1171-shortest-path-in-binary-matrix) |
 | [1196-filling-bookcase-shelves](https://github.com/SapChak114/LeetCode/tree/master/1196-filling-bookcase-shelves) |
@@ -271,6 +272,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0718-maximum-length-of-repeated-subarray](https://github.com/SapChak114/LeetCode/tree/master/0718-maximum-length-of-repeated-subarray) |
 | [0902-minimum-number-of-refueling-stops](https://github.com/SapChak114/LeetCode/tree/master/0902-minimum-number-of-refueling-stops) |
 | [0967-minimum-falling-path-sum](https://github.com/SapChak114/LeetCode/tree/master/0967-minimum-falling-path-sum) |
+| [1063-best-sightseeing-pair](https://github.com/SapChak114/LeetCode/tree/master/1063-best-sightseeing-pair) |
 | [1196-filling-bookcase-shelves](https://github.com/SapChak114/LeetCode/tree/master/1196-filling-bookcase-shelves) |
 | [1240-stone-game-ii](https://github.com/SapChak114/LeetCode/tree/master/1240-stone-game-ii) |
 | [1250-longest-common-subsequence](https://github.com/SapChak114/LeetCode/tree/master/1250-longest-common-subsequence) |
