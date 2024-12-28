@@ -1,46 +1,25 @@
 class Solution {
     public List<String> summaryRanges(int[] nums) {
-        int left = 0;
         List<String> ans = new ArrayList<>();
+        if (nums == null || nums.length == 0) {
+            return ans;
+        }
 
-        if ((nums.length == 1) || (nums.length > 1 && nums[0]+1 != nums[1])) {
-            ans.add(""+nums[0]);
-            left = 1;
-        }
-        if (nums.length == 2) {
-            List<String> li = new ArrayList<>();
-            if (nums[0] + 1 == nums[1]) {
-                li.add(nums[0]+"->"+nums[1]);
-                return li;
-            } else {
-                li.add(""+nums[0]);
-                li.add(""+nums[1]);
-                return li;
-            }
-        }
-        for (int i = 2; i<nums.length; i++) {
-            if (nums[i - 1] + 1 == nums[i]) {
-                if (i == nums.length - 1) {
-                    ans.add(nums[left]+"->"+nums[i]);
+        int start = 0; // Start index of the current range
+        for (int i = 1; i <= nums.length; i++) {
+            // Check if the current number breaks the sequence or we are at the end
+            if (i == nums.length || nums[i] != nums[i - 1] + 1) {
+                if (start == i - 1) {
+                    // Single number range
+                    ans.add(String.valueOf(nums[start]));
+                } else {
+                    // Multi-number range
+                    ans.add(nums[start] + "->" + nums[i - 1]);
                 }
-                continue;
-            }
-            if (left == i-1) {
-                //System.out.println("same "+i);
-                ans.add(""+nums[left]);
-            } else {
-                //System.out.println(i);
-                ans.add(nums[left]+"->"+nums[i-1]);
-            }
-            
-            left = i;
-            // System.out.println(i+" "+left);
-            // System.out.println();
-            if (i == nums.length - 1) {
-                ans.add(""+nums[i]);
+                // Update start for the next range
+                start = i;
             }
         }
-
         return ans;
     }
 }
