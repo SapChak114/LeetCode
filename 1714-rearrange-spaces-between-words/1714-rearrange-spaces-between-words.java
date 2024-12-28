@@ -12,7 +12,7 @@ class Solution {
         if (equalSpaces * (n - 1) != spaces) {
             extraSpaces = Math.abs((equalSpaces * (n - 1)) - spaces);
         }
-        System.out.println("spaces "+spaces+" equalSpaces: "+equalSpaces+" extraSpaces: "+extraSpaces+" words: "+n);
+        //System.out.println("spaces "+spaces+" equalSpaces: "+equalSpaces+" extraSpaces: "+extraSpaces+" words: "+n);
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i<n; i++) {
             sb.append(words[i]);
