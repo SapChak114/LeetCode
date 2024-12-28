@@ -1,4 +1,4 @@
-class Pair implements Comparable<Pair> {
+class Pair implements Comparable<Pair>{
     long total;
     List<Integer> ids;
 
@@ -8,7 +8,7 @@ class Pair implements Comparable<Pair> {
     }
 
     @Override
-    public int compareTo(Pair other) {
+    public int compareTo(Pair other){
         if (this.total == other.total) {
             int length = Math.min(this.ids.size(), other.ids.size());
             for (int i = 0; i < length; i++) {
@@ -23,15 +23,34 @@ class Pair implements Comparable<Pair> {
         return Long.compare(other.total, this.total);
     }
 }
-
 class Solution {
-    int[] A;
     int k;
+    int[] nums;
     List<Long> P;
     Map<String, Pair> dp;
+    public int[] maxSumOfThreeSubarrays(int[] nums, int k) {
+        this.k = k;
+        this.nums = nums;
+        this.P = new ArrayList<>();
+        this.dp = new HashMap<>();
+        P.add(0L);
+
+        for (int num : nums) {
+            P.add(P.get(P.size()-1) + num);
+        }
+
+        List<Integer> ids = dfs(0, 0).ids;
+
+        int[] ans = new int[3];
+        for (int i = 0; i<3; i++) {
+            ans[i] = ids.get(i);
+        }
+
+        return ans;
+    }
 
     Pair dfs(int i, int cnt) {
-        if (i >= A.length || cnt == 3) {
+        if (i >= nums.length || cnt == 3) {
             return new Pair(0L, new ArrayList<>());
         }
 
@@ -39,9 +58,8 @@ class Solution {
         if (dp.containsKey(key)) {
             return dp.get(key);
         }
-
         Pair take = new Pair(0L, new ArrayList<>());
-        if (i + k <= A.length) {
+        if (i + k <= nums.length) {
             take = dfs(i + k, cnt + 1);
             take = new Pair(take.total + P.get(i + k) - P.get(i), new ArrayList<>(take.ids));
             take.ids.add(0, i);
@@ -49,28 +67,10 @@ class Solution {
 
         Pair dont = dfs(i + 1, cnt);
 
-        Pair ans = (dont.compareTo(take) > 0) ? take : dont;
+        Pair ans = dont.compareTo(take) > 0 ? take : dont;
+
         dp.put(key, ans);
+
         return ans;
-    }
-
-    public int[] maxSumOfThreeSubarrays(int[] A, int k) {
-        this.A = A;
-        this.k = k;
-        this.P = new ArrayList<>();
-        this.dp = new HashMap<>();
-        P.add(0L);
-
-        for (int val : A) {
-            P.add(P.get(P.size() - 1) + val);
-        }
-
-        List<Integer> ids = dfs(0, 0).ids;
-
-        int[] result = new int[3];
-        for (int i = 0; i < 3; i++) {
-            result[i] = ids.get(i);
-        }
-        return result;
     }
 }
