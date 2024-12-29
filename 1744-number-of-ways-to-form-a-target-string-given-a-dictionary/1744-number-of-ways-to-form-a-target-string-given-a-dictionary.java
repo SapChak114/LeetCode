@@ -4,13 +4,16 @@ class Solution {
     String[] words;
     String target;
     Integer[][] dp;
+    int n, m;
     public int numWays(String[] words, String target) {
         this.counter = new HashMap<>();
         this.words = words;
         this.target = target;
-        this.dp = new Integer[words[0].length()][target.length()];
+        this.n = words[0].length();
+        this.m = target.length();
+        this.dp = new Integer[n][m];
 
-        for (int i = 0; i<words[0].length(); i++) {
+        for (int i = 0; i<n; i++) {
             Map<Character, Integer> map = new HashMap<>();
             for (String word : words) {
                 map.put(word.charAt(i), map.getOrDefault(word.charAt(i), 0) + 1);
@@ -22,11 +25,11 @@ class Solution {
     }
 
     int rec(int i, int j) {
-        if (j == target.length()) {
+        if (j == m) {
             return 1;
         }
 
-        if (i >= words[0].length()) {
+        if (i >= n) {
             return 0;
         }
 
