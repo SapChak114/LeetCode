@@ -1,80 +1,48 @@
-public class Solution {
-
+class Solution {
+    int mod = (int) 1e9 + 7;
+    Map<Integer, Map<Character, Integer>> counter;
+    String[] words;
+    String target;
+    Integer[][] dp;
     public int numWays(String[] words, String target) {
-        int wordLength = words[0].length();
-        int targetLength = target.length();
+        this.counter = new HashMap<>();
+        this.words = words;
+        this.target = target;
+        this.dp = new Integer[words[0].length()][target.length()];
 
-        // Initialize DP table and frequency table
-        int[][] dp = new int[wordLength][targetLength];
-        for (int i = 0; i < wordLength; i++) {
-            Arrays.fill(dp[i], -1);
-        }
-        int[][] charFrequency = new int[wordLength][26];
-
-        // Store the frequency of every character at each index in the words
-        for (String word : words) {
-            for (int j = 0; j < wordLength; j++) {
-                int character = word.charAt(j) - 'a';
-                charFrequency[j][character]++;
+        for (int i = 0; i<words[0].length(); i++) {
+            Map<Character, Integer> map = new HashMap<>();
+            for (String word : words) {
+                map.put(word.charAt(i), map.getOrDefault(word.charAt(i), 0) + 1);
             }
+            counter.put(i, map);
         }
 
-        return (int) getWords(words, target, 0, 0, dp, charFrequency);
+        return rec(0, 0);
     }
 
-    private long getWords(
-        String[] words,
-        String target,
-        int wordsIndex,
-        int targetIndex,
-        int[][] dp,
-        int[][] charFrequency
-    ) {
-        int MOD = 1000000007;
+    int rec(int i, int j) {
+        if (j == target.length()) {
+            return 1;
+        }
 
-        // If the target is fully matched
-        if (targetIndex == target.length()) return 1;
+        if (i >= words[0].length()) {
+            return 0;
+        }
 
-        // If we have no more columns in the words or not enough columns left to match
-        // the target
-        if (
-            wordsIndex == words[0].length() ||
-            words[0].length() - wordsIndex < target.length() - targetIndex
-        ) return 0;
+        if (dp[i][j] != null) {
+            return dp[i][j];
+        }
 
-        // If already computed, return the stored result
-        if (
-            dp[wordsIndex][targetIndex] != -1
-        ) return dp[wordsIndex][targetIndex];
+        int ways = rec(i + 1, j);
 
-        long countWays = 0;
-        int curPos = target.charAt(targetIndex) - 'a';
-
-        // Don't match any character of the target with the current word column
-        countWays += getWords(
-            words,
-            target,
-            wordsIndex + 1,
-            targetIndex,
-            dp,
-            charFrequency
-        );
-
-        // Match the current character of the target with the current word column
-        countWays +=
-            charFrequency[wordsIndex][curPos] *
-            getWords(
-                words,
-                target,
-                wordsIndex + 1,
-                targetIndex + 1,
-                dp,
-                charFrequency
-            );
-
-        // Store the result in dp and return the answer
-        dp[wordsIndex][targetIndex] = (int) (countWays % MOD);
-
-        return dp[wordsIndex][targetIndex];
+        char c = target.charAt(j);
+        int freq = counter.get(i).getOrDefault(c, 0);
+        if (freq > 0) {
+            ways += (int)((long)freq * rec(i + 1, j + 1) % mod);
+            ways %= mod;
+        }
+        
+        return dp[i][j] = ways;
     }
 }
