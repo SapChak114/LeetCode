@@ -11,7 +11,6 @@ class Solution {
         int[] pfZeros = new int[nums.size()];
 
         int n = pfOnes.length;
-        System.out.println(nums);
         if (nums.get(0) == 0) {
             pfZeros[0] = 1;
         }
@@ -30,8 +29,6 @@ class Solution {
             }
         }
 
-        System.out.println(Arrays.toString(pfZeros));
-        System.out.println(Arrays.toString(pfOnes));
         int ans = 0;
         for (int i = 0; i<n-1; i++) {
             int left = pfZeros[i];
