@@ -1,30 +1,29 @@
 class Solution {
-
+    boolean isVowel(char c) {
+        return (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u');
+    }
     public int[] vowelStrings(String[] words, int[][] queries) {
-        int[] ans = new int[queries.length];
-        HashSet<Character> vowels = new HashSet<>(
-            Arrays.asList('a', 'e', 'i', 'o', 'u')
-        );
-        int[] prefixSum = new int[words.length];
-        int sum = 0;
-        for (int i = 0; i < words.length; i++) {
-            String currentWord = words[i];
-            if (
-                vowels.contains(currentWord.charAt(0)) &&
-                vowels.contains(currentWord.charAt(currentWord.length() - 1))
-            ) {
-                sum++;
+        int n = words.length;
+        List<Integer> pfSum = new ArrayList<>(Collections.nCopies(n + 1, 0));
+
+        for (int i = 0; i<n; i++) {
+            char start = words[i].charAt(0);
+            char end = words[i].charAt(words[i].length() - 1);
+
+            if (isVowel(start) && isVowel(end)) {
+                pfSum.set(i+1, 1 + pfSum.get(i));
+            } else {
+                pfSum.set(i+1, pfSum.get(i));
             }
-            prefixSum[i] = sum;
         }
 
-        for (int i = 0; i < queries.length; i++) {
-            int[] currentQuery = queries[i];
-            ans[i] =
-                prefixSum[currentQuery[1]] -
-                (currentQuery[0] == 0 ? 0 : prefixSum[currentQuery[0] - 1]);
+        int[] result = new int[queries.length];
+        int idx = 0;
+        for (int[] query : queries) {
+            int count = pfSum.get(query[1] + 1) - pfSum.get(query[0]);
+            result[idx++] = count;
         }
 
-        return ans;
+        return result;
     }
 }
