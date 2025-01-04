@@ -871,6 +871,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0037-sudoku-solver](https://github.com/SapChak114/LeetCode/tree/master/0037-sudoku-solver) |
 | [0040-combination-sum-ii](https://github.com/SapChak114/LeetCode/tree/master/0040-combination-sum-ii) |
+| [0401-binary-watch](https://github.com/SapChak114/LeetCode/tree/master/0401-binary-watch) |
 | [0494-target-sum](https://github.com/SapChak114/LeetCode/tree/master/0494-target-sum) |
 | [0691-stickers-to-spell-word](https://github.com/SapChak114/LeetCode/tree/master/0691-stickers-to-spell-word) |
 | [1715-split-a-string-into-the-max-number-of-unique-substrings](https://github.com/SapChak114/LeetCode/tree/master/1715-split-a-string-into-the-max-number-of-unique-substrings) |
@@ -922,6 +923,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0389-find-the-difference](https://github.com/SapChak114/LeetCode/tree/master/0389-find-the-difference) |
+| [0401-binary-watch](https://github.com/SapChak114/LeetCode/tree/master/0401-binary-watch) |
 | [0476-number-complement](https://github.com/SapChak114/LeetCode/tree/master/0476-number-complement) |
 | [0691-stickers-to-spell-word](https://github.com/SapChak114/LeetCode/tree/master/0691-stickers-to-spell-word) |
 | [0861-flipping-an-image](https://github.com/SapChak114/LeetCode/tree/master/0861-flipping-an-image) |
