@@ -1,16 +1,18 @@
 class Solution {
     public int firstUniqChar(String s) {
-        int ans = Integer.MAX_VALUE;
-        int n = s.length();
+        Map<Character, Integer> map = new HashMap<>();
 
-        for (char ch = 'a'; ch<='z'; ch++) {
-            int idx = s.indexOf(ch);
+        for (char c : s.toCharArray()) {
+            map.put(c, map.getOrDefault(c, 0)+1);
+        }
 
-            if (idx != -1 && idx == s.lastIndexOf(ch)) {
-                ans = Math.min(ans, idx);
+        for (int i = 0; i<s.length(); i++) {
+            char c = s.charAt(i);
+            if (map.get(c) == 1) {
+                return i;
             }
         }
 
-        return ans == Integer.MAX_VALUE ? -1 : ans;
+        return -1;
     }
 }
