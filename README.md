@@ -439,6 +439,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0415-add-strings](https://github.com/SapChak114/LeetCode/tree/master/0415-add-strings) |
 | [0459-repeated-substring-pattern](https://github.com/SapChak114/LeetCode/tree/master/0459-repeated-substring-pattern) |
 | [0468-validate-ip-address](https://github.com/SapChak114/LeetCode/tree/master/0468-validate-ip-address) |
+| [0482-license-key-formatting](https://github.com/SapChak114/LeetCode/tree/master/0482-license-key-formatting) |
 | [0521-longest-uncommon-subsequence-i](https://github.com/SapChak114/LeetCode/tree/master/0521-longest-uncommon-subsequence-i) |
 | [0539-minimum-time-difference](https://github.com/SapChak114/LeetCode/tree/master/0539-minimum-time-difference) |
 | [0541-reverse-string-ii](https://github.com/SapChak114/LeetCode/tree/master/0541-reverse-string-ii) |
