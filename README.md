@@ -436,6 +436,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0394-decode-string](https://github.com/SapChak114/LeetCode/tree/master/0394-decode-string) |
 | [0409-longest-palindrome](https://github.com/SapChak114/LeetCode/tree/master/0409-longest-palindrome) |
 | [0415-add-strings](https://github.com/SapChak114/LeetCode/tree/master/0415-add-strings) |
+| [0459-repeated-substring-pattern](https://github.com/SapChak114/LeetCode/tree/master/0459-repeated-substring-pattern) |
 | [0468-validate-ip-address](https://github.com/SapChak114/LeetCode/tree/master/0468-validate-ip-address) |
 | [0521-longest-uncommon-subsequence-i](https://github.com/SapChak114/LeetCode/tree/master/0521-longest-uncommon-subsequence-i) |
 | [0539-minimum-time-difference](https://github.com/SapChak114/LeetCode/tree/master/0539-minimum-time-difference) |
@@ -986,6 +987,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0214-shortest-palindrome](https://github.com/SapChak114/LeetCode/tree/master/0214-shortest-palindrome) |
+| [0459-repeated-substring-pattern](https://github.com/SapChak114/LeetCode/tree/master/0459-repeated-substring-pattern) |
 | [0572-subtree-of-another-tree](https://github.com/SapChak114/LeetCode/tree/master/0572-subtree-of-another-tree) |
 | [0812-rotate-string](https://github.com/SapChak114/LeetCode/tree/master/0812-rotate-string) |
 ## Monotonic Stack
