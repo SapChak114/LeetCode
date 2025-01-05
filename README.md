@@ -39,6 +39,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0463-island-perimeter](https://github.com/SapChak114/LeetCode/tree/master/0463-island-perimeter) |
 | [0485-max-consecutive-ones](https://github.com/SapChak114/LeetCode/tree/master/0485-max-consecutive-ones) |
 | [0494-target-sum](https://github.com/SapChak114/LeetCode/tree/master/0494-target-sum) |
+| [0506-relative-ranks](https://github.com/SapChak114/LeetCode/tree/master/0506-relative-ranks) |
 | [0539-minimum-time-difference](https://github.com/SapChak114/LeetCode/tree/master/0539-minimum-time-difference) |
 | [0560-subarray-sum-equals-k](https://github.com/SapChak114/LeetCode/tree/master/0560-subarray-sum-equals-k) |
 | [0624-maximum-distance-in-arrays](https://github.com/SapChak114/LeetCode/tree/master/0624-maximum-distance-in-arrays) |
@@ -158,6 +159,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0242-valid-anagram](https://github.com/SapChak114/LeetCode/tree/master/0242-valid-anagram) |
 | [0295-find-median-from-data-stream](https://github.com/SapChak114/LeetCode/tree/master/0295-find-median-from-data-stream) |
 | [0389-find-the-difference](https://github.com/SapChak114/LeetCode/tree/master/0389-find-the-difference) |
+| [0506-relative-ranks](https://github.com/SapChak114/LeetCode/tree/master/0506-relative-ranks) |
 | [0539-minimum-time-difference](https://github.com/SapChak114/LeetCode/tree/master/0539-minimum-time-difference) |
 | [0632-smallest-range-covering-elements-from-k-lists](https://github.com/SapChak114/LeetCode/tree/master/0632-smallest-range-covering-elements-from-k-lists) |
 | [0692-top-k-frequent-words](https://github.com/SapChak114/LeetCode/tree/master/0692-top-k-frequent-words) |
@@ -197,6 +199,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0239-sliding-window-maximum](https://github.com/SapChak114/LeetCode/tree/master/0239-sliding-window-maximum) |
 | [0264-ugly-number-ii](https://github.com/SapChak114/LeetCode/tree/master/0264-ugly-number-ii) |
 | [0295-find-median-from-data-stream](https://github.com/SapChak114/LeetCode/tree/master/0295-find-median-from-data-stream) |
+| [0506-relative-ranks](https://github.com/SapChak114/LeetCode/tree/master/0506-relative-ranks) |
 | [0632-smallest-range-covering-elements-from-k-lists](https://github.com/SapChak114/LeetCode/tree/master/0632-smallest-range-covering-elements-from-k-lists) |
 | [0692-top-k-frequent-words](https://github.com/SapChak114/LeetCode/tree/master/0692-top-k-frequent-words) |
 | [0778-reorganize-string](https://github.com/SapChak114/LeetCode/tree/master/0778-reorganize-string) |
