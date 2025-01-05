@@ -16,8 +16,6 @@ class Solution {
 
             set.add(email);
         }
-
-        System.out.println(set);
         return set.size();
     }
 }
