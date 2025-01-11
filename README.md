@@ -249,6 +249,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0948-sort-an-array](https://github.com/SapChak114/LeetCode/tree/master/0948-sort-an-array) |
 | [1055-pairs-of-songs-with-total-durations-divisible-by-60](https://github.com/SapChak114/LeetCode/tree/master/1055-pairs-of-songs-with-total-durations-divisible-by-60) |
 | [1458-sort-integers-by-the-number-of-1-bits](https://github.com/SapChak114/LeetCode/tree/master/1458-sort-integers-by-the-number-of-1-bits) |
+| [1502-construct-k-palindrome-strings](https://github.com/SapChak114/LeetCode/tree/master/1502-construct-k-palindrome-strings) |
 | [1620-check-if-array-pairs-are-divisible-by-k](https://github.com/SapChak114/LeetCode/tree/master/1620-check-if-array-pairs-are-divisible-by-k) |
 | [1786-count-the-number-of-consistent-strings](https://github.com/SapChak114/LeetCode/tree/master/1786-count-the-number-of-consistent-strings) |
 | [2163-kth-distinct-string-in-an-array](https://github.com/SapChak114/LeetCode/tree/master/2163-kth-distinct-string-in-an-array) |
@@ -399,6 +400,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1256-rank-transform-of-an-array](https://github.com/SapChak114/LeetCode/tree/master/1256-rank-transform-of-an-array) |
 | [1468-check-if-n-and-its-double-exist](https://github.com/SapChak114/LeetCode/tree/master/1468-check-if-n-and-its-double-exist) |
 | [1473-find-the-longest-substring-containing-vowels-in-even-counts](https://github.com/SapChak114/LeetCode/tree/master/1473-find-the-longest-substring-containing-vowels-in-even-counts) |
+| [1502-construct-k-palindrome-strings](https://github.com/SapChak114/LeetCode/tree/master/1502-construct-k-palindrome-strings) |
 | [1556-make-two-arrays-equal-by-reversing-subarrays](https://github.com/SapChak114/LeetCode/tree/master/1556-make-two-arrays-equal-by-reversing-subarrays) |
 | [1620-check-if-array-pairs-are-divisible-by-k](https://github.com/SapChak114/LeetCode/tree/master/1620-check-if-array-pairs-are-divisible-by-k) |
 | [1694-make-sum-divisible-by-p](https://github.com/SapChak114/LeetCode/tree/master/1694-make-sum-divisible-by-p) |
@@ -476,6 +478,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1320-remove-all-adjacent-duplicates-in-string-ii](https://github.com/SapChak114/LeetCode/tree/master/1320-remove-all-adjacent-duplicates-in-string-ii) |
 | [1350-remove-sub-folders-from-the-filesystem](https://github.com/SapChak114/LeetCode/tree/master/1350-remove-sub-folders-from-the-filesystem) |
 | [1473-find-the-longest-substring-containing-vowels-in-even-counts](https://github.com/SapChak114/LeetCode/tree/master/1473-find-the-longest-substring-containing-vowels-in-even-counts) |
+| [1502-construct-k-palindrome-strings](https://github.com/SapChak114/LeetCode/tree/master/1502-construct-k-palindrome-strings) |
 | [1537-maximum-score-after-splitting-a-string](https://github.com/SapChak114/LeetCode/tree/master/1537-maximum-score-after-splitting-a-string) |
 | [1667-find-kth-bit-in-nth-binary-string](https://github.com/SapChak114/LeetCode/tree/master/1667-find-kth-bit-in-nth-binary-string) |
 | [1714-rearrange-spaces-between-words](https://github.com/SapChak114/LeetCode/tree/master/1714-rearrange-spaces-between-words) |
@@ -816,6 +819,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1285-balance-a-binary-search-tree](https://github.com/SapChak114/LeetCode/tree/master/1285-balance-a-binary-search-tree) |
 | [1304-longest-happy-string](https://github.com/SapChak114/LeetCode/tree/master/1304-longest-happy-string) |
 | [1478-maximum-number-of-events-that-can-be-attended](https://github.com/SapChak114/LeetCode/tree/master/1478-maximum-number-of-events-that-can-be-attended) |
+| [1502-construct-k-palindrome-strings](https://github.com/SapChak114/LeetCode/tree/master/1502-construct-k-palindrome-strings) |
 | [1659-get-the-maximum-score](https://github.com/SapChak114/LeetCode/tree/master/1659-get-the-maximum-score) |
 | [1766-minimum-number-of-removals-to-make-mountain-array](https://github.com/SapChak114/LeetCode/tree/master/1766-minimum-number-of-removals-to-make-mountain-array) |
 | [1917-maximum-average-pass-ratio](https://github.com/SapChak114/LeetCode/tree/master/1917-maximum-average-pass-ratio) |
