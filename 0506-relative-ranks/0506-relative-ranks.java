@@ -1,32 +1,44 @@
+class Pair implements Comparable<Pair>{
+    int num;
+    int idx;
+
+    public Pair(int num, int idx) {
+        this.num = num;
+        this.idx = idx;
+    }
+
+    public int compareTo(Pair other) {
+        if (this.num == other.num) {
+            return Integer.compare(other.idx, this.idx);
+        }
+        return Integer.compare(other.num, this.num);
+    }
+}
 class Solution {
     public String[] findRelativeRanks(int[] score) {
-        List<Pair<Integer,Integer>> list = new ArrayList<>();
-        for (int i = 0; i<score.length; i++) {
-            Pair p = new Pair(score[i], i);
-            list.add(p);
+        List<Pair> list = new ArrayList<>();
+        int n = score.length;
+
+        for (int i = 0; i<n; i++) {
+            list.add(new Pair(score[i], i));
         }
 
-        list.sort(
-            Comparator.comparing((Pair p) -> (int) p.getKey(), Comparator.reverseOrder()) // Descending order for keys
-              .thenComparing((Pair p) -> (int) p.getValue())                      // Ascending order for values
-        );
+        Collections.sort(list);
 
-
-
-        String[] ans = new String[list.size()];
-
-        for (int i = 0; i<ans.length; i++) {
+        String[] sb = new String[n];
+        for (int i = 0; i<n; i++) {
+            Pair p = list.get(i);
             if (i == 0) {
-                ans[list.get(i).getValue()] = "Gold Medal";
+                sb[p.idx] = "Gold Medal";
             } else if (i == 1) {
-                ans[list.get(i).getValue()] = "Silver Medal";
+                sb[p.idx] = "Silver Medal";
             } else if (i == 2) {
-                ans[list.get(i).getValue()] = "Bronze Medal";
+                sb[p.idx] = "Bronze Medal";
             } else {
-                ans[list.get(i).getValue()] = Integer.toString(i + 1);
+                sb[p.idx] = Integer.toString(i + 1);
             }
         }
 
-        return ans;
+        return sb;
     }
 }
