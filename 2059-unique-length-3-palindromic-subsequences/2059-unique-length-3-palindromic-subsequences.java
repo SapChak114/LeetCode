@@ -1,30 +1,30 @@
 class Solution {
     public int countPalindromicSubsequence(String s) {
-        char[] ch = s.toCharArray();
-
-        Map<Character, Integer> right = new HashMap<>();
-        for (char c : ch) {
-            right.put(c, right.getOrDefault(c, 0) + 1);
+        Map<Character, Integer> first = new HashMap<>();
+        Map<Character, Integer> last = new HashMap<>();
+        
+        int n = s.length();
+        for (int i = 0; i<n; i++) {
+            char c = s.charAt(i);
+            if (!first.containsKey(c)) {
+                first.put(c, i);
+            }
+            last.put(c, i);
         }
 
-        Set<Character> left = new HashSet<>();
-        Set<String> res = new HashSet<>();
+        int count = 0;
+        for (char c : first.keySet()) {
+            int start = first.get(c);
+            int end = last.get(c);
 
-        for (int i = 0; i<ch.length; i++) {
-            char mid = ch[i];
-            right.put(mid, right.getOrDefault(mid, 0) - 1);
-            if (right.get(mid) == 0) {
-                right.remove(mid);
+            Set<Character> mid = new HashSet<>();
+            for (int i = start+1; i<end; i++) {
+                mid.add(s.charAt(i));
             }
 
-            for (char chr = 'a'; chr<='z'; chr++) {
-                if (left.contains(chr) && right.containsKey(chr)) {
-                    res.add((chr+""+mid+""+chr));
-                }
-            }
-            left.add(mid);
+            count += mid.size();
         }
 
-        return res.size();
+        return count;
     }
 }
