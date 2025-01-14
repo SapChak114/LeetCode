@@ -3,8 +3,8 @@ class Solution {
         int n = nums.length;
 
         for (int i = 0; i<n; i++) {
-            int index = Math.abs(nums[i]) - 1;
-            nums[index] = -Math.abs(nums[index]);
+            int idx = Math.abs(nums[i]) - 1;
+            nums[idx] = -Math.abs(nums[idx]);
         }
 
         List<Integer> ans = new ArrayList<>();
