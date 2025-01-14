@@ -1,17 +1,17 @@
 class Solution {
-    public int[] minOperations(String s) {
-        int n = s.length();
+    public int[] minOperations(String boxes) {
+        int n = boxes.length(), B = 0, X = 0, Y = 0, C = 0;
         int[] res = new int[n];
 
         for (int i = 0; i<n; i++) {
-            int count = 0;
-            for (int j = 0; j<n; j++) {
-                if (s.charAt(j) == '0') {
-                    continue;
-                }
-                count += Math.abs(j-i);
-            }
-            res[i] = count;
+            res[i] += X;
+            B += boxes.charAt(i)-'0';
+            X += B;
+
+            int j = n - i - 1;
+            res[j] += Y;
+            C += boxes.charAt(j)-'0';
+            Y += C;
         }
 
         return res;
