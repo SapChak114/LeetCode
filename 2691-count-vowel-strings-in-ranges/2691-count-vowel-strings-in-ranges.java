@@ -1,29 +1,32 @@
 class Solution {
-    boolean isVowel(char c) {
-        return (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u');
-    }
-    public int[] vowelStrings(String[] words, int[][] queries) {
+    public int[] vowelStrings(String[] words, int[][] q) {
         int n = words.length;
-        List<Integer> pfSum = new ArrayList<>(Collections.nCopies(n + 1, 0));
+
+        List<Integer> pf = new ArrayList<>(Collections.nCopies(n + 1, 0));
 
         for (int i = 0; i<n; i++) {
-            char start = words[i].charAt(0);
-            char end = words[i].charAt(words[i].length() - 1);
+            char s = words[i].charAt(0);
+            char e = words[i].charAt(words[i].length()-1);
 
-            if (isVowel(start) && isVowel(end)) {
-                pfSum.set(i+1, 1 + pfSum.get(i));
+            if (isVowel(s) && isVowel(e)) {
+                pf.set(i+1, 1 + pf.get(i));
             } else {
-                pfSum.set(i+1, pfSum.get(i));
+                pf.set(i+1, pf.get(i));
             }
         }
 
-        int[] result = new int[queries.length];
-        int idx = 0;
-        for (int[] query : queries) {
-            int count = pfSum.get(query[1] + 1) - pfSum.get(query[0]);
-            result[idx++] = count;
+        int[] res = new int[q.length];
+        int j = 0;
+        for (int[] i : q) {
+            int s = i[0];
+            int e = i[1];
+            res[j++] = pf.get(e+1) - pf.get(s);
         }
 
-        return result;
+        return res;
+    }
+
+    boolean isVowel(char c) {
+        return c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u';
     }
 }
