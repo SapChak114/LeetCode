@@ -15,7 +15,7 @@
  */
 class Solution {
     public boolean isSubtree(TreeNode root, TreeNode subRoot) {
-        if (root == null) {
+        if (root == null || subRoot == null) {
             return false;
         }
 
@@ -28,10 +28,12 @@ class Solution {
         return isSubtree(root.left, subRoot) || isSubtree(root.right, subRoot);
     }
 
-    public boolean isIdentical(TreeNode root, TreeNode subRoot) {
+    boolean isIdentical(TreeNode root, TreeNode subRoot) {
         if (root == null && subRoot == null) {
             return true;
-        } else if(root == null || subRoot == null || root.val != subRoot.val) {
+        }
+
+        if (root == null || subRoot == null || root.val != subRoot.val) {
             return false;
         }
 
