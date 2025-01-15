@@ -1,23 +1,21 @@
 class Solution {
-    public double largestTriangleArea(int[][] points) {
-        double max = 0.0d;
+    public double largestTriangleArea(int[][] P) {
+        double ans = 0.0d;
+        int N = P.length;
 
-        for (int i = 0; i<points.length; i++) {
-            for (int j = i + 1; j<points.length; j++) {
-                for (int k = j + 1; k<points.length; k++) {
-                    double area = getArea(points[i], points[j], points[k]);
-
-                    if (area > max) {
-                        max = area;
-                    }
+        for (int i = 0; i<N; i++) {
+            for (int j = i+1; j<N; j++) {
+                for (int k = j+1; k<N; k++) {
+                    ans = Math.max(ans, area(P[i], P[j], P[k]));
                 }
             }
         }
 
-        return max;
+        return ans;
     }
 
-    double getArea(int[] a, int[] b, int[] c) {
-        return Math.abs((a[0] * (b[1] - c[1])) + (b[0] * (c[1] - a[1])) + (c[0] * (a[1] - b[1]))) / 2.0;
+    double area(int[] P, int[] Q, int[] R) {
+        return 0.5 * Math.abs((P[0]*Q[1] + Q[0]*R[1] + R[0]*P[1] 
+                    - P[1]*Q[0] - Q[1]*R[0] - R[1]*P[0]));
     }
 }
