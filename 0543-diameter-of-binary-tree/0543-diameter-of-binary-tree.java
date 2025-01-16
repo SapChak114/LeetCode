@@ -18,7 +18,7 @@ class Solution {
     public int diameterOfBinaryTree(TreeNode root) {
         this.height = 0;
         postOrder(root);
-        return height;
+        return this.height;
     }
 
     int postOrder(TreeNode root) {
@@ -29,8 +29,8 @@ class Solution {
         int left = postOrder(root.left);
         int right = postOrder(root.right);
 
-        height = Math.max(height, left + right);
+        this.height = Math.max(this.height, left + right);
 
-        return 1 + Math.max(left, right);
+        return Math.max(left, right) + 1;
     }
 }
