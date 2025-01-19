@@ -1,53 +1,48 @@
 class Solution {
+    class Pair {
+        int x, y, cost;
 
-    // Direction vectors: right, left, down, up (matching grid values 1,2,3,4)
-    int[][] dirs = new int[][] { { 0, 1 }, { 0, -1 }, { 1, 0 }, { -1, 0 } };
+        public Pair(int x, int y, int cost) {
+            this.x = x;
+            this.y = y;
+            this.cost = cost;
+        }
+    }
+
+    int[] dx = {0, 0, 1, -1};
+    int[] dy = {1, -1, 0, 0};
 
     public int minCost(int[][] grid) {
-        int numRows = grid.length, numCols = grid[0].length;
-
-        // Min-heap ordered by cost. Each element is [cost, row, col]
-        PriorityQueue<int[]> pq = new PriorityQueue<>((a, b) -> a[0] - b[0]);
-        pq.offer(new int[] { 0, 0, 0 });
-
-        // Track minimum cost to reach each cell
-        int[][] minCost = new int[numRows][numCols];
-        for (int row = 0; row < numRows; row++) {
-            Arrays.fill(minCost[row], Integer.MAX_VALUE);
+        int m = grid.length, n = grid[0].length;
+        PriorityQueue<Pair> pq = new PriorityQueue<>((a, b) -> a.cost - b.cost);
+        int[][] dist = new int[m][n];
+        
+        for (int[] d : dist) {
+            Arrays.fill(d, Integer.MAX_VALUE);
         }
-        minCost[0][0] = 0;
+
+        pq.add(new Pair(0, 0, 0));
+        dist[0][0] = 0;
 
         while (!pq.isEmpty()) {
-            int[] curr = pq.poll();
-            int cost = curr[0], row = curr[1], col = curr[2];
+            Pair p = pq.poll();
 
-            // Skip if we've found a better path to this cell
-            if (minCost[row][col] != cost) continue;
+            if (p.x == m - 1 && p.y == n - 1) {
+                return p.cost;
+            }
 
-            // Try all four directions
-            for (int dir = 0; dir < 4; dir++) {
-                int newRow = row + dirs[dir][0];
-                int newCol = col + dirs[dir][1];
+            for (int i = 0; i < 4; i++) {
+                int nx = p.x + dx[i];
+                int ny = p.y + dy[i];
+                int newCost = p.cost + (grid[p.x][p.y] == i + 1 ? 0 : 1);
 
-                // Check if new position is valid
-                if (
-                    newRow >= 0 &&
-                    newRow < numRows &&
-                    newCol >= 0 &&
-                    newCol < numCols
-                ) {
-                    // Add cost=1 if we need to change direction
-                    int newCost = cost + (dir != (grid[row][col] - 1) ? 1 : 0);
-
-                    // Update if we found a better path
-                    if (minCost[newRow][newCol] > newCost) {
-                        minCost[newRow][newCol] = newCost;
-                        pq.offer(new int[] { newCost, newRow, newCol });
-                    }
+                if (nx >= 0 && nx < m && ny >= 0 && ny < n && dist[nx][ny] > newCost) {
+                    dist[nx][ny] = newCost;
+                    pq.add(new Pair(nx, ny, newCost));
                 }
             }
         }
 
-        return minCost[numRows - 1][numCols - 1];
+        return -1; // Shouldn't reach here
     }
 }
