@@ -16,14 +16,14 @@
 class Solution {
     public List<String> binaryTreePaths(TreeNode root) {
         List<String> ans = new ArrayList<>();
-        searchBT(root, "", ans);
+        searchBT(root,"",ans);
         return ans;
     }
-    
+
     void searchBT(TreeNode root, String path, List<String> ans) {
         if (root.left == null && root.right == null) {
-            path += root.val;
-            ans.add(path);
+            ans.add(path+root.val);
+            return;
         }
 
         if (root.left != null) {
@@ -34,5 +34,4 @@ class Solution {
             searchBT(root.right, path+root.val+"->", ans);
         }
     }
-
 }
