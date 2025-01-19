@@ -1,28 +1,28 @@
 class Solution {
     public String reverseVowels(String s) {
-        char[] ch = s.toCharArray();
         int n = s.length();
-        int left = 0, right = n-1;
-        String vowels = "aeiouAEIOU";
-        
-        while (left < right) {
-            while (left < n && vowels.indexOf(ch[left])== -1) {
-                left++;
+        int i = 0, j = n-1;
+
+        Set<Character> set = Set.of('a','e','i','o','u','A','E','I','O','U');
+
+        StringBuilder sb = new StringBuilder(s);
+        while (i < j) {
+            while (i<sb.length() && !set.contains(sb.charAt(i))) {
+                i++;
+            }
+            while (j>=0 && !set.contains(sb.charAt(j))) {
+                j--;
             }
 
-            while (right >=0 && vowels.indexOf(ch[right])== -1) {
-                right--;
-            }
-
-            if (left < right) {
-                char temp = ch[left];
-                ch[left] = ch[right];
-                ch[right] = temp;
-                left++;
-                right--;
+            if (i < j) {
+                char temp = sb.charAt(i);
+                sb.setCharAt(i, sb.charAt(j));
+                sb.setCharAt(j, temp);
+                i++;
+                j--;
             }
         }
 
-        return new String(ch);
+        return sb.toString();
     }
 }
