@@ -4,8 +4,8 @@ class Solution {
             return false;
         }
 
-        double logRes = Math.log10(n) / Math.log10(3);
+        double res = Math.log10(n) / Math.log10(3);
 
-        return logRes == (int) logRes;
+        return res == (int)res;
     }
 }
