@@ -1,24 +1,28 @@
 class Solution {
     public boolean checkRecord(String s) {
-        Map<Character, Integer> map = new HashMap<>();
+        int n = s.length(), A = 0, L = 0;
+        char[] ch = s.toCharArray();
 
-        int countA = 0, countL = 0;
-
-        int n = s.length();
-
-        countA += s.charAt(0) == 'A' ? 1 : 0;
-        for (int i = 1; i<n-1; i++) {
-            if (s.charAt(i-1) == 'L' && s.charAt(i) == 'L' && s.charAt(i+1) == 'L') {
-                return false;
-            } else if (s.charAt(i) == 'A') {
-                countA++;
+        for (char c : ch) {
+            if (c == 'A') {
+                A++;
             }
         }
 
-        if (n > 1) {
-            countA += s.charAt(n-1) == 'A' ? 1 : 0;
+        if (A >= 2) {
+            return false;
         }
 
-        return countA < 2;
+        int max = 0;
+        for (char c : ch) {
+            if (c == 'L') {
+                L++;
+            } else {
+                L = 0;
+            }
+            max = Math.max(max, L);
+        }
+
+        return max < 3;
     }
 }
