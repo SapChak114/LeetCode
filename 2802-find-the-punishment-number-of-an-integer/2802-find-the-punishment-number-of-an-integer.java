@@ -1,36 +1,28 @@
 class Solution {
+    public int punishmentNumber(int n) {
+        int sum = 0;
 
-    public boolean canPartition(int num, int target) {
-        // Invalid partition found
-        if (target < 0 || num < target) {
+        for (int i = 1; i<=n; i++) {
+            int sq = i * i;
+            if (canPartition(sq, i)) {
+                sum += sq;
+            }
+        }
+
+        return sum;
+    }
+
+    boolean canPartition(int sq, int num) {
+        if (num < 0 || sq < num) {
             return false;
         }
 
-        // Valid partition found
-        if (num == target) {
+        if (sq == num) {
             return true;
         }
 
-        // Recursively check all partitions for a valid partition
-        return (
-            canPartition(num / 10, target - (num % 10)) ||
-            canPartition(num / 100, target - (num % 100)) ||
-            canPartition(num / 1000, target - (num % 1000))
-        );
-    }
-
-    public int punishmentNumber(int n) {
-        int punishmentNum = 0;
-
-        // Iterate through numbers in range [1, n]
-        for (int currentNum = 1; currentNum <= n; currentNum++) {
-            int squareNum = currentNum * currentNum;
-
-            // Check if valid partition can be found and add squared number if so
-            if (canPartition(squareNum, currentNum)) {
-                punishmentNum += squareNum;
-            }
-        }
-        return punishmentNum;
+        return (canPartition(sq / 10, num - (sq % 10)) ||
+                canPartition(sq / 100, num - (sq % 100)) ||
+                canPartition(sq / 1000, num - (sq % 1000)));
     }
 }
