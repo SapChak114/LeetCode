@@ -1,30 +1,21 @@
 class Solution {
     public List<List<Integer>> generate(int numRows) {
-        List<List<Integer>> sol = new ArrayList<>();
-        
-        for(int i= 0; i<numRows; i++){
-            if(sol.size()==0){
-                List<Integer> a = new ArrayList<>();
-                a.add(1);
-                sol.add(a);
-            } else{
-                List<Integer> al = sol.get(sol.size()-1);
-                List<Integer> a = new ArrayList<>();
-                a.add(1);
-                if(al.size()>=2){
-                    int x = 0;
-                    while(x<al.size()-1){
-                        int a1 = al.get(x);
-                        int a2 = al.get(x+1);
-                        a.add(a1+a2);
-                        x++;
-                    }
-                }
-                a.add(1);
-                sol.add(a);
-            }
+        List<List<Integer>> ans = new ArrayList<>();
+
+        ans.add(new ArrayList<>(List.of(1)));
+        if (numRows > 1) {
+            ans.add(new ArrayList<>(List.of(1,1)));
         }
-        
-        return sol;
+
+        for (int i = 1; i<numRows-1; i++) {
+            ans.add(new ArrayList<>(List.of(1)));
+            for (int j = 0; j<ans.get(i).size()-1; j++) {
+                int sum = ans.get(i).get(j) + ans.get(i).get(j+1);
+                ans.get(i+1).add(sum);
+            }
+            ans.get(i+1).add(1);
+        }
+
+        return ans;
     }
 }
