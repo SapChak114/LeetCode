@@ -1,24 +1,42 @@
 class Solution {
-    public void setZeroes(int[][] matrix) {
-        ArrayList<ArrayList<Integer>> al = new ArrayList<>();
+    public void setZeroes(int[][] mat) {
+        int n = mat.length, m = mat[0].length;
+        int[][] mat2 = new int[n][m];
+        for (int[] ma : mat2) {
+            Arrays.fill(ma, -1);
+        }
 
-        for(int i = 0; i<matrix.length; i++){
-            for(int j = 0; j<matrix[i].length; j++){
-                if(matrix[i][j]==0){
-                    ArrayList<Integer> a = new ArrayList<>();
-                    a.add(i);
-                    a.add(j);
-                    al.add(a);
+
+        for (int i = 0; i<n; i++) {
+            for (int j = 0; j<m; j++) {
+                mat2[i][j] = mat[i][j];
+            }
+        }
+
+        for (int i = 0; i<n; i++) {
+            for (int j = 0; j<m; j++) {
+                if (mat[i][j] != 0) {
+                    continue;
+                }
+
+                // entire row 0
+                for (int a = 0; a<m; a++) {
+                    mat2[i][a] = 0;
+                }
+
+                //entire col 0
+                for (int b = 0; b<n; b++) {
+                    mat2[b][j] = 0;
                 }
             }
         }
 
-        for(int i = 0; i<al.size(); i++){
-            Arrays.fill(matrix[al.get(i).get(0)],0);
-            for(int j = 0; j<matrix.length; j++){
-                matrix[j][al.get(i).get(1)]=0;
+        for (int i = 0; i<n; i++) {
+            for (int j = 0; j<m; j++) {
+                if (mat2[i][j] == 0) {
+                    mat[i][j] = 0;
+                }
             }
         }
-
     }
 }
