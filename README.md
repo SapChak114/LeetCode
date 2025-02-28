@@ -14,6 +14,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0040-combination-sum-ii](https://github.com/SapChak114/LeetCode/tree/master/0040-combination-sum-ii) |
 | [0042-trapping-rain-water](https://github.com/SapChak114/LeetCode/tree/master/0042-trapping-rain-water) |
 | [0045-jump-game-ii](https://github.com/SapChak114/LeetCode/tree/master/0045-jump-game-ii) |
+| [0048-rotate-image](https://github.com/SapChak114/LeetCode/tree/master/0048-rotate-image) |
 | [0049-group-anagrams](https://github.com/SapChak114/LeetCode/tree/master/0049-group-anagrams) |
 | [0053-maximum-subarray](https://github.com/SapChak114/LeetCode/tree/master/0053-maximum-subarray) |
 | [0054-spiral-matrix](https://github.com/SapChak114/LeetCode/tree/master/0054-spiral-matrix) |
@@ -797,6 +798,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0037-sudoku-solver](https://github.com/SapChak114/LeetCode/tree/master/0037-sudoku-solver) |
+| [0048-rotate-image](https://github.com/SapChak114/LeetCode/tree/master/0048-rotate-image) |
 | [0054-spiral-matrix](https://github.com/SapChak114/LeetCode/tree/master/0054-spiral-matrix) |
 | [0063-unique-paths-ii](https://github.com/SapChak114/LeetCode/tree/master/0063-unique-paths-ii) |
 | [0064-minimum-path-sum](https://github.com/SapChak114/LeetCode/tree/master/0064-minimum-path-sum) |
@@ -1003,6 +1005,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Math
 |  |
 | ------- |
+| [0048-rotate-image](https://github.com/SapChak114/LeetCode/tree/master/0048-rotate-image) |
 | [0070-climbing-stairs](https://github.com/SapChak114/LeetCode/tree/master/0070-climbing-stairs) |
 | [0241-different-ways-to-add-parentheses](https://github.com/SapChak114/LeetCode/tree/master/0241-different-ways-to-add-parentheses) |
 | [0264-ugly-number-ii](https://github.com/SapChak114/LeetCode/tree/master/0264-ugly-number-ii) |
