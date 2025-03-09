@@ -1,43 +1,38 @@
 class Solution {
-    int[] dirX = {0,1,-1,0};
-    int[] dirY = {1,0,0,-1};
+    int[] X = {0, 1, 0, -1};
+    int[] Y = {1, 0, -1, 0};
     public int[][] updateMatrix(int[][] mat) {
-        Queue<Integer> row = new LinkedList<>();
-        Queue<Integer> col = new LinkedList<>();
-        Queue<Integer> dist = new LinkedList<>();
+        Queue<int[]> q = new LinkedList<>();
+
         int n = mat.length, m = mat[0].length;
-        int[][] dis = new int[n][m];
-        
-        for(int i = 0; i<n; i++){
-            for(int j = 0; j<m; j++){
-                if(mat[i][j]==0){
-                    mat[i][j]=-1;
-                    row.add(i);
-                    col.add(j);
-                    dist.add(0);
+        int[][] dist = new int[n][m];
+
+        for (int i = 0; i<n; i++) {
+            for (int j = 0; j<m; j++) {
+                if (mat[i][j] == 0) {
+                    q.add(new int[]{i, j, 0});
+                    mat[i][j] = -1;
                 }
             }
         }
-        
-        while(!row.isEmpty()){
-            int x = row.poll();
-            int y = col.poll();
-            int d = dist.poll();
-            dis[x][y]=d;
-            for(int i = 0; i<dirX.length; i++){
-                int r = x + dirX[i];
-                int c = y + dirY[i];
-                
-                if(r<0 || r>=n || c<0 || c>=m || mat[r][c]!=1){
-                    continue;
+
+        while (!q.isEmpty()) {
+            int[] arr = q.poll();
+            int x = arr[0];
+            int y = arr[1];
+            int steps = arr[2];
+            dist[x][y] = steps;
+            for (int i = 0; i<4; i++) {
+                int r = x + X[i];
+                int c = y + Y[i];
+
+                if (r < n && r >= 0 && c < m && c >= 0 && mat[r][c] == 1) {
+                    q.add(new int[]{r, c, steps + 1});                   
+                    mat[r][c] = -1;
                 }
-                mat[r][c]=-1;
-                row.add(r);
-                col.add(c);
-                dist.add(d+1);
             }
         }
-        
-        return dis;
+
+        return dist;
     }
 }
