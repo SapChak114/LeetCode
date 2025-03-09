@@ -477,6 +477,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0432-all-oone-data-structure](https://github.com/SapChak114/LeetCode/tree/master/0432-all-oone-data-structure) |
 | [0448-find-all-numbers-disappeared-in-an-array](https://github.com/SapChak114/LeetCode/tree/master/0448-find-all-numbers-disappeared-in-an-array) |
 | [0522-longest-uncommon-subsequence-ii](https://github.com/SapChak114/LeetCode/tree/master/0522-longest-uncommon-subsequence-ii) |
+| [0535-encode-and-decode-tinyurl](https://github.com/SapChak114/LeetCode/tree/master/0535-encode-and-decode-tinyurl) |
 | [0560-subarray-sum-equals-k](https://github.com/SapChak114/LeetCode/tree/master/0560-subarray-sum-equals-k) |
 | [0567-permutation-in-string](https://github.com/SapChak114/LeetCode/tree/master/0567-permutation-in-string) |
 | [0632-smallest-range-covering-elements-from-k-lists](https://github.com/SapChak114/LeetCode/tree/master/0632-smallest-range-covering-elements-from-k-lists) |
@@ -562,6 +563,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0521-longest-uncommon-subsequence-i](https://github.com/SapChak114/LeetCode/tree/master/0521-longest-uncommon-subsequence-i) |
 | [0522-longest-uncommon-subsequence-ii](https://github.com/SapChak114/LeetCode/tree/master/0522-longest-uncommon-subsequence-ii) |
 | [0524-longest-word-in-dictionary-through-deleting](https://github.com/SapChak114/LeetCode/tree/master/0524-longest-word-in-dictionary-through-deleting) |
+| [0535-encode-and-decode-tinyurl](https://github.com/SapChak114/LeetCode/tree/master/0535-encode-and-decode-tinyurl) |
 | [0539-minimum-time-difference](https://github.com/SapChak114/LeetCode/tree/master/0539-minimum-time-difference) |
 | [0541-reverse-string-ii](https://github.com/SapChak114/LeetCode/tree/master/0541-reverse-string-ii) |
 | [0551-student-attendance-record-i](https://github.com/SapChak114/LeetCode/tree/master/0551-student-attendance-record-i) |
@@ -923,6 +925,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0214-shortest-palindrome](https://github.com/SapChak114/LeetCode/tree/master/0214-shortest-palindrome) |
+| [0535-encode-and-decode-tinyurl](https://github.com/SapChak114/LeetCode/tree/master/0535-encode-and-decode-tinyurl) |
 | [0572-subtree-of-another-tree](https://github.com/SapChak114/LeetCode/tree/master/0572-subtree-of-another-tree) |
 | [0718-maximum-length-of-repeated-subarray](https://github.com/SapChak114/LeetCode/tree/master/0718-maximum-length-of-repeated-subarray) |
 | [3309-count-prefix-and-suffix-pairs-i](https://github.com/SapChak114/LeetCode/tree/master/3309-count-prefix-and-suffix-pairs-i) |
@@ -932,6 +935,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0146-lru-cache](https://github.com/SapChak114/LeetCode/tree/master/0146-lru-cache) |
 | [0295-find-median-from-data-stream](https://github.com/SapChak114/LeetCode/tree/master/0295-find-median-from-data-stream) |
 | [0432-all-oone-data-structure](https://github.com/SapChak114/LeetCode/tree/master/0432-all-oone-data-structure) |
+| [0535-encode-and-decode-tinyurl](https://github.com/SapChak114/LeetCode/tree/master/0535-encode-and-decode-tinyurl) |
 | [0729-my-calendar-i](https://github.com/SapChak114/LeetCode/tree/master/0729-my-calendar-i) |
 | [0731-my-calendar-ii](https://github.com/SapChak114/LeetCode/tree/master/0731-my-calendar-ii) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/SapChak114/LeetCode/tree/master/0789-kth-largest-element-in-a-stream) |
