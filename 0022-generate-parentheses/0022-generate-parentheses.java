@@ -1,23 +1,30 @@
 class Solution {
     List<String> res;
+    Stack<String> st;
+    int n;
     public List<String> generateParenthesis(int n) {
-        res = new ArrayList<>();
-        check(n,"",0,0);
+        this.res = new ArrayList<>();
+        this.st = new Stack<>();
+        this.n = n;
+        back(0, 0);
         return res;
     }
-    
-    void check(int n, String s, int open, int close){
-        
-        if(s.length()==n*2){
-            res.add(s);
-            return;
+
+    void back(int open, int close) {
+        if (open == n && close == n) {
+            res.add(String.join("", st));
         }
-        
-        if(open<n){
-            check(n,s+'(',open+1,close);
+
+        if (open < n) {
+            st.push("(");
+            back(open + 1, close);
+            st.pop();
         }
-        if(close<open){
-            check(n,s+')',open,close+1);
+
+        if (close < open) {
+            st.push(")");
+            back(open, close + 1);
+            st.pop();
         }
     }
 }
