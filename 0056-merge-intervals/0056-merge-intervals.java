@@ -2,10 +2,12 @@ class Solution {
     public int[][] merge(int[][] inv) {
         int n = inv.length;
         
-        int[] prev = inv[0];
-        
+        Arrays.sort(inv, (a, b) -> a[0]-b[0]);
+
         List<int[]> ans = new ArrayList<>();
-        for (int i = 1; i<inv.length; i++) {
+
+        int[] prev = inv[0];
+        for (int i = 1; i<n; i++) {
             int[] in = inv[i];
 
             if (prev[1] >= in[0]) {
