@@ -27,6 +27,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0073-set-matrix-zeroes](https://github.com/SapChak114/LeetCode/tree/master/0073-set-matrix-zeroes) |
 | [0074-search-a-2d-matrix](https://github.com/SapChak114/LeetCode/tree/master/0074-search-a-2d-matrix) |
 | [0075-sort-colors](https://github.com/SapChak114/LeetCode/tree/master/0075-sort-colors) |
+| [0079-word-search](https://github.com/SapChak114/LeetCode/tree/master/0079-word-search) |
 | [0088-merge-sorted-array](https://github.com/SapChak114/LeetCode/tree/master/0088-merge-sorted-array) |
 | [0118-pascals-triangle](https://github.com/SapChak114/LeetCode/tree/master/0118-pascals-triangle) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/SapChak114/LeetCode/tree/master/0121-best-time-to-buy-and-sell-stock) |
@@ -549,6 +550,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0049-group-anagrams](https://github.com/SapChak114/LeetCode/tree/master/0049-group-anagrams) |
 | [0068-text-justification](https://github.com/SapChak114/LeetCode/tree/master/0068-text-justification) |
 | [0076-minimum-window-substring](https://github.com/SapChak114/LeetCode/tree/master/0076-minimum-window-substring) |
+| [0079-word-search](https://github.com/SapChak114/LeetCode/tree/master/0079-word-search) |
 | [0097-interleaving-string](https://github.com/SapChak114/LeetCode/tree/master/0097-interleaving-string) |
 | [0127-word-ladder](https://github.com/SapChak114/LeetCode/tree/master/0127-word-ladder) |
 | [0179-largest-number](https://github.com/SapChak114/LeetCode/tree/master/0179-largest-number) |
@@ -758,6 +760,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Depth-First Search
 |  |
 | ------- |
+| [0079-word-search](https://github.com/SapChak114/LeetCode/tree/master/0079-word-search) |
 | [0098-validate-binary-search-tree](https://github.com/SapChak114/LeetCode/tree/master/0098-validate-binary-search-tree) |
 | [0104-maximum-depth-of-binary-tree](https://github.com/SapChak114/LeetCode/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0124-binary-tree-maximum-path-sum](https://github.com/SapChak114/LeetCode/tree/master/0124-binary-tree-maximum-path-sum) |
@@ -871,6 +874,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0064-minimum-path-sum](https://github.com/SapChak114/LeetCode/tree/master/0064-minimum-path-sum) |
 | [0073-set-matrix-zeroes](https://github.com/SapChak114/LeetCode/tree/master/0073-set-matrix-zeroes) |
 | [0074-search-a-2d-matrix](https://github.com/SapChak114/LeetCode/tree/master/0074-search-a-2d-matrix) |
+| [0079-word-search](https://github.com/SapChak114/LeetCode/tree/master/0079-word-search) |
 | [0200-number-of-islands](https://github.com/SapChak114/LeetCode/tree/master/0200-number-of-islands) |
 | [0221-maximal-square](https://github.com/SapChak114/LeetCode/tree/master/0221-maximal-square) |
 | [0407-trapping-rain-water-ii](https://github.com/SapChak114/LeetCode/tree/master/0407-trapping-rain-water-ii) |
@@ -1146,6 +1150,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0022-generate-parentheses](https://github.com/SapChak114/LeetCode/tree/master/0022-generate-parentheses) |
 | [0037-sudoku-solver](https://github.com/SapChak114/LeetCode/tree/master/0037-sudoku-solver) |
 | [0040-combination-sum-ii](https://github.com/SapChak114/LeetCode/tree/master/0040-combination-sum-ii) |
+| [0079-word-search](https://github.com/SapChak114/LeetCode/tree/master/0079-word-search) |
 | [0257-binary-tree-paths](https://github.com/SapChak114/LeetCode/tree/master/0257-binary-tree-paths) |
 | [0401-binary-watch](https://github.com/SapChak114/LeetCode/tree/master/0401-binary-watch) |
 | [0494-target-sum](https://github.com/SapChak114/LeetCode/tree/master/0494-target-sum) |
