@@ -2,50 +2,40 @@ class Solution {
     public int[][] insert(int[][] intervals, int[] newInterval) {
         List<List<Integer>> res = new ArrayList<>();
         List<List<Integer>> ans = new ArrayList<>();
-        
-        for(int[] in : intervals){
-            int start = in[0];
-            int end = in[1];
+
+        int n = intervals.length;
+
+        for (int[] inter : intervals) {
             List<Integer> li = new ArrayList<>();
-            li.add(start);
-            li.add(end);
+            li.add(inter[0]);
+            li.add(inter[1]);
             res.add(li);
         }
-        
-        int start = newInterval[0];
-        int end = newInterval[1];
-        List<Integer> li = new ArrayList<>();
-        li.add(start);
-        li.add(end);
-        res.add(li);
-        
-        Collections.sort(res,(a,b)->Integer.compare(a.get(0),b.get(0)));
-        
+
+        res.add(List.of(newInterval[0], newInterval[1]));
+
+        Collections.sort(res, (a, b) -> a.get(0) - b.get(0));
+
         int i = 0;
-        while(i<res.size()){
-            start = res.get(i).get(0);
-            end = res.get(i).get(1);
-            
+        while (i < res.size()) {
+            int start = res.get(i).get(0);
+            int end = res.get(i).get(1);
+
             i++;
-            while(i<res.size() && end>=res.get(i).get(0)){
-                end = Math.max(end,res.get(i).get(1));
+            while (i < res.size() && end >= res.get(i).get(0)) {
+                end = Math.max(end, res.get(i).get(1));
                 i++;
             }
-            
-            List<Integer> al = new ArrayList<>();
-            al.add(start);
-            al.add(end);
-            ans.add(al);
-            
+
+            ans.add(List.of(start, end));
         }
-        int[][] an = new int[ans.size()][2];
-        
-        for(i = 0; i<an.length; i++){
-            an[i][0] = ans.get(i).get(0);
-            an[i][1] = ans.get(i).get(1);
+
+        int[][] re = new int[ans.size()][2];
+        for (i = 0; i<ans.size(); i++) {
+            re[i][0] = ans.get(i).get(0);
+            re[i][1] = ans.get(i).get(1);
         }
-        
-        return an;
-        
+
+        return re;
     }
 }
