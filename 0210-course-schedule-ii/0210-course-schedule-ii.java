@@ -7,11 +7,9 @@ class Solution {
         }
 
         for (int i = 0; i<pre.length; i++) {
-            for (int j = 0; j<pre[i].length; j++) {
-                int u = pre[i][0];
-                int v = pre[i][1];
-                adjList[u].add(v);
-            }
+            int u = pre[i][0];
+            int v = pre[i][1];
+            adjList[u].add(v);
         }
 
         int[] vis = new int[num];
@@ -23,13 +21,15 @@ class Solution {
 
         List<Integer> ans = new ArrayList<>();
         Set<Integer> seen = new HashSet<>();
+
         for (int i = 0; i<num; i++) {
             if (!seen.contains(i)) {
-                dfs(adjList, seen, i, ans);
+                dfs(seen, adjList, i, ans);
             }
         }
 
         int[] res = new int[ans.size()];
+
         for (int i = 0; i<res.length; i++) {
             res[i] = ans.get(i);
         }
@@ -40,12 +40,12 @@ class Solution {
     boolean dfsCy(List<Integer>[] adjList, int[] vis, int node) {
         vis[node] = 1;
 
-        for (int nod : adjList[node]) {
-            if (vis[nod] == 0) {
-                if (dfsCy(adjList, vis, nod)) {
+        for (int n : adjList[node]) {
+            if (vis[n] == 0) {
+                if (dfsCy(adjList, vis, n)) {
                     return true;
                 }
-            } else if (vis[nod] == 1) {
+            } else if (vis[n] == 1) {
                 return true;
             }
         }
@@ -54,15 +54,17 @@ class Solution {
         return false;
     }
 
-    void dfs(List<Integer>[] adjList, Set<Integer> seen, int node, List<Integer> ans) {
+    void dfs(Set<Integer> seen, List<Integer>[] adjList, int node, List<Integer> ans) {
         seen.add(node);
 
         for (int nod : adjList[node]) {
             if (!seen.contains(nod)) {
-                dfs(adjList, seen, nod, ans);
+                dfs(seen, adjList, nod, ans);
             }
         }
 
         ans.add(node);
     }
+
+
 }
