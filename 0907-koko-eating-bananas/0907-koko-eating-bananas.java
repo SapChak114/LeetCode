@@ -4,11 +4,11 @@ class Solution {
         int res = r;
 
         while (l <= r) {
-            int k = l + (r-l)/2;
+            int k = l + (r - l)/2;
             int hr = 0;
 
             for (int p : piles) {
-                hr += Math.ceil((double)p / k);
+                hr += Math.ceil((double) p / k);
             }
 
             if (hr <= h) {
