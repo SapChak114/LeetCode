@@ -1,29 +1,27 @@
 class Solution {
-    Set<String> set;
-    public int ladderLength(String beginWord, String endWord, List<String> wordList) {  
-        this.set = new HashSet<>(wordList);
-        if (!set.contains(endWord)) {
-            return 0;
-        }
+    Set<String> wordSet;
+    public int ladderLength(String beginWord, String endWord, List<String> wordList) {
+        this.wordSet = new HashSet<>(wordList);
 
         Queue<String> queue = new LinkedList<>();
         Queue<Integer> levels = new LinkedList<>();
 
+        Set<String> vis = new HashSet<>();
+
         queue.add(beginWord);
         levels.add(1);
-        Set<String> vis = new HashSet<>();
 
         while (!queue.isEmpty()) {
             String word = queue.poll();
-            int l = levels.poll();
+            int level = levels.poll();
             if (word.equals(endWord)) {
-                return l;
+                return level;
             }
 
             for (String w : getNei(word)) {
                 if (!vis.contains(w)) {
                     queue.add(w);
-                    levels.add(l + 1);
+                    levels.add(level+1);
                     vis.add(w);
                 }
             }
@@ -33,20 +31,20 @@ class Solution {
     }
 
     List<String> getNei(String word) {
-        List<String> list = new ArrayList<>();
+        List<String> wordList = new ArrayList<>();
 
         for (int i = 0; i<word.length(); i++) {
             for (char c = 'a'; c<='z'; c++) {
-                if (c == word.charAt(i)) {
+                String nWord = word.substring(0, i) + c + word.substring(i+1);
+                if (word.charAt(i) == c) {
                     continue;
                 }
-                String nWord = word.substring(0, i) + c + word.substring(i+1);
-                if (set.contains(nWord)) {
-                    list.add(nWord);
+                if (wordSet.contains(nWord)) {
+                    wordList.add(nWord);
                 }
             }
         }
 
-        return list;
+        return wordList;
     }
 }
