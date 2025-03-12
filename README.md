@@ -367,6 +367,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0494-target-sum](https://github.com/SapChak114/LeetCode/tree/master/0494-target-sum) |
 | [0526-beautiful-arrangement](https://github.com/SapChak114/LeetCode/tree/master/0526-beautiful-arrangement) |
 | [0542-01-matrix](https://github.com/SapChak114/LeetCode/tree/master/0542-01-matrix) |
+| [0583-delete-operation-for-two-strings](https://github.com/SapChak114/LeetCode/tree/master/0583-delete-operation-for-two-strings) |
 | [0647-palindromic-substrings](https://github.com/SapChak114/LeetCode/tree/master/0647-palindromic-substrings) |
 | [0650-2-keys-keyboard](https://github.com/SapChak114/LeetCode/tree/master/0650-2-keys-keyboard) |
 | [0664-strange-printer](https://github.com/SapChak114/LeetCode/tree/master/0664-strange-printer) |
@@ -594,6 +595,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0551-student-attendance-record-i](https://github.com/SapChak114/LeetCode/tree/master/0551-student-attendance-record-i) |
 | [0564-find-the-closest-palindrome](https://github.com/SapChak114/LeetCode/tree/master/0564-find-the-closest-palindrome) |
 | [0567-permutation-in-string](https://github.com/SapChak114/LeetCode/tree/master/0567-permutation-in-string) |
+| [0583-delete-operation-for-two-strings](https://github.com/SapChak114/LeetCode/tree/master/0583-delete-operation-for-two-strings) |
 | [0592-fraction-addition-and-subtraction](https://github.com/SapChak114/LeetCode/tree/master/0592-fraction-addition-and-subtraction) |
 | [0647-palindromic-substrings](https://github.com/SapChak114/LeetCode/tree/master/0647-palindromic-substrings) |
 | [0664-strange-printer](https://github.com/SapChak114/LeetCode/tree/master/0664-strange-printer) |
