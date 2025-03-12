@@ -3,12 +3,23 @@ class Solution {
         int n = nums.length;
         int low = -1, high = qr.length + 1;
 
-        while (high - low > 1) {
+        boolean isZeroArray = true;
+        for (int num : nums) {
+            if (num != 0) {
+                isZeroArray = false;
+                break;
+            }
+        }
+        if (isZeroArray) {
+            return 0; // No queries are needed.
+        }
+
+        while (low < high) {
             int h = high+low >> 1;
             if (solve(nums, qr, h)) {
                 high = h;
             } else {
-                low = h;
+                low = h + 1;
             }
         }
 
