@@ -13,12 +13,23 @@
  *     }
  * }
  */
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
+import java.util.*;
 class Solution {
     List<TreeNode> ans;
     Map<String, Integer> counter;
+    MessageDigest digest; // SHA-256 instance
+
     public List<TreeNode> findDuplicateSubtrees(TreeNode root) {
         this.ans = new ArrayList<>();
         this.counter = new HashMap<>();
+
+        try {
+            digest = MessageDigest.getInstance("SHA-256");
+        } catch (NoSuchAlgorithmException e) {
+            throw new RuntimeException(e); // Handle exception
+        }
 
         dfs(root);
         return ans;
@@ -26,22 +37,29 @@ class Solution {
 
     String dfs(TreeNode node) {
         if (node == null) {
-            return "#";  // Use "#" to represent null nodes
+            return "#";  // Unique identifier for null nodes
         }
 
-        // Serialize subtree uniquely
-        String hash = "(" + dfs(node.left) + ")"
-                    + node.val
-                    + "(" + dfs(node.right) + ")";
+        // Generate unique hash based on structure and value
+        String subtree = dfs(node.left) + "," + node.val + "," + dfs(node.right);
+        String hash = sha256(subtree);
 
-        // Count occurrences of this subtree
         counter.put(hash, counter.getOrDefault(hash, 0) + 1);
-        
-        // If it's the second time we encounter this subtree, add it to the answer list
-        if (counter.get(hash) == 2) {
+
+        if (counter.get(hash) == 2) { // Add only the first time it becomes duplicate
             ans.add(node);
         }
 
         return hash;
+    }
+
+    // Generate SHA-256 hash for a given string
+    private String sha256(String str) {
+        byte[] hashBytes = digest.digest(str.getBytes());
+        StringBuilder hexString = new StringBuilder();
+        for (byte b : hashBytes) {
+            hexString.append(String.format("%02x", b));
+        }
+        return hexString.toString();
     }
 }
