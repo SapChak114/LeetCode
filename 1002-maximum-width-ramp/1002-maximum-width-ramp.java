@@ -1,26 +1,20 @@
 class Solution {
-
     public int maxWidthRamp(int[] nums) {
         int n = nums.length;
-        Integer[] indices = new Integer[n];
+        Stack<Integer> st = new Stack<>();
 
-        // Initialize the array with indices
-        for (int i = 0; i < n; i++) {
-            indices[i] = i;
+        for (int i = 0; i<n; i++) {
+            if (st.isEmpty() || nums[st.peek()] > nums[i]) {
+                st.push(i);
+            }
         }
 
-        // Sort indices based on corresponding values in nums and ensure stability
-        Arrays.sort(indices, (i, j) ->
-            nums[i] != nums[j] ? nums[i] - nums[j] : i - j
-        );
-
-        int minIndex = n; // Minimum index encountered so far
         int maxWidth = 0;
 
-        // Calculate maximum width ramp
-        for (int i : indices) {
-            maxWidth = Math.max(maxWidth, i - minIndex);
-            minIndex = Math.min(minIndex, i);
+        for (int j = n-1; j>=0; j--) {
+            while (!st.isEmpty() && nums[st.peek()] <= nums[j]) {
+                maxWidth = Math.max(maxWidth, j - st.pop());
+            }
         }
 
         return maxWidth;
