@@ -98,6 +98,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1063-best-sightseeing-pair](https://github.com/SapChak114/LeetCode/tree/master/1063-best-sightseeing-pair) |
 | [1081-video-stitching](https://github.com/SapChak114/LeetCode/tree/master/1081-video-stitching) |
 | [1087-longest-arithmetic-subsequence](https://github.com/SapChak114/LeetCode/tree/master/1087-longest-arithmetic-subsequence) |
+| [1129-longest-string-chain](https://github.com/SapChak114/LeetCode/tree/master/1129-longest-string-chain) |
 | [1147-flip-columns-for-maximum-number-of-equal-rows](https://github.com/SapChak114/LeetCode/tree/master/1147-flip-columns-for-maximum-number-of-equal-rows) |
 | [1171-shortest-path-in-binary-matrix](https://github.com/SapChak114/LeetCode/tree/master/1171-shortest-path-in-binary-matrix) |
 | [1196-filling-bookcase-shelves](https://github.com/SapChak114/LeetCode/tree/master/1196-filling-bookcase-shelves) |
@@ -242,6 +243,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0780-max-chunks-to-make-sorted](https://github.com/SapChak114/LeetCode/tree/master/0780-max-chunks-to-make-sorted) |
 | [0808-number-of-matching-subsequences](https://github.com/SapChak114/LeetCode/tree/master/0808-number-of-matching-subsequences) |
 | [0948-sort-an-array](https://github.com/SapChak114/LeetCode/tree/master/0948-sort-an-array) |
+| [1129-longest-string-chain](https://github.com/SapChak114/LeetCode/tree/master/1129-longest-string-chain) |
 | [1256-rank-transform-of-an-array](https://github.com/SapChak114/LeetCode/tree/master/1256-rank-transform-of-an-array) |
 | [1333-sort-the-jumbled-numbers](https://github.com/SapChak114/LeetCode/tree/master/1333-sort-the-jumbled-numbers) |
 | [1458-sort-integers-by-the-number-of-1-bits](https://github.com/SapChak114/LeetCode/tree/master/1458-sort-integers-by-the-number-of-1-bits) |
@@ -395,6 +397,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1063-best-sightseeing-pair](https://github.com/SapChak114/LeetCode/tree/master/1063-best-sightseeing-pair) |
 | [1081-video-stitching](https://github.com/SapChak114/LeetCode/tree/master/1081-video-stitching) |
 | [1087-longest-arithmetic-subsequence](https://github.com/SapChak114/LeetCode/tree/master/1087-longest-arithmetic-subsequence) |
+| [1129-longest-string-chain](https://github.com/SapChak114/LeetCode/tree/master/1129-longest-string-chain) |
 | [1170-shortest-common-supersequence](https://github.com/SapChak114/LeetCode/tree/master/1170-shortest-common-supersequence) |
 | [1196-filling-bookcase-shelves](https://github.com/SapChak114/LeetCode/tree/master/1196-filling-bookcase-shelves) |
 | [1240-stone-game-ii](https://github.com/SapChak114/LeetCode/tree/master/1240-stone-game-ii) |
@@ -535,6 +538,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1016-subarray-sums-divisible-by-k](https://github.com/SapChak114/LeetCode/tree/master/1016-subarray-sums-divisible-by-k) |
 | [1055-pairs-of-songs-with-total-durations-divisible-by-60](https://github.com/SapChak114/LeetCode/tree/master/1055-pairs-of-songs-with-total-durations-divisible-by-60) |
 | [1087-longest-arithmetic-subsequence](https://github.com/SapChak114/LeetCode/tree/master/1087-longest-arithmetic-subsequence) |
+| [1129-longest-string-chain](https://github.com/SapChak114/LeetCode/tree/master/1129-longest-string-chain) |
 | [1147-flip-columns-for-maximum-number-of-equal-rows](https://github.com/SapChak114/LeetCode/tree/master/1147-flip-columns-for-maximum-number-of-equal-rows) |
 | [1160-letter-tile-possibilities](https://github.com/SapChak114/LeetCode/tree/master/1160-letter-tile-possibilities) |
 | [1256-rank-transform-of-an-array](https://github.com/SapChak114/LeetCode/tree/master/1256-rank-transform-of-an-array) |
@@ -638,6 +642,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1065-binary-string-with-substrings-representing-1-to-n](https://github.com/SapChak114/LeetCode/tree/master/1065-binary-string-with-substrings-representing-1-to-n) |
 | [1093-recover-a-tree-from-preorder-traversal](https://github.com/SapChak114/LeetCode/tree/master/1093-recover-a-tree-from-preorder-traversal) |
 | [1119-robot-bounded-in-circle](https://github.com/SapChak114/LeetCode/tree/master/1119-robot-bounded-in-circle) |
+| [1129-longest-string-chain](https://github.com/SapChak114/LeetCode/tree/master/1129-longest-string-chain) |
 | [1146-greatest-common-divisor-of-strings](https://github.com/SapChak114/LeetCode/tree/master/1146-greatest-common-divisor-of-strings) |
 | [1160-letter-tile-possibilities](https://github.com/SapChak114/LeetCode/tree/master/1160-letter-tile-possibilities) |
 | [1170-shortest-common-supersequence](https://github.com/SapChak114/LeetCode/tree/master/1170-shortest-common-supersequence) |
@@ -747,6 +752,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0874-backspace-string-compare](https://github.com/SapChak114/LeetCode/tree/master/0874-backspace-string-compare) |
 | [0908-middle-of-the-linked-list](https://github.com/SapChak114/LeetCode/tree/master/0908-middle-of-the-linked-list) |
 | [1002-maximum-width-ramp](https://github.com/SapChak114/LeetCode/tree/master/1002-maximum-width-ramp) |
+| [1129-longest-string-chain](https://github.com/SapChak114/LeetCode/tree/master/1129-longest-string-chain) |
 | [1468-check-if-n-and-its-double-exist](https://github.com/SapChak114/LeetCode/tree/master/1468-check-if-n-and-its-double-exist) |
 | [1615-range-sum-of-sorted-subarray-sums](https://github.com/SapChak114/LeetCode/tree/master/1615-range-sum-of-sorted-subarray-sums) |
 | [1659-get-the-maximum-score](https://github.com/SapChak114/LeetCode/tree/master/1659-get-the-maximum-score) |
