@@ -36,6 +36,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0123-best-time-to-buy-and-sell-stock-iii](https://github.com/SapChak114/LeetCode/tree/master/0123-best-time-to-buy-and-sell-stock-iii) |
 | [0128-longest-consecutive-sequence](https://github.com/SapChak114/LeetCode/tree/master/0128-longest-consecutive-sequence) |
 | [0130-surrounded-regions](https://github.com/SapChak114/LeetCode/tree/master/0130-surrounded-regions) |
+| [0139-word-break](https://github.com/SapChak114/LeetCode/tree/master/0139-word-break) |
 | [0169-majority-element](https://github.com/SapChak114/LeetCode/tree/master/0169-majority-element) |
 | [0179-largest-number](https://github.com/SapChak114/LeetCode/tree/master/0179-largest-number) |
 | [0200-number-of-islands](https://github.com/SapChak114/LeetCode/tree/master/0200-number-of-islands) |
@@ -372,6 +373,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/SapChak114/LeetCode/tree/master/0122-best-time-to-buy-and-sell-stock-ii) |
 | [0123-best-time-to-buy-and-sell-stock-iii](https://github.com/SapChak114/LeetCode/tree/master/0123-best-time-to-buy-and-sell-stock-iii) |
 | [0124-binary-tree-maximum-path-sum](https://github.com/SapChak114/LeetCode/tree/master/0124-binary-tree-maximum-path-sum) |
+| [0139-word-break](https://github.com/SapChak114/LeetCode/tree/master/0139-word-break) |
 | [0221-maximal-square](https://github.com/SapChak114/LeetCode/tree/master/0221-maximal-square) |
 | [0241-different-ways-to-add-parentheses](https://github.com/SapChak114/LeetCode/tree/master/0241-different-ways-to-add-parentheses) |
 | [0264-ugly-number-ii](https://github.com/SapChak114/LeetCode/tree/master/0264-ugly-number-ii) |
@@ -506,6 +508,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0127-word-ladder](https://github.com/SapChak114/LeetCode/tree/master/0127-word-ladder) |
 | [0128-longest-consecutive-sequence](https://github.com/SapChak114/LeetCode/tree/master/0128-longest-consecutive-sequence) |
 | [0133-clone-graph](https://github.com/SapChak114/LeetCode/tree/master/0133-clone-graph) |
+| [0139-word-break](https://github.com/SapChak114/LeetCode/tree/master/0139-word-break) |
 | [0141-linked-list-cycle](https://github.com/SapChak114/LeetCode/tree/master/0141-linked-list-cycle) |
 | [0142-linked-list-cycle-ii](https://github.com/SapChak114/LeetCode/tree/master/0142-linked-list-cycle-ii) |
 | [0146-lru-cache](https://github.com/SapChak114/LeetCode/tree/master/0146-lru-cache) |
@@ -600,6 +603,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0079-word-search](https://github.com/SapChak114/LeetCode/tree/master/0079-word-search) |
 | [0097-interleaving-string](https://github.com/SapChak114/LeetCode/tree/master/0097-interleaving-string) |
 | [0127-word-ladder](https://github.com/SapChak114/LeetCode/tree/master/0127-word-ladder) |
+| [0139-word-break](https://github.com/SapChak114/LeetCode/tree/master/0139-word-break) |
 | [0179-largest-number](https://github.com/SapChak114/LeetCode/tree/master/0179-largest-number) |
 | [0214-shortest-palindrome](https://github.com/SapChak114/LeetCode/tree/master/0214-shortest-palindrome) |
 | [0241-different-ways-to-add-parentheses](https://github.com/SapChak114/LeetCode/tree/master/0241-different-ways-to-add-parentheses) |
@@ -1251,6 +1255,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0014-longest-common-prefix](https://github.com/SapChak114/LeetCode/tree/master/0014-longest-common-prefix) |
+| [0139-word-break](https://github.com/SapChak114/LeetCode/tree/master/0139-word-break) |
 | [0386-lexicographical-numbers](https://github.com/SapChak114/LeetCode/tree/master/0386-lexicographical-numbers) |
 | [0440-k-th-smallest-in-lexicographical-order](https://github.com/SapChak114/LeetCode/tree/master/0440-k-th-smallest-in-lexicographical-order) |
 | [0692-top-k-frequent-words](https://github.com/SapChak114/LeetCode/tree/master/0692-top-k-frequent-words) |
@@ -1342,6 +1347,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0070-climbing-stairs](https://github.com/SapChak114/LeetCode/tree/master/0070-climbing-stairs) |
+| [0139-word-break](https://github.com/SapChak114/LeetCode/tree/master/0139-word-break) |
 | [0241-different-ways-to-add-parentheses](https://github.com/SapChak114/LeetCode/tree/master/0241-different-ways-to-add-parentheses) |
 ## Queue
 |  |
