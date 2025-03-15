@@ -2,6 +2,7 @@ class Solution {
     public int maximalSquare(char[][] matrix) {
         int n = matrix.length;
         int m = matrix[0].length;
+        int max = 0;
 
         int[][] dp = new int[n][m];
 
@@ -9,7 +10,6 @@ class Solution {
             Arrays.fill(d, -1);
         }
 
-        int max = 0;
         for (int i = 0; i<n; i++) {
             for (int j = 0; j<m; j++) {
                 if (matrix[i][j] == '1') {
@@ -24,11 +24,7 @@ class Solution {
     }
 
     int dfs(char[][] matrix, int[][] dp, int i, int j) {
-        if (i >= matrix.length || j >= matrix[0].length) {
-            return 0;
-        }
-
-        if (matrix[i][j] == '0') {
+        if (i >= matrix.length || j >= matrix[0].length || matrix[i][j] == '0') {
             return 0;
         }
 
