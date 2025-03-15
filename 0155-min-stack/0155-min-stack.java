@@ -1,33 +1,32 @@
 class MinStack {
-    Stack<Integer> st;
-    Map<Integer,Integer> map;
+    Stack<Integer> stack;
+    Stack<Integer> minStack;
     public MinStack() {
-        st = new Stack<>();
-        map = new TreeMap<>();
+        this.stack = new Stack<>();
+        this.minStack = new Stack<>();
     }
     
     public void push(int val) {
-        map.put(val,map.getOrDefault(val,0)+1);
-        st.add(val);
+        stack.push(val);
+        int val2 = Math.min(val, !minStack.isEmpty() ? minStack.peek() : val);
+        minStack.push(val2);
     }
     
     public void pop() {
-        int val = map.get(st.peek());
-        if(val==1){
-            map.remove(st.peek());
-        } else{
-            map.put(st.peek(),map.get(st.peek())-1);
+        if (!stack.isEmpty()) {
+            stack.pop();
         }
-        st.pop();
+        if (!minStack.isEmpty()) {
+            minStack.pop();
+        }
     }
     
     public int top() {
-        return st.peek();
+        return stack.peek();
     }
     
     public int getMin() {
-        for(int x : map.keySet()) return x;
-        return 0;
+        return minStack.peek();
     }
 }
 
