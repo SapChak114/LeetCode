@@ -654,6 +654,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0647-palindromic-substrings](https://github.com/SapChak114/LeetCode/tree/master/0647-palindromic-substrings) |
 | [0664-strange-printer](https://github.com/SapChak114/LeetCode/tree/master/0664-strange-printer) |
 | [0678-valid-parenthesis-string](https://github.com/SapChak114/LeetCode/tree/master/0678-valid-parenthesis-string) |
+| [0686-repeated-string-match](https://github.com/SapChak114/LeetCode/tree/master/0686-repeated-string-match) |
 | [0691-stickers-to-spell-word](https://github.com/SapChak114/LeetCode/tree/master/0691-stickers-to-spell-word) |
 | [0692-top-k-frequent-words](https://github.com/SapChak114/LeetCode/tree/master/0692-top-k-frequent-words) |
 | [0696-count-binary-substrings](https://github.com/SapChak114/LeetCode/tree/master/0696-count-binary-substrings) |
@@ -1408,6 +1409,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0214-shortest-palindrome](https://github.com/SapChak114/LeetCode/tree/master/0214-shortest-palindrome) |
 | [0459-repeated-substring-pattern](https://github.com/SapChak114/LeetCode/tree/master/0459-repeated-substring-pattern) |
 | [0572-subtree-of-another-tree](https://github.com/SapChak114/LeetCode/tree/master/0572-subtree-of-another-tree) |
+| [0686-repeated-string-match](https://github.com/SapChak114/LeetCode/tree/master/0686-repeated-string-match) |
 | [0812-rotate-string](https://github.com/SapChak114/LeetCode/tree/master/0812-rotate-string) |
 | [2292-counting-words-with-a-given-prefix](https://github.com/SapChak114/LeetCode/tree/master/2292-counting-words-with-a-given-prefix) |
 | [3309-count-prefix-and-suffix-pairs-i](https://github.com/SapChak114/LeetCode/tree/master/3309-count-prefix-and-suffix-pairs-i) |
