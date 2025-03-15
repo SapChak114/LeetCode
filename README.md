@@ -68,6 +68,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0632-smallest-range-covering-elements-from-k-lists](https://github.com/SapChak114/LeetCode/tree/master/0632-smallest-range-covering-elements-from-k-lists) |
 | [0643-maximum-average-subarray-i](https://github.com/SapChak114/LeetCode/tree/master/0643-maximum-average-subarray-i) |
 | [0658-find-k-closest-elements](https://github.com/SapChak114/LeetCode/tree/master/0658-find-k-closest-elements) |
+| [0659-split-array-into-consecutive-subsequences](https://github.com/SapChak114/LeetCode/tree/master/0659-split-array-into-consecutive-subsequences) |
 | [0689-maximum-sum-of-3-non-overlapping-subarrays](https://github.com/SapChak114/LeetCode/tree/master/0689-maximum-sum-of-3-non-overlapping-subarrays) |
 | [0691-stickers-to-spell-word](https://github.com/SapChak114/LeetCode/tree/master/0691-stickers-to-spell-word) |
 | [0718-maximum-length-of-repeated-subarray](https://github.com/SapChak114/LeetCode/tree/master/0718-maximum-length-of-repeated-subarray) |
@@ -292,6 +293,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0506-relative-ranks](https://github.com/SapChak114/LeetCode/tree/master/0506-relative-ranks) |
 | [0632-smallest-range-covering-elements-from-k-lists](https://github.com/SapChak114/LeetCode/tree/master/0632-smallest-range-covering-elements-from-k-lists) |
 | [0658-find-k-closest-elements](https://github.com/SapChak114/LeetCode/tree/master/0658-find-k-closest-elements) |
+| [0659-split-array-into-consecutive-subsequences](https://github.com/SapChak114/LeetCode/tree/master/0659-split-array-into-consecutive-subsequences) |
 | [0692-top-k-frequent-words](https://github.com/SapChak114/LeetCode/tree/master/0692-top-k-frequent-words) |
 | [0778-reorganize-string](https://github.com/SapChak114/LeetCode/tree/master/0778-reorganize-string) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/SapChak114/LeetCode/tree/master/0789-kth-largest-element-in-a-stream) |
@@ -537,6 +539,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0567-permutation-in-string](https://github.com/SapChak114/LeetCode/tree/master/0567-permutation-in-string) |
 | [0632-smallest-range-covering-elements-from-k-lists](https://github.com/SapChak114/LeetCode/tree/master/0632-smallest-range-covering-elements-from-k-lists) |
 | [0652-find-duplicate-subtrees](https://github.com/SapChak114/LeetCode/tree/master/0652-find-duplicate-subtrees) |
+| [0659-split-array-into-consecutive-subsequences](https://github.com/SapChak114/LeetCode/tree/master/0659-split-array-into-consecutive-subsequences) |
 | [0692-top-k-frequent-words](https://github.com/SapChak114/LeetCode/tree/master/0692-top-k-frequent-words) |
 | [0778-reorganize-string](https://github.com/SapChak114/LeetCode/tree/master/0778-reorganize-string) |
 | [0808-number-of-matching-subsequences](https://github.com/SapChak114/LeetCode/tree/master/0808-number-of-matching-subsequences) |
@@ -1127,6 +1130,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0409-longest-palindrome](https://github.com/SapChak114/LeetCode/tree/master/0409-longest-palindrome) |
 | [0624-maximum-distance-in-arrays](https://github.com/SapChak114/LeetCode/tree/master/0624-maximum-distance-in-arrays) |
 | [0632-smallest-range-covering-elements-from-k-lists](https://github.com/SapChak114/LeetCode/tree/master/0632-smallest-range-covering-elements-from-k-lists) |
+| [0659-split-array-into-consecutive-subsequences](https://github.com/SapChak114/LeetCode/tree/master/0659-split-array-into-consecutive-subsequences) |
 | [0670-maximum-swap](https://github.com/SapChak114/LeetCode/tree/master/0670-maximum-swap) |
 | [0678-valid-parenthesis-string](https://github.com/SapChak114/LeetCode/tree/master/0678-valid-parenthesis-string) |
 | [0778-reorganize-string](https://github.com/SapChak114/LeetCode/tree/master/0778-reorganize-string) |
