@@ -1,18 +1,26 @@
 class Solution {
-    int[] nums;
     Integer[] dp;
+    int n;
+    int[] nums;
     public int rob(int[] nums) {
-        this.nums=nums;
-        dp = new Integer[nums.length+1];
-        return rec(0);
+        this.n = nums.length;
+        this.dp = new Integer[n];
+        this.nums = nums;
+        return dfs(0);
     }
-    
-    int rec(int idx){
-        if(idx>=nums.length){
+
+    int dfs(int i) {
+        if (i >= n) {
             return 0;
         }
-        if(dp[idx]!=null) return dp[idx];
-        
-        return dp[idx] = Math.max(nums[idx]+rec(idx+2),rec(idx+1));
+
+        if (dp[i] != null) {
+            return dp[i];
+        }
+
+        int take = nums[i] + dfs(i+2);
+        int dont = dfs(i+1);
+
+        return dp[i] = Math.max(take, dont);
     }
 }
