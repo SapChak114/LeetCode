@@ -74,6 +74,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0659-split-array-into-consecutive-subsequences](https://github.com/SapChak114/LeetCode/tree/master/0659-split-array-into-consecutive-subsequences) |
 | [0665-non-decreasing-array](https://github.com/SapChak114/LeetCode/tree/master/0665-non-decreasing-array) |
 | [0689-maximum-sum-of-3-non-overlapping-subarrays](https://github.com/SapChak114/LeetCode/tree/master/0689-maximum-sum-of-3-non-overlapping-subarrays) |
+| [0690-employee-importance](https://github.com/SapChak114/LeetCode/tree/master/0690-employee-importance) |
 | [0691-stickers-to-spell-word](https://github.com/SapChak114/LeetCode/tree/master/0691-stickers-to-spell-word) |
 | [0695-max-area-of-island](https://github.com/SapChak114/LeetCode/tree/master/0695-max-area-of-island) |
 | [0718-maximum-length-of-repeated-subarray](https://github.com/SapChak114/LeetCode/tree/master/0718-maximum-length-of-repeated-subarray) |
@@ -550,6 +551,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0632-smallest-range-covering-elements-from-k-lists](https://github.com/SapChak114/LeetCode/tree/master/0632-smallest-range-covering-elements-from-k-lists) |
 | [0652-find-duplicate-subtrees](https://github.com/SapChak114/LeetCode/tree/master/0652-find-duplicate-subtrees) |
 | [0659-split-array-into-consecutive-subsequences](https://github.com/SapChak114/LeetCode/tree/master/0659-split-array-into-consecutive-subsequences) |
+| [0690-employee-importance](https://github.com/SapChak114/LeetCode/tree/master/0690-employee-importance) |
 | [0692-top-k-frequent-words](https://github.com/SapChak114/LeetCode/tree/master/0692-top-k-frequent-words) |
 | [0778-reorganize-string](https://github.com/SapChak114/LeetCode/tree/master/0778-reorganize-string) |
 | [0808-number-of-matching-subsequences](https://github.com/SapChak114/LeetCode/tree/master/0808-number-of-matching-subsequences) |
@@ -871,6 +873,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0572-subtree-of-another-tree](https://github.com/SapChak114/LeetCode/tree/master/0572-subtree-of-another-tree) |
 | [0652-find-duplicate-subtrees](https://github.com/SapChak114/LeetCode/tree/master/0652-find-duplicate-subtrees) |
 | [0684-redundant-connection](https://github.com/SapChak114/LeetCode/tree/master/0684-redundant-connection) |
+| [0690-employee-importance](https://github.com/SapChak114/LeetCode/tree/master/0690-employee-importance) |
 | [0695-max-area-of-island](https://github.com/SapChak114/LeetCode/tree/master/0695-max-area-of-island) |
 | [0776-n-ary-tree-postorder-traversal](https://github.com/SapChak114/LeetCode/tree/master/0776-n-ary-tree-postorder-traversal) |
 | [0820-find-eventual-safe-states](https://github.com/SapChak114/LeetCode/tree/master/0820-find-eventual-safe-states) |
@@ -914,6 +917,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0515-find-largest-value-in-each-tree-row](https://github.com/SapChak114/LeetCode/tree/master/0515-find-largest-value-in-each-tree-row) |
 | [0542-01-matrix](https://github.com/SapChak114/LeetCode/tree/master/0542-01-matrix) |
 | [0684-redundant-connection](https://github.com/SapChak114/LeetCode/tree/master/0684-redundant-connection) |
+| [0690-employee-importance](https://github.com/SapChak114/LeetCode/tree/master/0690-employee-importance) |
 | [0695-max-area-of-island](https://github.com/SapChak114/LeetCode/tree/master/0695-max-area-of-island) |
 | [0787-sliding-puzzle](https://github.com/SapChak114/LeetCode/tree/master/0787-sliding-puzzle) |
 | [0820-find-eventual-safe-states](https://github.com/SapChak114/LeetCode/tree/master/0820-find-eventual-safe-states) |
@@ -1092,6 +1096,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0543-diameter-of-binary-tree](https://github.com/SapChak114/LeetCode/tree/master/0543-diameter-of-binary-tree) |
 | [0572-subtree-of-another-tree](https://github.com/SapChak114/LeetCode/tree/master/0572-subtree-of-another-tree) |
 | [0652-find-duplicate-subtrees](https://github.com/SapChak114/LeetCode/tree/master/0652-find-duplicate-subtrees) |
+| [0690-employee-importance](https://github.com/SapChak114/LeetCode/tree/master/0690-employee-importance) |
 | [0776-n-ary-tree-postorder-traversal](https://github.com/SapChak114/LeetCode/tree/master/0776-n-ary-tree-postorder-traversal) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/SapChak114/LeetCode/tree/master/0789-kth-largest-element-in-a-stream) |
 | [0925-construct-binary-tree-from-preorder-and-postorder-traversal](https://github.com/SapChak114/LeetCode/tree/master/0925-construct-binary-tree-from-preorder-and-postorder-traversal) |
