@@ -9,20 +9,20 @@ class Employee {
 
 class Solution {
     public int getImportance(List<Employee> employees, int id) {
-        Map<Integer, Employee> inputMap = new HashMap<>();
+        Map<Integer, Employee> inMap = new HashMap<>();
 
         for (Employee e : employees) {
-            inputMap.put(e.id, e);
+            inMap.put(e.id, e);
         }
 
-        return helper(inputMap, id);
+        return rec(inMap, id);
     }
 
-    int helper(Map<Integer, Employee> inputMap, int id) {
-        int imp = inputMap.get(id).importance;
+    int rec(Map<Integer, Employee> inpMap, int id) {
+        int imp = inpMap.get(id).importance;
 
-        for (int subId : inputMap.get(id).subordinates) {
-            imp += helper(inputMap, subId);
+        for (int i : inpMap.get(id).subordinates) {
+            imp += rec(inpMap, i);
         }
 
         return imp;
