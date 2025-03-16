@@ -106,6 +106,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0999-regions-cut-by-slashes](https://github.com/SapChak114/LeetCode/tree/master/0999-regions-cut-by-slashes) |
 | [1002-maximum-width-ramp](https://github.com/SapChak114/LeetCode/tree/master/1002-maximum-width-ramp) |
 | [1016-subarray-sums-divisible-by-k](https://github.com/SapChak114/LeetCode/tree/master/1016-subarray-sums-divisible-by-k) |
+| [1036-rotting-oranges](https://github.com/SapChak114/LeetCode/tree/master/1036-rotting-oranges) |
 | [1055-pairs-of-songs-with-total-durations-divisible-by-60](https://github.com/SapChak114/LeetCode/tree/master/1055-pairs-of-songs-with-total-durations-divisible-by-60) |
 | [1063-best-sightseeing-pair](https://github.com/SapChak114/LeetCode/tree/master/1063-best-sightseeing-pair) |
 | [1081-video-stitching](https://github.com/SapChak114/LeetCode/tree/master/1081-video-stitching) |
@@ -939,6 +940,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0854-making-a-large-island](https://github.com/SapChak114/LeetCode/tree/master/0854-making-a-large-island) |
 | [0945-snakes-and-ladders](https://github.com/SapChak114/LeetCode/tree/master/0945-snakes-and-ladders) |
 | [0999-regions-cut-by-slashes](https://github.com/SapChak114/LeetCode/tree/master/0999-regions-cut-by-slashes) |
+| [1036-rotting-oranges](https://github.com/SapChak114/LeetCode/tree/master/1036-rotting-oranges) |
 | [1116-maximum-level-sum-of-a-binary-tree](https://github.com/SapChak114/LeetCode/tree/master/1116-maximum-level-sum-of-a-binary-tree) |
 | [1171-shortest-path-in-binary-matrix](https://github.com/SapChak114/LeetCode/tree/master/1171-shortest-path-in-binary-matrix) |
 | [1243-sum-of-nodes-with-even-valued-grandparent](https://github.com/SapChak114/LeetCode/tree/master/1243-sum-of-nodes-with-even-valued-grandparent) |
@@ -1010,6 +1012,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0945-snakes-and-ladders](https://github.com/SapChak114/LeetCode/tree/master/0945-snakes-and-ladders) |
 | [0967-minimum-falling-path-sum](https://github.com/SapChak114/LeetCode/tree/master/0967-minimum-falling-path-sum) |
 | [0999-regions-cut-by-slashes](https://github.com/SapChak114/LeetCode/tree/master/0999-regions-cut-by-slashes) |
+| [1036-rotting-oranges](https://github.com/SapChak114/LeetCode/tree/master/1036-rotting-oranges) |
 | [1147-flip-columns-for-maximum-number-of-equal-rows](https://github.com/SapChak114/LeetCode/tree/master/1147-flip-columns-for-maximum-number-of-equal-rows) |
 | [1171-shortest-path-in-binary-matrix](https://github.com/SapChak114/LeetCode/tree/master/1171-shortest-path-in-binary-matrix) |
 | [1396-count-servers-that-communicate](https://github.com/SapChak114/LeetCode/tree/master/1396-count-servers-that-communicate) |
