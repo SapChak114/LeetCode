@@ -6,7 +6,7 @@ class Solution {
 
         for (int x : nums) {
             prefixLeft.putIfAbsent((long)x, cur);
-            prefixLeft.put((long)x, (long)Math.min(prefixLeft.get((long)x), cur));
+            prefixLeft.put((long)x, (long)Math.min(prefixLeft.getOrDefault((long)x, Long.MAX_VALUE), cur));
             cur += x;
 
             if (prefixLeft.containsKey((long)(x - k))) {
