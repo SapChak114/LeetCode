@@ -212,6 +212,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3219-make-lexicographically-smallest-array-by-swapping-elements](https://github.com/SapChak114/LeetCode/tree/master/3219-make-lexicographically-smallest-array-by-swapping-elements) |
 | [3227-find-missing-and-repeated-values](https://github.com/SapChak114/LeetCode/tree/master/3227-find-missing-and-repeated-values) |
 | [3235-minimum-cost-to-convert-string-i](https://github.com/SapChak114/LeetCode/tree/master/3235-minimum-cost-to-convert-string-i) |
+| [3265-maximum-good-subarray-sum](https://github.com/SapChak114/LeetCode/tree/master/3265-maximum-good-subarray-sum) |
 | [3291-find-if-array-can-be-sorted](https://github.com/SapChak114/LeetCode/tree/master/3291-find-if-array-can-be-sorted) |
 | [3309-count-prefix-and-suffix-pairs-i](https://github.com/SapChak114/LeetCode/tree/master/3309-count-prefix-and-suffix-pairs-i) |
 | [3329-find-the-length-of-the-longest-common-prefix](https://github.com/SapChak114/LeetCode/tree/master/3329-find-the-length-of-the-longest-common-prefix) |
@@ -603,6 +604,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2755-extra-characters-in-a-string](https://github.com/SapChak114/LeetCode/tree/master/2755-extra-characters-in-a-string) |
 | [2766-find-the-prefix-common-array-of-two-arrays](https://github.com/SapChak114/LeetCode/tree/master/2766-find-the-prefix-common-array-of-two-arrays) |
 | [3227-find-missing-and-repeated-values](https://github.com/SapChak114/LeetCode/tree/master/3227-find-missing-and-repeated-values) |
+| [3265-maximum-good-subarray-sum](https://github.com/SapChak114/LeetCode/tree/master/3265-maximum-good-subarray-sum) |
 | [3267-find-longest-special-substring-that-occurs-thrice-i](https://github.com/SapChak114/LeetCode/tree/master/3267-find-longest-special-substring-that-occurs-thrice-i) |
 | [3276-minimum-number-of-pushes-to-type-word-ii](https://github.com/SapChak114/LeetCode/tree/master/3276-minimum-number-of-pushes-to-type-word-ii) |
 | [3329-find-the-length-of-the-longest-common-prefix](https://github.com/SapChak114/LeetCode/tree/master/3329-find-the-length-of-the-longest-common-prefix) |
@@ -1335,6 +1337,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2465-shifting-letters-ii](https://github.com/SapChak114/LeetCode/tree/master/2465-shifting-letters-ii) |
 | [2488-divide-intervals-into-minimum-number-of-groups](https://github.com/SapChak114/LeetCode/tree/master/2488-divide-intervals-into-minimum-number-of-groups) |
 | [2691-count-vowel-strings-in-ranges](https://github.com/SapChak114/LeetCode/tree/master/2691-count-vowel-strings-in-ranges) |
+| [3265-maximum-good-subarray-sum](https://github.com/SapChak114/LeetCode/tree/master/3265-maximum-good-subarray-sum) |
 | [3427-special-array-ii](https://github.com/SapChak114/LeetCode/tree/master/3427-special-array-ii) |
 | [3639-zero-array-transformation-i](https://github.com/SapChak114/LeetCode/tree/master/3639-zero-array-transformation-i) |
 | [3643-zero-array-transformation-ii](https://github.com/SapChak114/LeetCode/tree/master/3643-zero-array-transformation-ii) |
