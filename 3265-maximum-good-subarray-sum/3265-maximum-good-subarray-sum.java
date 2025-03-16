@@ -6,14 +6,14 @@ class Solution {
 
         for (int x : nums) {
             prefixLeft.putIfAbsent((long)x, cur);
-            prefixLeft.put((long)x, Math.min(prefixLeft.get((long)x), cur));
+            prefixLeft.put((long)x, (long)Math.min(prefixLeft.get((long)x), cur));
             cur += x;
 
             if (prefixLeft.containsKey((long)(x - k))) {
-                res = Math.max(res, cur - prefixLeft.get((long)(x - k)));
+                res = Math.max(res, cur - prefixLeft.getOrDefault((long)(x - k), Long.MAX_VALUE));
             }
             if (prefixLeft.containsKey((long)(x + k))) {
-                res = Math.max(res, cur - prefixLeft.get((long)(x + k)));
+                res = Math.max(res, cur - prefixLeft.getOrDefault((long)(x + k), Long.MAX_VALUE));
             }
         }
 
