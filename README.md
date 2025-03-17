@@ -80,6 +80,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0718-maximum-length-of-repeated-subarray](https://github.com/SapChak114/LeetCode/tree/master/0718-maximum-length-of-repeated-subarray) |
 | [0719-find-k-th-smallest-pair-distance](https://github.com/SapChak114/LeetCode/tree/master/0719-find-k-th-smallest-pair-distance) |
 | [0720-longest-word-in-dictionary](https://github.com/SapChak114/LeetCode/tree/master/0720-longest-word-in-dictionary) |
+| [0721-accounts-merge](https://github.com/SapChak114/LeetCode/tree/master/0721-accounts-merge) |
 | [0729-my-calendar-i](https://github.com/SapChak114/LeetCode/tree/master/0729-my-calendar-i) |
 | [0731-my-calendar-ii](https://github.com/SapChak114/LeetCode/tree/master/0731-my-calendar-ii) |
 | [0735-asteroid-collision](https://github.com/SapChak114/LeetCode/tree/master/0735-asteroid-collision) |
@@ -259,6 +260,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0692-top-k-frequent-words](https://github.com/SapChak114/LeetCode/tree/master/0692-top-k-frequent-words) |
 | [0719-find-k-th-smallest-pair-distance](https://github.com/SapChak114/LeetCode/tree/master/0719-find-k-th-smallest-pair-distance) |
 | [0720-longest-word-in-dictionary](https://github.com/SapChak114/LeetCode/tree/master/0720-longest-word-in-dictionary) |
+| [0721-accounts-merge](https://github.com/SapChak114/LeetCode/tree/master/0721-accounts-merge) |
 | [0778-reorganize-string](https://github.com/SapChak114/LeetCode/tree/master/0778-reorganize-string) |
 | [0780-max-chunks-to-make-sorted](https://github.com/SapChak114/LeetCode/tree/master/0780-max-chunks-to-make-sorted) |
 | [0808-number-of-matching-subsequences](https://github.com/SapChak114/LeetCode/tree/master/0808-number-of-matching-subsequences) |
@@ -564,6 +566,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0690-employee-importance](https://github.com/SapChak114/LeetCode/tree/master/0690-employee-importance) |
 | [0692-top-k-frequent-words](https://github.com/SapChak114/LeetCode/tree/master/0692-top-k-frequent-words) |
 | [0720-longest-word-in-dictionary](https://github.com/SapChak114/LeetCode/tree/master/0720-longest-word-in-dictionary) |
+| [0721-accounts-merge](https://github.com/SapChak114/LeetCode/tree/master/0721-accounts-merge) |
 | [0778-reorganize-string](https://github.com/SapChak114/LeetCode/tree/master/0778-reorganize-string) |
 | [0808-number-of-matching-subsequences](https://github.com/SapChak114/LeetCode/tree/master/0808-number-of-matching-subsequences) |
 | [0829-subdomain-visit-count](https://github.com/SapChak114/LeetCode/tree/master/0829-subdomain-visit-count) |
@@ -679,6 +682,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0692-top-k-frequent-words](https://github.com/SapChak114/LeetCode/tree/master/0692-top-k-frequent-words) |
 | [0696-count-binary-substrings](https://github.com/SapChak114/LeetCode/tree/master/0696-count-binary-substrings) |
 | [0720-longest-word-in-dictionary](https://github.com/SapChak114/LeetCode/tree/master/0720-longest-word-in-dictionary) |
+| [0721-accounts-merge](https://github.com/SapChak114/LeetCode/tree/master/0721-accounts-merge) |
 | [0778-reorganize-string](https://github.com/SapChak114/LeetCode/tree/master/0778-reorganize-string) |
 | [0808-number-of-matching-subsequences](https://github.com/SapChak114/LeetCode/tree/master/0808-number-of-matching-subsequences) |
 | [0812-rotate-string](https://github.com/SapChak114/LeetCode/tree/master/0812-rotate-string) |
@@ -893,6 +897,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0684-redundant-connection](https://github.com/SapChak114/LeetCode/tree/master/0684-redundant-connection) |
 | [0690-employee-importance](https://github.com/SapChak114/LeetCode/tree/master/0690-employee-importance) |
 | [0695-max-area-of-island](https://github.com/SapChak114/LeetCode/tree/master/0695-max-area-of-island) |
+| [0721-accounts-merge](https://github.com/SapChak114/LeetCode/tree/master/0721-accounts-merge) |
 | [0776-n-ary-tree-postorder-traversal](https://github.com/SapChak114/LeetCode/tree/master/0776-n-ary-tree-postorder-traversal) |
 | [0820-find-eventual-safe-states](https://github.com/SapChak114/LeetCode/tree/master/0820-find-eventual-safe-states) |
 | [0854-making-a-large-island](https://github.com/SapChak114/LeetCode/tree/master/0854-making-a-large-island) |
@@ -938,6 +943,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0684-redundant-connection](https://github.com/SapChak114/LeetCode/tree/master/0684-redundant-connection) |
 | [0690-employee-importance](https://github.com/SapChak114/LeetCode/tree/master/0690-employee-importance) |
 | [0695-max-area-of-island](https://github.com/SapChak114/LeetCode/tree/master/0695-max-area-of-island) |
+| [0721-accounts-merge](https://github.com/SapChak114/LeetCode/tree/master/0721-accounts-merge) |
 | [0787-sliding-puzzle](https://github.com/SapChak114/LeetCode/tree/master/0787-sliding-puzzle) |
 | [0820-find-eventual-safe-states](https://github.com/SapChak114/LeetCode/tree/master/0820-find-eventual-safe-states) |
 | [0854-making-a-large-island](https://github.com/SapChak114/LeetCode/tree/master/0854-making-a-large-island) |
@@ -982,6 +988,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0200-number-of-islands](https://github.com/SapChak114/LeetCode/tree/master/0200-number-of-islands) |
 | [0684-redundant-connection](https://github.com/SapChak114/LeetCode/tree/master/0684-redundant-connection) |
 | [0695-max-area-of-island](https://github.com/SapChak114/LeetCode/tree/master/0695-max-area-of-island) |
+| [0721-accounts-merge](https://github.com/SapChak114/LeetCode/tree/master/0721-accounts-merge) |
 | [0854-making-a-large-island](https://github.com/SapChak114/LeetCode/tree/master/0854-making-a-large-island) |
 | [0984-most-stones-removed-with-same-row-or-column](https://github.com/SapChak114/LeetCode/tree/master/0984-most-stones-removed-with-same-row-or-column) |
 | [0999-regions-cut-by-slashes](https://github.com/SapChak114/LeetCode/tree/master/0999-regions-cut-by-slashes) |
