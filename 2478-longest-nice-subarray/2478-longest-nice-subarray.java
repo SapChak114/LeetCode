@@ -1,27 +1,22 @@
 class Solution {
-
     public int longestNiceSubarray(int[] nums) {
-        int maxLength = 1; // Track the maximum nice subarray length found
+        int n = nums.length, max = 0, bit = 0;
 
-        for (int start = 0; start < nums.length - maxLength; start++) {
-            int currentLength = 1; // Length of current nice subarray
-            int usedBits = nums[start]; // Track which bits are used in our subarray
-
-            // Try to extend the subarray
-            for (int end = start + 1; end < nums.length; end++) {
-                // If no bits overlap between current number and used bits, we can extend
-                if ((usedBits & nums[end]) == 0) {
-                    usedBits |= nums[end]; // Add new number's bits to our tracker
-                    currentLength++;
+        for (int i = 0; i<n; i++) {
+            int curr = 1;
+            int used = nums[i];
+            for (int j = i+1; j<n; j++) {
+                if ((used & nums[j]) == 0) {
+                    used |= nums[j];
+                    curr++;
+                } else {
+                    break;
                 }
-                // If bits overlap, this number can't be part of our nice subarray
-                else break;
             }
 
-            // Update max length if we found a longer nice subarray
-            maxLength = Math.max(maxLength, currentLength);
+            max = Math.max(max, curr);
         }
 
-        return maxLength;
+        return max;
     }
 }
