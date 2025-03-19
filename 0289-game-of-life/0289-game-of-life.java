@@ -1,39 +1,48 @@
 class Solution {
+    int[] X = {0, 1, 1, 1, 0, -1, -1, -1};
+    int[] Y = {1, 1, 0, -1, -1, -1, 0, 1};
     public void gameOfLife(int[][] board) {
-    if (board == null || board.length == 0) return;
-    int m = board.length, n = board[0].length;
+        int n = board.length, m = board[0].length;
+        int dead = 2, alive = 3;
 
-    for (int i = 0; i < m; i++) {
-        for (int j = 0; j < n; j++) {
-            int lives = liveNeighbors(board, m, n, i, j);
+        int[][] board2 = new int[n][m];
+        for (int i = 0; i<n; i++) {
+            for (int j = 0; j<m; j++) {
+                
+                int liveNei = 0;
+                for (int k = 0; k<X.length; k++) {
+                    int r = i + X[k];
+                    int c = j + Y[k];
+                    if (r < 0 || r >= n || c < 0 || c >= m) {
+                        continue;
+                    }
 
-            // In the beginning, every 2nd bit is 0;
-            // So we only need to care about when will the 2nd bit become 1.
-            if (board[i][j] == 1 && lives >= 2 && lives <= 3) {  
-                board[i][j] = 3; // Make the 2nd bit 1: 01 ---> 11
+                    if (board[r][c] == 1) {
+                        liveNei++;
+                    }
+                }
+
+                if (board[i][j] == 1 && liveNei < 2) {
+                    board2[i][j] = dead;
+                } else if (board[i][j] == 1 && (liveNei == 2 || liveNei == 3)) {
+                    board2[i][j] = alive;
+                } else if (board[i][j] == 1 && liveNei > 3) {
+                    board2[i][j] = dead;
+                } else if (board[i][j] == 0 && liveNei == 3) {
+                    board2[i][j] = alive;
+                }
             }
-            if (board[i][j] == 0 && lives == 3) {
-                board[i][j] = 2; // Make the 2nd bit 1: 00 ---> 10
+        }
+
+        for (int i = 0; i<n; i++) {
+            for (int j = 0; j<m; j++) {
+                if (board2[i][j] == alive) {
+                    board[i][j] = 1;
+                } else if (board2[i][j] == dead) {
+                    board[i][j] = 0;
+                }
             }
         }
-    }
 
-    for (int i = 0; i < m; i++) {
-        for (int j = 0; j < n; j++) {
-            board[i][j] >>= 1;  // Get the 2nd state.
-        }
     }
-}
-
-public int liveNeighbors(int[][] board, int m, int n, int i, int j) {
-    int lives = 0;
-    for (int x = Math.max(i - 1, 0); x <= Math.min(i + 1, m - 1); x++) {
-        for (int y = Math.max(j - 1, 0); y <= Math.min(j + 1, n - 1); y++) {
-            lives += board[x][y] & 1;
-        }
-    }
-    lives -= board[i][j] & 1;
-    return lives;
-}
-
 }
