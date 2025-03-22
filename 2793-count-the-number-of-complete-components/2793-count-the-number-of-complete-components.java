@@ -61,17 +61,18 @@ class Solution {
         Set<Integer> vis = new HashSet<>();
         for (int node = 0; node<n; node++) {
             int cid = dsu.find(node);
-            if (vis.contains(cid)) {
-                continue;
-            }
-            vis.add(cid);
+            // if (vis.contains(cid)) {
+            //     continue;
+            // }
+            // vis.add(cid);
 
-            int nodes = dsu.size[cid];
-            int edgs = counter.getOrDefault(cid, 0);
+            if (cid == node) {
+                int nodes = dsu.size[cid];
+                int edgs = counter.getOrDefault(cid, 0);
 
-            System.out.println("cid : "+cid +", nodes : "+nodes+", edgs : "+edgs+", exp : "+((nodes * (nodes - 1)) / 2));
-            if (edgs == ((nodes * (nodes - 1)) / 2)) {
-                ans++;
+                if (edgs == ((nodes * (nodes - 1)) / 2)) {
+                    ans++;
+                }
             }
         }
         
