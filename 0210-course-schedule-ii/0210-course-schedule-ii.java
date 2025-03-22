@@ -1,71 +1,50 @@
 class Solution {
-    public int[] findOrder(int nc, int[][] pre) {
-        List<Integer>[] adjList = new ArrayList[nc];
-        for (int i = 0; i<nc; i++) {
-            adjList[i] = new ArrayList<>();
+    public int[] findOrder(int numCourses, int[][] pre) {
+        Map<Integer, List<Integer>> graph = new HashMap<>();
+        
+        Map<Integer, Integer> inDegree = new HashMap<>();
+        for (int i = 0; i<numCourses; i++) {
+            inDegree.put(i, 0);
         }
 
-        for (int i = 0; i<pre.length; i++) {
-            int u = pre[i][0];
-            int v = pre[i][1];
+        
+        List<Integer> order = new ArrayList<>();
 
-            adjList[u].add(v);
+        int n = pre.length;
+        for (int i = 0; i<n; i++) {
+            int course = pre[i][0];
+            int preCourse = pre[i][1];
+            graph.computeIfAbsent(preCourse, k -> new ArrayList<>()).add(course);
+            
+            inDegree.put(course, inDegree.get(course) + 1);
         }
 
-        int[] vis = new int[nc];
-
-        for (int i = 0; i<nc; i++) {
-            if (findCycle(adjList, vis, i)) {
-                return new int[]{};
+        Queue<Integer> queue = new LinkedList<>();
+        for (Map.Entry<Integer, Integer> e : inDegree.entrySet()) {
+            if (e.getValue() == 0) {
+                queue.add(e.getKey());
             }
         }
 
-        List<Integer> ans = new ArrayList<>();
-        Set<Integer> seen = new HashSet<>();
+        while (!queue.isEmpty()) {
+            int node = queue.poll();
+            order.add(node);
 
-        for (int i = 0; i<nc; i++) {
-            if (!seen.contains(i)) {
-                dfs(seen, adjList, i, ans);
-            }
-        }
+            if (graph.containsKey(node)) {
+                for (int nei : graph.get(node)) {
+                    inDegree.put(nei, inDegree.get(nei) - 1);
 
-        int[] res = new int[ans.size()];
-
-        for (int i = 0; i<res.length; i++) {
-            res[i] = ans.get(i);
-        }
-
-        return res;
-    }
-
-    boolean findCycle(List<Integer>[] adjList, int[] vis, int node) {
-        vis[node] = 1;
-
-        for (int nod : adjList[node]) {
-            if (vis[nod] == 0) {
-                if (findCycle(adjList, vis, nod)) {
-                    return true;
+                    if (inDegree.get(nei) == 0) {
+                        queue.add(nei);
+                    }
                 }
-            } else if (vis[nod] == 1) {
-                    return true;
             }
         }
 
-        vis[node] = 2;
-
-        return false;
-    }
-
-    void dfs(Set<Integer> seen, List<Integer>[] adjList, int node, List<Integer> ans) {
-        seen.add(node);
-
-        for (int nod : adjList[node]) {
-            if (!seen.contains(nod)) {
-                dfs(seen, adjList, nod, ans);
-            }
+        if (order.size() == numCourses) {
+            return order.stream().mapToInt(i -> i).toArray();
         }
 
-        ans.add(node);
+        return new int[]{};
     }
-
 }
