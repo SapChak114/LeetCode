@@ -1,45 +1,43 @@
 class Solution {
     public List<String> findAllRecipes(String[] recipes, List<List<String>> ingredients, String[] supplies) {
-        int n = recipes.length;
+        Map<String, List<String>> graph = new HashMap<>();
         Map<String, Integer> indegree = new HashMap<>();
-        Map<String, List<String>> adjList = new HashMap<>();
-        Set<String> supplySet = new HashSet<>(Arrays.asList(supplies));
-        
-        for (String recipe : recipes) {
-            indegree.put(recipe, 0);
-            adjList.put(recipe, new ArrayList<>());
-        }
-        
-        for (int i = 0; i < n; i++) {
+        int n = recipes.length;
+
+        for (int i = 0; i<n; i++) {
             String recipe = recipes[i];
-            for (String ingredient : ingredients.get(i)) {
-                if (!supplySet.contains(ingredient)) {
-                    adjList.computeIfAbsent(ingredient, k -> new ArrayList<>()).add(recipe);
-                    indegree.put(recipe, indegree.get(recipe) + 1);
-                }
+            indegree.put(recipe, ingredients.get(i).size());
+            for (String ingedient : ingredients.get(i)) {
+                graph.computeIfAbsent(ingedient, k -> new ArrayList<>()).add(recipe);
             }
         }
-        
+
         Queue<String> queue = new LinkedList<>();
-        for (String recipe : recipes) {
-            if (indegree.get(recipe) == 0) {
-                queue.offer(recipe);
-            }
+
+        for (String supply : supplies) {
+            queue.add(supply);
         }
         
         List<String> result = new ArrayList<>();
         while (!queue.isEmpty()) {
-            String currRecipe = queue.poll();
-            result.add(currRecipe);
-            
-            for (String nextRecipe : adjList.getOrDefault(currRecipe, new ArrayList<>())) {
-                indegree.put(nextRecipe, indegree.get(nextRecipe) - 1);
-                if (indegree.get(nextRecipe) == 0) {
-                    queue.offer(nextRecipe);
+            String current = queue.poll();
+
+            if (indegree.containsKey(current)) {
+                result.add(current);
+            }
+
+            if (graph.containsKey(current)) {
+                for (String next : graph.get(current)) {
+                    indegree.put(next, indegree.get(next) - 1);
+
+                    if (indegree.get(next) == 0) {
+                        queue.add(next);
+                    }
                 }
             }
         }
-        
+
         return result;
+
     }
 }
