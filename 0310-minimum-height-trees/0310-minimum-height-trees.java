@@ -2,6 +2,9 @@ class Solution {
     public List<Integer> findMinHeightTrees(int n, int[][] edges) {
         Map<Integer, List<Integer>> graph = new HashMap<>();
         Map<Integer, Integer> inDegree = new HashMap<>();
+        for (int i = 0; i<n; i++) {
+            inDegree.put(i, 0);
+        }
 
         int m = edges.length;
         for (int i = 0; i<m; i++) {
@@ -11,8 +14,8 @@ class Solution {
             graph.computeIfAbsent(u, k -> new ArrayList<>()).add(v);
             graph.computeIfAbsent(v, k -> new ArrayList<>()).add(u);
 
-            inDegree.put(u, inDegree.getOrDefault(u, 0) + 1);
-            inDegree.put(v, inDegree.getOrDefault(v, 0) + 1);
+            inDegree.put(u, inDegree.get(u) + 1);
+            inDegree.put(v, inDegree.get(v) + 1);
         }
 
         Queue<Integer> queue = new LinkedList<>();
@@ -41,6 +44,5 @@ class Solution {
         }
 
         return n > 2 ? new ArrayList<>(queue) : n == 1 ? Arrays.asList(0) : Arrays.asList(0, 1);
-
     }
 }
