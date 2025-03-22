@@ -49,6 +49,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0228-summary-ranges](https://github.com/SapChak114/LeetCode/tree/master/0228-summary-ranges) |
 | [0229-majority-element-ii](https://github.com/SapChak114/LeetCode/tree/master/0229-majority-element-ii) |
 | [0239-sliding-window-maximum](https://github.com/SapChak114/LeetCode/tree/master/0239-sliding-window-maximum) |
+| [0240-search-a-2d-matrix-ii](https://github.com/SapChak114/LeetCode/tree/master/0240-search-a-2d-matrix-ii) |
 | [0287-find-the-duplicate-number](https://github.com/SapChak114/LeetCode/tree/master/0287-find-the-duplicate-number) |
 | [0289-game-of-life](https://github.com/SapChak114/LeetCode/tree/master/0289-game-of-life) |
 | [0300-longest-increasing-subsequence](https://github.com/SapChak114/LeetCode/tree/master/0300-longest-increasing-subsequence) |
@@ -309,6 +310,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0109-convert-sorted-list-to-binary-search-tree](https://github.com/SapChak114/LeetCode/tree/master/0109-convert-sorted-list-to-binary-search-tree) |
 | [0169-majority-element](https://github.com/SapChak114/LeetCode/tree/master/0169-majority-element) |
 | [0215-kth-largest-element-in-an-array](https://github.com/SapChak114/LeetCode/tree/master/0215-kth-largest-element-in-an-array) |
+| [0240-search-a-2d-matrix-ii](https://github.com/SapChak114/LeetCode/tree/master/0240-search-a-2d-matrix-ii) |
 | [0925-construct-binary-tree-from-preorder-and-postorder-traversal](https://github.com/SapChak114/LeetCode/tree/master/0925-construct-binary-tree-from-preorder-and-postorder-traversal) |
 | [0948-sort-an-array](https://github.com/SapChak114/LeetCode/tree/master/0948-sort-an-array) |
 | [1285-balance-a-binary-search-tree](https://github.com/SapChak114/LeetCode/tree/master/1285-balance-a-binary-search-tree) |
@@ -515,6 +517,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0074-search-a-2d-matrix](https://github.com/SapChak114/LeetCode/tree/master/0074-search-a-2d-matrix) |
 | [0162-find-peak-element](https://github.com/SapChak114/LeetCode/tree/master/0162-find-peak-element) |
 | [0209-minimum-size-subarray-sum](https://github.com/SapChak114/LeetCode/tree/master/0209-minimum-size-subarray-sum) |
+| [0240-search-a-2d-matrix-ii](https://github.com/SapChak114/LeetCode/tree/master/0240-search-a-2d-matrix-ii) |
 | [0287-find-the-duplicate-number](https://github.com/SapChak114/LeetCode/tree/master/0287-find-the-duplicate-number) |
 | [0300-longest-increasing-subsequence](https://github.com/SapChak114/LeetCode/tree/master/0300-longest-increasing-subsequence) |
 | [0374-guess-number-higher-or-lower](https://github.com/SapChak114/LeetCode/tree/master/0374-guess-number-higher-or-lower) |
@@ -1052,6 +1055,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0130-surrounded-regions](https://github.com/SapChak114/LeetCode/tree/master/0130-surrounded-regions) |
 | [0200-number-of-islands](https://github.com/SapChak114/LeetCode/tree/master/0200-number-of-islands) |
 | [0221-maximal-square](https://github.com/SapChak114/LeetCode/tree/master/0221-maximal-square) |
+| [0240-search-a-2d-matrix-ii](https://github.com/SapChak114/LeetCode/tree/master/0240-search-a-2d-matrix-ii) |
 | [0289-game-of-life](https://github.com/SapChak114/LeetCode/tree/master/0289-game-of-life) |
 | [0407-trapping-rain-water-ii](https://github.com/SapChak114/LeetCode/tree/master/0407-trapping-rain-water-ii) |
 | [0463-island-perimeter](https://github.com/SapChak114/LeetCode/tree/master/0463-island-perimeter) |
