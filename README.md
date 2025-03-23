@@ -130,6 +130,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1242-matrix-block-sum](https://github.com/SapChak114/LeetCode/tree/master/1242-matrix-block-sum) |
 | [1256-rank-transform-of-an-array](https://github.com/SapChak114/LeetCode/tree/master/1256-rank-transform-of-an-array) |
 | [1325-path-with-maximum-probability](https://github.com/SapChak114/LeetCode/tree/master/1325-path-with-maximum-probability) |
+| [1331-path-with-maximum-gold](https://github.com/SapChak114/LeetCode/tree/master/1331-path-with-maximum-gold) |
 | [1333-sort-the-jumbled-numbers](https://github.com/SapChak114/LeetCode/tree/master/1333-sort-the-jumbled-numbers) |
 | [1335-maximum-candies-allocated-to-k-children](https://github.com/SapChak114/LeetCode/tree/master/1335-maximum-candies-allocated-to-k-children) |
 | [1350-remove-sub-folders-from-the-filesystem](https://github.com/SapChak114/LeetCode/tree/master/1350-remove-sub-folders-from-the-filesystem) |
@@ -1081,6 +1082,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1147-flip-columns-for-maximum-number-of-equal-rows](https://github.com/SapChak114/LeetCode/tree/master/1147-flip-columns-for-maximum-number-of-equal-rows) |
 | [1171-shortest-path-in-binary-matrix](https://github.com/SapChak114/LeetCode/tree/master/1171-shortest-path-in-binary-matrix) |
 | [1242-matrix-block-sum](https://github.com/SapChak114/LeetCode/tree/master/1242-matrix-block-sum) |
+| [1331-path-with-maximum-gold](https://github.com/SapChak114/LeetCode/tree/master/1331-path-with-maximum-gold) |
 | [1396-count-servers-that-communicate](https://github.com/SapChak114/LeetCode/tree/master/1396-count-servers-that-communicate) |
 | [1402-count-square-submatrices-with-all-ones](https://github.com/SapChak114/LeetCode/tree/master/1402-count-square-submatrices-with-all-ones) |
 | [1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid](https://github.com/SapChak114/LeetCode/tree/master/1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid) |
@@ -1384,6 +1386,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0526-beautiful-arrangement](https://github.com/SapChak114/LeetCode/tree/master/0526-beautiful-arrangement) |
 | [0691-stickers-to-spell-word](https://github.com/SapChak114/LeetCode/tree/master/0691-stickers-to-spell-word) |
 | [1160-letter-tile-possibilities](https://github.com/SapChak114/LeetCode/tree/master/1160-letter-tile-possibilities) |
+| [1331-path-with-maximum-gold](https://github.com/SapChak114/LeetCode/tree/master/1331-path-with-maximum-gold) |
 | [1715-split-a-string-into-the-max-number-of-unique-substrings](https://github.com/SapChak114/LeetCode/tree/master/1715-split-a-string-into-the-max-number-of-unique-substrings) |
 | [1819-construct-the-lexicographically-largest-valid-sequence](https://github.com/SapChak114/LeetCode/tree/master/1819-construct-the-lexicographically-largest-valid-sequence) |
 | [2170-count-number-of-maximum-bitwise-or-subsets](https://github.com/SapChak114/LeetCode/tree/master/2170-count-number-of-maximum-bitwise-or-subsets) |
