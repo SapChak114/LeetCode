@@ -1,25 +1,25 @@
 class Solution {
     public boolean isValidSudoku(char[][] board) {
         Set<String> set = new HashSet<>();
-        
-        for(int i = 0; i<board.length; i++){
-            for(int j = 0; j<board[0].length; j++){
-                if(board[i][j]=='.'){
+        int n = board.length, m = board[0].length;
+
+        for (int i = 0; i<n; i++) {
+            for (int j = 0; j<m; j++) {
+                char ch = board[i][j];
+                if (ch == '.') {
                     continue;
                 }
-                int num = board[i][j];
-                String rowKey = "r"+i+"-"+num;
-                String colKey = "c"+j+"0"+num;
-                String boxKey = "r"+(i/3)+"c"+(j/3)+"-"+num;
-                
-                for(String key :Arrays.asList(rowKey,colKey,boxKey)){
-                    if(set.contains(key)) return false;
-                    set.add(key);
+
+                String row = ch + "-row-" + i;
+                String col = ch + "-col-" + j;
+                String box = ch + "-box-" +(i/3) + "-" + (j/3);
+
+                if (!set.add(row) || !set.add(col) || !set.add(box)) {
+                    return false;
                 }
             }
         }
-        
+
         return true;
-        
     }
 }
