@@ -14,24 +14,22 @@
  * }
  */
 class Solution {
-    int targ;
+    int targetSum;
     public boolean hasPathSum(TreeNode root, int targetSum) {
-        targ = targetSum;
-        return dfs(root,0);
+        this.targetSum = targetSum;
+        return dfs(root, 0);
     }
-    
-    boolean dfs(TreeNode root, int currSum){
-        if(root==null){
+
+    boolean dfs(TreeNode root, int currSum) {
+        if (root == null) {
             return false;
         }
-        
-        if(root.left==null && root.right==null){
-            return targ==currSum+root.val;
+
+        currSum += root.val;
+        if (root.left == null && root.right == null) {
+            return currSum == targetSum;
         }
-        
-        boolean left = dfs(root.left,currSum + root.val);
-        boolean right = dfs(root.right,currSum + root.val);
-        
-        return left || right;
+
+        return dfs(root.left, currSum) || dfs(root.right, currSum);
     }
 }
