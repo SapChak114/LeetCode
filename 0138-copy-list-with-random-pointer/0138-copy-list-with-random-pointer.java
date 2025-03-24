@@ -14,41 +14,30 @@ class Node {
 */
 
 class Solution {
-    public Node copyRandomList(Node head) {
-        if(head==null) return head;
-        
-        Node curr = head;
-        
-        while(curr!=null){
-            Node temp = curr.next;
-            curr.next = new Node(curr.val);
-            curr.next.next = temp;
-            curr = temp;
+        public Node copyRandomList(Node head) {
+        if (head == null) return null;
+        Node cur = head;
+        while (cur != null) {
+            Node next = cur.next;
+            cur.next = new Node(cur.val, next, null);
+            cur = next;
         }
-        
-        curr = head;
-        
-        while(curr!=null){
-            if(curr.next!=null){
-                curr.next.random = curr.random!=null?curr.random.next:null;
-            }
-            curr = curr.next.next;
+        cur = head;
+        while (cur != null) {
+            if (cur.random != null)
+                cur.next.random = cur.random.next;
+            cur = cur.next.next;
         }
-        
-        curr = head;
-        Node copy = head.next, temp = copy;
-        
-        while(curr!=null){
-            curr.next = curr.next.next;
-            if (copy.next != null) {
-                copy.next = copy.next.next;
-            }
-            
-            curr = curr.next;
-            copy = copy.next;
+        cur = head;
+        Node copyHead = head.next;
+        while (cur != null) {
+            Node next = cur.next.next;
+            Node copy = cur.next;
+            cur.next = next;
+            if (next != null)
+                copy.next = next.next;
+            cur = next;
         }
-        
-        return temp;
-        
+        return copyHead;
     }
 }
