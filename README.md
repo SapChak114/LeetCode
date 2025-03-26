@@ -80,6 +80,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0658-find-k-closest-elements](https://github.com/SapChak114/LeetCode/tree/master/0658-find-k-closest-elements) |
 | [0659-split-array-into-consecutive-subsequences](https://github.com/SapChak114/LeetCode/tree/master/0659-split-array-into-consecutive-subsequences) |
 | [0665-non-decreasing-array](https://github.com/SapChak114/LeetCode/tree/master/0665-non-decreasing-array) |
+| [0667-beautiful-arrangement-ii](https://github.com/SapChak114/LeetCode/tree/master/0667-beautiful-arrangement-ii) |
 | [0689-maximum-sum-of-3-non-overlapping-subarrays](https://github.com/SapChak114/LeetCode/tree/master/0689-maximum-sum-of-3-non-overlapping-subarrays) |
 | [0690-employee-importance](https://github.com/SapChak114/LeetCode/tree/master/0690-employee-importance) |
 | [0691-stickers-to-spell-word](https://github.com/SapChak114/LeetCode/tree/master/0691-stickers-to-spell-word) |
@@ -1370,6 +1371,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0564-find-the-closest-palindrome](https://github.com/SapChak114/LeetCode/tree/master/0564-find-the-closest-palindrome) |
 | [0592-fraction-addition-and-subtraction](https://github.com/SapChak114/LeetCode/tree/master/0592-fraction-addition-and-subtraction) |
 | [0650-2-keys-keyboard](https://github.com/SapChak114/LeetCode/tree/master/0650-2-keys-keyboard) |
+| [0667-beautiful-arrangement-ii](https://github.com/SapChak114/LeetCode/tree/master/0667-beautiful-arrangement-ii) |
 | [0670-maximum-swap](https://github.com/SapChak114/LeetCode/tree/master/0670-maximum-swap) |
 | [0796-reaching-points](https://github.com/SapChak114/LeetCode/tree/master/0796-reaching-points) |
 | [0805-escape-the-ghosts](https://github.com/SapChak114/LeetCode/tree/master/0805-escape-the-ghosts) |
