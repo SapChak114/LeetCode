@@ -744,6 +744,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0433-minimum-genetic-mutation](https://github.com/SapChak114/LeetCode/tree/master/0433-minimum-genetic-mutation) |
 | [0459-repeated-substring-pattern](https://github.com/SapChak114/LeetCode/tree/master/0459-repeated-substring-pattern) |
 | [0468-validate-ip-address](https://github.com/SapChak114/LeetCode/tree/master/0468-validate-ip-address) |
+| [0481-magical-string](https://github.com/SapChak114/LeetCode/tree/master/0481-magical-string) |
 | [0482-license-key-formatting](https://github.com/SapChak114/LeetCode/tree/master/0482-license-key-formatting) |
 | [0521-longest-uncommon-subsequence-i](https://github.com/SapChak114/LeetCode/tree/master/0521-longest-uncommon-subsequence-i) |
 | [0522-longest-uncommon-subsequence-ii](https://github.com/SapChak114/LeetCode/tree/master/0522-longest-uncommon-subsequence-ii) |
@@ -883,6 +884,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0287-find-the-duplicate-number](https://github.com/SapChak114/LeetCode/tree/master/0287-find-the-duplicate-number) |
 | [0295-find-median-from-data-stream](https://github.com/SapChak114/LeetCode/tree/master/0295-find-median-from-data-stream) |
 | [0345-reverse-vowels-of-a-string](https://github.com/SapChak114/LeetCode/tree/master/0345-reverse-vowels-of-a-string) |
+| [0481-magical-string](https://github.com/SapChak114/LeetCode/tree/master/0481-magical-string) |
 | [0522-longest-uncommon-subsequence-ii](https://github.com/SapChak114/LeetCode/tree/master/0522-longest-uncommon-subsequence-ii) |
 | [0524-longest-word-in-dictionary-through-deleting](https://github.com/SapChak114/LeetCode/tree/master/0524-longest-word-in-dictionary-through-deleting) |
 | [0541-reverse-string-ii](https://github.com/SapChak114/LeetCode/tree/master/0541-reverse-string-ii) |
