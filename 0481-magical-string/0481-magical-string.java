@@ -5,19 +5,21 @@ class Solution {
         }
 
         Queue<Integer> q = new LinkedList<>();
-        int totalCount = 1, currDigit = 1;
+        int totalCount = 1, currDigit = 1, i = 2;
         q.add(2);
 
-        for (int i = 2; i<n; i++) {
+        while (i < n-1) {
             int currCount = q.poll();
 
-            for (int j = 0; j<currCount; j++) {
+            for (int j = 0; j<currCount && i<n-1; j++) {
                 q.add(currDigit);
+                if (currDigit == 1) {
+                    totalCount++;
+                }
+                i++;
             }
 
-            if (currCount == 1) {
-                totalCount++;
-            }
+            
 
             if (currDigit == 1) {
                 currDigit = 2;
