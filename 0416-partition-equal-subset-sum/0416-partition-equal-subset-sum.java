@@ -1,45 +1,41 @@
 class Solution {
+    int[] nums;
+    int n, targSum;
+    Boolean[][] dp;
     public boolean canPartition(int[] nums) {
-        int n = nums.length;
-
+        this.nums = nums;
+        this.n = nums.length;
         int sum = Arrays.stream(nums).sum();
-        if (sum % 2 != 0) {
+        if (sum % 2 == 1) {
             return false;
         }
-
-        int targ = sum / 2;
-
-        int[][] dp = new int[n][targ+1];
-
-        for (int[] d : dp) {
-            Arrays.fill(d, -1);
-        }
-
-        return dfs(nums, targ, dp, n-1);
+        this.targSum = sum / 2;
+        this.dp = new Boolean[n][targSum+1];
+        return dfs(0, 0);
     }
 
-    boolean dfs (int[] nums, int targ, int[][] dp, int idx) {
-        if (idx < 0 && targ != 0) {
+    boolean dfs(int index, int sum) {
+        if (index >= n || sum > targSum) {
             return false;
         }
 
-        if (idx == 0) {
-            return nums[idx] == targ;
+        if (sum == targSum) {
+            return true;
         }
 
-        if (dp[idx][targ] != -1) {
-            return dp[idx][targ] == 1;
+        if (dp[index][sum] != null) {
+            return dp[index][sum];
         }
 
-        boolean take = false;
-        if (nums[idx] <= targ) {
-            take = dfs(nums, targ - nums[idx], dp, idx - 1);
+        int newSum = sum + nums[index];
+
+        boolean ans = false;
+        if (dfs(index+1, newSum)) {
+            ans = true;
         }
 
-        boolean dont = dfs(nums, targ, dp, idx - 1);
+        ans |= dfs(index+1, sum);
 
-        dp[idx][targ] = (take || dont) ? 1 : 0;
-
-        return dp[idx][targ] == 1;
+        return dp[index][sum] = ans;
     }
 }
