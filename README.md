@@ -98,6 +98,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0735-asteroid-collision](https://github.com/SapChak114/LeetCode/tree/master/0735-asteroid-collision) |
 | [0780-max-chunks-to-make-sorted](https://github.com/SapChak114/LeetCode/tree/master/0780-max-chunks-to-make-sorted) |
 | [0787-sliding-puzzle](https://github.com/SapChak114/LeetCode/tree/master/0787-sliding-puzzle) |
+| [0797-rabbits-in-forest](https://github.com/SapChak114/LeetCode/tree/master/0797-rabbits-in-forest) |
 | [0805-escape-the-ghosts](https://github.com/SapChak114/LeetCode/tree/master/0805-escape-the-ghosts) |
 | [0808-number-of-matching-subsequences](https://github.com/SapChak114/LeetCode/tree/master/0808-number-of-matching-subsequences) |
 | [0827-expressive-words](https://github.com/SapChak114/LeetCode/tree/master/0827-expressive-words) |
@@ -659,6 +660,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0721-accounts-merge](https://github.com/SapChak114/LeetCode/tree/master/0721-accounts-merge) |
 | [0768-partition-labels](https://github.com/SapChak114/LeetCode/tree/master/0768-partition-labels) |
 | [0778-reorganize-string](https://github.com/SapChak114/LeetCode/tree/master/0778-reorganize-string) |
+| [0797-rabbits-in-forest](https://github.com/SapChak114/LeetCode/tree/master/0797-rabbits-in-forest) |
 | [0808-number-of-matching-subsequences](https://github.com/SapChak114/LeetCode/tree/master/0808-number-of-matching-subsequences) |
 | [0829-subdomain-visit-count](https://github.com/SapChak114/LeetCode/tree/master/0829-subdomain-visit-count) |
 | [0870-magic-squares-in-grid](https://github.com/SapChak114/LeetCode/tree/master/0870-magic-squares-in-grid) |
@@ -1371,6 +1373,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0768-partition-labels](https://github.com/SapChak114/LeetCode/tree/master/0768-partition-labels) |
 | [0778-reorganize-string](https://github.com/SapChak114/LeetCode/tree/master/0778-reorganize-string) |
 | [0780-max-chunks-to-make-sorted](https://github.com/SapChak114/LeetCode/tree/master/0780-max-chunks-to-make-sorted) |
+| [0797-rabbits-in-forest](https://github.com/SapChak114/LeetCode/tree/master/0797-rabbits-in-forest) |
 | [0890-lemonade-change](https://github.com/SapChak114/LeetCode/tree/master/0890-lemonade-change) |
 | [0902-minimum-number-of-refueling-stops](https://github.com/SapChak114/LeetCode/tree/master/0902-minimum-number-of-refueling-stops) |
 | [0957-minimum-add-to-make-parentheses-valid](https://github.com/SapChak114/LeetCode/tree/master/0957-minimum-add-to-make-parentheses-valid) |
@@ -1445,6 +1448,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0667-beautiful-arrangement-ii](https://github.com/SapChak114/LeetCode/tree/master/0667-beautiful-arrangement-ii) |
 | [0670-maximum-swap](https://github.com/SapChak114/LeetCode/tree/master/0670-maximum-swap) |
 | [0796-reaching-points](https://github.com/SapChak114/LeetCode/tree/master/0796-reaching-points) |
+| [0797-rabbits-in-forest](https://github.com/SapChak114/LeetCode/tree/master/0797-rabbits-in-forest) |
 | [0804-rotated-digits](https://github.com/SapChak114/LeetCode/tree/master/0804-rotated-digits) |
 | [0805-escape-the-ghosts](https://github.com/SapChak114/LeetCode/tree/master/0805-escape-the-ghosts) |
 | [0826-soup-servings](https://github.com/SapChak114/LeetCode/tree/master/0826-soup-servings) |
