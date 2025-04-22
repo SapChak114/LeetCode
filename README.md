@@ -73,6 +73,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0506-relative-ranks](https://github.com/SapChak114/LeetCode/tree/master/0506-relative-ranks) |
 | [0522-longest-uncommon-subsequence-ii](https://github.com/SapChak114/LeetCode/tree/master/0522-longest-uncommon-subsequence-ii) |
 | [0524-longest-word-in-dictionary-through-deleting](https://github.com/SapChak114/LeetCode/tree/master/0524-longest-word-in-dictionary-through-deleting) |
+| [0525-contiguous-array](https://github.com/SapChak114/LeetCode/tree/master/0525-contiguous-array) |
 | [0526-beautiful-arrangement](https://github.com/SapChak114/LeetCode/tree/master/0526-beautiful-arrangement) |
 | [0539-minimum-time-difference](https://github.com/SapChak114/LeetCode/tree/master/0539-minimum-time-difference) |
 | [0542-01-matrix](https://github.com/SapChak114/LeetCode/tree/master/0542-01-matrix) |
@@ -649,6 +650,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0433-minimum-genetic-mutation](https://github.com/SapChak114/LeetCode/tree/master/0433-minimum-genetic-mutation) |
 | [0448-find-all-numbers-disappeared-in-an-array](https://github.com/SapChak114/LeetCode/tree/master/0448-find-all-numbers-disappeared-in-an-array) |
 | [0522-longest-uncommon-subsequence-ii](https://github.com/SapChak114/LeetCode/tree/master/0522-longest-uncommon-subsequence-ii) |
+| [0525-contiguous-array](https://github.com/SapChak114/LeetCode/tree/master/0525-contiguous-array) |
 | [0535-encode-and-decode-tinyurl](https://github.com/SapChak114/LeetCode/tree/master/0535-encode-and-decode-tinyurl) |
 | [0560-subarray-sum-equals-k](https://github.com/SapChak114/LeetCode/tree/master/0560-subarray-sum-equals-k) |
 | [0567-permutation-in-string](https://github.com/SapChak114/LeetCode/tree/master/0567-permutation-in-string) |
@@ -1558,6 +1560,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0209-minimum-size-subarray-sum](https://github.com/SapChak114/LeetCode/tree/master/0209-minimum-size-subarray-sum) |
+| [0525-contiguous-array](https://github.com/SapChak114/LeetCode/tree/master/0525-contiguous-array) |
 | [0560-subarray-sum-equals-k](https://github.com/SapChak114/LeetCode/tree/master/0560-subarray-sum-equals-k) |
 | [0731-my-calendar-ii](https://github.com/SapChak114/LeetCode/tree/master/0731-my-calendar-ii) |
 | [0892-shortest-subarray-with-sum-at-least-k](https://github.com/SapChak114/LeetCode/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
