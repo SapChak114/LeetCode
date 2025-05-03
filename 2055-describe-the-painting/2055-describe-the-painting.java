@@ -14,7 +14,7 @@ class Solution {
 
         for (Map.Entry<Long, Long> entry : map.entrySet()) {
             long currTime = entry.getKey();
-            if (prevTime != currTime && totalColor != 0) {
+            if (totalColor != 0) {
                 result.add(Arrays.asList(prevTime, currTime, totalColor));
             }
             totalColor += entry.getValue();
