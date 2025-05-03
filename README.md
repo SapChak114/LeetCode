@@ -189,6 +189,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2006-find-the-student-that-will-replace-the-chalk](https://github.com/SapChak114/LeetCode/tree/master/2006-find-the-student-that-will-replace-the-chalk) |
 | [2035-count-sub-islands](https://github.com/SapChak114/LeetCode/tree/master/2035-count-sub-islands) |
 | [2054-the-number-of-the-smallest-unoccupied-chair](https://github.com/SapChak114/LeetCode/tree/master/2054-the-number-of-the-smallest-unoccupied-chair) |
+| [2055-describe-the-painting](https://github.com/SapChak114/LeetCode/tree/master/2055-describe-the-painting) |
 | [2067-maximum-number-of-points-with-cost](https://github.com/SapChak114/LeetCode/tree/master/2067-maximum-number-of-points-with-cost) |
 | [2089-maximum-matrix-sum](https://github.com/SapChak114/LeetCode/tree/master/2089-maximum-matrix-sum) |
 | [2117-find-original-array-from-doubled-array](https://github.com/SapChak114/LeetCode/tree/master/2117-find-original-array-from-doubled-array) |
@@ -334,6 +335,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1556-make-two-arrays-equal-by-reversing-subarrays](https://github.com/SapChak114/LeetCode/tree/master/1556-make-two-arrays-equal-by-reversing-subarrays) |
 | [1615-range-sum-of-sorted-subarray-sums](https://github.com/SapChak114/LeetCode/tree/master/1615-range-sum-of-sorted-subarray-sums) |
 | [1829-maximum-units-on-a-truck](https://github.com/SapChak114/LeetCode/tree/master/1829-maximum-units-on-a-truck) |
+| [2055-describe-the-painting](https://github.com/SapChak114/LeetCode/tree/master/2055-describe-the-painting) |
 | [2117-find-original-array-from-doubled-array](https://github.com/SapChak114/LeetCode/tree/master/2117-find-original-array-from-doubled-array) |
 | [2123-the-number-of-weak-characters-in-the-game](https://github.com/SapChak114/LeetCode/tree/master/2123-the-number-of-weak-characters-in-the-game) |
 | [2160-minimum-operations-to-make-a-uni-value-grid](https://github.com/SapChak114/LeetCode/tree/master/2160-minimum-operations-to-make-a-uni-value-grid) |
@@ -713,6 +715,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1786-count-the-number-of-consistent-strings](https://github.com/SapChak114/LeetCode/tree/master/1786-count-the-number-of-consistent-strings) |
 | [1915-check-if-one-string-swap-can-make-strings-equal](https://github.com/SapChak114/LeetCode/tree/master/1915-check-if-one-string-swap-can-make-strings-equal) |
 | [2054-the-number-of-the-smallest-unoccupied-chair](https://github.com/SapChak114/LeetCode/tree/master/2054-the-number-of-the-smallest-unoccupied-chair) |
+| [2055-describe-the-painting](https://github.com/SapChak114/LeetCode/tree/master/2055-describe-the-painting) |
 | [2059-unique-length-3-palindromic-subsequences](https://github.com/SapChak114/LeetCode/tree/master/2059-unique-length-3-palindromic-subsequences) |
 | [2117-find-original-array-from-doubled-array](https://github.com/SapChak114/LeetCode/tree/master/2117-find-original-array-from-doubled-array) |
 | [2163-kth-distinct-string-in-an-array](https://github.com/SapChak114/LeetCode/tree/master/2163-kth-distinct-string-in-an-array) |
@@ -1605,6 +1608,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1940-maximum-xor-for-each-query](https://github.com/SapChak114/LeetCode/tree/master/1940-maximum-xor-for-each-query) |
 | [1983-maximum-population-year](https://github.com/SapChak114/LeetCode/tree/master/1983-maximum-population-year) |
 | [2006-find-the-student-that-will-replace-the-chalk](https://github.com/SapChak114/LeetCode/tree/master/2006-find-the-student-that-will-replace-the-chalk) |
+| [2055-describe-the-painting](https://github.com/SapChak114/LeetCode/tree/master/2055-describe-the-painting) |
 | [2059-unique-length-3-palindromic-subsequences](https://github.com/SapChak114/LeetCode/tree/master/2059-unique-length-3-palindromic-subsequences) |
 | [2145-grid-game](https://github.com/SapChak114/LeetCode/tree/master/2145-grid-game) |
 | [2249-count-the-hidden-sequences](https://github.com/SapChak114/LeetCode/tree/master/2249-count-the-hidden-sequences) |
