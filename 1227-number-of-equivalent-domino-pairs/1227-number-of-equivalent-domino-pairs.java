@@ -1,13 +1,12 @@
 class Solution {
     public int numEquivDominoPairs(int[][] dominoes) {
+        int[] arr = new int[100];
 
-        Map<String, Integer> counter = new HashMap<>();
         int ans = 0;
         for (int[] domino : dominoes) {
-            Arrays.sort(domino);
-            String key = Arrays.toString(domino);
-            ans += counter.getOrDefault(key, 0);
-            counter.put(key, counter.getOrDefault(key, 0) + 1);
+            int val = domino[0] > domino[1] ? ((domino[0] * 10) + domino[1]) : ((domino[1] * 10) + domino[0]);
+            ans += arr[val];
+            arr[val]++;
         }
 
         return ans;
