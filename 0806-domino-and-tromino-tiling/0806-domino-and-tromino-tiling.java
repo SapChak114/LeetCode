@@ -1,8 +1,5 @@
-import java.util.HashMap;
-import java.util.Map;
-
 public class Solution {
-    private static final int MOD = 1_000_000_007;
+    private static final int MOD = (int) (1e9 + 7);
     private Map<Integer, Integer> dpMemo = new HashMap<>();
     private Map<Integer, Integer> dp2Memo = new HashMap<>();
 
