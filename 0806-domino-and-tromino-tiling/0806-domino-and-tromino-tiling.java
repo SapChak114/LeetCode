@@ -9,19 +9,13 @@ class Solution {
     }
 
     int rec(int i, int j) {
-        if (i == n-1) {
-            if (j == 0) {
-                return 1;
-            } else {
-                return 0;
-            }
+        if (i > n) {
+            return 0;
         }
-        if (i == n-2) {
-            if (j == 0) {
-                return 2;
-            } else {
-                return 1;
-            }
+
+        if (i == n) {
+            if (j == 0) return 1;
+            else return 0;
         }
 
         if (dp[i][j] != null) {
