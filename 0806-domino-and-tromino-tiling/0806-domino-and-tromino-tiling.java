@@ -1,34 +1,41 @@
-public class Solution {
-    private static final int MOD = (int) (1e9 + 7);
-    private Map<Integer, Integer> dpMemo = new HashMap<>();
-    private Map<Integer, Integer> dp2Memo = new HashMap<>();
-
+class Solution {
+    Integer[][] dp;
+    int n;
+    int MOD = (int) (1e9 + 7);
     public int numTilings(int n) {
-        return dp(n);
+        this.dp = new Integer[n+1][n+1];
+        this.n = n;
+        return rec(0, 0);
     }
 
-    private int dp(int n) {
-        if (n == 0) return 1;
-        if (n == 1) return 1;
-        if (n == 2) return 2;
+    int rec(int i, int j) {
+        if (i == n-1) {
+            if (j == 0) {
+                return 1;
+            } else {
+                return 0;
+            }
+        }
+        if (i == n-2) {
+            if (j == 0) {
+                return 2;
+            } else {
+                return 1;
+            }
+        }
 
-        if (dpMemo.containsKey(n)) return dpMemo.get(n);
+        if (dp[i][j] != null) {
+            return dp[i][j];
+        }
 
-        long res = (dp(n - 1) + dp(n - 2)) % MOD;
-        res = (res + 2L * dp2(n - 1)) % MOD;
+        long res;
+        if (j == 0) {
+            res = (rec(i + 1, 0) + rec(i + 2, 0)) % MOD;
+            res = (res + 2L * rec(i + 1, 1)) % MOD;
+        } else {
+            res = (rec(i + 1, 1) + rec(i + 2, 0)) % MOD;
+        }
 
-        dpMemo.put(n, (int) res);
-        return (int) res;
-    }
-
-    private int dp2(int n) {
-        if (n <= 1) return 0;
-
-        if (dp2Memo.containsKey(n)) return dp2Memo.get(n);
-
-        long res = (dp2(n - 1) + dp(n - 2)) % MOD;
-
-        dp2Memo.put(n, (int) res);
-        return (int) res;
+        return dp[i][j] = (int) res;
     }
 }
