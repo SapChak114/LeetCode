@@ -512,6 +512,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0691-stickers-to-spell-word](https://github.com/SapChak114/LeetCode/tree/master/0691-stickers-to-spell-word) |
 | [0718-maximum-length-of-repeated-subarray](https://github.com/SapChak114/LeetCode/tree/master/0718-maximum-length-of-repeated-subarray) |
 | [0804-rotated-digits](https://github.com/SapChak114/LeetCode/tree/master/0804-rotated-digits) |
+| [0806-domino-and-tromino-tiling](https://github.com/SapChak114/LeetCode/tree/master/0806-domino-and-tromino-tiling) |
 | [0808-number-of-matching-subsequences](https://github.com/SapChak114/LeetCode/tree/master/0808-number-of-matching-subsequences) |
 | [0826-soup-servings](https://github.com/SapChak114/LeetCode/tree/master/0826-soup-servings) |
 | [0868-push-dominoes](https://github.com/SapChak114/LeetCode/tree/master/0868-push-dominoes) |
