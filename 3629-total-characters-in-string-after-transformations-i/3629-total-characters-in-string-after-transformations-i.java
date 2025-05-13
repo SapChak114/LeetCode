@@ -1,23 +1,36 @@
 class Solution {
-    private static final int MOD = 1000000007;
+    int MOD = (int) (1e9 + 7);
     public int lengthAfterTransformations(String s, int t) {
         int[] cnt = new int[26];
-        for (char ch : s.toCharArray()) {
-            ++cnt[ch - 'a'];
+
+        // Count frequency of each character
+        for (char c : s.toCharArray()) {
+            cnt[c - 'a']++;
         }
-        for (int round = 0; round < t; ++round) {
-            int[] nxt = new int[26];
-            nxt[0] = cnt[25];
-            nxt[1] = (cnt[25] + cnt[0]) % MOD;
-            for (int i = 2; i < 26; ++i) {
-                nxt[i] = cnt[i - 1];
+
+        for (int i = 0; i < t; i++) {
+            int[] temp = new int[26];
+
+            for (int j = 0; j < 26; j++) {
+                int freq = cnt[j];
+                if (freq == 0) continue;
+
+                if (j != 25) { // 'a' to 'y'
+                    temp[j + 1] = (temp[j + 1] + freq) % MOD;
+                } else { // 'z' transforms to 'a' and 'b'
+                    temp[0] = (temp[0] + freq) % MOD;
+                    temp[1] = (temp[1] + freq) % MOD;
+                }
             }
-            cnt = nxt;
+
+            cnt = temp;
         }
+
         int ans = 0;
-        for (int i = 0; i < 26; ++i) {
+        for (int i = 0; i < 26; i++) {
             ans = (ans + cnt[i]) % MOD;
         }
+
         return ans;
     }
 }
