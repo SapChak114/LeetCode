@@ -1,50 +1,49 @@
 class Solution {
-
-    public List<String> getWordsInLongestSubsequence(
-        String[] words,
-        int[] groups
-    ) {
-        int n = groups.length;
-        int[] dp = new int[n];
+    public List<String> getWordsInLongestSubsequence(String[] words, int[] groups) {
+        int n = words.length, maxIndex = 0;
+        int[] lis = new int[n];
         int[] prev = new int[n];
-        Arrays.fill(dp, 1);
+        Arrays.fill(lis, 1);
         Arrays.fill(prev, -1);
-        int maxIndex = 0;
-        for (int i = 1; i < n; i++) {
-            for (int j = 0; j < i; j++) {
-                if (
-                    check(words[i], words[j]) &&
-                    dp[j] + 1 > dp[i] &&
-                    groups[i] != groups[j]
-                ) {
-                    dp[i] = dp[j] + 1;
+
+        for (int i = n-1; i >= 0; i--) {
+            for (int j = i + 1; j < n; j++) {
+                if (check(words[i], words[j]) && (groups[i] != groups[j])
+                                                     && (lis[i] < 1 + lis[j])) {
+                    lis[i] = 1 + lis[j];
                     prev[i] = j;
                 }
             }
-            if (dp[i] > dp[maxIndex]) {
-                maxIndex = i;
-            }
+
+            if (lis[i] > lis[maxIndex] ||            // strictly longer
+    (lis[i] == lis[maxIndex] && i < maxIndex)) {   // same length, earlier start
+    maxIndex = i;
+}
         }
+
         List<String> ans = new ArrayList<>();
-        for (int i = maxIndex; i >= 0; i = prev[i]) {
+        for (int i = maxIndex; i != -1; i = prev[i]) {
             ans.add(words[i]);
         }
-        Collections.reverse(ans);
         return ans;
     }
 
-    private boolean check(String s1, String s2) {
-        if (s1.length() != s2.length()) {
+    boolean check(String w1, String w2) {
+        int n = w1.length(), m = w2.length();
+        if (n != m) {
             return false;
         }
-        int diff = 0;
-        for (int i = 0; i < s1.length(); i++) {
-            if (s1.charAt(i) != s2.charAt(i)) {
-                if (++diff > 1) {
-                    return false;
-                }
+
+        int count = 0;
+        for(int i = 0; i<n; i++) {
+            if (w1.charAt(i) != w2.charAt(i)) {
+                count++;
+            }
+            if (count > 1) {
+                return false;
             }
         }
-        return diff == 1;
+
+        return count == 1;
     }
 }
