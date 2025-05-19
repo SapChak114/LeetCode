@@ -1,23 +1,47 @@
-class Solution { //aw
-    public List<String> ambiguousCoordinates(String S) {
-        List<String> ans = new ArrayList();
-        for (int i = 2; i < S.length()-1; ++i)
-            for (String left: make(S, 1, i))
-                for (String right: make(S, i, S.length()-1))
-                    ans.add("(" + left + ", " + right + ")");
-        return ans;
-    }
-
-    public List<String> make(String S, int i, int j) {
-        // Make on S.substring(i, j)
-        List<String> ans = new ArrayList();
-        for (int d = 1; d <= j-i; ++d) {
-            String left = S.substring(i, i+d);
-            String right = S.substring(i+d, j);
-            if ((!left.startsWith("0") || left.equals("0"))
-                    && !right.endsWith("0"))
-                ans.add(left + (d < j-i ? "." : "") + right);
+class Solution {
+    List<String> result = new ArrayList<>();
+    public List<String> ambiguousCoordinates(String s) {
+        s=s.substring(1,s.length()-1);
+        //Breaking String in x,y form (0123) -> (0,123)
+        for(int i = 1; i < s.length(); i++) {
+            helper(s.substring(0,i), s.substring(i));
         }
-        return ans;
+        return result;
+    }
+    
+    public void helper(String x, String y){
+        List<String> dotx = putDot(x);
+        List<String> doty = putDot(y);
+        
+        for(String dx : dotx){
+            if(isValid(dx)) {
+                for(String dy : doty){
+                    if(isValid(dy)) {
+                        result.add("("+dx+", "+dy+")"); //(1, 23)
+                    }
+                }
+            }
+        }
+    }
+    
+    public List<String> putDot(String s){
+        List<String> res = new ArrayList<>();
+        res.add(s);
+        for(int i = 1; i < s.length(); i++) {
+            res.add(s.substring(0,i)+"."+s.substring(i));
+        }
+        return res;
+    }
+    
+    public boolean isValid(String s) {
+        if(s.contains(".")) {
+            String[] part = s.split("\\.");
+            if(!part[0].equals("0") && part[0].startsWith("0")) return false;
+            else return !part[1].endsWith("0");
+        }
+        else {
+            if(s.equals("0")) return true;
+            else return !s.startsWith("0");
+        }
     }
 }
