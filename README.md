@@ -858,6 +858,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0812-rotate-string](https://github.com/SapChak114/LeetCode/tree/master/0812-rotate-string) |
 | [0827-expressive-words](https://github.com/SapChak114/LeetCode/tree/master/0827-expressive-words) |
 | [0829-subdomain-visit-count](https://github.com/SapChak114/LeetCode/tree/master/0829-subdomain-visit-count) |
+| [0834-ambiguous-coordinates](https://github.com/SapChak114/LeetCode/tree/master/0834-ambiguous-coordinates) |
 | [0857-positions-of-large-groups](https://github.com/SapChak114/LeetCode/tree/master/0857-positions-of-large-groups) |
 | [0868-push-dominoes](https://github.com/SapChak114/LeetCode/tree/master/0868-push-dominoes) |
 | [0874-backspace-string-compare](https://github.com/SapChak114/LeetCode/tree/master/0874-backspace-string-compare) |
@@ -1602,6 +1603,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0494-target-sum](https://github.com/SapChak114/LeetCode/tree/master/0494-target-sum) |
 | [0526-beautiful-arrangement](https://github.com/SapChak114/LeetCode/tree/master/0526-beautiful-arrangement) |
 | [0691-stickers-to-spell-word](https://github.com/SapChak114/LeetCode/tree/master/0691-stickers-to-spell-word) |
+| [0834-ambiguous-coordinates](https://github.com/SapChak114/LeetCode/tree/master/0834-ambiguous-coordinates) |
 | [1160-letter-tile-possibilities](https://github.com/SapChak114/LeetCode/tree/master/1160-letter-tile-possibilities) |
 | [1331-path-with-maximum-gold](https://github.com/SapChak114/LeetCode/tree/master/1331-path-with-maximum-gold) |
 | [1715-split-a-string-into-the-max-number-of-unique-substrings](https://github.com/SapChak114/LeetCode/tree/master/1715-split-a-string-into-the-max-number-of-unique-substrings) |
@@ -1755,6 +1757,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Enumeration
 |  |
 | ------- |
+| [0834-ambiguous-coordinates](https://github.com/SapChak114/LeetCode/tree/master/0834-ambiguous-coordinates) |
 | [0856-consecutive-numbers-sum](https://github.com/SapChak114/LeetCode/tree/master/0856-consecutive-numbers-sum) |
 | [1656-count-good-triplets](https://github.com/SapChak114/LeetCode/tree/master/1656-count-good-triplets) |
 | [1993-sum-of-all-subset-xor-totals](https://github.com/SapChak114/LeetCode/tree/master/1993-sum-of-all-subset-xor-totals) |
