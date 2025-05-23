@@ -1,12 +1,10 @@
 class Solution {
     Map<String, Long> dp;
     int[] nums;
-    int[][] edges;
     int k;
     public long maximumValueSum(int[] nums, int k, int[][] edges) {
         this.dp = new HashMap<>();
         this.nums = nums;
-        this.edges = edges;
         this.k = k;
         return rec(0, true);
     }
