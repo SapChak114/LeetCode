@@ -1,29 +1,33 @@
 class Solution {
+    Map<String, Long> dp;
+    int[] nums;
+    int[][] edges;
+    int k;
     public long maximumValueSum(int[] nums, int k, int[][] edges) {
-        long[][] memo = new long[nums.length][2];
-        for (long[] row : memo) {
-            Arrays.fill(row, -1);
-        }
-        return maxSumOfNodes(0, 1, nums, k, memo);
+        this.dp = new HashMap<>();
+        this.nums = nums;
+        this.edges = edges;
+        this.k = k;
+        return rec(0, true);
     }
 
-    private long maxSumOfNodes(int index, int isEven, int[] nums, int k,
-            long[][] memo) {
-        if (index == nums.length) {
-            // If the operation is performed on an odd number of elements return
-            // INT_MIN
-            return isEven == 1 ? 0 : Integer.MIN_VALUE;
+    long rec(int idx, boolean isEven) {
+        if (idx == nums.length) {
+            return isEven ? 0 : Integer.MIN_VALUE;
         }
-        if (memo[index][isEven] != -1) {
-            return memo[index][isEven];
-        }
-        // No operation performed on the element
-        long noXorDone = nums[index] + maxSumOfNodes(index + 1, isEven, nums, k, memo);
-        // XOR operation is performed on the element
-        long xorDone = (nums[index] ^ k) +
-                maxSumOfNodes(index + 1, isEven ^ 1, nums, k, memo);
 
-        // Memoize and return the result
-        return memo[index][isEven] = Math.max(xorDone, noXorDone);
+        String key = idx+"-"+isEven;
+        if (dp.containsKey(key)) {
+            return dp.get(key);
+        }
+
+        long dont = nums[idx] + rec(idx + 1, isEven);
+        long take = (nums[idx]^k) + rec(idx + 1, !isEven);
+
+        long val = Math.max(dont, take);
+
+        dp.put(key, val);
+
+        return val;
     }
 }
