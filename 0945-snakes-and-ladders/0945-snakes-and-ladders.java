@@ -11,7 +11,6 @@ class Solution {
                 row.add(board[i][j]);
             }
 
-            System.out.println((n-i-1));
             if ((n - i - 1) % 2 == 1) {
                 Collections.reverse(row);
             }
