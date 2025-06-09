@@ -1,25 +1,34 @@
 class Solution {
+
     public int findKthNumber(int n, int k) {
-        int prefix=1;
-        for(int count=1;count<k;){
-            int currCount=getCountWithPrefix(prefix,prefix+1,n);
-            if(currCount+count<=k){
-                count+=currCount;
-                prefix++;
-            }else{
-                prefix*=10;
-                count++;
+        int curr = 1;
+        k--;
+
+        while (k > 0) {
+            int step = countSteps(n, curr, curr + 1);
+            // If the steps are less than or equal to k, we skip this prefix's subtree
+            if (step <= k) {
+                // Move to the next prefix and decrease k by the number of steps we skip
+                curr++;
+                k -= step;
+            } else {
+                // Move to the next level of the tree and decrement k by 1
+                curr *= 10;
+                k--;
             }
         }
-        return prefix;
+
+        return curr;
     }
-    private int getCountWithPrefix(long startPrefix,long endPrefix,int max){
-        int count=0;
-        while(startPrefix<=max){
-            count+=Math.min(max+1,endPrefix)-startPrefix;
-            startPrefix*=10;
-            endPrefix*=10;
+
+    // To count how many numbers exist between prefix1 and prefix2
+    private int countSteps(int n, long prefix1, long prefix2) {
+        int steps = 0;
+        while (prefix1 <= n) {
+            steps += Math.min(n + 1, prefix2) - prefix1;
+            prefix1 *= 10;
+            prefix2 *= 10;
         }
-        return count;
+        return steps;
     }
 }
