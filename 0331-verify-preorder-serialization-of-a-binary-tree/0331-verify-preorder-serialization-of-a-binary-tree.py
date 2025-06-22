@@ -1,27 +1,18 @@
-class TreeNode:
-    def __init__(self, val):
-        self.val = val
-        self.left = None
-        self.right = None
-    
 class Solution:
     def isValidSerialization(self, preorder: str) -> bool:
-        queue = collections.deque(preorder.split(","))
-        self.ans = True
+        degree = 1 # to handle the root
+        # diff b/w indegree and outdegree
+        # outdegree - indegree
 
-        def build():
-            if not queue:
-                self.ans = False
-                return None
-            
-            ch = queue.popleft()
-            if ch == "#":
-                return None
+        if preorder.startswith("#") and len(preorder) != 1:
+            return False
 
-            node = TreeNode(ch)
-            node.left = build()
-            node.right = build()
-            return node
+        for node in preorder.split(","):
+            degree -= 1
+            if degree < 0:
+                return False
+
+            if node != "#":
+                degree += 2
         
-        build()
-        return self.ans and not queue
+        return degree == 0
