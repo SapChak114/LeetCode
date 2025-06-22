@@ -18,11 +18,6 @@ class Solution {
             ans.add(sb.toString());
         }
 
-        String[] res = new String[ans.size()];
-        for (int i = 0; i<ans.size(); i++) {
-            res[i] = ans.get(i);
-        }
-
-        return res;
+        return ans.toArray(new String[0]);
     }
 }
