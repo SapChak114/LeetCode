@@ -541,6 +541,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0337-house-robber-iii](https://github.com/SapChak114/LeetCode/tree/master/0337-house-robber-iii) |
 | [0357-count-numbers-with-unique-digits](https://github.com/SapChak114/LeetCode/tree/master/0357-count-numbers-with-unique-digits) |
 | [0368-largest-divisible-subset](https://github.com/SapChak114/LeetCode/tree/master/0368-largest-divisible-subset) |
+| [0375-guess-number-higher-or-lower-ii](https://github.com/SapChak114/LeetCode/tree/master/0375-guess-number-higher-or-lower-ii) |
 | [0377-combination-sum-iv](https://github.com/SapChak114/LeetCode/tree/master/0377-combination-sum-iv) |
 | [0397-integer-replacement](https://github.com/SapChak114/LeetCode/tree/master/0397-integer-replacement) |
 | [0416-partition-equal-subset-sum](https://github.com/SapChak114/LeetCode/tree/master/0416-partition-equal-subset-sum) |
@@ -1605,6 +1606,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0326-power-of-three](https://github.com/SapChak114/LeetCode/tree/master/0326-power-of-three) |
 | [0357-count-numbers-with-unique-digits](https://github.com/SapChak114/LeetCode/tree/master/0357-count-numbers-with-unique-digits) |
 | [0368-largest-divisible-subset](https://github.com/SapChak114/LeetCode/tree/master/0368-largest-divisible-subset) |
+| [0375-guess-number-higher-or-lower-ii](https://github.com/SapChak114/LeetCode/tree/master/0375-guess-number-higher-or-lower-ii) |
 | [0380-insert-delete-getrandom-o1](https://github.com/SapChak114/LeetCode/tree/master/0380-insert-delete-getrandom-o1) |
 | [0415-add-strings](https://github.com/SapChak114/LeetCode/tree/master/0415-add-strings) |
 | [0539-minimum-time-difference](https://github.com/SapChak114/LeetCode/tree/master/0539-minimum-time-difference) |
@@ -1776,6 +1778,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Game Theory
 |  |
 | ------- |
+| [0375-guess-number-higher-or-lower-ii](https://github.com/SapChak114/LeetCode/tree/master/0375-guess-number-higher-or-lower-ii) |
 | [1240-stone-game-ii](https://github.com/SapChak114/LeetCode/tree/master/1240-stone-game-ii) |
 ## Bit Manipulation
 |  |
