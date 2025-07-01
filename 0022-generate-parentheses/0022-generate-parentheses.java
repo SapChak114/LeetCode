@@ -1,13 +1,13 @@
 class Solution {
-    List<String> res;
-    Stack<String> st;
     int n;
+    Stack<String> st;
+    List<String> res;
     public List<String> generateParenthesis(int n) {
-        this.res = new ArrayList<>();
         this.st = new Stack<>();
+        this.res = new ArrayList<>();
         this.n = n;
         back(0, 0);
-        return res;
+        return this.res;
     }
 
     void back(int open, int close) {
