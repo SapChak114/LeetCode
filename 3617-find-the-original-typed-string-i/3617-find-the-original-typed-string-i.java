@@ -1,14 +1,14 @@
 class Solution {
     public int possibleStringCount(String word) {
         char[] ch = word.toCharArray();
-        int n = ch.length, ans = 1;
+        int count = 1;
 
-        for (int i = 1; i<n; i++) {
+        for (int i = 1; i<ch.length; i++) {
             if (ch[i] == ch[i-1]) {
-                ans++;
+                count++;
             }
         }
 
-        return ans;
+        return count;
     }
 }
