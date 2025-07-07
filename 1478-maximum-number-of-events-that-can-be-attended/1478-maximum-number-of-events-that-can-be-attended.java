@@ -1,26 +1,34 @@
 class Solution {
     public int maxEvents(int[][] events) {
-        Arrays.sort(events, (a,b) -> a[0] - b[0]);
-        int day = 0, index = 0, n = events.length, result = 0;
+        Arrays.sort(events, (a,b) -> a[0] == b[0] ? a[1] - b[1] : a[0] - b[0]);
 
-        PriorityQueue<Integer> pq = new PriorityQueue<>();
+        int n = events.length;
+        int pos = 0, time = 1, attended = 0;
 
-        while (!pq.isEmpty() || index < n) {
-            if (pq.isEmpty()) {
-                day = events[index][0];
+        PriorityQueue<Integer> minHeap = new PriorityQueue<>();
+        while (pos < n || !minHeap.isEmpty()) {
+
+            if (minHeap.isEmpty()) {
+                time = Math.max(time, events[pos][0]);
             }
-            while (index < n && events[index][0] <= day) {
-                pq.add(events[index][1]);
-                index++;
+            
+            while (pos < n && events[pos][0] == time) {
+                minHeap.add(events[pos][1]);
+                pos++;
             }
-            pq.poll();
-            day++;
-            result++;
-            while (!pq.isEmpty() && pq.peek() < day) {
-                pq.poll();
+
+            while (!minHeap.isEmpty() && minHeap.peek() < time) {
+                minHeap.poll();
             }
+
+            if (!minHeap.isEmpty()) {
+                minHeap.poll();
+                attended++;
+            }
+
+            time++;
         }
 
-        return result;
+        return attended;
     }
 }
