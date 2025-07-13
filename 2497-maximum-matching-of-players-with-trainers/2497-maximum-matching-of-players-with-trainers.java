@@ -3,20 +3,13 @@ class Solution {
         Arrays.sort(players);
         Arrays.sort(trainers);
 
-        int n = players.length, m = trainers.length;
-        int count = 0, j = 0;
-        for (int i = 0; i<n; i++) {
-            while (j < m && players[i] > trainers[j]) {
-                j++;
-            }
-            if (j == m) {
-                break;
-            }
-
+        int count = 0, i = 0, j = 0;
+        while (i < players.length && j < trainers.length) {
             if (players[i] <= trainers[j]) {
                 count++;
-                j++;
+                i++;
             }
+            j++;
         }
 
         return count;
