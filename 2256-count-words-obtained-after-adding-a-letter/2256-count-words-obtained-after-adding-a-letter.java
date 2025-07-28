@@ -1,27 +1,27 @@
 class Solution {
-    public int wordCount(String[] startWords, String[] targetWords) {
-        Set<String> sortedStartWord = new HashSet<>();
-        for (String start : startWords) {
-            char[] ch = start.toCharArray();
-            Arrays.sort(ch);
-            sortedStartWord.add(new String(ch));
+    public int getBitMask(String str){
+        int mask =0;
+        for(char ch : str.toCharArray()){
+            mask = mask | (1<<(ch-'a'));
         }
-
-        int count = 0;
-        for (String targ : targetWords) {
-            char[] ch = targ.toCharArray();
-            Arrays.sort(ch);
-            String sortedTarg = new String(ch);
-            int n = sortedTarg.length();
-            for (int i = 0; i<n; i++) {
-                String sub = sortedTarg.substring(0, i) + sortedTarg.substring(i+1);
-                if (sortedStartWord.contains(sub)) {
-                    count++;
+        return mask;
+    }
+    public int wordCount(String[] startWords, String[] targetWords) {
+        Set<Integer> startSet = new HashSet<>();
+        for(String word : startWords){
+            startSet.add(getBitMask(word));
+        }
+        int res = 0;
+        for(String target : targetWords){
+            int targetMask = getBitMask(target);
+            for(char ch : target.toCharArray()){
+                int submask = targetMask ^ (1<<(ch-'a'));
+                if(startSet.contains(submask)){
+                    res++;
                     break;
                 }
             }
         }
-
-        return count;
+        return res;
     }
 }
