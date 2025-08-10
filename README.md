@@ -148,6 +148,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1242-matrix-block-sum](https://github.com/SapChak114/LeetCode/tree/master/1242-matrix-block-sum) |
 | [1249-snapshot-array](https://github.com/SapChak114/LeetCode/tree/master/1249-snapshot-array) |
 | [1256-rank-transform-of-an-array](https://github.com/SapChak114/LeetCode/tree/master/1256-rank-transform-of-an-array) |
+| [1288-maximum-subarray-sum-with-one-deletion](https://github.com/SapChak114/LeetCode/tree/master/1288-maximum-subarray-sum-with-one-deletion) |
 | [1293-three-consecutive-odds](https://github.com/SapChak114/LeetCode/tree/master/1293-three-consecutive-odds) |
 | [1325-path-with-maximum-probability](https://github.com/SapChak114/LeetCode/tree/master/1325-path-with-maximum-probability) |
 | [1331-path-with-maximum-gold](https://github.com/SapChak114/LeetCode/tree/master/1331-path-with-maximum-gold) |
@@ -618,6 +619,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1196-filling-bookcase-shelves](https://github.com/SapChak114/LeetCode/tree/master/1196-filling-bookcase-shelves) |
 | [1240-stone-game-ii](https://github.com/SapChak114/LeetCode/tree/master/1240-stone-game-ii) |
 | [1250-longest-common-subsequence](https://github.com/SapChak114/LeetCode/tree/master/1250-longest-common-subsequence) |
+| [1288-maximum-subarray-sum-with-one-deletion](https://github.com/SapChak114/LeetCode/tree/master/1288-maximum-subarray-sum-with-one-deletion) |
 | [1402-count-square-submatrices-with-all-ones](https://github.com/SapChak114/LeetCode/tree/master/1402-count-square-submatrices-with-all-ones) |
 | [1456-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance](https://github.com/SapChak114/LeetCode/tree/master/1456-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance) |
 | [1511-count-number-of-teams](https://github.com/SapChak114/LeetCode/tree/master/1511-count-number-of-teams) |
