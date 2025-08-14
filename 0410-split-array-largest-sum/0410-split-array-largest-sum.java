@@ -1,44 +1,34 @@
 class Solution {
-    int[] nums;
-    int  n;
-    Integer[][] dp;
     public int splitArray(int[] nums, int k) {
-        this.n = nums.length;
-        this.dp = new Integer[n][k+1];
-        this.nums = nums;
-        //this.k = k;
-        return dfs(0, k);
-    }
-    
-    int dfs(int idx, int k) {
-        if (idx == n) {
-            return -(int)1e8 + 2;
+        int maxNum=0;
+        long sum = 0;
+        for(int num : nums){
+            maxNum = Math.max(maxNum,num);
+            sum += num;
         }
-        if (k == 1) {
-            long sum = 0;
-            for (int i = idx; i<n; i++) {
-                sum += nums[i];
+        int l = maxNum, r = (int)(sum+1);
+        while(l<r){
+            int mid = l + (r-l)/2;
+            if(canWork(nums,k,mid)){
+                r = mid;
+            } else{
+                l = mid+1;
             }
-            //System.out.println("base i : "+idx+" nums "+ sum);
-            return (int)sum;
         }
-        //System.out.println(idx+" idx "+k);
-        if (dp[idx][k] != null) {
-            return dp[idx][k];
+        return l;
+    }
+
+    private boolean canWork(int[] nums, int k, int cap){
+        int cur = 0;
+        int split = 1;
+        for(int num : nums){
+            if(num+cur > cap){
+                split++;
+                cur = 0;
+                if(split>k) return false;
+            }
+            cur += num;
         }
-        long sum = 0, res = 0, max = (int)1e8 + 2;
-        for (int i = idx; i<=n-k; i++) {
-            //System.out.println(i+",");
-            //System.out.println("i : "+i+" nums "+ sum);
-            sum += nums[i];
-            res = Math.max(sum, dfs(i+1, k-1));
-            max = Math.min(max, res);
-        }
-        
-        // 5-2+1
-        // n-k+1
-        return dp[idx][k] = (int)max;
+        return true;
     }
 }
-
-
