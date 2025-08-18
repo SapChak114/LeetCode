@@ -88,6 +88,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0659-split-array-into-consecutive-subsequences](https://github.com/SapChak114/LeetCode/tree/master/0659-split-array-into-consecutive-subsequences) |
 | [0665-non-decreasing-array](https://github.com/SapChak114/LeetCode/tree/master/0665-non-decreasing-array) |
 | [0667-beautiful-arrangement-ii](https://github.com/SapChak114/LeetCode/tree/master/0667-beautiful-arrangement-ii) |
+| [0679-24-game](https://github.com/SapChak114/LeetCode/tree/master/0679-24-game) |
 | [0689-maximum-sum-of-3-non-overlapping-subarrays](https://github.com/SapChak114/LeetCode/tree/master/0689-maximum-sum-of-3-non-overlapping-subarrays) |
 | [0690-employee-importance](https://github.com/SapChak114/LeetCode/tree/master/0690-employee-importance) |
 | [0691-stickers-to-spell-word](https://github.com/SapChak114/LeetCode/tree/master/0691-stickers-to-spell-word) |
@@ -1725,6 +1726,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0650-2-keys-keyboard](https://github.com/SapChak114/LeetCode/tree/master/0650-2-keys-keyboard) |
 | [0667-beautiful-arrangement-ii](https://github.com/SapChak114/LeetCode/tree/master/0667-beautiful-arrangement-ii) |
 | [0670-maximum-swap](https://github.com/SapChak114/LeetCode/tree/master/0670-maximum-swap) |
+| [0679-24-game](https://github.com/SapChak114/LeetCode/tree/master/0679-24-game) |
 | [0796-reaching-points](https://github.com/SapChak114/LeetCode/tree/master/0796-reaching-points) |
 | [0797-rabbits-in-forest](https://github.com/SapChak114/LeetCode/tree/master/0797-rabbits-in-forest) |
 | [0804-rotated-digits](https://github.com/SapChak114/LeetCode/tree/master/0804-rotated-digits) |
@@ -1821,6 +1823,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0401-binary-watch](https://github.com/SapChak114/LeetCode/tree/master/0401-binary-watch) |
 | [0494-target-sum](https://github.com/SapChak114/LeetCode/tree/master/0494-target-sum) |
 | [0526-beautiful-arrangement](https://github.com/SapChak114/LeetCode/tree/master/0526-beautiful-arrangement) |
+| [0679-24-game](https://github.com/SapChak114/LeetCode/tree/master/0679-24-game) |
 | [0691-stickers-to-spell-word](https://github.com/SapChak114/LeetCode/tree/master/0691-stickers-to-spell-word) |
 | [0834-ambiguous-coordinates](https://github.com/SapChak114/LeetCode/tree/master/0834-ambiguous-coordinates) |
 | [1160-letter-tile-possibilities](https://github.com/SapChak114/LeetCode/tree/master/1160-letter-tile-possibilities) |
