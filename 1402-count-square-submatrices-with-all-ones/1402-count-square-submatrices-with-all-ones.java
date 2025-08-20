@@ -1,32 +1,22 @@
 class Solution {
-    Integer[][] dp;
-    int[][] matrix;
+
     public int countSquares(int[][] matrix) {
-        int n = matrix.length;
-        int m = matrix[0].length;
-        int squares = 0;
-
-        this.dp = new Integer[n][m];
-        this.matrix = matrix;
-
-        for (int row = 0; row<n; row++) {
-            for (int col = 0; col<m; col++) {
-                squares += dfs(row, col);
+        int row = matrix.length, col = matrix[0].length;
+        int[][] dp = new int[row + 1][col + 1];
+        int ans = 0;
+        for (int i = 0; i < row; i++) {
+            for (int j = 0; j < col; j++) {
+                if (matrix[i][j] == 1) {
+                    dp[i + 1][j + 1] =
+                        Math.min(
+                            Math.min(dp[i][j + 1], dp[i + 1][j]),
+                            dp[i][j]
+                        ) +
+                        1;
+                    ans += dp[i + 1][j + 1];
+                }
             }
         }
-
-        return squares;
-    }
-
-    int dfs(int row, int col) {
-        if (row == matrix.length || col == matrix[0].length || matrix[row][col] == 0) {
-            return 0;
-        }
-
-        if (dp[row][col] != null) {
-            return dp[row][col];
-        }
-
-        return dp[row][col] = 1 + Math.min(dfs(row + 1, col), Math.min(dfs(row, col + 1), dfs(row + 1, col + 1)));
+        return ans;
     }
 }
