@@ -2,22 +2,21 @@ class Solution {
     public String removeDuplicateLetters(String s) {
         Stack<Character> st = new Stack<>();
         char[] ch = s.toCharArray();
-        Map<Character, Integer> freq = new HashMap<>();
+        Map<Character, Integer> lastOcc = new HashMap<>();
 
-        for (char c : ch) {
-            freq.put(c, freq.getOrDefault(c, 0) + 1);
+        for (int i = 0; i<ch.length; i++) {
+            lastOcc.put(ch[i], i);
         }
 
         Set<Character> seen = new HashSet<>();
-        for (char c : ch) {
-
-            freq.put(c, freq.get(c) - 1);
+        for (int i = 0; i<ch.length; i++) {
+            char c = ch[i];
 
             if (seen.contains(c)) {
                 continue;
             }
 
-            while (!st.isEmpty() && c < st.peek() && freq.get(st.peek()) > 0) {
+            while (!st.isEmpty() && c < st.peek() && lastOcc.get(st.peek()) > i) {
                 seen.remove(st.pop());
             }
 
