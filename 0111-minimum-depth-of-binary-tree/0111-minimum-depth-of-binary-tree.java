@@ -15,21 +15,16 @@
  */
 class Solution {
     public int minDepth(TreeNode root) {
-        return dfs(root);
-    }
-    
-    int dfs(TreeNode root){
-        if(root==null){
+        if (root == null) {
             return 0;
         }
-        
-        if(root.left==null){
-            return 1+ dfs(root.right);
+
+        if (root.left == null) {
+            return minDepth(root.right) + 1;
+        } else if (root.right == null) {
+            return minDepth(root.left) + 1;
         }
-        if(root.right==null){
-            return 1+ dfs(root.left);
-        }
-        
-        return 1+Math.min(dfs(root.left),dfs(root.right));
+
+        return Math.min(minDepth(root.left), minDepth(root.right)) + 1;
     }
 }
