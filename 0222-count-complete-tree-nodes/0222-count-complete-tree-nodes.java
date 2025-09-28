@@ -27,7 +27,7 @@ class Solution {
         }
 
         dfs(root.left);
-        count++;
         dfs(root.right);
+        count++;
     }
 }
