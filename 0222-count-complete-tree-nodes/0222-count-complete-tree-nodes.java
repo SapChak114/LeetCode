@@ -14,20 +14,20 @@
  * }
  */
 class Solution {
-    List<Integer> res;
+    int count;
     public int countNodes(TreeNode root) {
-        res = new ArrayList<>();
-        preOrder(root);
-        return res.size();
+        this.count = 0;
+        dfs(root);
+        return this.count;
     }
-    
-    void preOrder(TreeNode root){
-        if(root==null){
+
+    void dfs(TreeNode root) {
+        if (root == null) {
             return;
         }
-        
-        res.add(root.val);
-        preOrder(root.left);
-        preOrder(root.right);
+
+        count++;
+        dfs(root.left);
+        dfs(root.right);
     }
 }
