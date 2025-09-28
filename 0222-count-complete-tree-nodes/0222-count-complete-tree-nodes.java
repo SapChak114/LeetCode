@@ -26,8 +26,8 @@ class Solution {
             return;
         }
 
-        count++;
         dfs(root.left);
+        count++;
         dfs(root.right);
     }
 }
