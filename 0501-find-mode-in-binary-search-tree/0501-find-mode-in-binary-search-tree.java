@@ -14,58 +14,44 @@
  * }
  */
 class Solution {
-    private int currentVal;
-    private int currentCount;
-    private int maxFrequency;
-    private int modeCount;
-    private int[] modes;
-
     public int[] findMode(TreeNode root) {
-        if ((root.left == null && root.right ==null)) {
-            return new int[]{root.val};
-        }
-        // First pass: Find the maximum frequency
-        inorder(root, false);
+        Map<Integer, Integer> hm = new HashMap<>();
+        Queue<TreeNode> q = new LinkedList<>();
+        q.add(root);
 
-        // Allocate space for the modes
-        modes = new int[modeCount];
-        modeCount = 0;
-        currentVal = Integer.MIN_VALUE; // Reset to an initial state
-        currentCount = 0;
+        while (!q.isEmpty()) {
+            int size = q.size();
+            for (int i = 0; i<size; i++) {
+                TreeNode node = q.poll();
+                hm.put(node.val, hm.getOrDefault(node.val, 0) + 1);
 
-        // Second pass: Collect the modes
-        inorder(root, true);
+                if (node.left != null) {
+                    q.add(node.left);
+                }
 
-        return modes;
-    }
-
-    private void inorder(TreeNode node, boolean collectModes) {
-        if (node == null) {
-            return;
-        }
-
-        // In-order traversal: Left -> Node -> Right
-        inorder(node.left, collectModes);
-
-        // Process current node
-        if (currentVal != node.val) {
-            currentVal = node.val;
-            currentCount = 0;
-        }
-        currentCount++;
-
-        if (currentCount > maxFrequency) {
-            maxFrequency = currentCount;
-            // if (!collectModes) {
-                modeCount = 1; // Reset mode count in first pass
-            // }
-        } else if (currentCount == maxFrequency) {
-            if (collectModes) {
-                modes[modeCount] = currentVal;
+                if (node.right != null) {
+                    q.add(node.right);
+                }
             }
-            modeCount++;
         }
 
-        inorder(node.right, collectModes);
+        int maxFreq = 0;
+        for (int key : hm.keySet()) {
+            maxFreq = Math.max(maxFreq, hm.get(key));
+        }
+
+        List<Integer> res = new ArrayList<>();
+        for (int key : hm.keySet()) {
+            if (hm.get(key) == maxFreq) {
+                res.add(key);
+            }
+        }
+
+        int[] result = new int[res.size()];
+        for (int i = 0; i<result.length; i++) {
+            result[i] = res.get(i);
+        }
+
+        return result;
     }
 }
