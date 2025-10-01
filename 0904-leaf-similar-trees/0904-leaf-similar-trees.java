@@ -27,7 +27,6 @@ class Solution {
         if (root != null) {
             if (root.left == null && root.right == null) {
                 list.add(root.val);
-                return;
             }
             populateLeaves(root.left, list);
             populateLeaves(root.right, list);
