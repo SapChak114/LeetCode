@@ -24,12 +24,13 @@ class Solution {
     }
 
     void populateLeaves(TreeNode root, List<Integer> list) {
-        if (root != null) {
-            if (root.left == null && root.right == null) {
-                list.add(root.val);
-            }
-            populateLeaves(root.left, list);
-            populateLeaves(root.right, list);
+        if (root == null) {
+            return;
         }
+        if (root.left == null && root.right == null) {
+            list.add(root.val);
+        }
+        populateLeaves(root.left, list);
+        populateLeaves(root.right, list);
     }
 }
