@@ -1305,6 +1305,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0999-regions-cut-by-slashes](https://github.com/SapChak114/LeetCode/tree/master/0999-regions-cut-by-slashes) |
 | [1005-univalued-binary-tree](https://github.com/SapChak114/LeetCode/tree/master/1005-univalued-binary-tree) |
 | [1008-binary-tree-cameras](https://github.com/SapChak114/LeetCode/tree/master/1008-binary-tree-cameras) |
+| [1035-cousins-in-binary-tree](https://github.com/SapChak114/LeetCode/tree/master/1035-cousins-in-binary-tree) |
 | [1093-recover-a-tree-from-preorder-traversal](https://github.com/SapChak114/LeetCode/tree/master/1093-recover-a-tree-from-preorder-traversal) |
 | [1116-maximum-level-sum-of-a-binary-tree](https://github.com/SapChak114/LeetCode/tree/master/1116-maximum-level-sum-of-a-binary-tree) |
 | [1207-delete-nodes-and-return-forest](https://github.com/SapChak114/LeetCode/tree/master/1207-delete-nodes-and-return-forest) |
@@ -1370,6 +1371,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0945-snakes-and-ladders](https://github.com/SapChak114/LeetCode/tree/master/0945-snakes-and-ladders) |
 | [0999-regions-cut-by-slashes](https://github.com/SapChak114/LeetCode/tree/master/0999-regions-cut-by-slashes) |
 | [1005-univalued-binary-tree](https://github.com/SapChak114/LeetCode/tree/master/1005-univalued-binary-tree) |
+| [1035-cousins-in-binary-tree](https://github.com/SapChak114/LeetCode/tree/master/1035-cousins-in-binary-tree) |
 | [1036-rotting-oranges](https://github.com/SapChak114/LeetCode/tree/master/1036-rotting-oranges) |
 | [1116-maximum-level-sum-of-a-binary-tree](https://github.com/SapChak114/LeetCode/tree/master/1116-maximum-level-sum-of-a-binary-tree) |
 | [1171-shortest-path-in-binary-matrix](https://github.com/SapChak114/LeetCode/tree/master/1171-shortest-path-in-binary-matrix) |
@@ -1626,6 +1628,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0988-flip-equivalent-binary-trees](https://github.com/SapChak114/LeetCode/tree/master/0988-flip-equivalent-binary-trees) |
 | [1005-univalued-binary-tree](https://github.com/SapChak114/LeetCode/tree/master/1005-univalued-binary-tree) |
 | [1008-binary-tree-cameras](https://github.com/SapChak114/LeetCode/tree/master/1008-binary-tree-cameras) |
+| [1035-cousins-in-binary-tree](https://github.com/SapChak114/LeetCode/tree/master/1035-cousins-in-binary-tree) |
 | [1093-recover-a-tree-from-preorder-traversal](https://github.com/SapChak114/LeetCode/tree/master/1093-recover-a-tree-from-preorder-traversal) |
 | [1116-maximum-level-sum-of-a-binary-tree](https://github.com/SapChak114/LeetCode/tree/master/1116-maximum-level-sum-of-a-binary-tree) |
 | [1207-delete-nodes-and-return-forest](https://github.com/SapChak114/LeetCode/tree/master/1207-delete-nodes-and-return-forest) |
@@ -1690,6 +1693,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0988-flip-equivalent-binary-trees](https://github.com/SapChak114/LeetCode/tree/master/0988-flip-equivalent-binary-trees) |
 | [1005-univalued-binary-tree](https://github.com/SapChak114/LeetCode/tree/master/1005-univalued-binary-tree) |
 | [1008-binary-tree-cameras](https://github.com/SapChak114/LeetCode/tree/master/1008-binary-tree-cameras) |
+| [1035-cousins-in-binary-tree](https://github.com/SapChak114/LeetCode/tree/master/1035-cousins-in-binary-tree) |
 | [1093-recover-a-tree-from-preorder-traversal](https://github.com/SapChak114/LeetCode/tree/master/1093-recover-a-tree-from-preorder-traversal) |
 | [1116-maximum-level-sum-of-a-binary-tree](https://github.com/SapChak114/LeetCode/tree/master/1116-maximum-level-sum-of-a-binary-tree) |
 | [1207-delete-nodes-and-return-forest](https://github.com/SapChak114/LeetCode/tree/master/1207-delete-nodes-and-return-forest) |
