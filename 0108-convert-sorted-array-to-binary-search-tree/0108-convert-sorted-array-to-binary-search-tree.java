@@ -25,7 +25,7 @@ class Solution {
             return null;
         }
 
-        int mid = l + (r - l) / 2;
+        int mid = l + (r-l) / 2;
         TreeNode root = new TreeNode(nums[mid]);
         root.left = bst(l, mid - 1);
         root.right = bst(mid + 1, r);
