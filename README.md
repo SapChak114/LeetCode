@@ -1203,6 +1203,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0776-n-ary-tree-postorder-traversal](https://github.com/SapChak114/LeetCode/tree/master/0776-n-ary-tree-postorder-traversal) |
 | [0780-max-chunks-to-make-sorted](https://github.com/SapChak114/LeetCode/tree/master/0780-max-chunks-to-make-sorted) |
 | [0874-backspace-string-compare](https://github.com/SapChak114/LeetCode/tree/master/0874-backspace-string-compare) |
+| [0933-increasing-order-search-tree](https://github.com/SapChak114/LeetCode/tree/master/0933-increasing-order-search-tree) |
 | [0957-minimum-add-to-make-parentheses-valid](https://github.com/SapChak114/LeetCode/tree/master/0957-minimum-add-to-make-parentheses-valid) |
 | [1002-maximum-width-ramp](https://github.com/SapChak114/LeetCode/tree/master/1002-maximum-width-ramp) |
 | [1197-parsing-a-boolean-expression](https://github.com/SapChak114/LeetCode/tree/master/1197-parsing-a-boolean-expression) |
@@ -1297,6 +1298,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0820-find-eventual-safe-states](https://github.com/SapChak114/LeetCode/tree/master/0820-find-eventual-safe-states) |
 | [0854-making-a-large-island](https://github.com/SapChak114/LeetCode/tree/master/0854-making-a-large-island) |
 | [0904-leaf-similar-trees](https://github.com/SapChak114/LeetCode/tree/master/0904-leaf-similar-trees) |
+| [0933-increasing-order-search-tree](https://github.com/SapChak114/LeetCode/tree/master/0933-increasing-order-search-tree) |
 | [0984-most-stones-removed-with-same-row-or-column](https://github.com/SapChak114/LeetCode/tree/master/0984-most-stones-removed-with-same-row-or-column) |
 | [0988-flip-equivalent-binary-trees](https://github.com/SapChak114/LeetCode/tree/master/0988-flip-equivalent-binary-trees) |
 | [0999-regions-cut-by-slashes](https://github.com/SapChak114/LeetCode/tree/master/0999-regions-cut-by-slashes) |
@@ -1616,6 +1618,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0789-kth-largest-element-in-a-stream](https://github.com/SapChak114/LeetCode/tree/master/0789-kth-largest-element-in-a-stream) |
 | [0904-leaf-similar-trees](https://github.com/SapChak114/LeetCode/tree/master/0904-leaf-similar-trees) |
 | [0925-construct-binary-tree-from-preorder-and-postorder-traversal](https://github.com/SapChak114/LeetCode/tree/master/0925-construct-binary-tree-from-preorder-and-postorder-traversal) |
+| [0933-increasing-order-search-tree](https://github.com/SapChak114/LeetCode/tree/master/0933-increasing-order-search-tree) |
 | [0988-flip-equivalent-binary-trees](https://github.com/SapChak114/LeetCode/tree/master/0988-flip-equivalent-binary-trees) |
 | [1008-binary-tree-cameras](https://github.com/SapChak114/LeetCode/tree/master/1008-binary-tree-cameras) |
 | [1093-recover-a-tree-from-preorder-traversal](https://github.com/SapChak114/LeetCode/tree/master/1093-recover-a-tree-from-preorder-traversal) |
@@ -1677,6 +1680,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0789-kth-largest-element-in-a-stream](https://github.com/SapChak114/LeetCode/tree/master/0789-kth-largest-element-in-a-stream) |
 | [0904-leaf-similar-trees](https://github.com/SapChak114/LeetCode/tree/master/0904-leaf-similar-trees) |
 | [0925-construct-binary-tree-from-preorder-and-postorder-traversal](https://github.com/SapChak114/LeetCode/tree/master/0925-construct-binary-tree-from-preorder-and-postorder-traversal) |
+| [0933-increasing-order-search-tree](https://github.com/SapChak114/LeetCode/tree/master/0933-increasing-order-search-tree) |
 | [0988-flip-equivalent-binary-trees](https://github.com/SapChak114/LeetCode/tree/master/0988-flip-equivalent-binary-trees) |
 | [1008-binary-tree-cameras](https://github.com/SapChak114/LeetCode/tree/master/1008-binary-tree-cameras) |
 | [1093-recover-a-tree-from-preorder-traversal](https://github.com/SapChak114/LeetCode/tree/master/1093-recover-a-tree-from-preorder-traversal) |
@@ -1791,6 +1795,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/SapChak114/LeetCode/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [0783-search-in-a-binary-search-tree](https://github.com/SapChak114/LeetCode/tree/master/0783-search-in-a-binary-search-tree) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/SapChak114/LeetCode/tree/master/0789-kth-largest-element-in-a-stream) |
+| [0933-increasing-order-search-tree](https://github.com/SapChak114/LeetCode/tree/master/0933-increasing-order-search-tree) |
 | [1285-balance-a-binary-search-tree](https://github.com/SapChak114/LeetCode/tree/master/1285-balance-a-binary-search-tree) |
 ## Math
 |  |
