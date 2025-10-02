@@ -25,8 +25,8 @@ class Solution {
 
         int[] left = isBal(root.left);
         int[] right = isBal(root.right);
-        boolean balanced = (left[0] == 1 && right[0] == 1 && Math.abs(left[1] - right[1]) <= 1);
+        boolean bal = left[0] == 1 && right[0] == 1 && Math.abs(right[1] - left[1]) <= 1;
 
-        return new int[]{(balanced ? 1 : 0), 1 + Math.max(left[1], right[1])};
+        return new int[]{bal ? 1 : 0, Math.max(left[1], right[1]) + 1};
     }
 }
