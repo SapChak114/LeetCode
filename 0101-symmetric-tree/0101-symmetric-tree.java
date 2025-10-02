@@ -27,6 +27,6 @@ class Solution {
             return false;
         }
 
-        return (left.val == right.val) && dfs(left.left, right.right) && dfs(left.right, right.left);
+        return left.val == right.val && dfs(left.left, right.right) && dfs(left.right, right.left);
     }
 }
