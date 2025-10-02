@@ -14,24 +14,11 @@
  * }
  */
 class Solution {
-    int val;
-    boolean isUni;
     public boolean isUnivalTree(TreeNode root) {
-        this.val = root.val;
-        this.isUni = true;
-        preorder(root);
-        return this.isUni;
-    }
 
-    void preorder(TreeNode root) {
-        if (root == null) {
-            return;
-        }
+        boolean left = root.left == null || (root.val == root.left.val && isUnivalTree(root.left));
+        boolean right = root.right == null || (root.val == root.right.val && isUnivalTree(root.right));
 
-        if (root.val != val) {
-            isUni = false;
-        }
-        preorder(root.left);
-        preorder(root.right);
+        return left && right;
     }
 }
