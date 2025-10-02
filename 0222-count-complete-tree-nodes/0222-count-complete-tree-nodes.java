@@ -14,20 +14,11 @@
  * }
  */
 class Solution {
-    int count;
     public int countNodes(TreeNode root) {
-        this.count = 0;
-        dfs(root);
-        return this.count;
-    }
-
-    void dfs(TreeNode root) {
         if (root == null) {
-            return;
+            return 0;
         }
 
-        dfs(root.left);
-        dfs(root.right);
-        count++;
+        return 1 + countNodes(root.left) + countNodes(root.right);
     }
 }
