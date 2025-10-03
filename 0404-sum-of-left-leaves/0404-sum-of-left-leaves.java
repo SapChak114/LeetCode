@@ -15,10 +15,10 @@
  */
 class Solution {
     public int sumOfLeftLeaves(TreeNode root) {
-        return sum(root, false);
+        return dfs(root, false);
     }
 
-    int sum(TreeNode root, boolean isLeft) {
+    int dfs(TreeNode root, boolean isLeft) {
         if (root == null) {
             return 0;
         }
@@ -27,6 +27,6 @@ class Solution {
             return isLeft ? root.val : 0;
         }
 
-        return sum(root.left, true) + sum(root.right, false);
+        return dfs(root.left, true) + dfs(root.right, false);
     }
 }
