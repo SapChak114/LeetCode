@@ -20,38 +20,35 @@ class Solution {
         q.add(root);
 
         while (!q.isEmpty()) {
-            int size = q.size();
-            for (int i = 0; i<size; i++) {
-                TreeNode node = q.poll();
-                hm.put(node.val, hm.getOrDefault(node.val, 0) + 1);
+            TreeNode node = q.poll();
+            hm.put(node.val, hm.getOrDefault(node.val, 0) + 1);
 
-                if (node.left != null) {
-                    q.add(node.left);
-                }
+            if (node.left != null) {
+                q.add(node.left);
+            }
 
-                if (node.right != null) {
-                    q.add(node.right);
-                }
+            if (node.right != null) {
+                q.add(node.right);
             }
         }
 
-        int maxFreq = 0;
+        int max = Integer.MIN_VALUE;
         for (int key : hm.keySet()) {
-            maxFreq = Math.max(maxFreq, hm.get(key));
+            max = Math.max(max, hm.get(key));
         }
 
-        List<Integer> res = new ArrayList<>();
+        List<Integer> list = new ArrayList<>();
         for (int key : hm.keySet()) {
-            if (hm.get(key) == maxFreq) {
-                res.add(key);
+            if (hm.get(key) == max) {
+                list.add(key);
             }
         }
 
-        int[] result = new int[res.size()];
-        for (int i = 0; i<result.length; i++) {
-            result[i] = res.get(i);
+        int[] res = new int[list.size()];
+        for (int i = 0; i<res.length; i++) {
+            res[i] = list.get(i);
         }
 
-        return result;
+        return res;
     }
 }
