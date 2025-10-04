@@ -18,7 +18,7 @@ class Solution {
     public int diameterOfBinaryTree(TreeNode root) {
         this.res = 0;
         pre(root);
-        return res;
+        return this.res;
     }
 
     int pre(TreeNode root) {
