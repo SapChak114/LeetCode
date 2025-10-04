@@ -17,18 +17,18 @@ class Solution {
     int tilt;
     public int findTilt(TreeNode root) {
         this.tilt = 0;
-        find(root);
-        return tilt;
+        dfs(root);
+        return this.tilt;
     }
 
-    int find(TreeNode root) {
+    int dfs(TreeNode root) {
         if (root == null) {
             return 0;
         }
 
-        int left = find(root.left);
-        int right = find(root.right);
-        this.tilt += Math.abs(left - right);
+        int left = dfs(root.left);
+        int right = dfs(root.right);
+        tilt += Math.abs(left - right);
 
         return root.val + left + right;
     }
