@@ -22,14 +22,13 @@ class Solution {
     public List<Integer> preorder(Node root) {
         this.list = new ArrayList<>();
         dfs(root);
-        return list;
+        return this.list;
     }
 
     void dfs(Node root) {
         if (root == null) {
             return;
         }
-
         list.add(root.val);
         for (Node node : root.children) {
             dfs(node);
