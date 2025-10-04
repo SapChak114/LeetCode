@@ -19,19 +19,22 @@ class Node {
 
 class Solution {
     public int maxDepth(Node root) {
-        return find(root);
+        if (root == null) {
+            return 0;
+        }
+        return depth(root) + 1;
     }
 
-    int find(Node root) {
+    int depth(Node root) {
         if (root == null) {
             return 0;
         }
 
         int max = 0;
         for (Node node : root.children) {
-            max = Math.max(max, find(node));
+            max = Math.max(max, depth(node) + 1);
         }
 
-        return 1 + max;
+        return max;
     }
 }
