@@ -14,26 +14,24 @@
  * }
  */
 class Solution {
-    int diff;
-    TreeNode prev;
+    int min;
+    TreeNode parent;
     public int minDiffInBST(TreeNode root) {
-        this.diff = Integer.MAX_VALUE;
-        this.prev = null;
-        inorder(root);
-        return this.diff;
+        this.min = Integer.MAX_VALUE;
+        dfs(root);
+        return this.min;
     }
 
-    void inorder(TreeNode root) {
+    void dfs(TreeNode root) {
         if (root == null) {
             return;
         }
 
-        inorder(root.left);
-
-        if (prev != null) {
-            diff = Math.min(diff, root.val - prev.val);
+        dfs(root.left);
+        if (parent != null) {
+            min = Math.min(min, Math.abs(root.val - parent.val));
         }
-        prev = root;
-        inorder(root.right);
+        parent = root;
+        dfs(root.right);
     }
 }
