@@ -15,22 +15,26 @@
  */
 class Solution {
     public boolean leafSimilar(TreeNode root1, TreeNode root2) {
-        List<Integer> fl = new ArrayList<>();
-        populateLeaves(root1, fl);
-        List<Integer> sl = new ArrayList<>();
-        populateLeaves(root2, sl);
+        List<Integer> listLeft = new ArrayList<>();
+        List<Integer> listRight = new ArrayList<>();
 
-        return fl.equals(sl);
+        addNodes(root1, listLeft);
+        addNodes(root2, listRight);
+
+        return listLeft.equals(listRight);
     }
 
-    void populateLeaves(TreeNode root, List<Integer> list) {
-        if (root == null) {
+    void addNodes(TreeNode node, List<Integer> list) {
+        if (node == null) {
             return;
         }
-        if (root.left == null && root.right == null) {
-            list.add(root.val);
+
+        if (node.left == null && node.right == null) {
+            list.add(node.val);
         }
-        populateLeaves(root.left, list);
-        populateLeaves(root.right, list);
+
+        addNodes(node.left, list);
+        addNodes(node.right, list);
     }
+
 }
