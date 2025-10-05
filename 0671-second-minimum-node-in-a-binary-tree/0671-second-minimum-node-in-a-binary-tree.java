@@ -14,23 +14,26 @@
  * }
  */
 class Solution {
-    long min, smin;
+    int root;
+    long smin;
     public int findSecondMinimumValue(TreeNode root) {
-        this.min = root.val;
+        this.root = root.val;
         this.smin = Long.MAX_VALUE;
-        preorder(root);
-        return this.smin == Long.MAX_VALUE ? -1 : (int)this.smin;
+        dfs(root);
+        return (int) (this.smin == Long.MAX_VALUE ? -1 : this.smin);
     }
 
-    void preorder(TreeNode root) {
-        if (root == null) {
+    void dfs(TreeNode node) {
+        if (node == null) {
             return;
         }
 
-        if (root.val > min && root.val < smin) {
-            smin = root.val;
+        // root.val == min(root.left.val, root.right.val) for each internal node of the tree.
+        if (node.val > root && node.val < smin) {
+            smin = node.val;
         }
-        preorder(root.left);
-        preorder(root.right);
+
+        dfs(node.left);
+        dfs(node.right);
     }
 }
