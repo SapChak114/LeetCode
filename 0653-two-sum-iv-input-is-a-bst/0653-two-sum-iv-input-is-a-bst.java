@@ -14,24 +14,24 @@
  * }
  */
 class Solution {
-    Set<Integer> set;
     int k;
+    Set<Integer> set;
     public boolean findTarget(TreeNode root, int k) {
-        this.set = new HashSet<>();
         this.k = k;
-        return find(root);
+        this.set = new HashSet<>();
+        return dfs(root);
     }
 
-    boolean find(TreeNode root) {
+    boolean dfs(TreeNode root) {
         if (root == null) {
             return false;
         }
 
         if (set.contains(k - root.val)) {
-            return true;
+            return Boolean.TRUE;
         }
         set.add(root.val);
 
-        return find(root.left) || find(root.right);
+        return dfs(root.left) || dfs(root.right);
     }
 }
