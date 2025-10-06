@@ -22,14 +22,14 @@ class Solution {
         return first.right;
     }
 
-    void dfs(TreeNode node) {
-        if (node == null) {
+    void dfs(TreeNode root) {
+        if (root == null) {
             return;
         }
 
-        dfs(node.left);
-        curr.right = new TreeNode(node.val);
+        dfs(root.left);
+        curr.right = new TreeNode(root.val);
         curr = curr.right;
-        dfs(node.right);
+        dfs(root.right);
     }
 }
