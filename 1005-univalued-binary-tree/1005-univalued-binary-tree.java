@@ -15,9 +15,8 @@
  */
 class Solution {
     public boolean isUnivalTree(TreeNode root) {
-
-        boolean left = root.left == null || (root.val == root.left.val && isUnivalTree(root.left));
-        boolean right = root.right == null || (root.val == root.right.val && isUnivalTree(root.right));
+        boolean left = root.left == null || root.val == root.left.val && isUnivalTree(root.left);
+        boolean right = root.right == null || root.val == root.right.val && isUnivalTree(root.right);
 
         return left && right;
     }
