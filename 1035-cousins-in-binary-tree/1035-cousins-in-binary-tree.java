@@ -16,14 +16,13 @@
 class Solution {
     public boolean isCousins(TreeNode root, int x, int y) {
         Queue<TreeNode> q = new LinkedList<>();
-        if (root == null) {
-            return false;
-        }
         q.add(root);
+
         int level = 0, dx = 0, dy = 0;
 
-        while (!q.isEmpty()) {
+        while(!q.isEmpty()) {
             int size = q.size();
+            level++;
             for (int i = 0; i<size; i++) {
                 TreeNode node = q.poll();
 
@@ -34,11 +33,12 @@ class Solution {
                     if (node.left.val == y && node.right.val == x) {
                         return false;
                     }
-                }
+                }  
 
                 if (node.val == x) {
                     dx = level;
                 }
+
                 if (node.val == y) {
                     dy = level;
                 }
@@ -46,12 +46,11 @@ class Solution {
                 if (node.left != null) {
                     q.add(node.left);
                 }
+
                 if (node.right != null) {
                     q.add(node.right);
                 }
-
             }
-            level++;
         }
 
         return dx == dy;
