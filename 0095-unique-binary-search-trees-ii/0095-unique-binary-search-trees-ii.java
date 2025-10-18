@@ -15,27 +15,33 @@
  */
 class Solution {
     public List<TreeNode> generateTrees(int n) {
-        return dfs(1,n);
+        return helper(1, n);
     }
-    
-    List<TreeNode> dfs(int left, int right){
-        if(left>right){
+
+    List<TreeNode> helper(int start, int end) {
+        if (start > end) {
             return Collections.singletonList(null);
         }
-        
-        List<TreeNode> ans = new ArrayList<>();
-        
-        for(int mid = left; mid<=right; mid++){
-            List<TreeNode> lTrees = dfs(left,mid-1);
-            List<TreeNode> rTrees = dfs(mid+1,right);
-            
-            for(TreeNode l : lTrees){
-                for(TreeNode r : rTrees){
-                    ans.add(new TreeNode(mid,l,r));
+
+        if (start == end) {
+            return Collections.singletonList(new TreeNode(start));
+        }
+
+        List<TreeNode> trees = new ArrayList<>();
+        for (int i = start; i<=end; i++) {
+            List<TreeNode> leftTrees = helper(start, i-1);
+            List<TreeNode> rightTrees = helper(i+1, end);
+
+            for (TreeNode left : leftTrees) {
+                for (TreeNode right : rightTrees) {
+                    TreeNode node = new TreeNode(i);
+                    node.left = left;
+                    node.right = right;
+                    trees.add(node);
                 }
             }
         }
-        
-        return ans;
+
+        return trees;
     }
 }
