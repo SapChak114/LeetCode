@@ -31,11 +31,11 @@ class Solution {
             return false;
         }
 
-        if (!validate(root.right, root.val, right)) {
+        if (!validate(root.left, left, root.val)) {
             return false;
         }
 
-        if (!validate(root.left, left, root.val)) {
+        if (!validate(root.right, root.val, right)) {
             return false;
         }
 
