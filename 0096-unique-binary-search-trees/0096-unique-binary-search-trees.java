@@ -1,18 +1,27 @@
 class Solution {
+    Integer[] dp;
     public int numTrees(int n) {
-        int[] arr = new int[n+1];
-        Arrays.fill(arr, 1);
+        this.dp = new Integer[n+1];
+        return helper(n);
+    }
 
-        for (int nodes = 2; nodes<=n; nodes++) {
-            int total = 0;
-            for (int root = 1; root<=nodes; root++) {
-                int left = root - 1;
-                int right = nodes - root;
-                total += arr[left] * arr[right];
-            }
-            arr[nodes] = total;
+    int helper(int n) {
+        if (n == 0 || n == 1) {
+            return 1;
         }
 
-        return arr[n];
+        if (dp[n] != null) {
+            return dp[n];
+        }
+
+        int total = 0;
+        for (int root = 1; root <=n; root++) {
+            int left = helper(root - 1);
+            int right = helper(n - root);
+
+            total += left * right;
+        }
+
+        return dp[n] = total;
     }
 }
