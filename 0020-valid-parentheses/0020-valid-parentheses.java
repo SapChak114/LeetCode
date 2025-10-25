@@ -4,27 +4,27 @@ class Solution {
 
         Stack<Character> st = new Stack<>();
         for (char c : ch) {
-            if (c == '(' || c == '[' || c == '{') {
+            if (c == '(' || c == '{' || c == '[') {
                 st.push(c);
             } else if (st.isEmpty()) {
                 return false;
             } else {
-                switch (c) {
+                switch(c) {
                     case ')':
-                        char cc = st.pop();
-                        if (cc == '[' || cc == '{') {
-                            return false;
-                        }
-                        break;
-                    case ']':
-                        cc = st.pop();
-                        if (cc == '(' || cc == '{') {
+                        char e = st.pop();
+                        if (e == '[' || e == '{') {
                             return false;
                         }
                         break;
                     case '}':
-                        cc = st.pop();
-                        if (cc == '[' || cc == '(') {
+                        e = st.pop();
+                        if (e == '[' || e == '(') {
+                            return false;
+                        }
+                        break;
+                    case ']':
+                        e = st.pop();
+                        if (e == '(' || e == '{') {
                             return false;
                         }
                         break;
