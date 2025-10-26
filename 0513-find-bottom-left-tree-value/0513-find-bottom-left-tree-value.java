@@ -15,17 +15,22 @@
  */
 class Solution {
     public int findBottomLeftValue(TreeNode root) {
-        Deque<TreeNode> q = new ArrayDeque<>();
-        
+        Deque<TreeNode> dq = new ArrayDeque<>();
+        dq.add(root);
+
         TreeNode node = null;
-        q.add(root);
-        while(!q.isEmpty()){
-            node = q.removeFirst();
-            
-            if(node.right !=null) q.add(node.right);
-            if(node.left !=null) q.add(node.left);
+        while(!dq.isEmpty()) {
+            node = dq.pollFirst();
+
+            if (node.right != null) {
+                dq.add(node.right);
+            }
+
+            if (node.left != null) {
+                dq.add(node.left);
+            }
         }
-        
+
         return node.val;
     }
 }
