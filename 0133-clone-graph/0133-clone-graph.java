@@ -30,13 +30,12 @@ class Solution {
         if (node == null) {
             return null;
         }
-
+        
         if (vis.containsKey(node)) {
             return vis.get(node);
         }
 
         Node nod = new Node(node.val);
-
         vis.put(node, nod);
 
         for (Node n : node.neighbors) {
