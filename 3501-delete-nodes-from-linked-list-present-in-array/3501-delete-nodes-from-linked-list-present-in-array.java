@@ -9,32 +9,26 @@
  * }
  */
 class Solution {
-    
     public ListNode modifiedList(int[] nums, ListNode head) {
-        if (head == null || head.next == null) {
-            return head;
-        }
         Set<Integer> set = new HashSet<>();
+
         for (int num : nums) {
             set.add(num);
         }
-        
-        ListNode dummy = new ListNode(0);
-        dummy.next = head;
-        ListNode prev = dummy;
-        ListNode curr = head;
 
-        while (curr != null) {
-            if (set.contains(curr.val)) {
-                prev.next = curr.next;
-            } else {
-                prev = prev.next;
-            }
-
-            curr = curr.next;
+        while (head != null && set.contains(head.val)) {
+            head = head.next;
         }
 
-        return dummy.next;
+        ListNode curr = head;
+        while (curr.next != null) {
+            if (set.contains(curr.next.val)) {
+                curr.next = curr.next.next;
+            } else {
+                curr = curr.next;
+            }
+        }
 
+        return head;
     }
 }
