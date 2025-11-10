@@ -370,6 +370,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3789-maximize-subarrays-after-removing-one-conflicting-pair](https://github.com/SapChak114/LeetCode/tree/master/3789-maximize-subarrays-after-removing-one-conflicting-pair) |
 | [3790-fruits-into-baskets-ii](https://github.com/SapChak114/LeetCode/tree/master/3790-fruits-into-baskets-ii) |
 | [3791-fruits-into-baskets-iii](https://github.com/SapChak114/LeetCode/tree/master/3791-fruits-into-baskets-iii) |
+| [3834-minimum-operations-to-convert-all-elements-to-zero](https://github.com/SapChak114/LeetCode/tree/master/3834-minimum-operations-to-convert-all-elements-to-zero) |
 ## Sorting
 |  |
 | ------- |
@@ -951,6 +952,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3656-minimum-number-of-operations-to-make-elements-in-array-distinct](https://github.com/SapChak114/LeetCode/tree/master/3656-minimum-number-of-operations-to-make-elements-in-array-distinct) |
 | [3753-maximum-difference-between-even-and-odd-frequency-i](https://github.com/SapChak114/LeetCode/tree/master/3753-maximum-difference-between-even-and-odd-frequency-i) |
 | [3788-maximum-unique-subarray-sum-after-deletion](https://github.com/SapChak114/LeetCode/tree/master/3788-maximum-unique-subarray-sum-after-deletion) |
+| [3834-minimum-operations-to-convert-all-elements-to-zero](https://github.com/SapChak114/LeetCode/tree/master/3834-minimum-operations-to-convert-all-elements-to-zero) |
 ## String
 |  |
 | ------- |
@@ -1254,6 +1256,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3181-find-building-where-alice-and-bob-can-meet](https://github.com/SapChak114/LeetCode/tree/master/3181-find-building-where-alice-and-bob-can-meet) |
 | [3445-lexicographically-minimum-string-after-removing-stars](https://github.com/SapChak114/LeetCode/tree/master/3445-lexicographically-minimum-string-after-removing-stars) |
 | [3447-clear-digits](https://github.com/SapChak114/LeetCode/tree/master/3447-clear-digits) |
+| [3834-minimum-operations-to-convert-all-elements-to-zero](https://github.com/SapChak114/LeetCode/tree/master/3834-minimum-operations-to-convert-all-elements-to-zero) |
 ## Recursion
 |  |
 | ------- |
@@ -1852,6 +1855,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3741-reschedule-meetings-for-maximum-free-time-ii](https://github.com/SapChak114/LeetCode/tree/master/3741-reschedule-meetings-for-maximum-free-time-ii) |
 | [3743-reschedule-meetings-for-maximum-free-time-i](https://github.com/SapChak114/LeetCode/tree/master/3743-reschedule-meetings-for-maximum-free-time-i) |
 | [3788-maximum-unique-subarray-sum-after-deletion](https://github.com/SapChak114/LeetCode/tree/master/3788-maximum-unique-subarray-sum-after-deletion) |
+| [3834-minimum-operations-to-convert-all-elements-to-zero](https://github.com/SapChak114/LeetCode/tree/master/3834-minimum-operations-to-convert-all-elements-to-zero) |
 ## Doubly-Linked List
 |  |
 | ------- |
@@ -2247,6 +2251,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2123-the-number-of-weak-characters-in-the-game](https://github.com/SapChak114/LeetCode/tree/master/2123-the-number-of-weak-characters-in-the-game) |
 | [2227-sum-of-subarray-ranges](https://github.com/SapChak114/LeetCode/tree/master/2227-sum-of-subarray-ranges) |
 | [3181-find-building-where-alice-and-bob-can-meet](https://github.com/SapChak114/LeetCode/tree/master/3181-find-building-where-alice-and-bob-can-meet) |
+| [3834-minimum-operations-to-convert-all-elements-to-zero](https://github.com/SapChak114/LeetCode/tree/master/3834-minimum-operations-to-convert-all-elements-to-zero) |
 ## Segment Tree
 |  |
 | ------- |
