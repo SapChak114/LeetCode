@@ -98,6 +98,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0690-employee-importance](https://github.com/SapChak114/LeetCode/tree/master/0690-employee-importance) |
 | [0691-stickers-to-spell-word](https://github.com/SapChak114/LeetCode/tree/master/0691-stickers-to-spell-word) |
 | [0695-max-area-of-island](https://github.com/SapChak114/LeetCode/tree/master/0695-max-area-of-island) |
+| [0717-1-bit-and-2-bit-characters](https://github.com/SapChak114/LeetCode/tree/master/0717-1-bit-and-2-bit-characters) |
 | [0718-maximum-length-of-repeated-subarray](https://github.com/SapChak114/LeetCode/tree/master/0718-maximum-length-of-repeated-subarray) |
 | [0719-find-k-th-smallest-pair-distance](https://github.com/SapChak114/LeetCode/tree/master/0719-find-k-th-smallest-pair-distance) |
 | [0720-longest-word-in-dictionary](https://github.com/SapChak114/LeetCode/tree/master/0720-longest-word-in-dictionary) |
