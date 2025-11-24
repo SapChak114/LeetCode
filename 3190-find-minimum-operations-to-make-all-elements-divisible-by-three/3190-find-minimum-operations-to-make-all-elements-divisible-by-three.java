@@ -1,12 +1,12 @@
 class Solution {
     public int minimumOperations(int[] nums) {
-        int n = nums.length, ans = 0;
+        int n = nums.length, total = 0;
 
-        for (int i = 0; i<n; i++) {
-            int rem = nums[i] % 3;
-            ans += Math.min(rem, 3 - rem);
+        for (int num : nums) {
+            int rem = num % 3;
+            total += Math.min(rem, 3 - rem);
         }
 
-        return ans;
+        return total;
     }
 }
