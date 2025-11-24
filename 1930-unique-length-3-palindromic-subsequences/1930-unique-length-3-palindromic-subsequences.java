@@ -1,12 +1,11 @@
 class Solution {
     public int countPalindromicSubsequence(String s) {
         Set<Character> letters = new HashSet<>();
-        for (int i = 0; i<s.length(); i++) {
-            letters.add(s.charAt(i));
+        for (char c : s.toCharArray()) {
+            letters.add(c);
         }
 
-
-        int ans = 0;
+        int total = 0;
         for (char letter : letters) {
             int i = -1;
             int j = 0;
@@ -16,19 +15,18 @@ class Solution {
                     if (i == -1) {
                         i = k;
                     }
-
                     j = k;
                 }
             }
 
-            Set<Character> btwn = new HashSet<>();
+            Set<Character> middle = new HashSet<>();
             for (int k = i+1; k<j; k++) {
-                btwn.add(s.charAt(k));
+                middle.add(s.charAt(k));
             }
 
-            ans += btwn.size();
+            total += middle.size();
         }
 
-        return ans;
+        return total;
     }
 }
