@@ -231,6 +231,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2117-find-original-array-from-doubled-array](https://github.com/SapChak114/LeetCode/tree/master/2117-find-original-array-from-doubled-array) |
 | [2123-the-number-of-weak-characters-in-the-game](https://github.com/SapChak114/LeetCode/tree/master/2123-the-number-of-weak-characters-in-the-game) |
 | [2132-convert-1d-array-into-2d-array](https://github.com/SapChak114/LeetCode/tree/master/2132-convert-1d-array-into-2d-array) |
+| [2141-maximum-running-time-of-n-computers](https://github.com/SapChak114/LeetCode/tree/master/2141-maximum-running-time-of-n-computers) |
 | [2144-maximum-difference-between-increasing-elements](https://github.com/SapChak114/LeetCode/tree/master/2144-maximum-difference-between-increasing-elements) |
 | [2145-grid-game](https://github.com/SapChak114/LeetCode/tree/master/2145-grid-game) |
 | [2146-check-if-word-can-be-placed-in-crossword](https://github.com/SapChak114/LeetCode/tree/master/2146-check-if-word-can-be-placed-in-crossword) |
@@ -434,6 +435,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2055-describe-the-painting](https://github.com/SapChak114/LeetCode/tree/master/2055-describe-the-painting) |
 | [2117-find-original-array-from-doubled-array](https://github.com/SapChak114/LeetCode/tree/master/2117-find-original-array-from-doubled-array) |
 | [2123-the-number-of-weak-characters-in-the-game](https://github.com/SapChak114/LeetCode/tree/master/2123-the-number-of-weak-characters-in-the-game) |
+| [2141-maximum-running-time-of-n-computers](https://github.com/SapChak114/LeetCode/tree/master/2141-maximum-running-time-of-n-computers) |
 | [2154-keep-multiplying-found-values-by-two](https://github.com/SapChak114/LeetCode/tree/master/2154-keep-multiplying-found-values-by-two) |
 | [2160-minimum-operations-to-make-a-uni-value-grid](https://github.com/SapChak114/LeetCode/tree/master/2160-minimum-operations-to-make-a-uni-value-grid) |
 | [2179-most-beautiful-item-for-each-query](https://github.com/SapChak114/LeetCode/tree/master/2179-most-beautiful-item-for-each-query) |
@@ -792,6 +794,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1851-maximum-number-of-events-that-can-be-attended-ii](https://github.com/SapChak114/LeetCode/tree/master/1851-maximum-number-of-events-that-can-be-attended-ii) |
 | [1886-minimum-limit-of-balls-in-a-bag](https://github.com/SapChak114/LeetCode/tree/master/1886-minimum-limit-of-balls-in-a-bag) |
 | [2006-find-the-student-that-will-replace-the-chalk](https://github.com/SapChak114/LeetCode/tree/master/2006-find-the-student-that-will-replace-the-chalk) |
+| [2141-maximum-running-time-of-n-computers](https://github.com/SapChak114/LeetCode/tree/master/2141-maximum-running-time-of-n-computers) |
 | [2150-kth-smallest-product-of-two-sorted-arrays](https://github.com/SapChak114/LeetCode/tree/master/2150-kth-smallest-product-of-two-sorted-arrays) |
 | [2179-most-beautiful-item-for-each-query](https://github.com/SapChak114/LeetCode/tree/master/2179-most-beautiful-item-for-each-query) |
 | [2180-maximum-number-of-tasks-you-can-assign](https://github.com/SapChak114/LeetCode/tree/master/2180-maximum-number-of-tasks-you-can-assign) |
@@ -1856,6 +1859,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2095-minimum-number-of-swaps-to-make-the-string-balanced](https://github.com/SapChak114/LeetCode/tree/master/2095-minimum-number-of-swaps-to-make-the-string-balanced) |
 | [2117-find-original-array-from-doubled-array](https://github.com/SapChak114/LeetCode/tree/master/2117-find-original-array-from-doubled-array) |
 | [2123-the-number-of-weak-characters-in-the-game](https://github.com/SapChak114/LeetCode/tree/master/2123-the-number-of-weak-characters-in-the-game) |
+| [2141-maximum-running-time-of-n-computers](https://github.com/SapChak114/LeetCode/tree/master/2141-maximum-running-time-of-n-computers) |
 | [2180-maximum-number-of-tasks-you-can-assign](https://github.com/SapChak114/LeetCode/tree/master/2180-maximum-number-of-tasks-you-can-assign) |
 | [2221-check-if-a-parentheses-string-can-be-valid](https://github.com/SapChak114/LeetCode/tree/master/2221-check-if-a-parentheses-string-can-be-valid) |
 | [2237-longest-palindrome-by-concatenating-two-letter-words](https://github.com/SapChak114/LeetCode/tree/master/2237-longest-palindrome-by-concatenating-two-letter-words) |
