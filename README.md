@@ -350,6 +350,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3427-special-array-ii](https://github.com/SapChak114/LeetCode/tree/master/3427-special-array-ii) |
 | [3429-special-array-i](https://github.com/SapChak114/LeetCode/tree/master/3429-special-array-i) |
 | [3430-count-days-without-meetings](https://github.com/SapChak114/LeetCode/tree/master/3430-count-days-without-meetings) |
+| [3432-count-partitions-with-even-sum-difference](https://github.com/SapChak114/LeetCode/tree/master/3432-count-partitions-with-even-sum-difference) |
 | [3434-find-the-number-of-distinct-colors-among-the-balls](https://github.com/SapChak114/LeetCode/tree/master/3434-find-the-number-of-distinct-colors-among-the-balls) |
 | [3459-find-the-minimum-area-to-cover-all-ones-ii](https://github.com/SapChak114/LeetCode/tree/master/3459-find-the-minimum-area-to-cover-all-ones-ii) |
 | [3461-find-the-minimum-area-to-cover-all-ones-i](https://github.com/SapChak114/LeetCode/tree/master/3461-find-the-minimum-area-to-cover-all-ones-i) |
@@ -2002,6 +2003,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3227-find-missing-and-repeated-values](https://github.com/SapChak114/LeetCode/tree/master/3227-find-missing-and-repeated-values) |
 | [3243-count-the-number-of-powerful-integers](https://github.com/SapChak114/LeetCode/tree/master/3243-count-the-number-of-powerful-integers) |
 | [3321-type-of-triangle](https://github.com/SapChak114/LeetCode/tree/master/3321-type-of-triangle) |
+| [3432-count-partitions-with-even-sum-difference](https://github.com/SapChak114/LeetCode/tree/master/3432-count-partitions-with-even-sum-difference) |
 | [3512-minimum-operations-to-make-array-sum-divisible-by-k](https://github.com/SapChak114/LeetCode/tree/master/3512-minimum-operations-to-make-array-sum-divisible-by-k) |
 | [3548-find-the-count-of-good-integers](https://github.com/SapChak114/LeetCode/tree/master/3548-find-the-count-of-good-integers) |
 | [3555-final-array-state-after-k-multiplication-operations-i](https://github.com/SapChak114/LeetCode/tree/master/3555-final-array-state-after-k-multiplication-operations-i) |
@@ -2146,6 +2148,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2915-count-of-interesting-subarrays](https://github.com/SapChak114/LeetCode/tree/master/2915-count-of-interesting-subarrays) |
 | [3265-maximum-good-subarray-sum](https://github.com/SapChak114/LeetCode/tree/master/3265-maximum-good-subarray-sum) |
 | [3427-special-array-ii](https://github.com/SapChak114/LeetCode/tree/master/3427-special-array-ii) |
+| [3432-count-partitions-with-even-sum-difference](https://github.com/SapChak114/LeetCode/tree/master/3432-count-partitions-with-even-sum-difference) |
 | [3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i](https://github.com/SapChak114/LeetCode/tree/master/3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i) |
 | [3616-make-array-elements-equal-to-zero](https://github.com/SapChak114/LeetCode/tree/master/3616-make-array-elements-equal-to-zero) |
 | [3618-find-the-original-typed-string-ii](https://github.com/SapChak114/LeetCode/tree/master/3618-find-the-original-typed-string-ii) |
