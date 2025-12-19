@@ -1,43 +1,48 @@
 class Solution {
-    public List<Integer> findAllPeople(int n, int[][] meetings, int firstPerson) {
+    public List<Integer> findAllPeople(int n, int[][] meetings, int fp) {
         List<int[]>[] adjList = new ArrayList[n];
-        for(int i = 0; i<n; i++){
+
+        for (int i = 0; i<n; i++) {
             adjList[i] = new ArrayList<>();
         }
 
-        for(int i = 0; i<meetings.length; i++){
+        for (int i = 0; i<meetings.length; i++) {
             int u = meetings[i][0];
             int v = meetings[i][1];
             int t = meetings[i][2];
 
-            adjList[u].add(new int[]{t,v});
-            adjList[v].add(new int[]{t,u});
+            adjList[v].add(new int[]{t, u});
+            adjList[u].add(new int[]{t, v});
         }
 
-        PriorityQueue<int[]> pq = new PriorityQueue<>((a,b)->a[0]-b[0]);
-        pq.add(new int[]{0,0});
-        pq.add(new int[]{0,firstPerson});
         boolean[] seen = new boolean[n];
-        while(!pq.isEmpty()){
-            int[] ar = pq.poll();
-            int time = ar[0];
-            int node = ar[1];
-            if(seen[node]){
+        PriorityQueue<int[]> pq = new PriorityQueue<>((a,b) -> a[0]-b[0]);
+        pq.add(new int[]{0, 0});
+        pq.add(new int[]{0, fp});
+    
+        while (!pq.isEmpty()) {
+            int[] vals = pq.poll();
+            int time = vals[0];
+            int node = vals[1];
+
+            if (seen[node]) {
                 continue;
             }
+
             seen[node] = true;
-            for(int[] nei : adjList[node]){
+            for (int[] nei : adjList[node]) {
                 int t = nei[0];
                 int v = nei[1];
-                if(t >= time && !seen[v]){
-                    pq.add(new int[]{t,v});
+
+                if (t >= time && !seen[v]) {
+                    pq.add(new int[]{t, v});
                 }
             }
         }
 
         List<Integer> ans = new ArrayList<>();
-        for(int i = 0; i<n; i++){
-            if(seen[i]){
+        for (int i = 0; i<seen.length; i++) {
+            if (seen[i]) {
                 ans.add(i);
             }
         }
