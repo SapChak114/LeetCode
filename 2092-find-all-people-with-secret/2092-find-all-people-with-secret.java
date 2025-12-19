@@ -11,31 +11,31 @@ class Solution {
             int v = meetings[i][1];
             int t = meetings[i][2];
 
-            adjList[v].add(new int[]{t, u});
-            adjList[u].add(new int[]{t, v});
+            adjList[v].add(new int[]{u, t});
+            adjList[u].add(new int[]{v, t});
         }
 
         boolean[] seen = new boolean[n];
-        PriorityQueue<int[]> pq = new PriorityQueue<>((a,b) -> a[0]-b[0]);
+        PriorityQueue<int[]> pq = new PriorityQueue<>((a,b) -> a[1]-b[1]);
         pq.add(new int[]{0, 0});
-        pq.add(new int[]{0, fp});
+        pq.add(new int[]{fp, 0});
     
         while (!pq.isEmpty()) {
-            int[] vals = pq.poll();
-            int time = vals[0];
-            int node = vals[1];
-
-            if (seen[node]) {
+            int[] nodes = pq.poll();
+            int u = nodes[0];
+            int time = nodes[1];
+            
+            if (seen[u]) {
                 continue;
             }
 
-            seen[node] = true;
-            for (int[] nei : adjList[node]) {
-                int t = nei[0];
-                int v = nei[1];
+            seen[u] = true;
+            for (int[] nei : adjList[u]) {
+                int v = nei[0];
+                int t = nei[1];
 
                 if (t >= time && !seen[v]) {
-                    pq.add(new int[]{t, v});
+                    pq.add(new int[]{v, t});
                 }
             }
         }
