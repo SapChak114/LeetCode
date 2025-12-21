@@ -134,6 +134,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0944-delete-columns-to-make-sorted](https://github.com/SapChak114/LeetCode/tree/master/0944-delete-columns-to-make-sorted) |
 | [0945-snakes-and-ladders](https://github.com/SapChak114/LeetCode/tree/master/0945-snakes-and-ladders) |
 | [0948-sort-an-array](https://github.com/SapChak114/LeetCode/tree/master/0948-sort-an-array) |
+| [0955-delete-columns-to-make-sorted-ii](https://github.com/SapChak114/LeetCode/tree/master/0955-delete-columns-to-make-sorted-ii) |
 | [0965-unique-email-addresses](https://github.com/SapChak114/LeetCode/tree/master/0965-unique-email-addresses) |
 | [0967-minimum-falling-path-sum](https://github.com/SapChak114/LeetCode/tree/master/0967-minimum-falling-path-sum) |
 | [0999-regions-cut-by-slashes](https://github.com/SapChak114/LeetCode/tree/master/0999-regions-cut-by-slashes) |
@@ -1073,6 +1074,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0868-push-dominoes](https://github.com/SapChak114/LeetCode/tree/master/0868-push-dominoes) |
 | [0874-backspace-string-compare](https://github.com/SapChak114/LeetCode/tree/master/0874-backspace-string-compare) |
 | [0944-delete-columns-to-make-sorted](https://github.com/SapChak114/LeetCode/tree/master/0944-delete-columns-to-make-sorted) |
+| [0955-delete-columns-to-make-sorted-ii](https://github.com/SapChak114/LeetCode/tree/master/0955-delete-columns-to-make-sorted-ii) |
 | [0957-minimum-add-to-make-parentheses-valid](https://github.com/SapChak114/LeetCode/tree/master/0957-minimum-add-to-make-parentheses-valid) |
 | [0965-unique-email-addresses](https://github.com/SapChak114/LeetCode/tree/master/0965-unique-email-addresses) |
 | [1006-vowel-spellchecker](https://github.com/SapChak114/LeetCode/tree/master/1006-vowel-spellchecker) |
@@ -1862,6 +1864,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0887-minimum-cost-to-hire-k-workers](https://github.com/SapChak114/LeetCode/tree/master/0887-minimum-cost-to-hire-k-workers) |
 | [0890-lemonade-change](https://github.com/SapChak114/LeetCode/tree/master/0890-lemonade-change) |
 | [0902-minimum-number-of-refueling-stops](https://github.com/SapChak114/LeetCode/tree/master/0902-minimum-number-of-refueling-stops) |
+| [0955-delete-columns-to-make-sorted-ii](https://github.com/SapChak114/LeetCode/tree/master/0955-delete-columns-to-make-sorted-ii) |
 | [0957-minimum-add-to-make-parentheses-valid](https://github.com/SapChak114/LeetCode/tree/master/0957-minimum-add-to-make-parentheses-valid) |
 | [1049-minimum-domino-rotations-for-equal-row](https://github.com/SapChak114/LeetCode/tree/master/1049-minimum-domino-rotations-for-equal-row) |
 | [1081-video-stitching](https://github.com/SapChak114/LeetCode/tree/master/1081-video-stitching) |
