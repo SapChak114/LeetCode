@@ -135,6 +135,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0945-snakes-and-ladders](https://github.com/SapChak114/LeetCode/tree/master/0945-snakes-and-ladders) |
 | [0948-sort-an-array](https://github.com/SapChak114/LeetCode/tree/master/0948-sort-an-array) |
 | [0955-delete-columns-to-make-sorted-ii](https://github.com/SapChak114/LeetCode/tree/master/0955-delete-columns-to-make-sorted-ii) |
+| [0960-delete-columns-to-make-sorted-iii](https://github.com/SapChak114/LeetCode/tree/master/0960-delete-columns-to-make-sorted-iii) |
 | [0965-unique-email-addresses](https://github.com/SapChak114/LeetCode/tree/master/0965-unique-email-addresses) |
 | [0967-minimum-falling-path-sum](https://github.com/SapChak114/LeetCode/tree/master/0967-minimum-falling-path-sum) |
 | [0999-regions-cut-by-slashes](https://github.com/SapChak114/LeetCode/tree/master/0999-regions-cut-by-slashes) |
@@ -670,6 +671,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0902-minimum-number-of-refueling-stops](https://github.com/SapChak114/LeetCode/tree/master/0902-minimum-number-of-refueling-stops) |
 | [0905-length-of-longest-fibonacci-subsequence](https://github.com/SapChak114/LeetCode/tree/master/0905-length-of-longest-fibonacci-subsequence) |
 | [0934-bitwise-ors-of-subarrays](https://github.com/SapChak114/LeetCode/tree/master/0934-bitwise-ors-of-subarrays) |
+| [0960-delete-columns-to-make-sorted-iii](https://github.com/SapChak114/LeetCode/tree/master/0960-delete-columns-to-make-sorted-iii) |
 | [0967-minimum-falling-path-sum](https://github.com/SapChak114/LeetCode/tree/master/0967-minimum-falling-path-sum) |
 | [1008-binary-tree-cameras](https://github.com/SapChak114/LeetCode/tree/master/1008-binary-tree-cameras) |
 | [1063-best-sightseeing-pair](https://github.com/SapChak114/LeetCode/tree/master/1063-best-sightseeing-pair) |
@@ -1076,6 +1078,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0944-delete-columns-to-make-sorted](https://github.com/SapChak114/LeetCode/tree/master/0944-delete-columns-to-make-sorted) |
 | [0955-delete-columns-to-make-sorted-ii](https://github.com/SapChak114/LeetCode/tree/master/0955-delete-columns-to-make-sorted-ii) |
 | [0957-minimum-add-to-make-parentheses-valid](https://github.com/SapChak114/LeetCode/tree/master/0957-minimum-add-to-make-parentheses-valid) |
+| [0960-delete-columns-to-make-sorted-iii](https://github.com/SapChak114/LeetCode/tree/master/0960-delete-columns-to-make-sorted-iii) |
 | [0965-unique-email-addresses](https://github.com/SapChak114/LeetCode/tree/master/0965-unique-email-addresses) |
 | [1006-vowel-spellchecker](https://github.com/SapChak114/LeetCode/tree/master/1006-vowel-spellchecker) |
 | [1058-lexicographically-smallest-equivalent-string](https://github.com/SapChak114/LeetCode/tree/master/1058-lexicographically-smallest-equivalent-string) |
