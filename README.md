@@ -227,6 +227,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2035-count-sub-islands](https://github.com/SapChak114/LeetCode/tree/master/2035-count-sub-islands) |
 | [2048-build-array-from-permutation](https://github.com/SapChak114/LeetCode/tree/master/2048-build-array-from-permutation) |
 | [2054-the-number-of-the-smallest-unoccupied-chair](https://github.com/SapChak114/LeetCode/tree/master/2054-the-number-of-the-smallest-unoccupied-chair) |
+| [2054-two-best-non-overlapping-events](https://github.com/SapChak114/LeetCode/tree/master/2054-two-best-non-overlapping-events) |
 | [2055-describe-the-painting](https://github.com/SapChak114/LeetCode/tree/master/2055-describe-the-painting) |
 | [2067-maximum-number-of-points-with-cost](https://github.com/SapChak114/LeetCode/tree/master/2067-maximum-number-of-points-with-cost) |
 | [2079-delete-duplicate-folders-in-system](https://github.com/SapChak114/LeetCode/tree/master/2079-delete-duplicate-folders-in-system) |
@@ -442,6 +443,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1621-number-of-subsequences-that-satisfy-the-given-sum-condition](https://github.com/SapChak114/LeetCode/tree/master/1621-number-of-subsequences-that-satisfy-the-given-sum-condition) |
 | [1829-maximum-units-on-a-truck](https://github.com/SapChak114/LeetCode/tree/master/1829-maximum-units-on-a-truck) |
 | [1851-maximum-number-of-events-that-can-be-attended-ii](https://github.com/SapChak114/LeetCode/tree/master/1851-maximum-number-of-events-that-can-be-attended-ii) |
+| [2054-two-best-non-overlapping-events](https://github.com/SapChak114/LeetCode/tree/master/2054-two-best-non-overlapping-events) |
 | [2055-describe-the-painting](https://github.com/SapChak114/LeetCode/tree/master/2055-describe-the-painting) |
 | [2092-find-all-people-with-secret](https://github.com/SapChak114/LeetCode/tree/master/2092-find-all-people-with-secret) |
 | [2117-find-original-array-from-doubled-array](https://github.com/SapChak114/LeetCode/tree/master/2117-find-original-array-from-doubled-array) |
@@ -527,6 +529,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1762-furthest-building-you-can-reach](https://github.com/SapChak114/LeetCode/tree/master/1762-furthest-building-you-can-reach) |
 | [1917-maximum-average-pass-ratio](https://github.com/SapChak114/LeetCode/tree/master/1917-maximum-average-pass-ratio) |
 | [2054-the-number-of-the-smallest-unoccupied-chair](https://github.com/SapChak114/LeetCode/tree/master/2054-the-number-of-the-smallest-unoccupied-chair) |
+| [2054-two-best-non-overlapping-events](https://github.com/SapChak114/LeetCode/tree/master/2054-two-best-non-overlapping-events) |
 | [2204-find-subsequence-of-length-k-with-the-largest-sum](https://github.com/SapChak114/LeetCode/tree/master/2204-find-subsequence-of-length-k-with-the-largest-sum) |
 | [2267-minimum-difference-in-sums-after-removal-of-elements](https://github.com/SapChak114/LeetCode/tree/master/2267-minimum-difference-in-sums-after-removal-of-elements) |
 | [2300-construct-string-with-repeat-limit](https://github.com/SapChak114/LeetCode/tree/master/2300-construct-string-with-repeat-limit) |
@@ -700,6 +703,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1849-maximum-absolute-sum-of-any-subarray](https://github.com/SapChak114/LeetCode/tree/master/1849-maximum-absolute-sum-of-any-subarray) |
 | [1851-maximum-number-of-events-that-can-be-attended-ii](https://github.com/SapChak114/LeetCode/tree/master/1851-maximum-number-of-events-that-can-be-attended-ii) |
 | [2028-the-earliest-and-latest-rounds-where-players-compete](https://github.com/SapChak114/LeetCode/tree/master/2028-the-earliest-and-latest-rounds-where-players-compete) |
+| [2054-two-best-non-overlapping-events](https://github.com/SapChak114/LeetCode/tree/master/2054-two-best-non-overlapping-events) |
 | [2061-painting-a-grid-with-three-different-colors](https://github.com/SapChak114/LeetCode/tree/master/2061-painting-a-grid-with-three-different-colors) |
 | [2067-maximum-number-of-points-with-cost](https://github.com/SapChak114/LeetCode/tree/master/2067-maximum-number-of-points-with-cost) |
 | [2090-number-of-ways-to-arrive-at-destination](https://github.com/SapChak114/LeetCode/tree/master/2090-number-of-ways-to-arrive-at-destination) |
@@ -812,6 +816,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1851-maximum-number-of-events-that-can-be-attended-ii](https://github.com/SapChak114/LeetCode/tree/master/1851-maximum-number-of-events-that-can-be-attended-ii) |
 | [1886-minimum-limit-of-balls-in-a-bag](https://github.com/SapChak114/LeetCode/tree/master/1886-minimum-limit-of-balls-in-a-bag) |
 | [2006-find-the-student-that-will-replace-the-chalk](https://github.com/SapChak114/LeetCode/tree/master/2006-find-the-student-that-will-replace-the-chalk) |
+| [2054-two-best-non-overlapping-events](https://github.com/SapChak114/LeetCode/tree/master/2054-two-best-non-overlapping-events) |
 | [2141-maximum-running-time-of-n-computers](https://github.com/SapChak114/LeetCode/tree/master/2141-maximum-running-time-of-n-computers) |
 | [2150-kth-smallest-product-of-two-sorted-arrays](https://github.com/SapChak114/LeetCode/tree/master/2150-kth-smallest-product-of-two-sorted-arrays) |
 | [2179-most-beautiful-item-for-each-query](https://github.com/SapChak114/LeetCode/tree/master/2179-most-beautiful-item-for-each-query) |
