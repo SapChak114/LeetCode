@@ -1,35 +1,23 @@
 class Solution {
     public int minimumBoxes(int[] apple, int[] cap) {
+        int totalApps = 0;
+
+        for (int apps : apple) {
+            totalApps += apps;
+        }
+
         sortReverse(cap);
-        PriorityQueue<Integer> pq = new PriorityQueue<>(Collections.reverseOrder());
 
-        for (int app : apple) {
-            pq.add(app);
-        }
-
-        int ans = 0;
-        for (int i = 0; i<cap.length; i++) {
-            int val = cap[i];
+        int idx = 0, ans = 0;
+        while (totalApps > 0) {
+            totalApps -= cap[idx++];
             ans++;
-            while (val > 0 && !pq.isEmpty()) {
-                if (val >= pq.peek()) {
-                    val -= pq.poll();
-                } else {
-                    int poll = pq.poll();
-                    int rem = poll - val;
-                    pq.add(rem);
-                    val = 0;
-                }
-            }
-
-            if (pq.isEmpty()) {
-                break;
-            }
         }
+
 
         return ans;
-
     }
+
 
     void sortReverse(int[] cap) {
         Arrays.sort(cap);
