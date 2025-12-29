@@ -901,6 +901,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0692-top-k-frequent-words](https://github.com/SapChak114/LeetCode/tree/master/0692-top-k-frequent-words) |
 | [0720-longest-word-in-dictionary](https://github.com/SapChak114/LeetCode/tree/master/0720-longest-word-in-dictionary) |
 | [0721-accounts-merge](https://github.com/SapChak114/LeetCode/tree/master/0721-accounts-merge) |
+| [0756-pyramid-transition-matrix](https://github.com/SapChak114/LeetCode/tree/master/0756-pyramid-transition-matrix) |
 | [0768-partition-labels](https://github.com/SapChak114/LeetCode/tree/master/0768-partition-labels) |
 | [0778-reorganize-string](https://github.com/SapChak114/LeetCode/tree/master/0778-reorganize-string) |
 | [0797-rabbits-in-forest](https://github.com/SapChak114/LeetCode/tree/master/0797-rabbits-in-forest) |
@@ -1078,6 +1079,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0720-longest-word-in-dictionary](https://github.com/SapChak114/LeetCode/tree/master/0720-longest-word-in-dictionary) |
 | [0721-accounts-merge](https://github.com/SapChak114/LeetCode/tree/master/0721-accounts-merge) |
 | [0722-remove-comments](https://github.com/SapChak114/LeetCode/tree/master/0722-remove-comments) |
+| [0756-pyramid-transition-matrix](https://github.com/SapChak114/LeetCode/tree/master/0756-pyramid-transition-matrix) |
 | [0768-partition-labels](https://github.com/SapChak114/LeetCode/tree/master/0768-partition-labels) |
 | [0778-reorganize-string](https://github.com/SapChak114/LeetCode/tree/master/0778-reorganize-string) |
 | [0793-swap-adjacent-in-lr-string](https://github.com/SapChak114/LeetCode/tree/master/0793-swap-adjacent-in-lr-string) |
@@ -2123,6 +2125,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0526-beautiful-arrangement](https://github.com/SapChak114/LeetCode/tree/master/0526-beautiful-arrangement) |
 | [0679-24-game](https://github.com/SapChak114/LeetCode/tree/master/0679-24-game) |
 | [0691-stickers-to-spell-word](https://github.com/SapChak114/LeetCode/tree/master/0691-stickers-to-spell-word) |
+| [0756-pyramid-transition-matrix](https://github.com/SapChak114/LeetCode/tree/master/0756-pyramid-transition-matrix) |
 | [0834-ambiguous-coordinates](https://github.com/SapChak114/LeetCode/tree/master/0834-ambiguous-coordinates) |
 | [1160-letter-tile-possibilities](https://github.com/SapChak114/LeetCode/tree/master/1160-letter-tile-possibilities) |
 | [1331-path-with-maximum-gold](https://github.com/SapChak114/LeetCode/tree/master/1331-path-with-maximum-gold) |
@@ -2227,6 +2230,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0476-number-complement](https://github.com/SapChak114/LeetCode/tree/master/0476-number-complement) |
 | [0526-beautiful-arrangement](https://github.com/SapChak114/LeetCode/tree/master/0526-beautiful-arrangement) |
 | [0691-stickers-to-spell-word](https://github.com/SapChak114/LeetCode/tree/master/0691-stickers-to-spell-word) |
+| [0756-pyramid-transition-matrix](https://github.com/SapChak114/LeetCode/tree/master/0756-pyramid-transition-matrix) |
 | [0861-flipping-an-image](https://github.com/SapChak114/LeetCode/tree/master/0861-flipping-an-image) |
 | [0934-bitwise-ors-of-subarrays](https://github.com/SapChak114/LeetCode/tree/master/0934-bitwise-ors-of-subarrays) |
 | [1018-binary-prefix-divisible-by-5](https://github.com/SapChak114/LeetCode/tree/master/1018-binary-prefix-divisible-by-5) |
