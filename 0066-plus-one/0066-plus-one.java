@@ -6,21 +6,12 @@ class Solution {
                 digits[i] = 0;
             } else {
                 digits[i]++;
-                carr = 0;
-                break;
+                return digits;
             }
         }
 
-        int[] ans = new int[carr == 0 ? n : n + 1];
-
-        for (int i = carr; i<n; i++) {
-            ans[i] = digits[i];
-        }
-
-        if (carr == 1) {
-            ans[0] = 1;
-        }
-
+        int[] ans = new int[n + 1];
+        ans[0] = 1;
         return ans;
     }
 }
