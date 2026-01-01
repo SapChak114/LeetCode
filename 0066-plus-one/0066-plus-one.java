@@ -9,9 +9,8 @@ class Solution {
                 return digits;
             }
         }
-
         int[] ans = new int[n + 1];
-        ans[0] = 1;
+        ans[0] = carr;
         return ans;
     }
 }
