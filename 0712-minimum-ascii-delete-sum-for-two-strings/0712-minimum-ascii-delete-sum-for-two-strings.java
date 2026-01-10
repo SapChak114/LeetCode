@@ -1,8 +1,6 @@
 class Solution {
-    String s1;
-    String s2;
-    int n;
-    int m;
+    String s1, s2;
+    int n, m;
     Integer[][] dp;
     public int minimumDeleteSum(String s1, String s2) {
         this.s1=s1;
