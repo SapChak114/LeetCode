@@ -33,6 +33,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0074-search-a-2d-matrix](https://github.com/SapChak114/LeetCode/tree/master/0074-search-a-2d-matrix) |
 | [0075-sort-colors](https://github.com/SapChak114/LeetCode/tree/master/0075-sort-colors) |
 | [0079-word-search](https://github.com/SapChak114/LeetCode/tree/master/0079-word-search) |
+| [0085-maximal-rectangle](https://github.com/SapChak114/LeetCode/tree/master/0085-maximal-rectangle) |
 | [0088-merge-sorted-array](https://github.com/SapChak114/LeetCode/tree/master/0088-merge-sorted-array) |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/SapChak114/LeetCode/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
 | [0106-construct-binary-tree-from-inorder-and-postorder-traversal](https://github.com/SapChak114/LeetCode/tree/master/0106-construct-binary-tree-from-inorder-and-postorder-traversal) |
@@ -637,6 +638,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0064-minimum-path-sum](https://github.com/SapChak114/LeetCode/tree/master/0064-minimum-path-sum) |
 | [0070-climbing-stairs](https://github.com/SapChak114/LeetCode/tree/master/0070-climbing-stairs) |
 | [0072-edit-distance](https://github.com/SapChak114/LeetCode/tree/master/0072-edit-distance) |
+| [0085-maximal-rectangle](https://github.com/SapChak114/LeetCode/tree/master/0085-maximal-rectangle) |
 | [0095-unique-binary-search-trees-ii](https://github.com/SapChak114/LeetCode/tree/master/0095-unique-binary-search-trees-ii) |
 | [0096-unique-binary-search-trees](https://github.com/SapChak114/LeetCode/tree/master/0096-unique-binary-search-trees) |
 | [0097-interleaving-string](https://github.com/SapChak114/LeetCode/tree/master/0097-interleaving-string) |
@@ -1295,6 +1297,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0020-valid-parentheses](https://github.com/SapChak114/LeetCode/tree/master/0020-valid-parentheses) |
 | [0042-trapping-rain-water](https://github.com/SapChak114/LeetCode/tree/master/0042-trapping-rain-water) |
+| [0085-maximal-rectangle](https://github.com/SapChak114/LeetCode/tree/master/0085-maximal-rectangle) |
 | [0094-binary-tree-inorder-traversal](https://github.com/SapChak114/LeetCode/tree/master/0094-binary-tree-inorder-traversal) |
 | [0114-flatten-binary-tree-to-linked-list](https://github.com/SapChak114/LeetCode/tree/master/0114-flatten-binary-tree-to-linked-list) |
 | [0144-binary-tree-preorder-traversal](https://github.com/SapChak114/LeetCode/tree/master/0144-binary-tree-preorder-traversal) |
@@ -1583,6 +1586,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0073-set-matrix-zeroes](https://github.com/SapChak114/LeetCode/tree/master/0073-set-matrix-zeroes) |
 | [0074-search-a-2d-matrix](https://github.com/SapChak114/LeetCode/tree/master/0074-search-a-2d-matrix) |
 | [0079-word-search](https://github.com/SapChak114/LeetCode/tree/master/0079-word-search) |
+| [0085-maximal-rectangle](https://github.com/SapChak114/LeetCode/tree/master/0085-maximal-rectangle) |
 | [0130-surrounded-regions](https://github.com/SapChak114/LeetCode/tree/master/0130-surrounded-regions) |
 | [0200-number-of-islands](https://github.com/SapChak114/LeetCode/tree/master/0200-number-of-islands) |
 | [0221-maximal-square](https://github.com/SapChak114/LeetCode/tree/master/0221-maximal-square) |
@@ -2378,6 +2382,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0042-trapping-rain-water](https://github.com/SapChak114/LeetCode/tree/master/0042-trapping-rain-water) |
+| [0085-maximal-rectangle](https://github.com/SapChak114/LeetCode/tree/master/0085-maximal-rectangle) |
 | [0316-remove-duplicate-letters](https://github.com/SapChak114/LeetCode/tree/master/0316-remove-duplicate-letters) |
 | [0780-max-chunks-to-make-sorted](https://github.com/SapChak114/LeetCode/tree/master/0780-max-chunks-to-make-sorted) |
 | [1002-maximum-width-ramp](https://github.com/SapChak114/LeetCode/tree/master/1002-maximum-width-ramp) |
