@@ -1,19 +1,20 @@
 class Solution {
-    public int maximalRectangle(char[][] mat) {
-        int n = mat.length;
-        int m = mat[0].length;
+    public int maximalRectangle(char[][] matrix) {
+        int n = matrix.length;
+        int m = matrix[0].length;
 
-        int[] ma = new int[m];
+        int[] mat = new int[m];
         int max = Integer.MIN_VALUE;
         for (int i = 0; i<n; i++) {
             for (int j = 0; j<m; j++) {
-                if (mat[i][j] == '1') {
-                    ma[j]++;
+                if (matrix[i][j] == '1') {
+                    mat[j]++;
                 } else {
-                    ma[j] = 0;
+                    mat[j] = 0;
                 }
             }
-            max = Math.max(max, lra(ma));
+
+            max = Math.max(max, lra(mat));
         }
 
         return max;
@@ -26,7 +27,7 @@ class Solution {
         int max = Integer.MIN_VALUE;
         for (int i = 0; i<A.length; i++) {
             int val = rightSmall[i] - leftSmall[i] - 1;
-            max = Math.max(max, A[i] * val);
+            max = Math.max(max, val * A[i]);
         }
 
         return max;
@@ -35,11 +36,13 @@ class Solution {
     int[] leftSmall(int[] A) {
         int n = A.length;
         int[] ans = new int[n];
+
         Stack<Integer> st = new Stack<>();
         for (int i = 0; i<n; i++) {
             while (!st.isEmpty() && A[st.peek()] >= A[i]) {
                 st.pop();
             }
+
             ans[i] = st.isEmpty() ? -1 : st.peek();
             st.push(i);
         }
@@ -50,11 +53,13 @@ class Solution {
     int[] rightSmall(int[] A) {
         int n = A.length;
         int[] ans = new int[n];
+
         Stack<Integer> st = new Stack<>();
         for (int i = n-1; i>=0; i--) {
             while (!st.isEmpty() && A[st.peek()] >= A[i]) {
                 st.pop();
             }
+
             ans[i] = st.isEmpty() ? n : st.peek();
             st.push(i);
         }
