@@ -168,6 +168,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1262-greatest-sum-divisible-by-three](https://github.com/SapChak114/LeetCode/tree/master/1262-greatest-sum-divisible-by-three) |
 | [1266-minimum-time-visiting-all-points](https://github.com/SapChak114/LeetCode/tree/master/1266-minimum-time-visiting-all-points) |
 | [1288-maximum-subarray-sum-with-one-deletion](https://github.com/SapChak114/LeetCode/tree/master/1288-maximum-subarray-sum-with-one-deletion) |
+| [1292-maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshold](https://github.com/SapChak114/LeetCode/tree/master/1292-maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshold) |
 | [1293-three-consecutive-odds](https://github.com/SapChak114/LeetCode/tree/master/1293-three-consecutive-odds) |
 | [1325-path-with-maximum-probability](https://github.com/SapChak114/LeetCode/tree/master/1325-path-with-maximum-probability) |
 | [1331-path-with-maximum-gold](https://github.com/SapChak114/LeetCode/tree/master/1331-path-with-maximum-gold) |
@@ -826,6 +827,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0907-koko-eating-bananas](https://github.com/SapChak114/LeetCode/tree/master/0907-koko-eating-bananas) |
 | [1087-longest-arithmetic-subsequence](https://github.com/SapChak114/LeetCode/tree/master/1087-longest-arithmetic-subsequence) |
 | [1249-snapshot-array](https://github.com/SapChak114/LeetCode/tree/master/1249-snapshot-array) |
+| [1292-maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshold](https://github.com/SapChak114/LeetCode/tree/master/1292-maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshold) |
 | [1335-maximum-candies-allocated-to-k-children](https://github.com/SapChak114/LeetCode/tree/master/1335-maximum-candies-allocated-to-k-children) |
 | [1351-count-negative-numbers-in-a-sorted-matrix](https://github.com/SapChak114/LeetCode/tree/master/1351-count-negative-numbers-in-a-sorted-matrix) |
 | [1468-check-if-n-and-its-double-exist](https://github.com/SapChak114/LeetCode/tree/master/1468-check-if-n-and-its-double-exist) |
@@ -1616,6 +1618,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1147-flip-columns-for-maximum-number-of-equal-rows](https://github.com/SapChak114/LeetCode/tree/master/1147-flip-columns-for-maximum-number-of-equal-rows) |
 | [1171-shortest-path-in-binary-matrix](https://github.com/SapChak114/LeetCode/tree/master/1171-shortest-path-in-binary-matrix) |
 | [1242-matrix-block-sum](https://github.com/SapChak114/LeetCode/tree/master/1242-matrix-block-sum) |
+| [1292-maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshold](https://github.com/SapChak114/LeetCode/tree/master/1292-maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshold) |
 | [1331-path-with-maximum-gold](https://github.com/SapChak114/LeetCode/tree/master/1331-path-with-maximum-gold) |
 | [1351-count-negative-numbers-in-a-sorted-matrix](https://github.com/SapChak114/LeetCode/tree/master/1351-count-negative-numbers-in-a-sorted-matrix) |
 | [1396-count-servers-that-communicate](https://github.com/SapChak114/LeetCode/tree/master/1396-count-servers-that-communicate) |
@@ -2220,6 +2223,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1016-subarray-sums-divisible-by-k](https://github.com/SapChak114/LeetCode/tree/master/1016-subarray-sums-divisible-by-k) |
 | [1240-stone-game-ii](https://github.com/SapChak114/LeetCode/tree/master/1240-stone-game-ii) |
 | [1242-matrix-block-sum](https://github.com/SapChak114/LeetCode/tree/master/1242-matrix-block-sum) |
+| [1292-maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshold](https://github.com/SapChak114/LeetCode/tree/master/1292-maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshold) |
 | [1435-xor-queries-of-a-subarray](https://github.com/SapChak114/LeetCode/tree/master/1435-xor-queries-of-a-subarray) |
 | [1473-find-the-longest-substring-containing-vowels-in-even-counts](https://github.com/SapChak114/LeetCode/tree/master/1473-find-the-longest-substring-containing-vowels-in-even-counts) |
 | [1537-maximum-score-after-splitting-a-string](https://github.com/SapChak114/LeetCode/tree/master/1537-maximum-score-after-splitting-a-string) |
