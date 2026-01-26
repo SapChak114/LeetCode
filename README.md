@@ -157,6 +157,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1147-flip-columns-for-maximum-number-of-equal-rows](https://github.com/SapChak114/LeetCode/tree/master/1147-flip-columns-for-maximum-number-of-equal-rows) |
 | [1171-shortest-path-in-binary-matrix](https://github.com/SapChak114/LeetCode/tree/master/1171-shortest-path-in-binary-matrix) |
 | [1196-filling-bookcase-shelves](https://github.com/SapChak114/LeetCode/tree/master/1196-filling-bookcase-shelves) |
+| [1200-minimum-absolute-difference](https://github.com/SapChak114/LeetCode/tree/master/1200-minimum-absolute-difference) |
 | [1207-delete-nodes-and-return-forest](https://github.com/SapChak114/LeetCode/tree/master/1207-delete-nodes-and-return-forest) |
 | [1222-remove-covered-intervals](https://github.com/SapChak114/LeetCode/tree/master/1222-remove-covered-intervals) |
 | [1227-number-of-equivalent-domino-pairs](https://github.com/SapChak114/LeetCode/tree/master/1227-number-of-equivalent-domino-pairs) |
@@ -450,6 +451,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0900-reordered-power-of-2](https://github.com/SapChak114/LeetCode/tree/master/0900-reordered-power-of-2) |
 | [0948-sort-an-array](https://github.com/SapChak114/LeetCode/tree/master/0948-sort-an-array) |
 | [1129-longest-string-chain](https://github.com/SapChak114/LeetCode/tree/master/1129-longest-string-chain) |
+| [1200-minimum-absolute-difference](https://github.com/SapChak114/LeetCode/tree/master/1200-minimum-absolute-difference) |
 | [1222-remove-covered-intervals](https://github.com/SapChak114/LeetCode/tree/master/1222-remove-covered-intervals) |
 | [1256-rank-transform-of-an-array](https://github.com/SapChak114/LeetCode/tree/master/1256-rank-transform-of-an-array) |
 | [1262-greatest-sum-divisible-by-three](https://github.com/SapChak114/LeetCode/tree/master/1262-greatest-sum-divisible-by-three) |
