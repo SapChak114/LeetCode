@@ -580,6 +580,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3555-final-array-state-after-k-multiplication-operations-i](https://github.com/SapChak114/LeetCode/tree/master/3555-final-array-state-after-k-multiplication-operations-i) |
 | [3627-find-minimum-time-to-reach-last-room-i](https://github.com/SapChak114/LeetCode/tree/master/3627-find-minimum-time-to-reach-last-room-i) |
 | [3628-find-minimum-time-to-reach-last-room-ii](https://github.com/SapChak114/LeetCode/tree/master/3628-find-minimum-time-to-reach-last-room-ii) |
+| [3650-minimum-cost-path-with-edge-reversals](https://github.com/SapChak114/LeetCode/tree/master/3650-minimum-cost-path-with-edge-reversals) |
 ## Merge Sort
 |  |
 | ------- |
@@ -808,6 +809,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3235-minimum-cost-to-convert-string-i](https://github.com/SapChak114/LeetCode/tree/master/3235-minimum-cost-to-convert-string-i) |
 | [3627-find-minimum-time-to-reach-last-room-i](https://github.com/SapChak114/LeetCode/tree/master/3627-find-minimum-time-to-reach-last-room-i) |
 | [3628-find-minimum-time-to-reach-last-room-ii](https://github.com/SapChak114/LeetCode/tree/master/3628-find-minimum-time-to-reach-last-room-ii) |
+| [3650-minimum-cost-path-with-edge-reversals](https://github.com/SapChak114/LeetCode/tree/master/3650-minimum-cost-path-with-edge-reversals) |
 ## Binary Search
 |  |
 | ------- |
@@ -2482,4 +2484,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [3454-separate-squares-ii](https://github.com/SapChak114/LeetCode/tree/master/3454-separate-squares-ii) |
+## Graph Theory
+|  |
+| ------- |
+| [3650-minimum-cost-path-with-edge-reversals](https://github.com/SapChak114/LeetCode/tree/master/3650-minimum-cost-path-with-edge-reversals) |
 <!---LeetCode Topics End-->
