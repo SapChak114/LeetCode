@@ -268,6 +268,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2204-find-subsequence-of-length-k-with-the-largest-sum](https://github.com/SapChak114/LeetCode/tree/master/2204-find-subsequence-of-length-k-with-the-largest-sum) |
 | [2215-finding-3-digit-even-numbers](https://github.com/SapChak114/LeetCode/tree/master/2215-finding-3-digit-even-numbers) |
 | [2220-find-all-possible-recipes-from-given-supplies](https://github.com/SapChak114/LeetCode/tree/master/2220-find-all-possible-recipes-from-given-supplies) |
+| [2221-find-triangular-sum-of-an-array](https://github.com/SapChak114/LeetCode/tree/master/2221-find-triangular-sum-of-an-array) |
 | [2227-sum-of-subarray-ranges](https://github.com/SapChak114/LeetCode/tree/master/2227-sum-of-subarray-ranges) |
 | [2229-maximum-fruits-harvested-after-at-most-k-steps](https://github.com/SapChak114/LeetCode/tree/master/2229-maximum-fruits-harvested-after-at-most-k-steps) |
 | [2232-adding-spaces-to-a-string](https://github.com/SapChak114/LeetCode/tree/master/2232-adding-spaces-to-a-string) |
@@ -2110,6 +2111,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2160-minimum-operations-to-make-a-uni-value-grid](https://github.com/SapChak114/LeetCode/tree/master/2160-minimum-operations-to-make-a-uni-value-grid) |
 | [2174-next-greater-numerically-balanced-number](https://github.com/SapChak114/LeetCode/tree/master/2174-next-greater-numerically-balanced-number) |
 | [2202-sum-of-k-mirror-numbers](https://github.com/SapChak114/LeetCode/tree/master/2202-sum-of-k-mirror-numbers) |
+| [2221-find-triangular-sum-of-an-array](https://github.com/SapChak114/LeetCode/tree/master/2221-find-triangular-sum-of-an-array) |
 | [2244-number-of-laser-beams-in-a-bank](https://github.com/SapChak114/LeetCode/tree/master/2244-number-of-laser-beams-in-a-bank) |
 | [2288-count-operations-to-obtain-zero](https://github.com/SapChak114/LeetCode/tree/master/2288-count-operations-to-obtain-zero) |
 | [2307-replace-non-coprime-numbers-in-array](https://github.com/SapChak114/LeetCode/tree/master/2307-replace-non-coprime-numbers-in-array) |
@@ -2166,6 +2168,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2155-find-missing-observations](https://github.com/SapChak114/LeetCode/tree/master/2155-find-missing-observations) |
 | [2169-simple-bank-system](https://github.com/SapChak114/LeetCode/tree/master/2169-simple-bank-system) |
 | [2211-count-collisions-on-a-road](https://github.com/SapChak114/LeetCode/tree/master/2211-count-collisions-on-a-road) |
+| [2221-find-triangular-sum-of-an-array](https://github.com/SapChak114/LeetCode/tree/master/2221-find-triangular-sum-of-an-array) |
 | [2232-adding-spaces-to-a-string](https://github.com/SapChak114/LeetCode/tree/master/2232-adding-spaces-to-a-string) |
 | [2260-divide-a-string-into-groups-of-size-k](https://github.com/SapChak114/LeetCode/tree/master/2260-divide-a-string-into-groups-of-size-k) |
 | [2265-partition-array-according-to-given-pivot](https://github.com/SapChak114/LeetCode/tree/master/2265-partition-array-according-to-given-pivot) |
@@ -2487,6 +2490,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0062-unique-paths](https://github.com/SapChak114/LeetCode/tree/master/0062-unique-paths) |
 | [1993-sum-of-all-subset-xor-totals](https://github.com/SapChak114/LeetCode/tree/master/1993-sum-of-all-subset-xor-totals) |
+| [2221-find-triangular-sum-of-an-array](https://github.com/SapChak114/LeetCode/tree/master/2221-find-triangular-sum-of-an-array) |
 | [2415-count-the-number-of-ideal-arrays](https://github.com/SapChak114/LeetCode/tree/master/2415-count-the-number-of-ideal-arrays) |
 | [3201-distribute-candies-among-children-ii](https://github.com/SapChak114/LeetCode/tree/master/3201-distribute-candies-among-children-ii) |
 | [3548-find-the-count-of-good-integers](https://github.com/SapChak114/LeetCode/tree/master/3548-find-the-count-of-good-integers) |
