@@ -745,6 +745,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2067-maximum-number-of-points-with-cost](https://github.com/SapChak114/LeetCode/tree/master/2067-maximum-number-of-points-with-cost) |
 | [2090-number-of-ways-to-arrive-at-destination](https://github.com/SapChak114/LeetCode/tree/master/2090-number-of-ways-to-arrive-at-destination) |
 | [2110-number-of-smooth-descent-periods-of-a-stock](https://github.com/SapChak114/LeetCode/tree/master/2110-number-of-smooth-descent-periods-of-a-stock) |
+| [2222-number-of-ways-to-select-buildings](https://github.com/SapChak114/LeetCode/tree/master/2222-number-of-ways-to-select-buildings) |
 | [2262-solving-questions-with-brainpower](https://github.com/SapChak114/LeetCode/tree/master/2262-solving-questions-with-brainpower) |
 | [2267-minimum-difference-in-sums-after-removal-of-elements](https://github.com/SapChak114/LeetCode/tree/master/2267-minimum-difference-in-sums-after-removal-of-elements) |
 | [2395-longest-binary-subsequence-less-than-or-equal-to-k](https://github.com/SapChak114/LeetCode/tree/master/2395-longest-binary-subsequence-less-than-or-equal-to-k) |
@@ -1182,6 +1183,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2211-count-collisions-on-a-road](https://github.com/SapChak114/LeetCode/tree/master/2211-count-collisions-on-a-road) |
 | [2220-find-all-possible-recipes-from-given-supplies](https://github.com/SapChak114/LeetCode/tree/master/2220-find-all-possible-recipes-from-given-supplies) |
 | [2221-check-if-a-parentheses-string-can-be-valid](https://github.com/SapChak114/LeetCode/tree/master/2221-check-if-a-parentheses-string-can-be-valid) |
+| [2222-number-of-ways-to-select-buildings](https://github.com/SapChak114/LeetCode/tree/master/2222-number-of-ways-to-select-buildings) |
 | [2232-adding-spaces-to-a-string](https://github.com/SapChak114/LeetCode/tree/master/2232-adding-spaces-to-a-string) |
 | [2237-longest-palindrome-by-concatenating-two-letter-words](https://github.com/SapChak114/LeetCode/tree/master/2237-longest-palindrome-by-concatenating-two-letter-words) |
 | [2244-number-of-laser-beams-in-a-bank](https://github.com/SapChak114/LeetCode/tree/master/2244-number-of-laser-beams-in-a-bank) |
@@ -2276,6 +2278,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2055-describe-the-painting](https://github.com/SapChak114/LeetCode/tree/master/2055-describe-the-painting) |
 | [2059-unique-length-3-palindromic-subsequences](https://github.com/SapChak114/LeetCode/tree/master/2059-unique-length-3-palindromic-subsequences) |
 | [2145-grid-game](https://github.com/SapChak114/LeetCode/tree/master/2145-grid-game) |
+| [2222-number-of-ways-to-select-buildings](https://github.com/SapChak114/LeetCode/tree/master/2222-number-of-ways-to-select-buildings) |
 | [2229-maximum-fruits-harvested-after-at-most-k-steps](https://github.com/SapChak114/LeetCode/tree/master/2229-maximum-fruits-harvested-after-at-most-k-steps) |
 | [2249-count-the-hidden-sequences](https://github.com/SapChak114/LeetCode/tree/master/2249-count-the-hidden-sequences) |
 | [2394-count-subarrays-with-score-less-than-k](https://github.com/SapChak114/LeetCode/tree/master/2394-count-subarrays-with-score-less-than-k) |
