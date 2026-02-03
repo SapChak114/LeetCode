@@ -1,5 +1,5 @@
 class LRUCache {
-    Map<Integer, Integer> hm;
+    LinkedHashMap<Integer, Integer> hm;
     int cap;
     public LRUCache(int capacity) {
         this.hm = new LinkedHashMap<>();
@@ -7,31 +7,24 @@ class LRUCache {
     }
     
     public int get(int key) {
-        if (hm.containsKey(key)) {
-            int val = hm.remove(key);
-            hm.put(key, val);
-            return val;
-        } else {
+        if (!hm.containsKey(key)) {
             return -1;
         }
+
+        int val = hm.remove(key);
+        hm.put(key, val);
+        return val;
     }
     
     public void put(int key, int value) {
         if (hm.containsKey(key)) {
             hm.remove(key);
         }
+
         if (hm.size() >= cap) {
-            int remKey = 0;
-            boolean flag = false;
-            for (Map.Entry<Integer, Integer> e : hm.entrySet()) {
-                remKey = e.getKey();
-                flag = true;
-                break;
-            }
-            if (flag) {
-                hm.remove(remKey);
-            }
+            hm.remove(hm.keySet().iterator().next());
         }
+
         hm.put(key, value);
     }
 }
