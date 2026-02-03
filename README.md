@@ -143,6 +143,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0961-n-repeated-element-in-size-2n-array](https://github.com/SapChak114/LeetCode/tree/master/0961-n-repeated-element-in-size-2n-array) |
 | [0965-unique-email-addresses](https://github.com/SapChak114/LeetCode/tree/master/0965-unique-email-addresses) |
 | [0967-minimum-falling-path-sum](https://github.com/SapChak114/LeetCode/tree/master/0967-minimum-falling-path-sum) |
+| [0994-rotting-oranges](https://github.com/SapChak114/LeetCode/tree/master/0994-rotting-oranges) |
 | [0999-regions-cut-by-slashes](https://github.com/SapChak114/LeetCode/tree/master/0999-regions-cut-by-slashes) |
 | [1002-maximum-width-ramp](https://github.com/SapChak114/LeetCode/tree/master/1002-maximum-width-ramp) |
 | [1006-vowel-spellchecker](https://github.com/SapChak114/LeetCode/tree/master/1006-vowel-spellchecker) |
@@ -1534,6 +1535,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0863-all-nodes-distance-k-in-binary-tree](https://github.com/SapChak114/LeetCode/tree/master/0863-all-nodes-distance-k-in-binary-tree) |
 | [0865-smallest-subtree-with-all-the-deepest-nodes](https://github.com/SapChak114/LeetCode/tree/master/0865-smallest-subtree-with-all-the-deepest-nodes) |
 | [0945-snakes-and-ladders](https://github.com/SapChak114/LeetCode/tree/master/0945-snakes-and-ladders) |
+| [0994-rotting-oranges](https://github.com/SapChak114/LeetCode/tree/master/0994-rotting-oranges) |
 | [0999-regions-cut-by-slashes](https://github.com/SapChak114/LeetCode/tree/master/0999-regions-cut-by-slashes) |
 | [1005-univalued-binary-tree](https://github.com/SapChak114/LeetCode/tree/master/1005-univalued-binary-tree) |
 | [1035-cousins-in-binary-tree](https://github.com/SapChak114/LeetCode/tree/master/1035-cousins-in-binary-tree) |
@@ -1635,6 +1637,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0870-magic-squares-in-grid](https://github.com/SapChak114/LeetCode/tree/master/0870-magic-squares-in-grid) |
 | [0945-snakes-and-ladders](https://github.com/SapChak114/LeetCode/tree/master/0945-snakes-and-ladders) |
 | [0967-minimum-falling-path-sum](https://github.com/SapChak114/LeetCode/tree/master/0967-minimum-falling-path-sum) |
+| [0994-rotting-oranges](https://github.com/SapChak114/LeetCode/tree/master/0994-rotting-oranges) |
 | [0999-regions-cut-by-slashes](https://github.com/SapChak114/LeetCode/tree/master/0999-regions-cut-by-slashes) |
 | [1036-rotting-oranges](https://github.com/SapChak114/LeetCode/tree/master/1036-rotting-oranges) |
 | [1147-flip-columns-for-maximum-number-of-equal-rows](https://github.com/SapChak114/LeetCode/tree/master/1147-flip-columns-for-maximum-number-of-equal-rows) |
