@@ -248,6 +248,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2067-maximum-number-of-points-with-cost](https://github.com/SapChak114/LeetCode/tree/master/2067-maximum-number-of-points-with-cost) |
 | [2079-delete-duplicate-folders-in-system](https://github.com/SapChak114/LeetCode/tree/master/2079-delete-duplicate-folders-in-system) |
 | [2089-maximum-matrix-sum](https://github.com/SapChak114/LeetCode/tree/master/2089-maximum-matrix-sum) |
+| [2100-find-good-days-to-rob-the-bank](https://github.com/SapChak114/LeetCode/tree/master/2100-find-good-days-to-rob-the-bank) |
 | [2110-number-of-smooth-descent-periods-of-a-stock](https://github.com/SapChak114/LeetCode/tree/master/2110-number-of-smooth-descent-periods-of-a-stock) |
 | [2117-find-original-array-from-doubled-array](https://github.com/SapChak114/LeetCode/tree/master/2117-find-original-array-from-doubled-array) |
 | [2123-the-number-of-weak-characters-in-the-game](https://github.com/SapChak114/LeetCode/tree/master/2123-the-number-of-weak-characters-in-the-game) |
@@ -746,6 +747,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2061-painting-a-grid-with-three-different-colors](https://github.com/SapChak114/LeetCode/tree/master/2061-painting-a-grid-with-three-different-colors) |
 | [2067-maximum-number-of-points-with-cost](https://github.com/SapChak114/LeetCode/tree/master/2067-maximum-number-of-points-with-cost) |
 | [2090-number-of-ways-to-arrive-at-destination](https://github.com/SapChak114/LeetCode/tree/master/2090-number-of-ways-to-arrive-at-destination) |
+| [2100-find-good-days-to-rob-the-bank](https://github.com/SapChak114/LeetCode/tree/master/2100-find-good-days-to-rob-the-bank) |
 | [2110-number-of-smooth-descent-periods-of-a-stock](https://github.com/SapChak114/LeetCode/tree/master/2110-number-of-smooth-descent-periods-of-a-stock) |
 | [2222-number-of-ways-to-select-buildings](https://github.com/SapChak114/LeetCode/tree/master/2222-number-of-ways-to-select-buildings) |
 | [2262-solving-questions-with-brainpower](https://github.com/SapChak114/LeetCode/tree/master/2262-solving-questions-with-brainpower) |
@@ -2280,6 +2282,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2006-find-the-student-that-will-replace-the-chalk](https://github.com/SapChak114/LeetCode/tree/master/2006-find-the-student-that-will-replace-the-chalk) |
 | [2055-describe-the-painting](https://github.com/SapChak114/LeetCode/tree/master/2055-describe-the-painting) |
 | [2059-unique-length-3-palindromic-subsequences](https://github.com/SapChak114/LeetCode/tree/master/2059-unique-length-3-palindromic-subsequences) |
+| [2100-find-good-days-to-rob-the-bank](https://github.com/SapChak114/LeetCode/tree/master/2100-find-good-days-to-rob-the-bank) |
 | [2145-grid-game](https://github.com/SapChak114/LeetCode/tree/master/2145-grid-game) |
 | [2222-number-of-ways-to-select-buildings](https://github.com/SapChak114/LeetCode/tree/master/2222-number-of-ways-to-select-buildings) |
 | [2229-maximum-fruits-harvested-after-at-most-k-steps](https://github.com/SapChak114/LeetCode/tree/master/2229-maximum-fruits-harvested-after-at-most-k-steps) |
