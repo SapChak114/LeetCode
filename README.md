@@ -1072,6 +1072,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0038-count-and-say](https://github.com/SapChak114/LeetCode/tree/master/0038-count-and-say) |
 | [0044-wildcard-matching](https://github.com/SapChak114/LeetCode/tree/master/0044-wildcard-matching) |
 | [0049-group-anagrams](https://github.com/SapChak114/LeetCode/tree/master/0049-group-anagrams) |
+| [0067-add-binary](https://github.com/SapChak114/LeetCode/tree/master/0067-add-binary) |
 | [0068-text-justification](https://github.com/SapChak114/LeetCode/tree/master/0068-text-justification) |
 | [0072-edit-distance](https://github.com/SapChak114/LeetCode/tree/master/0072-edit-distance) |
 | [0076-minimum-window-substring](https://github.com/SapChak114/LeetCode/tree/master/0076-minimum-window-substring) |
@@ -2069,6 +2070,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0050-powx-n](https://github.com/SapChak114/LeetCode/tree/master/0050-powx-n) |
 | [0062-unique-paths](https://github.com/SapChak114/LeetCode/tree/master/0062-unique-paths) |
 | [0066-plus-one](https://github.com/SapChak114/LeetCode/tree/master/0066-plus-one) |
+| [0067-add-binary](https://github.com/SapChak114/LeetCode/tree/master/0067-add-binary) |
 | [0069-sqrtx](https://github.com/SapChak114/LeetCode/tree/master/0069-sqrtx) |
 | [0070-climbing-stairs](https://github.com/SapChak114/LeetCode/tree/master/0070-climbing-stairs) |
 | [0096-unique-binary-search-trees](https://github.com/SapChak114/LeetCode/tree/master/0096-unique-binary-search-trees) |
@@ -2164,6 +2166,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0054-spiral-matrix](https://github.com/SapChak114/LeetCode/tree/master/0054-spiral-matrix) |
+| [0067-add-binary](https://github.com/SapChak114/LeetCode/tree/master/0067-add-binary) |
 | [0068-text-justification](https://github.com/SapChak114/LeetCode/tree/master/0068-text-justification) |
 | [0289-game-of-life](https://github.com/SapChak114/LeetCode/tree/master/0289-game-of-life) |
 | [0415-add-strings](https://github.com/SapChak114/LeetCode/tree/master/0415-add-strings) |
@@ -2323,6 +2326,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Bit Manipulation
 |  |
 | ------- |
+| [0067-add-binary](https://github.com/SapChak114/LeetCode/tree/master/0067-add-binary) |
 | [0222-count-complete-tree-nodes](https://github.com/SapChak114/LeetCode/tree/master/0222-count-complete-tree-nodes) |
 | [0287-find-the-duplicate-number](https://github.com/SapChak114/LeetCode/tree/master/0287-find-the-duplicate-number) |
 | [0318-maximum-product-of-word-lengths](https://github.com/SapChak114/LeetCode/tree/master/0318-maximum-product-of-word-lengths) |
