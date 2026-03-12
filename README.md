@@ -79,6 +79,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0463-island-perimeter](https://github.com/SapChak114/LeetCode/tree/master/0463-island-perimeter) |
 | [0474-ones-and-zeroes](https://github.com/SapChak114/LeetCode/tree/master/0474-ones-and-zeroes) |
 | [0485-max-consecutive-ones](https://github.com/SapChak114/LeetCode/tree/master/0485-max-consecutive-ones) |
+| [0486-predict-the-winner](https://github.com/SapChak114/LeetCode/tree/master/0486-predict-the-winner) |
 | [0494-target-sum](https://github.com/SapChak114/LeetCode/tree/master/0494-target-sum) |
 | [0506-relative-ranks](https://github.com/SapChak114/LeetCode/tree/master/0506-relative-ranks) |
 | [0522-longest-uncommon-subsequence-ii](https://github.com/SapChak114/LeetCode/tree/master/0522-longest-uncommon-subsequence-ii) |
@@ -699,6 +700,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0416-partition-equal-subset-sum](https://github.com/SapChak114/LeetCode/tree/master/0416-partition-equal-subset-sum) |
 | [0435-non-overlapping-intervals](https://github.com/SapChak114/LeetCode/tree/master/0435-non-overlapping-intervals) |
 | [0474-ones-and-zeroes](https://github.com/SapChak114/LeetCode/tree/master/0474-ones-and-zeroes) |
+| [0486-predict-the-winner](https://github.com/SapChak114/LeetCode/tree/master/0486-predict-the-winner) |
 | [0494-target-sum](https://github.com/SapChak114/LeetCode/tree/master/0494-target-sum) |
 | [0526-beautiful-arrangement](https://github.com/SapChak114/LeetCode/tree/master/0526-beautiful-arrangement) |
 | [0542-01-matrix](https://github.com/SapChak114/LeetCode/tree/master/0542-01-matrix) |
@@ -1416,6 +1418,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0326-power-of-three](https://github.com/SapChak114/LeetCode/tree/master/0326-power-of-three) |
 | [0342-power-of-four](https://github.com/SapChak114/LeetCode/tree/master/0342-power-of-four) |
 | [0394-decode-string](https://github.com/SapChak114/LeetCode/tree/master/0394-decode-string) |
+| [0486-predict-the-winner](https://github.com/SapChak114/LeetCode/tree/master/0486-predict-the-winner) |
 | [1197-parsing-a-boolean-expression](https://github.com/SapChak114/LeetCode/tree/master/1197-parsing-a-boolean-expression) |
 | [1667-find-kth-bit-in-nth-binary-string](https://github.com/SapChak114/LeetCode/tree/master/1667-find-kth-bit-in-nth-binary-string) |
 | [2050-count-good-numbers](https://github.com/SapChak114/LeetCode/tree/master/2050-count-good-numbers) |
@@ -2111,6 +2114,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0375-guess-number-higher-or-lower-ii](https://github.com/SapChak114/LeetCode/tree/master/0375-guess-number-higher-or-lower-ii) |
 | [0380-insert-delete-getrandom-o1](https://github.com/SapChak114/LeetCode/tree/master/0380-insert-delete-getrandom-o1) |
 | [0415-add-strings](https://github.com/SapChak114/LeetCode/tree/master/0415-add-strings) |
+| [0486-predict-the-winner](https://github.com/SapChak114/LeetCode/tree/master/0486-predict-the-winner) |
 | [0539-minimum-time-difference](https://github.com/SapChak114/LeetCode/tree/master/0539-minimum-time-difference) |
 | [0564-find-the-closest-palindrome](https://github.com/SapChak114/LeetCode/tree/master/0564-find-the-closest-palindrome) |
 | [0592-fraction-addition-and-subtraction](https://github.com/SapChak114/LeetCode/tree/master/0592-fraction-addition-and-subtraction) |
@@ -2350,6 +2354,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0375-guess-number-higher-or-lower-ii](https://github.com/SapChak114/LeetCode/tree/master/0375-guess-number-higher-or-lower-ii) |
+| [0486-predict-the-winner](https://github.com/SapChak114/LeetCode/tree/master/0486-predict-the-winner) |
 | [1240-stone-game-ii](https://github.com/SapChak114/LeetCode/tree/master/1240-stone-game-ii) |
 ## Bit Manipulation
 |  |
