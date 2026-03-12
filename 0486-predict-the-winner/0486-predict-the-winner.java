@@ -1,46 +1,34 @@
+// class Solution {
+//     public boolean predictTheWinner(int[] nums) {
+        
+//     }
+    
+// }
 class Solution {
-    Map<String,Integer> map;
-    public boolean PredictTheWinner(int[] nums) {
-        map = new HashMap<>();
-        int player1 = rec(nums,0,nums.length-1,1);
-        int sum = 0;
-        for(int s : nums){
-            sum += s;
+    int[][] dp;
+    
+    public int score(int[] nums, int l, int r) {
+        if (dp[l][r] != -1) {
+            return dp[l][r];
+        }
+        if (l == r) {
+            return nums[l];
         }
         
-        int player2 = sum - player1;
+        int left = nums[l] - score(nums, l + 1, r);
+        int right = nums[r] - score(nums, l, r - 1);
+        dp[l][r] = Math.max(left, right);
         
-        return player1>=player2;
+        return dp[l][r];
     }
     
-    
-    public int rec(int[] nums, int left, int right,int player){
-        if(left>right){
-            return 0;
+    public boolean predictTheWinner(int[] nums) {
+        int n = nums.length;
+        dp = new int[n][n];
+        for (int i = 0; i < n; ++i) {
+            Arrays.fill(dp[i], -1);
         }
         
-        String key = left+"-"+right+"-"+player;
-        
-        if(map.containsKey(key)) return map.get(key);
-        
-        if(player==1){
-            int first = nums[left] + rec(nums,left+1,right,2);
-            int second = nums[right] + rec(nums,left,right-1,2);
-            
-            map.put(key,Math.max(first,second));
-            
-            return Math.max(first,second);
-        } else{
-            
-            int first = rec(nums,left+1,right,1);
-            int second = rec(nums,left,right-1,1);
-            
-            map.put(key,Math.min(first,second));
-            
-            return Math.min(first,second);
-        }
-        
+        return score(nums, 0, n - 1) >= 0;
     }
-    
-    
 }
