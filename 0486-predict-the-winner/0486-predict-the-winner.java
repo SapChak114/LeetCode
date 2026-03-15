@@ -1,34 +1,28 @@
-// class Solution {
-//     public boolean predictTheWinner(int[] nums) {
-        
-//     }
-    
-// }
 class Solution {
-    int[][] dp;
-    
-    public int score(int[] nums, int l, int r) {
-        if (dp[l][r] != -1) {
+    Integer[][] dp;
+    int n;
+    int[] nums;
+    public boolean predictTheWinner(int[] nums) {
+        this.n = nums.length;
+        this.dp = new Integer[n][n];
+        this.nums = nums;
+
+        return score(0, n-1) >= 0;
+    }
+
+    int score(int l, int r) {
+        if (dp[l][r] != null) {
             return dp[l][r];
         }
+
         if (l == r) {
             return nums[l];
         }
-        
-        int left = nums[l] - score(nums, l + 1, r);
-        int right = nums[r] - score(nums, l, r - 1);
-        dp[l][r] = Math.max(left, right);
-        
-        return dp[l][r];
+
+        int lScore = nums[l] - score(l+1, r);
+        int rScore = nums[r] - score(l, r-1);
+
+        return dp[l][r] = Math.max(lScore, rScore);
     }
-    
-    public boolean predictTheWinner(int[] nums) {
-        int n = nums.length;
-        dp = new int[n][n];
-        for (int i = 0; i < n; ++i) {
-            Arrays.fill(dp[i], -1);
-        }
-        
-        return score(nums, 0, n - 1) >= 0;
-    }
+
 }
