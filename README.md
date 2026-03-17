@@ -346,6 +346,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2766-find-the-prefix-common-array-of-two-arrays](https://github.com/SapChak114/LeetCode/tree/master/2766-find-the-prefix-common-array-of-two-arrays) |
 | [2792-neighboring-bitwise-xor](https://github.com/SapChak114/LeetCode/tree/master/2792-neighboring-bitwise-xor) |
 | [2794-maximum-number-of-moves-in-a-grid](https://github.com/SapChak114/LeetCode/tree/master/2794-maximum-number-of-moves-in-a-grid) |
+| [2848-points-that-intersect-with-cars](https://github.com/SapChak114/LeetCode/tree/master/2848-points-that-intersect-with-cars) |
 | [2856-count-complete-subarrays-in-an-array](https://github.com/SapChak114/LeetCode/tree/master/2856-count-complete-subarrays-in-an-array) |
 | [2868-continuous-subarrays](https://github.com/SapChak114/LeetCode/tree/master/2868-continuous-subarrays) |
 | [2888-minimum-index-of-a-valid-split](https://github.com/SapChak114/LeetCode/tree/master/2888-minimum-index-of-a-valid-split) |
@@ -1049,6 +1050,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2707-merge-two-2d-arrays-by-summing-values](https://github.com/SapChak114/LeetCode/tree/master/2707-merge-two-2d-arrays-by-summing-values) |
 | [2755-extra-characters-in-a-string](https://github.com/SapChak114/LeetCode/tree/master/2755-extra-characters-in-a-string) |
 | [2766-find-the-prefix-common-array-of-two-arrays](https://github.com/SapChak114/LeetCode/tree/master/2766-find-the-prefix-common-array-of-two-arrays) |
+| [2848-points-that-intersect-with-cars](https://github.com/SapChak114/LeetCode/tree/master/2848-points-that-intersect-with-cars) |
 | [2856-count-complete-subarrays-in-an-array](https://github.com/SapChak114/LeetCode/tree/master/2856-count-complete-subarrays-in-an-array) |
 | [2888-minimum-index-of-a-valid-split](https://github.com/SapChak114/LeetCode/tree/master/2888-minimum-index-of-a-valid-split) |
 | [2915-count-of-interesting-subarrays](https://github.com/SapChak114/LeetCode/tree/master/2915-count-of-interesting-subarrays) |
@@ -2343,6 +2345,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2488-divide-intervals-into-minimum-number-of-groups](https://github.com/SapChak114/LeetCode/tree/master/2488-divide-intervals-into-minimum-number-of-groups) |
 | [2529-range-product-queries-of-powers](https://github.com/SapChak114/LeetCode/tree/master/2529-range-product-queries-of-powers) |
 | [2691-count-vowel-strings-in-ranges](https://github.com/SapChak114/LeetCode/tree/master/2691-count-vowel-strings-in-ranges) |
+| [2848-points-that-intersect-with-cars](https://github.com/SapChak114/LeetCode/tree/master/2848-points-that-intersect-with-cars) |
 | [2915-count-of-interesting-subarrays](https://github.com/SapChak114/LeetCode/tree/master/2915-count-of-interesting-subarrays) |
 | [3265-maximum-good-subarray-sum](https://github.com/SapChak114/LeetCode/tree/master/3265-maximum-good-subarray-sum) |
 | [3427-special-array-ii](https://github.com/SapChak114/LeetCode/tree/master/3427-special-array-ii) |
