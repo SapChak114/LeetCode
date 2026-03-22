@@ -204,6 +204,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1573-find-two-non-overlapping-sub-arrays-each-with-target-sum](https://github.com/SapChak114/LeetCode/tree/master/1573-find-two-non-overlapping-sub-arrays-each-with-target-sum) |
 | [1582-special-positions-in-a-binary-matrix](https://github.com/SapChak114/LeetCode/tree/master/1582-special-positions-in-a-binary-matrix) |
 | [1586-longest-subarray-of-1s-after-deleting-one-element](https://github.com/SapChak114/LeetCode/tree/master/1586-longest-subarray-of-1s-after-deleting-one-element) |
+| [1589-maximum-sum-obtained-of-any-permutation](https://github.com/SapChak114/LeetCode/tree/master/1589-maximum-sum-obtained-of-any-permutation) |
 | [1590-make-sum-divisible-by-p](https://github.com/SapChak114/LeetCode/tree/master/1590-make-sum-divisible-by-p) |
 | [1615-range-sum-of-sorted-subarray-sums](https://github.com/SapChak114/LeetCode/tree/master/1615-range-sum-of-sorted-subarray-sums) |
 | [1620-check-if-array-pairs-are-divisible-by-k](https://github.com/SapChak114/LeetCode/tree/master/1620-check-if-array-pairs-are-divisible-by-k) |
@@ -481,6 +482,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1468-check-if-n-and-its-double-exist](https://github.com/SapChak114/LeetCode/tree/master/1468-check-if-n-and-its-double-exist) |
 | [1478-maximum-number-of-events-that-can-be-attended](https://github.com/SapChak114/LeetCode/tree/master/1478-maximum-number-of-events-that-can-be-attended) |
 | [1556-make-two-arrays-equal-by-reversing-subarrays](https://github.com/SapChak114/LeetCode/tree/master/1556-make-two-arrays-equal-by-reversing-subarrays) |
+| [1589-maximum-sum-obtained-of-any-permutation](https://github.com/SapChak114/LeetCode/tree/master/1589-maximum-sum-obtained-of-any-permutation) |
 | [1615-range-sum-of-sorted-subarray-sums](https://github.com/SapChak114/LeetCode/tree/master/1615-range-sum-of-sorted-subarray-sums) |
 | [1621-number-of-subsequences-that-satisfy-the-given-sum-condition](https://github.com/SapChak114/LeetCode/tree/master/1621-number-of-subsequences-that-satisfy-the-given-sum-condition) |
 | [1829-maximum-units-on-a-truck](https://github.com/SapChak114/LeetCode/tree/master/1829-maximum-units-on-a-truck) |
@@ -2030,6 +2032,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1529-max-difference-you-can-get-from-changing-an-integer](https://github.com/SapChak114/LeetCode/tree/master/1529-max-difference-you-can-get-from-changing-an-integer) |
 | [1536-minimum-swaps-to-arrange-a-binary-grid](https://github.com/SapChak114/LeetCode/tree/master/1536-minimum-swaps-to-arrange-a-binary-grid) |
 | [1567-maximum-length-of-subarray-with-positive-product](https://github.com/SapChak114/LeetCode/tree/master/1567-maximum-length-of-subarray-with-positive-product) |
+| [1589-maximum-sum-obtained-of-any-permutation](https://github.com/SapChak114/LeetCode/tree/master/1589-maximum-sum-obtained-of-any-permutation) |
 | [1633-minimum-number-of-increments-on-subarrays-to-form-a-target-array](https://github.com/SapChak114/LeetCode/tree/master/1633-minimum-number-of-increments-on-subarrays-to-form-a-target-array) |
 | [1659-get-the-maximum-score](https://github.com/SapChak114/LeetCode/tree/master/1659-get-the-maximum-score) |
 | [1762-furthest-building-you-can-reach](https://github.com/SapChak114/LeetCode/tree/master/1762-furthest-building-you-can-reach) |
@@ -2330,6 +2333,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1473-find-the-longest-substring-containing-vowels-in-even-counts](https://github.com/SapChak114/LeetCode/tree/master/1473-find-the-longest-substring-containing-vowels-in-even-counts) |
 | [1537-maximum-score-after-splitting-a-string](https://github.com/SapChak114/LeetCode/tree/master/1537-maximum-score-after-splitting-a-string) |
 | [1538-maximum-points-you-can-obtain-from-cards](https://github.com/SapChak114/LeetCode/tree/master/1538-maximum-points-you-can-obtain-from-cards) |
+| [1589-maximum-sum-obtained-of-any-permutation](https://github.com/SapChak114/LeetCode/tree/master/1589-maximum-sum-obtained-of-any-permutation) |
 | [1590-make-sum-divisible-by-p](https://github.com/SapChak114/LeetCode/tree/master/1590-make-sum-divisible-by-p) |
 | [1631-number-of-sub-arrays-with-odd-sum](https://github.com/SapChak114/LeetCode/tree/master/1631-number-of-sub-arrays-with-odd-sum) |
 | [1694-make-sum-divisible-by-p](https://github.com/SapChak114/LeetCode/tree/master/1694-make-sum-divisible-by-p) |
