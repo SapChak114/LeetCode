@@ -237,6 +237,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1893-check-if-all-the-integers-in-a-range-are-covered](https://github.com/SapChak114/LeetCode/tree/master/1893-check-if-all-the-integers-in-a-range-are-covered) |
 | [1895-minimum-number-of-operations-to-move-all-balls-to-each-box](https://github.com/SapChak114/LeetCode/tree/master/1895-minimum-number-of-operations-to-move-all-balls-to-each-box) |
 | [1895-largest-magic-square](https://github.com/SapChak114/LeetCode/tree/master/1895-largest-magic-square) |
+| [1909-remove-one-element-to-make-the-array-strictly-increasing](https://github.com/SapChak114/LeetCode/tree/master/1909-remove-one-element-to-make-the-array-strictly-increasing) |
 | [1917-maximum-average-pass-ratio](https://github.com/SapChak114/LeetCode/tree/master/1917-maximum-average-pass-ratio) |
 | [1923-sentence-similarity-iii](https://github.com/SapChak114/LeetCode/tree/master/1923-sentence-similarity-iii) |
 | [1927-maximum-ascending-subarray-sum](https://github.com/SapChak114/LeetCode/tree/master/1927-maximum-ascending-subarray-sum) |
