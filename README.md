@@ -391,6 +391,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3348-minimum-cost-walk-in-weighted-graph](https://github.com/SapChak114/LeetCode/tree/master/3348-minimum-cost-walk-in-weighted-graph) |
 | [3372-longest-strictly-increasing-or-strictly-decreasing-subarray](https://github.com/SapChak114/LeetCode/tree/master/3372-longest-strictly-increasing-or-strictly-decreasing-subarray) |
 | [3380-shortest-subarray-with-or-at-least-k-ii](https://github.com/SapChak114/LeetCode/tree/master/3380-shortest-subarray-with-or-at-least-k-ii) |
+| [3418-maximum-amount-of-money-robot-can-earn](https://github.com/SapChak114/LeetCode/tree/master/3418-maximum-amount-of-money-robot-can-earn) |
 | [3427-special-array-ii](https://github.com/SapChak114/LeetCode/tree/master/3427-special-array-ii) |
 | [3429-special-array-i](https://github.com/SapChak114/LeetCode/tree/master/3429-special-array-i) |
 | [3430-count-days-without-meetings](https://github.com/SapChak114/LeetCode/tree/master/3430-count-days-without-meetings) |
@@ -795,6 +796,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3143-longest-unequal-adjacent-groups-subsequence-i](https://github.com/SapChak114/LeetCode/tree/master/3143-longest-unequal-adjacent-groups-subsequence-i) |
 | [3243-count-the-number-of-powerful-integers](https://github.com/SapChak114/LeetCode/tree/master/3243-count-the-number-of-powerful-integers) |
 | [3307-find-the-maximum-sum-of-node-values](https://github.com/SapChak114/LeetCode/tree/master/3307-find-the-maximum-sum-of-node-values) |
+| [3418-maximum-amount-of-money-robot-can-earn](https://github.com/SapChak114/LeetCode/tree/master/3418-maximum-amount-of-money-robot-can-earn) |
 | [3490-find-the-maximum-length-of-valid-subsequence-i](https://github.com/SapChak114/LeetCode/tree/master/3490-find-the-maximum-length-of-valid-subsequence-i) |
 | [3491-find-the-maximum-length-of-valid-subsequence-ii](https://github.com/SapChak114/LeetCode/tree/master/3491-find-the-maximum-length-of-valid-subsequence-ii) |
 | [3573-best-time-to-buy-and-sell-stock-v](https://github.com/SapChak114/LeetCode/tree/master/3573-best-time-to-buy-and-sell-stock-v) |
@@ -1737,6 +1739,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2794-maximum-number-of-moves-in-a-grid](https://github.com/SapChak114/LeetCode/tree/master/2794-maximum-number-of-moves-in-a-grid) |
 | [2946-matrix-similarity-after-cyclic-shifts](https://github.com/SapChak114/LeetCode/tree/master/2946-matrix-similarity-after-cyclic-shifts) |
 | [3227-find-missing-and-repeated-values](https://github.com/SapChak114/LeetCode/tree/master/3227-find-missing-and-repeated-values) |
+| [3418-maximum-amount-of-money-robot-can-earn](https://github.com/SapChak114/LeetCode/tree/master/3418-maximum-amount-of-money-robot-can-earn) |
 | [3459-find-the-minimum-area-to-cover-all-ones-ii](https://github.com/SapChak114/LeetCode/tree/master/3459-find-the-minimum-area-to-cover-all-ones-ii) |
 | [3461-find-the-minimum-area-to-cover-all-ones-i](https://github.com/SapChak114/LeetCode/tree/master/3461-find-the-minimum-area-to-cover-all-ones-i) |
 | [3548-equal-sum-grid-partition-ii](https://github.com/SapChak114/LeetCode/tree/master/3548-equal-sum-grid-partition-ii) |
