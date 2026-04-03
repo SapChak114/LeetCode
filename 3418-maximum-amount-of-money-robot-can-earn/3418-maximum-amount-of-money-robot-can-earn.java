@@ -1,42 +1,38 @@
 class Solution {
-    int m, n;
+    int[][] coins;
     Integer[][][] dp;
-    int NEG = Integer.MIN_VALUE;
+    int n, m;
+    int MIN = Integer.MIN_VALUE;
     public int maximumAmount(int[][] coins) {
-        m = coins.length; n = coins[0].length;
-        dp = new Integer[m][n][3];
-        return solve(0, 0, 2, coins);
+        this.coins = coins;
+        this.n = coins.length;
+        this.m = coins[0].length;
+        this.dp = new Integer[n][m][3];
+        return rec(0, 0, 2);
     }
-    
-    int solve(int i, int j, int k, int[][] coins) {
-        if (i < 0 || j < 0 || i >= m || j >= n) return NEG;
-        if (dp[i][j][k] != null) return dp[i][j][k];
-        if (i == m - 1 && j == n - 1) {
-            int c = coins[i][j];
-            if (c >= 0) dp[i][j][k] = c;
-            else {
-                if (k > 0) dp[i][j][k] = 0;
-                else dp[i][j][k] = c;
-            }
+
+    int rec(int i, int j, int k) {
+        if (i == n || j == m) {
+            return MIN;
+        }
+
+        if (i == n-1 && j == m-1) {
+            return (coins[i][j] < 0 && k > 0) ? 0 : coins[i][j];
+        }
+
+        if (dp[i][j][k] != null) {
             return dp[i][j][k];
         }
+
+        int coin = coins[i][j];
+        int res = coin + Math.max(rec(i + 1, j, k), rec(i, j + 1, k));
         
-        int c = coins[i][j];
-        int down = solve(i + 1, j, k, coins);
-        int right = solve(i, j + 1, k, coins);
-        int best = Math.max(down, right);
-        if (c >= 0) {
-            dp[i][j][k] = c + best;
-        } else {
-            int pay = c + best;
-            int skip = NEG;
-            if (k > 0) {
-                int d2 = solve(i + 1, j, k - 1, coins);
-                int r2 = solve(i, j + 1, k - 1, coins);
-                skip = Math.max(d2, r2);
-            }
-            dp[i][j][k] = Math.max(pay, skip);
+        if (coin < 0 && k > 0) {
+            int skip = Math.max(rec(i + 1, j, k - 1), rec(i, j + 1, k - 1));
+
+            res = Math.max(res, skip);
         }
-        return dp[i][j][k];
+
+        return dp[i][j][k] = res;
     }
 }
