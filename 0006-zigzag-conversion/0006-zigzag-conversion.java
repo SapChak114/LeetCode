@@ -1,29 +1,31 @@
 class Solution {
     public String convert(String s, int numRows) {
         StringBuilder[] sbs = new StringBuilder[numRows];
-        
-        for(int i = 0; i<numRows; i++) sbs[i] = new StringBuilder();
-        
+
+        for (int k = 0; k<numRows; k++) {
+            sbs[k] = new StringBuilder();
+        }
+
+        int i = 0, n = s.length();
+
         char[] arr = s.toCharArray();
-        
-        int n = arr.length;
-        int index = 0;
-        while(index<n){
-            for(int j = 0; j<numRows && index<n; j++){
-                sbs[j].append(arr[index++]);
+
+        while (i < n) {
+            for (int j = 0; j<numRows && i < n; j++) {
+                sbs[j].append(""+arr[i++]);
             }
-            
-            for(int j = numRows-2; j>0 && index<n; j--){
-                sbs[j].append(arr[index++]);
+
+            for (int j = numRows-2; j>0 && i < n; j--) {
+                sbs[j].append(""+arr[i++]);
             }
         }
-        
-        StringBuilder st = sbs[0];
-        
-        for(int k = 1 ; k<numRows; k++){
-            st.append(sbs[k].toString());
+
+        StringBuilder sb = new StringBuilder();
+
+        for (i = 0; i < numRows; i++) {
+            sb.append(sbs[i].toString());
         }
-        
-        return st.toString();
+
+        return sb.toString();
     }
 }
