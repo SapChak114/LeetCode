@@ -37,14 +37,14 @@ class Solution {
             }
         }
 
-        if (order.size() == nc) {
-            int[] arr = new int[nc];
-            for (int i = 0; i<nc; i++) {
-                arr[i] = order.get(i);
-            }
-            return arr;
+        if (order.size() < nc) {
+            return new int[]{};
         }
 
-        return new int[]{};
+        int[] arr = new int[nc];
+        for (int i = 0; i<nc; i++) {
+            arr[i] = order.get(i);
+        }
+        return arr;
     }
 }
