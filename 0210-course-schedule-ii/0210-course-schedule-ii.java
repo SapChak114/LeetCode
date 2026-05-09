@@ -1,48 +1,48 @@
 class Solution {
-    public int[] findOrder(int numCourses, int[][] pre) {
-        Map<Integer, List<Integer>> graph = new HashMap<>();
-        
-        Map<Integer, Integer> inDegree = new HashMap<>();
-        for (int i = 0; i<numCourses; i++) {
-            inDegree.put(i, 0);
+    public int[] findOrder(int nc, int[][] pre) {
+        List<Integer>[] adjList = new ArrayList[nc];
+        for (int i = 0; i<nc; i++) {
+            adjList[i] = new ArrayList<>();
         }
+        int[] inDeg = new int[nc];
 
-        
-        List<Integer> order = new ArrayList<>();
-
-        int n = pre.length;
-        for (int i = 0; i<n; i++) {
+        for (int i = 0; i<pre.length; i++) {
             int course = pre[i][0];
             int preCourse = pre[i][1];
-            graph.computeIfAbsent(preCourse, k -> new ArrayList<>()).add(course);
-            
-            inDegree.put(course, inDegree.get(course) + 1);
+
+            adjList[preCourse].add(course);
+
+            inDeg[course]++;
         }
 
-        Queue<Integer> queue = new LinkedList<>();
-        for (Map.Entry<Integer, Integer> e : inDegree.entrySet()) {
-            if (e.getValue() == 0) {
-                queue.add(e.getKey());
+        Queue<Integer> q = new LinkedList<>();
+
+        for (int i = 0; i<nc; i++) {
+            if (inDeg[i] == 0) {
+                q.add(i);
             }
         }
 
-        while (!queue.isEmpty()) {
-            int node = queue.poll();
+        List<Integer> order = new ArrayList<>();
+        while (!q.isEmpty()) {
+            int node = q.poll();
             order.add(node);
 
-            if (graph.containsKey(node)) {
-                for (int nei : graph.get(node)) {
-                    inDegree.put(nei, inDegree.get(nei) - 1);
+            for (int nei : adjList[node]) {
+                inDeg[nei]--;
 
-                    if (inDegree.get(nei) == 0) {
-                        queue.add(nei);
-                    }
+                if (inDeg[nei] == 0) {
+                    q.add(nei);
                 }
             }
         }
 
-        if (order.size() == numCourses) {
-            return order.stream().mapToInt(i -> i).toArray();
+        if (order.size() == nc) {
+            int[] arr = new int[nc];
+            for (int i = 0; i<nc; i++) {
+                arr[i] = order.get(i);
+            }
+            return arr;
         }
 
         return new int[]{};
