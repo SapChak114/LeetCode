@@ -1,59 +1,63 @@
-class Vertex implements Comparable<Vertex>{
-    int dist;
-    int label;
-    
-    public Vertex(int dist,int label){
-        this.dist=dist;
-        this.label=label;
-    }
-    
-    public int compareTo(Vertex v) {
-        return this.dist - v.dist;
-    }
-}
-
 class Solution {
     public int snakesAndLadders(int[][] board) {
         int n = board.length;
-        
-        Pair<Integer,Integer>[] cells = new Pair[n*n+1];
-        
-        Integer[] columns = new Integer[n];
-        
-        for(int i = 0; i<n; i++){
-            columns[i]=i;
-        }
-        
-        int pos = 1;
-        for(int i = n-1; i>=0; i--){
-            for(int col : columns){
-                cells[pos++]=new Pair(i,col);
+        int m = board[0].length;
+
+        List<Integer> flatBoard = new ArrayList<>();
+        for (int i = n-1; i>=0; i--) {
+            List<Integer> row = new ArrayList<>();
+
+            for (int j = 0; j<m; j++) {
+                row.add(board[i][j]);
             }
-            Collections.reverse(Arrays.asList(columns));
-        }
-        
-        PriorityQueue<Vertex> pq = new PriorityQueue<>();
-        int[] dist = new int[n*n+1];
-        Arrays.fill(dist,-1);
-        pq.add(new Vertex(0,1));
-        dist[1]=0;
-        
-        while(!pq.isEmpty()){
-            Vertex vertex = pq.poll();
-            int d = vertex.dist, curr = vertex.label;
-            if(d!=dist[curr]){
-                continue;
+
+            if ((n - i - 1) % 2 == 1) {
+                Collections.reverse(row);
             }
-            for(int next = curr+1; next<=Math.min(curr+6,n*n); next++){
-                int row = cells[next].getKey(), col = cells[next].getValue();
-                int dest = board[row][col]!=-1?board[row][col]:next;
-                if(dist[dest]==-1 || dist[curr] + 1 < dist[dest]){
-                    dist[dest] = dist[curr]+1;
-                    pq.add(new Vertex(dist[dest],dest));
+
+            flatBoard.addAll(row);
+        }
+
+        Map<Integer, Integer> snakeOrLadder = new HashMap<>();
+        
+        for (int i = 0; i<flatBoard.size(); i++) {
+            if (flatBoard.get(i) != -1) {
+                snakeOrLadder.put(i + 1, flatBoard.get(i));
+            }
+        }
+
+        Queue<int[]> q = new LinkedList<>();
+        Set<Integer> vis = new HashSet<>();
+        q.add(new int[]{1, 0});
+        vis.add(1);
+
+        while (!q.isEmpty()) {
+            int[] vals = q.poll();
+            int pos = vals[0];
+            int totalDiceRolls = vals[1];
+            
+            if (pos == n * n) {
+                return totalDiceRolls;
+            }
+
+            for (int i = 1; i<=6; i++) {
+                int newPos = pos + i;
+
+                if (newPos > n * n) {
+                    break;
+                }
+
+                if (snakeOrLadder.containsKey(newPos)) {
+                    newPos = snakeOrLadder.get(newPos);
+                }
+
+                if (!vis.contains(newPos)) {
+                    vis.add(newPos);
+                    q.add(new int[]{newPos, totalDiceRolls + 1});
                 }
             }
         }
-        
-        return dist[n*n];
+
+        return -1;
     }
 }
