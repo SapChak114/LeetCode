@@ -1,75 +1,86 @@
 class Solution {
-    private int[] dirX = {0, 1, 0, -1};
-    private int[] dirY = {1, 0, -1, 0};
-
     public List<String> findWords(char[][] board, String[] words) {
-        Trie trie = new Trie();
-        for (String word : words) {
+        Trie trie = new Trie(board);
+
+        for(String word : words){
             trie.insert(word);
         }
 
-        int n = board.length;
-        int m = board[0].length;
-        List<String> result = new ArrayList<>();
+        return trie.findAll();
+    }
+}
 
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < m; j++) {
-                dfs(board, i, j, trie.root, result);
+class TrieNode{
+    Map<Character,TrieNode> hm = new HashMap<>();
+    boolean isEnd;
+}
+
+class Trie{
+    TrieNode root;
+    char[][] b;
+    List<String> ans;
+    int[] dirX = {0,1,0,-1};
+    int[] dirY = {1,0,-1,0};
+
+    public Trie(char[][] b){
+        this.b = b;
+        this.root = new TrieNode();
+    }
+
+    public void insert(String word){
+        TrieNode curr = root;
+        for(char c : word.toCharArray()){
+            if(!curr.hm.containsKey(c)){
+                curr.hm.put(c, new TrieNode());
             }
+            curr = curr.hm.get(c);
         }
-
-        return result;
+        curr.isEnd = true;
     }
 
-    private void dfs(char[][] board, int i, int j, TrieNode node, List<String> result) {
-        char letter = board[i][j];
-        int index = letter - 'a';
-
-        if (letter == '#' || node.children[index] == null) {
-            return;
-        }
-
-        node = node.children[index];
-
-        if (node.word != null) {
-            result.add(node.word);
-            node.word = null; // Avoid duplicates
-        }
-
-        // Mark the cell as visited
-        char tmp = board[i][j];
-        board[i][j] = '#';
-
-        for (int k = 0; k < 4; k++) {
-            int r = i + dirX[k];
-            int c = j + dirY[k];
-            if (r >= 0 && r < board.length && c >= 0 && c < board[0].length) {
-                dfs(board, r, c, node, result);
-            }
-        }
-
-        // Restore the cell
-        board[i][j] = tmp;
-    }
-
-    class TrieNode {
-        TrieNode[] children = new TrieNode[26];
-        String word;
-    }
-
-    class Trie {
-        TrieNode root = new TrieNode();
-
-        public void insert(String word) {
-            TrieNode node = root;
-            for (char c : word.toCharArray()) {
-                int index = c - 'a';
-                if (node.children[index] == null) {
-                    node.children[index] = new TrieNode();
+    public List<String> findAll(){
+        TrieNode curr = root;
+        int n = b.length, m = b[0].length;
+        this.ans = new ArrayList<>();
+        for(int i = 0; i<n; i++){
+            for(int j = 0; j<m; j++){
+                char c = b[i][j];
+                if(curr.hm.containsKey(c)){
+                    dfs(curr.hm.get(c),i,j,b,""+c);
                 }
-                node = node.children[index];
             }
-            node.word = word;
         }
+        return this.ans;
+    }
+
+    void dfs(TrieNode node, int x, int y, char[][] b, String word){
+        if(node.isEnd && !word.isEmpty()){
+            node.isEnd = false;
+            ans.add(word);
+        }
+
+        char c = b[x][y];
+        b[x][y] = '*';
+
+        for(int i = 0; i<dirX.length; i++){
+            int newX = dirX[i] + x;
+            int newY = dirY[i] + y;
+            if(check(newX, newY)){
+                char ch = b[newX][newY];
+                if(node.hm.containsKey(ch)){
+                    dfs(node.hm.get(ch), newX, newY, b, word+b[newX][newY]);
+                }
+            }
+        }
+
+        b[x][y] = c;
+    }
+
+    boolean check(int x, int y){
+        int n = b.length, m = b[0].length;
+        if(x<0 || x>=n || y<0 || y>=m){
+            return false;
+        }
+        return true;
     }
 }
