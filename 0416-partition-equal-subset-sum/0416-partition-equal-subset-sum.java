@@ -1,6 +1,7 @@
 class Solution {
     int[] nums;
-    int n, targSum;
+    int targetSum;
+    int n;
     Boolean[][] dp;
     public boolean canPartition(int[] nums) {
         this.nums = nums;
@@ -9,33 +10,27 @@ class Solution {
         if (sum % 2 == 1) {
             return false;
         }
-        this.targSum = sum / 2;
-        this.dp = new Boolean[n][targSum+1];
+        this.targetSum = sum / 2;
+        this.dp = new Boolean[n][targetSum + 1];
         return dfs(0, 0);
     }
 
-    boolean dfs(int index, int sum) {
-        if (index >= n || sum > targSum) {
-            return false;
-        }
-
-        if (sum == targSum) {
+    boolean dfs(int idx, int sum) {
+        if (sum == targetSum) {
             return true;
         }
 
-        if (dp[index][sum] != null) {
-            return dp[index][sum];
+        if (idx == n || sum > targetSum) {
+            return false;
         }
 
-        int newSum = sum + nums[index];
-
-        boolean ans = false;
-        if (dfs(index+1, newSum)) {
-            ans = true;
+        if (dp[idx][sum] != null) {
+            return dp[idx][sum];
         }
 
-        ans |= dfs(index+1, sum);
+        boolean take = dfs(idx + 1, sum + nums[idx]);
+        boolean dont = dfs(idx + 1, sum);
 
-        return dp[index][sum] = ans;
+        return dp[idx][sum] = take | dont;
     }
 }
