@@ -7,37 +7,37 @@ class Solution {
             adjList[i] = new ArrayList<>();
         }
 
+        int[] inDeg = new int[nc];
         for (int i = 0; i<pre.length; i++) {
             int course = pre[i][0];
             int preCourse = pre[i][1];
 
             adjList[preCourse].add(course);
+
+            inDeg[course]++;
         }
 
-        int[] vis = new int[nc];
+        Queue<Integer> q = new LinkedList<>();
         for (int i = 0; i<nc; i++) {
-            if (vis[i] == WHITE && dfs(i, vis, adjList)) {
-                return false;
+            if (inDeg[i] == 0) {
+                q.add(i);
             }
         }
 
-        return true;
-    }
+        int count = 0;
+        while (!q.isEmpty()) {
+            int node = q.poll();
+            count++;
+            
+            for (int nei : adjList[node]) {
+                inDeg[nei]--;
 
-    boolean dfs(int node, int[] vis, List<Integer>[] adjList) {
-        vis[node] = GREY;
-
-        for (int nei : adjList[node]) {
-            if (vis[nei] == WHITE) {
-                if (dfs(nei, vis, adjList)) {
-                    return true;
+                if (inDeg[nei] == 0) {
+                    q.add(nei);
                 }
-            } else if (vis[nei] == GREY) {
-                return true;
             }
         }
 
-        vis[node] = BLACK;
-        return false;
+        return count == nc;
     }
 }
