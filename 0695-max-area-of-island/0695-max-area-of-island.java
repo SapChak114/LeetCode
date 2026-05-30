@@ -1,40 +1,35 @@
 class Solution {
-    int[][] grid;
-    int[] X = {0, 1, 0, -1};
-    int[] Y = {1, 0, -1, 0};
-    boolean[][] vis;
+    int[] dirX = {0, 1, 0, -1};
+    int[] dirY = {1, 0, -1, 0};
+    int max, count;
     public int maxAreaOfIsland(int[][] grid) {
-        int n = grid.length;
-        int m = grid[0].length;
-        int maxSize = 0;
-        this.grid = grid;
-        this.vis = new boolean[n][m];
+        int n = grid.length, m = grid[0].length;
+        boolean[][] vis = new boolean[n][m];
+        this.max = Integer.MIN_VALUE;
 
-        for (int i = 0; i<n; i++){
+        for (int i = 0; i<n; i++) {
             for (int j = 0; j<m; j++) {
-                if (grid[i][j] == 1 && !vis[i][j]) {
-                    int size = dfs(i, j);
-                    maxSize = Math.max(maxSize, size);
+                if (!vis[i][j] && grid[i][j] == 1) {
+                    this.count = 0;
+                    dfs(grid, vis, i, j);
+                    this.max = Math.max(this.max, this.count);
                 }
             }
         }
 
-        return maxSize;
+        return this.max == Integer.MIN_VALUE ? 0 : this.max;
     }
 
-    int dfs(int i, int j) {
-        if (i < 0 || i >= grid.length || j < 0 || j >= grid[0].length || vis[i][j] || grid[i][j] == 0) {
-            return 0;
-        }
-        
+    void dfs(int[][] grid, boolean[][] vis, int i, int j) {
         vis[i][j] = true;
-        int size = 1;
-        for (int a = 0; a<X.length; a++) {
-            int r = i + X[a];
-            int c = j + Y[a];
-            size += dfs(r, c);
-        }
+        this.count++;
+        for (int a = 0; a<dirX.length; a++) {
+            int newX = i + dirX[a];
+            int newY = j + dirY[a];
 
-        return size;
+            if (newX >= 0 && newX < grid.length && newY >= 0 && newY < grid[0].length && grid[newX][newY] == 1 && !vis[newX][newY]) {
+                dfs(grid, vis, newX, newY);
+            }
+        }
     }
 }
