@@ -1,30 +1,29 @@
 class Solution {
-    String s;
-    int n;
-    Set<String> words;
+    Set<String> wordSet;
     List<String> ans;
+    int n;
+    String s;
     public List<String> wordBreak(String s, List<String> wordDict) {
         this.s = s;
         this.n = s.length();
-        this.words = new HashSet<>(wordDict);
+        this.wordSet = new HashSet<>(wordDict);
         this.ans = new ArrayList<>();
-        rec(0, new ArrayList<>());
-
+        dfs(0, new ArrayList<>());
         return this.ans;
     }
 
-    void rec(int i, List<String> curr) {
+    void dfs(int i, List<String> sentence) {
         if (i == n) {
-            ans.add(String.join(" ", curr));
+            ans.add(String.join(" ", sentence));
             return;
         }
 
-        for (int k = i; k<n; k++) {
-            String sub = s.substring(i, k+1);
-            if (words.contains(sub)) {
-                curr.add(sub);
-                rec(k+1, curr);
-                curr.remove(curr.size()-1);
+        for (int a = i+1; a<=n; a++) {
+            String newWord = s.substring(i, a);
+            if (wordSet.contains(newWord)) {
+                sentence.add(newWord);
+                dfs(a, sentence);
+                sentence.remove(sentence.size()-1);
             }
         }
     }
