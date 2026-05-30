@@ -37,6 +37,10 @@ class Solution {
             }
         }
 
+        if (ans.size() < nc) {
+            return new int[]{};
+        }
+
         int[] res = new int[ans.size()];
         for (int i = 0; i<ans.size(); i++) {
             res[i] = ans.get(i);
