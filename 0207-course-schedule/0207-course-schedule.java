@@ -1,4 +1,5 @@
 class Solution {
+    int WHITE = 0, GREY = 1, BLACK = 2;
     public boolean canFinish(int nc, int[][] pre) {
         List<Integer>[] adjList = new ArrayList[nc];
 
@@ -7,37 +8,36 @@ class Solution {
         }
 
         for (int i = 0; i<pre.length; i++) {
-            int u = pre[i][0];
-            int v = pre[i][1];
-            adjList[u].add(v);
+            int course = pre[i][0];
+            int preCourse = pre[i][1];
+
+            adjList[preCourse].add(course);
         }
 
         int[] vis = new int[nc];
         for (int i = 0; i<nc; i++) {
-            if (vis[i] == 0) {
-                if (dfs(adjList, vis, i)) {
-                    return false;
-                }
+            if (vis[i] == WHITE && dfs(i, vis, adjList)) {
+                return false;
             }
         }
 
         return true;
     }
 
-    boolean dfs(List<Integer>[] adjList, int[] vis, int node) {
-        vis[node] = 1;
+    boolean dfs(int node, int[] vis, List<Integer>[] adjList) {
+        vis[node] = GREY;
 
-        for (int nod : adjList[node]) {
-            if (vis[nod] == 1) {
-                return true;
-            } else if (vis[nod] == 0) {
-                if (dfs(adjList, vis, nod)) {
+        for (int nei : adjList[node]) {
+            if (vis[nei] == WHITE) {
+                if (dfs(nei, vis, adjList)) {
                     return true;
                 }
+            } else if (vis[nei] == GREY) {
+                return true;
             }
         }
 
-        vis[node] = 2;
+        vis[node] = BLACK;
         return false;
     }
 }
