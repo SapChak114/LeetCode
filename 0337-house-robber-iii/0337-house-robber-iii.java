@@ -28,11 +28,12 @@ class Solution {
         if (map.containsKey(root)) {
             return map.get(root);
         }
-
+        
         int take = root.val;
         if (root.left != null) {
             take += dfs(root.left.left) + dfs(root.left.right);
         }
+
         if (root.right != null) {
             take += dfs(root.right.left) + dfs(root.right.right);
         }
@@ -40,6 +41,7 @@ class Solution {
         int dont = dfs(root.left) + dfs(root.right);
 
         int val = Math.max(take, dont);
+
         map.put(root, val);
 
         return val;
