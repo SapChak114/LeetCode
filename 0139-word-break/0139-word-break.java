@@ -1,26 +1,25 @@
 class Solution {
     public boolean wordBreak(String s, List<String> wordDict) {
-        int n = s.length();
-        Set<String> words = new HashSet<>(wordDict);
-        Queue<Integer> queue = new LinkedList<>();
-        boolean[] seen = new boolean[n + 1];
-        queue.add(0);
+        int n = wordDict.size();
+        Set<String> wordSet = new HashSet<>(wordDict);
+        Queue<Integer> q = new LinkedList<>();
+        q.add(0);
+        boolean[] vis = new boolean[s.length()+1];
+        vis[0] = true;
 
-        while (!queue.isEmpty()) {
-            int start = queue.remove();
-
+        while (!q.isEmpty()) {
+            int start = q.poll();
             if (start == s.length()) {
                 return true;
             }
-
-            for (int end = start + 1; end <= n; end++) {
-                if (seen[end]) {
+            for (int i = start+1; i<=s.length(); i++) {
+                if (vis[i]) {
                     continue;
                 }
-
-                if (words.contains(s.substring(start, end))) {
-                    seen[end] = true;
-                    queue.add(end);
+                String word = s.substring(start, i);
+                if (wordDict.contains(word)) {
+                    q.add(i);
+                    vis[i] = true;
                 }
             }
         }
