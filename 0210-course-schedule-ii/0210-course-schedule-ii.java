@@ -1,50 +1,47 @@
 class Solution {
     public int[] findOrder(int nc, int[][] pre) {
         List<Integer>[] adjList = new ArrayList[nc];
+
         for (int i = 0; i<nc; i++) {
             adjList[i] = new ArrayList<>();
         }
-        int[] inDeg = new int[nc];
 
+        int[] inDeg = new int[nc];
         for (int i = 0; i<pre.length; i++) {
-            int course = pre[i][0];
             int preCourse = pre[i][1];
+            int course = pre[i][0];
 
             adjList[preCourse].add(course);
-
             inDeg[course]++;
         }
 
         Queue<Integer> q = new LinkedList<>();
 
-        for (int i = 0; i<nc; i++) {
+        for (int i = 0; i<inDeg.length; i++) {
             if (inDeg[i] == 0) {
                 q.add(i);
             }
         }
 
-        List<Integer> order = new ArrayList<>();
+        List<Integer> ans = new ArrayList<>();
         while (!q.isEmpty()) {
             int node = q.poll();
-            order.add(node);
+            ans.add(node);
 
-            for (int nei : adjList[node]) {
-                inDeg[nei]--;
+            for (int nod : adjList[node]) {
+                inDeg[nod]--;
 
-                if (inDeg[nei] == 0) {
-                    q.add(nei);
+                if (inDeg[nod] == 0) {
+                    q.add(nod);
                 }
             }
         }
 
-        if (order.size() < nc) {
-            return new int[]{};
+        int[] res = new int[ans.size()];
+        for (int i = 0; i<ans.size(); i++) {
+            res[i] = ans.get(i);
         }
 
-        int[] arr = new int[nc];
-        for (int i = 0; i<nc; i++) {
-            arr[i] = order.get(i);
-        }
-        return arr;
+        return res;
     }
 }
