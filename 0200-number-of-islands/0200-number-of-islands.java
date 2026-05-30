@@ -1,16 +1,17 @@
 class Solution {
     int[] dirX = {0, 1, 0, -1};
     int[] dirY = {1, 0, -1, 0};
+    int n, m;
     public int numIslands(char[][] grid) {
-        int n = grid.length;
-        int m = grid[0].length;
+        this.n = grid.length;
+        this.m = grid[0].length;
 
         boolean[][] vis = new boolean[n][m];
         int count = 0;
         for (int i = 0; i<n; i++) {
             for (int j = 0; j<m; j++) {
-                if (grid[i][j] == '1' && !vis[i][j]) {
-                    dfs(grid, i, j, vis);
+                if (!vis[i][j] && grid[i][j] == '1') {
+                    dfs(vis, grid, i, j);
                     count++;
                 }
             }
@@ -19,24 +20,18 @@ class Solution {
         return count;
     }
 
-    void dfs(char[][] grid, int i, int j, boolean[][] vis) {
+    void dfs(boolean[][] vis, char[][] grid, int i, int j) {
         vis[i][j] = true;
-        
+
         for (int a = 0; a<dirX.length; a++) {
-            int newX = dirX[a] + i;
-            int newY = dirY[a] + j;
+            int newX = i + dirX[a];
+            int newY = j + dirY[a];
 
-            if (check(grid, newX, newY, vis)) {
-                dfs(grid, newX, newY, vis);
+            if (newX < 0 || newX >= n || newY < 0 || newY >= m || grid[newX][newY] == '0' || vis[newX][newY]) {
+                continue;
             }
-        }
 
-    }
-
-    boolean check(char[][] grid, int i, int j, boolean[][] vis) {
-        if (i < 0 || i>= grid.length || j < 0 || j >= grid[0].length || grid[i][j] != '1' || vis[i][j]) {
-            return false;
+            dfs(vis, grid, newX, newY);
         }
-        return true;
     }
 }
