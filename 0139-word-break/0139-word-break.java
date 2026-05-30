@@ -12,7 +12,7 @@ class Solution {
             if (start == s.length()) {
                 return true;
             }
-            for (int i = start; i<=s.length(); i++) {
+            for (int i = start+1; i<=s.length(); i++) {
                 if (vis[i]) {
                     continue;
                 }
