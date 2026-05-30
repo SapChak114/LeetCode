@@ -2,27 +2,26 @@ class Solution {
     Set<String> wordSet;
     public int ladderLength(String beginWord, String endWord, List<String> wordList) {
         this.wordSet = new HashSet<>(wordList);
-
-        Queue<String> queue = new LinkedList<>();
+        Queue<String> q = new LinkedList<>();
         Queue<Integer> levels = new LinkedList<>();
-
         Set<String> vis = new HashSet<>();
-
-        queue.add(beginWord);
+        q.add(beginWord);
         levels.add(1);
+        vis.add(beginWord);
 
-        while (!queue.isEmpty()) {
-            String word = queue.poll();
+        while (!q.isEmpty()) {
+            String word = q.poll();
             int level = levels.poll();
+
             if (word.equals(endWord)) {
                 return level;
             }
 
-            for (String w : getNei(word)) {
-                if (!vis.contains(w)) {
-                    queue.add(w);
+            for (String nei : getNei(word)) {
+                if (!vis.contains(nei)) {
+                    q.add(nei);
                     levels.add(level+1);
-                    vis.add(w);
+                    vis.add(nei);
                 }
             }
         }
@@ -31,20 +30,19 @@ class Solution {
     }
 
     List<String> getNei(String word) {
-        List<String> wordList = new ArrayList<>();
-
-        for (int i = 0; i<word.length(); i++) {
-            for (char c = 'a'; c<='z'; c++) {
-                String nWord = word.substring(0, i) + c + word.substring(i+1);
-                if (word.charAt(i) == c) {
+        int n = word.length();
+        List<String> words = new ArrayList<>();
+        
+        for (int i = 0; i<n; i++) {
+            for (char ch = 'a'; ch<='z'; ch++) {
+                String newWord = word.substring(0, i) + ch + word.substring(i+1);
+                if (newWord.equals(word) || !wordSet.contains(newWord)) {
                     continue;
                 }
-                if (wordSet.contains(nWord)) {
-                    wordList.add(nWord);
-                }
+                words.add(newWord);
             }
         }
 
-        return wordList;
+        return words;
     }
 }
