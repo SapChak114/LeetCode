@@ -4,23 +4,24 @@ class Solution {
     int[] nums;
     public int rob(int[] nums) {
         this.n = nums.length;
-        this.dp = new Integer[n];
         this.nums = nums;
-        return dfs(0);
+        this.dp = new Integer[this.n];
+
+        return dfs(n-1);
     }
 
-    int dfs(int i) {
-        if (i >= n) {
+    int dfs(int n) {
+        if (n < 0) {
             return 0;
         }
 
-        if (dp[i] != null) {
-            return dp[i];
+        if (dp[n] != null) {
+            return dp[n];
         }
 
-        int take = nums[i] + dfs(i+2);
-        int dont = dfs(i+1);
+        int take = nums[n] + dfs(n-2);
+        int dont = dfs(n-1);
 
-        return dp[i] = Math.max(take, dont);
+        return dp[n] = Math.max(take, dont);
     }
 }
