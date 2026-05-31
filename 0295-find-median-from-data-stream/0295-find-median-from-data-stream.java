@@ -8,33 +8,30 @@ class MedianFinder {
     
     public void addNum(int num) {
         smallHeap.add(num);
+
         if (!largeHeap.isEmpty() && smallHeap.peek() > largeHeap.peek()) {
-            heapAdd(smallHeap, largeHeap);
+            largeHeap.add(smallHeap.poll());
         }
 
         if (smallHeap.size() > (largeHeap.size() + 1)) {
-            heapAdd(smallHeap, largeHeap);
+            largeHeap.add(smallHeap.poll());
         }
 
         if (largeHeap.size() > (smallHeap.size() + 1)) {
-            heapAdd(largeHeap, smallHeap);
+            smallHeap.add(largeHeap.poll());
         }
     }
     
     public double findMedian() {
         if (smallHeap.size() > largeHeap.size()) {
-            return (double)smallHeap.peek();
-        } else if (largeHeap.size() > smallHeap.size()) {
-            return (double)largeHeap.peek();
-        } else {
-            int large = smallHeap.peek();
-            int small = largeHeap.peek();
-            return ((double) large + small) / 2.0d;
+            return smallHeap.peek();
         }
-    }
 
-    void heapAdd(PriorityQueue<Integer> heap1, PriorityQueue<Integer> heap2) {
-        heap2.add(heap1.poll());
+        if (largeHeap.size() > smallHeap.size()) {
+            return largeHeap.peek();
+        }
+
+        return ((double) smallHeap.peek() + largeHeap.peek()) / 2.0d;
     }
 }
 
