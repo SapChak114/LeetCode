@@ -1,6 +1,6 @@
 class LRUCache {
-    LinkedHashMap<Integer, Integer> hm;
     int cap;
+    LinkedHashMap<Integer, Integer> hm;
     public LRUCache(int capacity) {
         this.hm = new LinkedHashMap<>();
         this.cap = capacity;
@@ -11,8 +11,10 @@ class LRUCache {
             return -1;
         }
 
-        int val = hm.remove(key);
+        int val = hm.get(key);
+        hm.remove(key);
         hm.put(key, val);
+
         return val;
     }
     
