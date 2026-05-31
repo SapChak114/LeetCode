@@ -1,12 +1,16 @@
 class Solution {
+    int n;
     int[] coins;
     Integer[] dp;
+    int inf;
     public int coinChange(int[] coins, int amount) {
+        this.n = coins.length;
         this.coins = coins;
-        this.dp = new Integer[amount+1];
-        int ans = dfs(amount);
+        this.dp = new Integer[amount + 1];
+        this.inf = (int)1e9 + 8;
+        int res = dfs(amount);
 
-        return ans == Integer.MAX_VALUE ? -1 : ans;
+        return res == inf ? -1 : res;
     }
 
     int dfs(int amount) {
@@ -15,20 +19,16 @@ class Solution {
         }
 
         if (amount < 0) {
-            return Integer.MAX_VALUE;
+            return inf;
         }
 
         if (dp[amount] != null) {
             return dp[amount];
         }
 
-        int ans = Integer.MAX_VALUE;
+        int ans = inf;
         for (int coin : coins) {
-            int val = dfs(amount - coin);
-
-            if (val != Integer.MAX_VALUE) {
-                ans = Math.min(ans, val + 1);
-            }
+            ans = Math.min(ans, 1 + dfs(amount - coin));
         }
 
         return dp[amount] = ans;
