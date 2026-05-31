@@ -2,7 +2,7 @@ class Solution {
     public int networkDelayTime(int[][] times, int n, int k) {
         List<int[]>[] adjList = new ArrayList[n+1];
         int[] dist = new int[n+1];
-
+        Set<Integer> seen = new HashSet<>();
         Arrays.fill(dist, Integer.MAX_VALUE);
         dist[k] = 0;
 
@@ -26,11 +26,16 @@ class Solution {
             int node = vals[0];
             int weight = vals[1];
 
+            if (seen.contains(node)) {
+                continue;
+            }
+            seen.add(node);
+
             for (int[] nei : adjList[node]) {
                 int newNode = nei[0];
                 int newWeight = nei[1];
 
-                if (weight + newWeight < dist[newNode]) {
+                if (weight + newWeight < dist[newNode] && !seen.contains(newNode)) {
                     dist[newNode] = weight + newWeight;
                     pq.add(new int[]{newNode, dist[newNode]});
                 }
