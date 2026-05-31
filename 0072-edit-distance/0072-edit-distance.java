@@ -10,11 +10,11 @@ class Solution {
         }
 
         for (int j = m; j>=0; j--) {
-            dp[n][j] =  m - j;
+            dp[n][j] = m - j;
         }
 
         for (int i = n-1; i>=0; i--) {
-            for (int j = m-1; j>=0; j--) {
+            for (int j = m-1; j >= 0; j--) {
                 if (word1.charAt(i) == word2.charAt(j)) {
                     dp[i][j] = dp[i+1][j+1];
                 } else {
