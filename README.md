@@ -329,6 +329,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2551-apply-operations-to-an-array](https://github.com/SapChak114/LeetCode/tree/master/2551-apply-operations-to-an-array) |
 | [2552-maximum-sum-of-distinct-subarrays-with-length-k](https://github.com/SapChak114/LeetCode/tree/master/2552-maximum-sum-of-distinct-subarrays-with-length-k) |
 | [2554-minimum-total-distance-traveled](https://github.com/SapChak114/LeetCode/tree/master/2554-minimum-total-distance-traveled) |
+| [2560-house-robber-iv](https://github.com/SapChak114/LeetCode/tree/master/2560-house-robber-iv) |
 | [2564-most-profitable-path-in-a-tree](https://github.com/SapChak114/LeetCode/tree/master/2564-most-profitable-path-in-a-tree) |
 | [2573-find-the-string-with-lcp](https://github.com/SapChak114/LeetCode/tree/master/2573-find-the-string-with-lcp) |
 | [2581-divide-players-into-teams-of-equal-skill](https://github.com/SapChak114/LeetCode/tree/master/2581-divide-players-into-teams-of-equal-skill) |
@@ -799,6 +800,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2415-count-the-number-of-ideal-arrays](https://github.com/SapChak114/LeetCode/tree/master/2415-count-the-number-of-ideal-arrays) |
 | [2435-paths-in-matrix-whose-sum-is-divisible-by-k](https://github.com/SapChak114/LeetCode/tree/master/2435-paths-in-matrix-whose-sum-is-divisible-by-k) |
 | [2554-minimum-total-distance-traveled](https://github.com/SapChak114/LeetCode/tree/master/2554-minimum-total-distance-traveled) |
+| [2560-house-robber-iv](https://github.com/SapChak114/LeetCode/tree/master/2560-house-robber-iv) |
 | [2562-count-ways-to-build-good-strings](https://github.com/SapChak114/LeetCode/tree/master/2562-count-ways-to-build-good-strings) |
 | [2573-find-the-string-with-lcp](https://github.com/SapChak114/LeetCode/tree/master/2573-find-the-string-with-lcp) |
 | [2586-longest-square-streak-in-an-array](https://github.com/SapChak114/LeetCode/tree/master/2586-longest-square-streak-in-an-array) |
@@ -920,6 +922,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2280-count-good-triplets-in-an-array](https://github.com/SapChak114/LeetCode/tree/master/2280-count-good-triplets-in-an-array) |
 | [2394-count-subarrays-with-score-less-than-k](https://github.com/SapChak114/LeetCode/tree/master/2394-count-subarrays-with-score-less-than-k) |
 | [2498-smallest-subarrays-with-maximum-bitwise-or](https://github.com/SapChak114/LeetCode/tree/master/2498-smallest-subarrays-with-maximum-bitwise-or) |
+| [2560-house-robber-iv](https://github.com/SapChak114/LeetCode/tree/master/2560-house-robber-iv) |
 | [2586-longest-square-streak-in-an-array](https://github.com/SapChak114/LeetCode/tree/master/2586-longest-square-streak-in-an-array) |
 | [2614-maximum-count-of-positive-integer-and-negative-integer](https://github.com/SapChak114/LeetCode/tree/master/2614-maximum-count-of-positive-integer-and-negative-integer) |
 | [2640-maximum-number-of-integers-to-choose-from-a-range-i](https://github.com/SapChak114/LeetCode/tree/master/2640-maximum-number-of-integers-to-choose-from-a-range-i) |
@@ -2098,6 +2101,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2497-maximum-matching-of-players-with-trainers](https://github.com/SapChak114/LeetCode/tree/master/2497-maximum-matching-of-players-with-trainers) |
 | [2509-minimize-xor](https://github.com/SapChak114/LeetCode/tree/master/2509-minimize-xor) |
 | [2520-using-a-robot-to-print-the-lexicographically-smallest-string](https://github.com/SapChak114/LeetCode/tree/master/2520-using-a-robot-to-print-the-lexicographically-smallest-string) |
+| [2560-house-robber-iv](https://github.com/SapChak114/LeetCode/tree/master/2560-house-robber-iv) |
 | [2573-find-the-string-with-lcp](https://github.com/SapChak114/LeetCode/tree/master/2573-find-the-string-with-lcp) |
 | [2616-maximal-score-after-applying-k-operations](https://github.com/SapChak114/LeetCode/tree/master/2616-maximal-score-after-applying-k-operations) |
 | [2640-maximum-number-of-integers-to-choose-from-a-range-i](https://github.com/SapChak114/LeetCode/tree/master/2640-maximum-number-of-integers-to-choose-from-a-range-i) |
