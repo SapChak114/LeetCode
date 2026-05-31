@@ -1,29 +1,33 @@
 class Solution {
+    int n;
     int[] coins;
     Integer[][] dp;
+    int inf = (int)1e9 + 8;
     public int change(int amount, int[] coins) {
-        this.dp = new Integer[coins.length+1][amount+1];
         this.coins = coins;
-        return rec(0,amount);
+        this.dp = new Integer[amount+1][coins.length+1];
+        return dfs(amount, coins.length-1);
     }
-    
-    int rec(int idx, int amount){
-        if(amount<0){
+
+    int dfs(int amount, int idx) {
+        if (amount == 0) {
+            return 1;
+        }
+
+        if (idx < 0) {
             return 0;
         }
-        if(idx==coins.length){
-            if(amount==0){
-                return 1;
-            } else{
-                return 0;
-            }
+
+        if (dp[amount][idx] != null) {
+            return dp[amount][idx];
         }
-        if(dp[idx][amount]!=null){
-            return dp[idx][amount];
+
+        int take = 0;
+        if (amount >= coins[idx]) { 
+            take = dfs(amount - coins[idx], idx);
         }
-        int take = rec(idx,amount-coins[idx]);
-        int dont = rec(idx+1,amount);
-        
-        return dp[idx][amount] = take+dont;
+        int dont = dfs(amount, idx - 1);
+
+        return dp[amount][idx] = take + dont;
     }
 }
