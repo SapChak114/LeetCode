@@ -1,41 +1,29 @@
 class Solution {
-    public int[][] insert(int[][] intervals, int[] newInterval) {
-        List<List<Integer>> res = new ArrayList<>();
-        List<List<Integer>> ans = new ArrayList<>();
+    public int[][] insert(int[][] in, int[] newInv) {
+        List<int[]> res = new ArrayList<>();
 
-        int n = intervals.length;
+        int n = in.length;
+        for (int i = 0; i<n; i++) {
+            int[] inv = in[i];
 
-        for (int[] inter : intervals) {
-            List<Integer> li = new ArrayList<>();
-            li.add(inter[0]);
-            li.add(inter[1]);
-            res.add(li);
-        }
-
-        res.add(List.of(newInterval[0], newInterval[1]));
-
-        Collections.sort(res, (a, b) -> a.get(0) - b.get(0));
-
-        int i = 0;
-        while (i < res.size()) {
-            int start = res.get(i).get(0);
-            int end = res.get(i).get(1);
-
-            i++;
-            while (i < res.size() && end >= res.get(i).get(0)) {
-                end = Math.max(end, res.get(i).get(1));
-                i++;
+            if (inv[1] < newInv[0]) {
+                res.add(inv);
+            } else if (newInv[1] < inv[0]) {
+                res.add(newInv);
+                newInv = inv;
+            } else {
+                newInv[0] = Math.min(newInv[0], inv[0]);
+                newInv[1] = Math.max(newInv[1], inv[1]);
             }
+        }
+        res.add(newInv);
 
-            ans.add(List.of(start, end));
+        int[][] ans = new int[res.size()][2];
+        for (int i = 0; i<res.size(); i++) {
+            ans[i][0] = res.get(i)[0];
+            ans[i][1] = res.get(i)[1];
         }
 
-        int[][] re = new int[ans.size()][2];
-        for (i = 0; i<ans.size(); i++) {
-            re[i][0] = ans.get(i).get(0);
-            re[i][1] = ans.get(i).get(1);
-        }
-
-        return re;
+        return ans;
     }
-}
+ }
