@@ -442,6 +442,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3790-fruits-into-baskets-ii](https://github.com/SapChak114/LeetCode/tree/master/3790-fruits-into-baskets-ii) |
 | [3791-fruits-into-baskets-iii](https://github.com/SapChak114/LeetCode/tree/master/3791-fruits-into-baskets-iii) |
 | [3834-minimum-operations-to-convert-all-elements-to-zero](https://github.com/SapChak114/LeetCode/tree/master/3834-minimum-operations-to-convert-all-elements-to-zero) |
+| [3840-house-robber-v](https://github.com/SapChak114/LeetCode/tree/master/3840-house-robber-v) |
 ## Sorting
 |  |
 | ------- |
@@ -821,6 +822,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3651-minimum-cost-path-with-teleportations](https://github.com/SapChak114/LeetCode/tree/master/3651-minimum-cost-path-with-teleportations) |
 | [3661-maximum-walls-destroyed-by-robots](https://github.com/SapChak114/LeetCode/tree/master/3661-maximum-walls-destroyed-by-robots) |
 | [3733-length-of-longest-v-shaped-diagonal-segment](https://github.com/SapChak114/LeetCode/tree/master/3733-length-of-longest-v-shaped-diagonal-segment) |
+| [3840-house-robber-v](https://github.com/SapChak114/LeetCode/tree/master/3840-house-robber-v) |
 ## Graph
 |  |
 | ------- |
