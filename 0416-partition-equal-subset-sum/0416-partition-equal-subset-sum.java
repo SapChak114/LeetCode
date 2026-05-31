@@ -1,36 +1,45 @@
 class Solution {
     int[] nums;
-    int targetSum;
-    int n;
     Boolean[][] dp;
     public boolean canPartition(int[] nums) {
         this.nums = nums;
-        this.n = nums.length;
-        int sum = Arrays.stream(nums).sum();
+        int sum = 0;
+
+        for (int num : nums) {
+            sum += num;
+        }
+
         if (sum % 2 == 1) {
             return false;
         }
-        this.targetSum = sum / 2;
-        this.dp = new Boolean[n][targetSum + 1];
-        return dfs(0, 0);
+
+        int half = sum / 2;
+
+        this.dp = new Boolean[half + 1][nums.length];
+
+        return dfs(half, 0);
     }
 
-    boolean dfs(int idx, int sum) {
-        if (sum == targetSum) {
+    boolean dfs(int val, int idx) {
+        if (val == 0) {
             return true;
         }
 
-        if (idx == n || sum > targetSum) {
+        if (val < 0 || idx >= nums.length) {
             return false;
         }
 
-        if (dp[idx][sum] != null) {
-            return dp[idx][sum];
+        if (dp[val][idx] != null) {
+            return dp[val][idx];
         }
 
-        boolean take = dfs(idx + 1, sum + nums[idx]);
-        boolean dont = dfs(idx + 1, sum);
+        boolean take = dfs(val - nums[idx], idx+1);
+        boolean dont = false;
+        
+        if (!take) {
+            dont = dfs(val, idx+1);
+        }
 
-        return dp[idx][sum] = take | dont;
+        return dp[val][idx] = take || dont;
     }
 }
