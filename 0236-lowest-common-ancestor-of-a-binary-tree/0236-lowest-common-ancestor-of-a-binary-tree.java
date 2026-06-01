@@ -9,14 +9,18 @@
  */
 class Solution {
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
-        if (root == null || p == root || q == root) {
+        return dfs(root, p, q);
+    }
+
+    TreeNode dfs(TreeNode root, TreeNode p, TreeNode q) {
+        if (root == null || root == p || root == q) {
             return root;
         }
 
-        TreeNode left = lowestCommonAncestor(root.left, p, q);
-        TreeNode right = lowestCommonAncestor(root.right, p, q);
+        TreeNode left = dfs(root.left, p, q);
+        TreeNode right = dfs(root.right, p, q);
 
-        if (left != null && right != null) {
+        if (right == p && left == q) {
             return root;
         }
 
