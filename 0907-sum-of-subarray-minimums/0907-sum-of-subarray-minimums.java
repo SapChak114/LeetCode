@@ -10,7 +10,7 @@ class Solution {
         System.out.println(Arrays.toString(arrR));
         
         int[] res = new int[n];
-        long sum = 1;
+        long sum = 0;
 
         for (int i = 0; i<n; i++) {
             long left = i - arrL[i];
@@ -22,7 +22,7 @@ class Solution {
             sum = (sum + totalSum) % mod;
         }
 
-        return (int)sum-1;
+        return (int)sum;
     }
 
     int[] minSubLeft(int[] arr) {
