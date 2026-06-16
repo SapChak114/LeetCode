@@ -5,9 +5,9 @@ class Solution {
         pq.add(new int[]{0, 0});
 
         boolean[] vis = new boolean[n];
-        // int[] dist = new int[n];
-        // Arrays.fill(dist, Integer.MAX_VALUE);
-        // dist[0] = 0;
+        int[] dist = new int[n];
+        Arrays.fill(dist, Integer.MAX_VALUE);
+        dist[0] = 0;
 
         int mst = 0;
         while (!pq.isEmpty()) {
@@ -27,10 +27,10 @@ class Solution {
                 if (!vis[v]) {
                     int manhattenDist = Math.abs(points[u][0] - points[v][0]) + Math.abs(points[u][1] - points[v][1]);
 
-                    //if(manhattenDist < dist[v]) {
-                        //dist[v] = manhattenDist;
+                    if(manhattenDist < dist[v]) {
+                        dist[v] = manhattenDist;
                         pq.add(new int[]{manhattenDist, v});
-                    //}
+                    }
                 }
             }
         }
