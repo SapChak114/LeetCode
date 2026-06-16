@@ -214,6 +214,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1570-final-prices-with-a-special-discount-in-a-shop](https://github.com/SapChak114/LeetCode/tree/master/1570-final-prices-with-a-special-discount-in-a-shop) |
 | [1573-find-two-non-overlapping-sub-arrays-each-with-target-sum](https://github.com/SapChak114/LeetCode/tree/master/1573-find-two-non-overlapping-sub-arrays-each-with-target-sum) |
 | [1582-special-positions-in-a-binary-matrix](https://github.com/SapChak114/LeetCode/tree/master/1582-special-positions-in-a-binary-matrix) |
+| [1584-min-cost-to-connect-all-points](https://github.com/SapChak114/LeetCode/tree/master/1584-min-cost-to-connect-all-points) |
 | [1586-longest-subarray-of-1s-after-deleting-one-element](https://github.com/SapChak114/LeetCode/tree/master/1586-longest-subarray-of-1s-after-deleting-one-element) |
 | [1589-maximum-sum-obtained-of-any-permutation](https://github.com/SapChak114/LeetCode/tree/master/1589-maximum-sum-obtained-of-any-permutation) |
 | [1590-make-sum-divisible-by-p](https://github.com/SapChak114/LeetCode/tree/master/1590-make-sum-divisible-by-p) |
@@ -2697,6 +2698,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0210-course-schedule-ii](https://github.com/SapChak114/LeetCode/tree/master/0210-course-schedule-ii) |
 | [0743-network-delay-time](https://github.com/SapChak114/LeetCode/tree/master/0743-network-delay-time) |
 | [0787-cheapest-flights-within-k-stops](https://github.com/SapChak114/LeetCode/tree/master/0787-cheapest-flights-within-k-stops) |
+| [1584-min-cost-to-connect-all-points](https://github.com/SapChak114/LeetCode/tree/master/1584-min-cost-to-connect-all-points) |
 | [2976-minimum-cost-to-convert-string-i](https://github.com/SapChak114/LeetCode/tree/master/2976-minimum-cost-to-convert-string-i) |
 | [3650-minimum-cost-path-with-edge-reversals](https://github.com/SapChak114/LeetCode/tree/master/3650-minimum-cost-path-with-edge-reversals) |
 ## Union-Find
@@ -2705,5 +2707,10 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0128-longest-consecutive-sequence](https://github.com/SapChak114/LeetCode/tree/master/0128-longest-consecutive-sequence) |
 | [0200-number-of-islands](https://github.com/SapChak114/LeetCode/tree/master/0200-number-of-islands) |
 | [0695-max-area-of-island](https://github.com/SapChak114/LeetCode/tree/master/0695-max-area-of-island) |
+| [1584-min-cost-to-connect-all-points](https://github.com/SapChak114/LeetCode/tree/master/1584-min-cost-to-connect-all-points) |
 | [2573-find-the-string-with-lcp](https://github.com/SapChak114/LeetCode/tree/master/2573-find-the-string-with-lcp) |
+## Minimum Spanning Tree
+|  |
+| ------- |
+| [1584-min-cost-to-connect-all-points](https://github.com/SapChak114/LeetCode/tree/master/1584-min-cost-to-connect-all-points) |
 <!---LeetCode Topics End-->
