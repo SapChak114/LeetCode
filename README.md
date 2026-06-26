@@ -1557,6 +1557,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0774-maximum-depth-of-n-ary-tree](https://github.com/SapChak114/LeetCode/tree/master/0774-maximum-depth-of-n-ary-tree) |
 | [0775-n-ary-tree-preorder-traversal](https://github.com/SapChak114/LeetCode/tree/master/0775-n-ary-tree-preorder-traversal) |
 | [0776-n-ary-tree-postorder-traversal](https://github.com/SapChak114/LeetCode/tree/master/0776-n-ary-tree-postorder-traversal) |
+| [0785-is-graph-bipartite](https://github.com/SapChak114/LeetCode/tree/master/0785-is-graph-bipartite) |
 | [0787-cheapest-flights-within-k-stops](https://github.com/SapChak114/LeetCode/tree/master/0787-cheapest-flights-within-k-stops) |
 | [0799-minimum-distance-between-bst-nodes](https://github.com/SapChak114/LeetCode/tree/master/0799-minimum-distance-between-bst-nodes) |
 | [0820-find-eventual-safe-states](https://github.com/SapChak114/LeetCode/tree/master/0820-find-eventual-safe-states) |
@@ -1645,6 +1646,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0721-accounts-merge](https://github.com/SapChak114/LeetCode/tree/master/0721-accounts-merge) |
 | [0743-network-delay-time](https://github.com/SapChak114/LeetCode/tree/master/0743-network-delay-time) |
 | [0774-maximum-depth-of-n-ary-tree](https://github.com/SapChak114/LeetCode/tree/master/0774-maximum-depth-of-n-ary-tree) |
+| [0785-is-graph-bipartite](https://github.com/SapChak114/LeetCode/tree/master/0785-is-graph-bipartite) |
 | [0787-sliding-puzzle](https://github.com/SapChak114/LeetCode/tree/master/0787-sliding-puzzle) |
 | [0787-cheapest-flights-within-k-stops](https://github.com/SapChak114/LeetCode/tree/master/0787-cheapest-flights-within-k-stops) |
 | [0799-minimum-distance-between-bst-nodes](https://github.com/SapChak114/LeetCode/tree/master/0799-minimum-distance-between-bst-nodes) |
@@ -2697,6 +2699,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0207-course-schedule](https://github.com/SapChak114/LeetCode/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/SapChak114/LeetCode/tree/master/0210-course-schedule-ii) |
 | [0743-network-delay-time](https://github.com/SapChak114/LeetCode/tree/master/0743-network-delay-time) |
+| [0785-is-graph-bipartite](https://github.com/SapChak114/LeetCode/tree/master/0785-is-graph-bipartite) |
 | [0787-cheapest-flights-within-k-stops](https://github.com/SapChak114/LeetCode/tree/master/0787-cheapest-flights-within-k-stops) |
 | [1584-min-cost-to-connect-all-points](https://github.com/SapChak114/LeetCode/tree/master/1584-min-cost-to-connect-all-points) |
 | [2976-minimum-cost-to-convert-string-i](https://github.com/SapChak114/LeetCode/tree/master/2976-minimum-cost-to-convert-string-i) |
@@ -2707,6 +2710,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0128-longest-consecutive-sequence](https://github.com/SapChak114/LeetCode/tree/master/0128-longest-consecutive-sequence) |
 | [0200-number-of-islands](https://github.com/SapChak114/LeetCode/tree/master/0200-number-of-islands) |
 | [0695-max-area-of-island](https://github.com/SapChak114/LeetCode/tree/master/0695-max-area-of-island) |
+| [0785-is-graph-bipartite](https://github.com/SapChak114/LeetCode/tree/master/0785-is-graph-bipartite) |
 | [1584-min-cost-to-connect-all-points](https://github.com/SapChak114/LeetCode/tree/master/1584-min-cost-to-connect-all-points) |
 | [2573-find-the-string-with-lcp](https://github.com/SapChak114/LeetCode/tree/master/2573-find-the-string-with-lcp) |
 ## Minimum Spanning Tree
