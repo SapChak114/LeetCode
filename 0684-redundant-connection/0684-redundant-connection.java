@@ -1,40 +1,41 @@
-class DSU{
-    int[] parent;
+class DSU {
     int[] size;
+    int[] parent;
 
-    public DSU(int n){
-        parent = new int[n+1];
-        size = new int[n+1];
+    public DSU(int n) {
+        this.size = new int[n+1];
+        this.parent = new int[n+1];
 
-        for (int i = 1; i<=n; i++) {
+        for (int i = 0; i<size.length; i++) {
             parent[i] = i;
             size[i] = 1;
         }
     }
 
-    int findParent(int a) {
-        if (parent[a] == a) {
-            return a;
+
+    int findParent(int val) {
+        if (parent[val] == val) {
+            return val;
         }
 
-        return parent[a]=findParent(parent[a]);
+        return parent[val] = findParent(parent[val]);
     }
 
-    boolean union(int a, int b){
-        int pa = findParent(a);
-        int pb = findParent(b);
-
-        if (pa == pb) {
+    boolean union(int u, int v) {
+        int pu = findParent(u);
+        int pv = findParent(v);
+        if (pu == pv) {
             return true;
         }
 
-        if (size[pa] >= size[pb]) {
-            parent[pb] = pa;
-            size[pa] += size[pb];
+        if (size[pu] > size[pv]) {
+            parent[pv] = parent[pu];
+            size[pu] += size[pv];
         } else {
-            parent[pa] = pb;
-            size[pb] += size[pa];
+            parent[pu] = parent[pv];
+            size[pv] += size[pu];
         }
+
         return false;
     }
 }
@@ -42,18 +43,15 @@ class Solution {
     public int[] findRedundantConnection(int[][] edges) {
         DSU dsu = new DSU(edges.length);
 
-        for (int[] edge : edges) {
-            if (dsu.union(edge[0], edge[1])) {
-                return new int[]{edge[0], edge[1]};
+        for (int i = 0; i<edges.length; i++) {
+            int u = edges[i][0];
+            int v = edges[i][1];
+
+            if (dsu.union(u,v)) {
+                return new int[]{u, v};
             }
         }
 
         return new int[]{};
     }
 }
-/**
-1 -> 2
-2 -> 1, 3
-
-
- */
