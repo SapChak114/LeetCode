@@ -136,6 +136,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0861-flipping-an-image](https://github.com/SapChak114/LeetCode/tree/master/0861-flipping-an-image) |
 | [0862-find-and-replace-in-string](https://github.com/SapChak114/LeetCode/tree/master/0862-find-and-replace-in-string) |
 | [0870-magic-squares-in-grid](https://github.com/SapChak114/LeetCode/tree/master/0870-magic-squares-in-grid) |
+| [0875-koko-eating-bananas](https://github.com/SapChak114/LeetCode/tree/master/0875-koko-eating-bananas) |
 | [0887-minimum-cost-to-hire-k-workers](https://github.com/SapChak114/LeetCode/tree/master/0887-minimum-cost-to-hire-k-workers) |
 | [0890-lemonade-change](https://github.com/SapChak114/LeetCode/tree/master/0890-lemonade-change) |
 | [0892-shortest-subarray-with-sum-at-least-k](https://github.com/SapChak114/LeetCode/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
@@ -914,6 +915,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0729-my-calendar-i](https://github.com/SapChak114/LeetCode/tree/master/0729-my-calendar-i) |
 | [0731-my-calendar-ii](https://github.com/SapChak114/LeetCode/tree/master/0731-my-calendar-ii) |
 | [0808-number-of-matching-subsequences](https://github.com/SapChak114/LeetCode/tree/master/0808-number-of-matching-subsequences) |
+| [0875-koko-eating-bananas](https://github.com/SapChak114/LeetCode/tree/master/0875-koko-eating-bananas) |
 | [0892-shortest-subarray-with-sum-at-least-k](https://github.com/SapChak114/LeetCode/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
 | [0907-koko-eating-bananas](https://github.com/SapChak114/LeetCode/tree/master/0907-koko-eating-bananas) |
 | [1011-capacity-to-ship-packages-within-d-days](https://github.com/SapChak114/LeetCode/tree/master/1011-capacity-to-ship-packages-within-d-days) |
