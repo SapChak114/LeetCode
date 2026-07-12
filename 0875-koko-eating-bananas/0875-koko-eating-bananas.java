@@ -10,10 +10,10 @@ class Solution {
                 hr += Math.ceil((double) p / k);
             }
 
-            if (hr <= h) {
-                r = k;
-            } else {
+            if (hr > h) {
                 l = k + 1;
+            } else {
+                r = k;
             }
         }
 
