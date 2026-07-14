@@ -38,7 +38,7 @@ public class Codec {
     }
 
     TreeNode build() {
-        if (i == n || data[i].equals("N")) {
+        if (data[i].equals("N")) {
             i++;
             return null;
         }
