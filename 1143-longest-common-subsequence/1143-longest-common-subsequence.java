@@ -7,7 +7,7 @@ class Solution {
         this.m = text2.length();
         this.text1 = text1;
         this.text2 = text2;
-        this.dp = new Integer[n+1][m+1];
+        this.dp = new Integer[n][m];
         return dfs(0, 0);
     }
 
