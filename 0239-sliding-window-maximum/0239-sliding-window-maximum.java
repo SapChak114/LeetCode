@@ -16,7 +16,7 @@ class Solution {
                 dq.pollLast();
             }
 
-            dq.add(i);
+            dq.addLast(i);
 
             if (i >= k-1) {
                 ans[idx++] = nums[dq.peekFirst()];
