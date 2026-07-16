@@ -11,23 +11,31 @@ class Solution {
         while (low < high) {
             int mid = (low + high) / 2;
 
-            int daysNeeded = 1, currWeight = 0;
-            for (int weight : weights) {
-                if (currWeight + weight > mid) {
-                    daysNeeded++;
-                    currWeight = 0;
-                }
-                currWeight += weight;
-            }
-
-            if (daysNeeded > days) {
-                low = mid + 1;
-            } else {
+            if (check(days, weights, mid)) {
                 high = mid;
+            } else {
+                low = mid + 1;
             }
         }
 
         return low;
 
+    }
+
+    boolean check(int days, int[] weights, int mid) {
+        int daysNeeded = 1, currWeight = 0;
+        for (int weight : weights) {
+            if (currWeight + weight > mid) {
+                daysNeeded++;
+                currWeight = 0;
+
+                if (daysNeeded > days) {
+                    return false;
+                }
+            }
+            currWeight += weight;
+        }
+
+        return true;
     }
 }
