@@ -7,7 +7,7 @@ class Solution {
                 return true;
             }
 
-            if (x >= Integer.MAX_VALUE/2) {
+            if (x > Integer.MAX_VALUE/2) {
                 break;
             }
 
