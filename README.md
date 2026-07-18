@@ -1499,6 +1499,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0044-wildcard-matching](https://github.com/SapChak114/LeetCode/tree/master/0044-wildcard-matching) |
 | [0050-powx-n](https://github.com/SapChak114/LeetCode/tree/master/0050-powx-n) |
 | [0206-reverse-linked-list](https://github.com/SapChak114/LeetCode/tree/master/0206-reverse-linked-list) |
+| [0231-power-of-two](https://github.com/SapChak114/LeetCode/tree/master/0231-power-of-two) |
 | [0234-palindrome-linked-list](https://github.com/SapChak114/LeetCode/tree/master/0234-palindrome-linked-list) |
 | [0241-different-ways-to-add-parentheses](https://github.com/SapChak114/LeetCode/tree/master/0241-different-ways-to-add-parentheses) |
 | [0273-integer-to-english-words](https://github.com/SapChak114/LeetCode/tree/master/0273-integer-to-english-words) |
@@ -2224,6 +2225,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0070-climbing-stairs](https://github.com/SapChak114/LeetCode/tree/master/0070-climbing-stairs) |
 | [0096-unique-binary-search-trees](https://github.com/SapChak114/LeetCode/tree/master/0096-unique-binary-search-trees) |
 | [0166-fraction-to-recurring-decimal](https://github.com/SapChak114/LeetCode/tree/master/0166-fraction-to-recurring-decimal) |
+| [0231-power-of-two](https://github.com/SapChak114/LeetCode/tree/master/0231-power-of-two) |
 | [0241-different-ways-to-add-parentheses](https://github.com/SapChak114/LeetCode/tree/master/0241-different-ways-to-add-parentheses) |
 | [0264-ugly-number-ii](https://github.com/SapChak114/LeetCode/tree/master/0264-ugly-number-ii) |
 | [0273-integer-to-english-words](https://github.com/SapChak114/LeetCode/tree/master/0273-integer-to-english-words) |
@@ -2496,6 +2498,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0067-add-binary](https://github.com/SapChak114/LeetCode/tree/master/0067-add-binary) |
 | [0222-count-complete-tree-nodes](https://github.com/SapChak114/LeetCode/tree/master/0222-count-complete-tree-nodes) |
+| [0231-power-of-two](https://github.com/SapChak114/LeetCode/tree/master/0231-power-of-two) |
 | [0287-find-the-duplicate-number](https://github.com/SapChak114/LeetCode/tree/master/0287-find-the-duplicate-number) |
 | [0318-maximum-product-of-word-lengths](https://github.com/SapChak114/LeetCode/tree/master/0318-maximum-product-of-word-lengths) |
 | [0342-power-of-four](https://github.com/SapChak114/LeetCode/tree/master/0342-power-of-four) |
