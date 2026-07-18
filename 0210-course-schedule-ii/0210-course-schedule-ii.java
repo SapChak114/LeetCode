@@ -8,44 +8,42 @@ class Solution {
 
         int[] inDeg = new int[nc];
         for (int i = 0; i<pre.length; i++) {
-            int preCourse = pre[i][1];
             int course = pre[i][0];
+            int preCourse = pre[i][1];
 
             adjList[preCourse].add(course);
             inDeg[course]++;
         }
 
         Queue<Integer> q = new LinkedList<>();
-
-        for (int i = 0; i<inDeg.length; i++) {
+        for (int i = 0; i<nc; i++) {
             if (inDeg[i] == 0) {
                 q.add(i);
             }
         }
 
-        List<Integer> ans = new ArrayList<>();
+        List<Integer> vals = new ArrayList<>();
         while (!q.isEmpty()) {
             int node = q.poll();
-            ans.add(node);
+            vals.add(node);
 
-            for (int nod : adjList[node]) {
-                inDeg[nod]--;
-
-                if (inDeg[nod] == 0) {
-                    q.add(nod);
+            for (int nei : adjList[node]) {
+                inDeg[nei]--;
+                if (inDeg[nei] == 0) {
+                    q.add(nei);
                 }
             }
         }
 
-        if (ans.size() < nc) {
+        if (vals.size() < nc) {
             return new int[]{};
         }
 
-        int[] res = new int[ans.size()];
-        for (int i = 0; i<ans.size(); i++) {
-            res[i] = ans.get(i);
+        int[] ans = new int[vals.size()];
+        for (int i = 0; i<ans.length; i++) {
+            ans[i] = vals.get(i);
         }
 
-        return res;
+        return ans;
     }
 }
