@@ -12,11 +12,13 @@ class Solution {
         }
 
         if (root.left == null && root.right == null) {
-            ans.add((s.isEmpty() ? s+root.val : s+"->"+root.val));
+            ans.add((s+root.val));
             return;
         }
 
-        dfs(root.left, s.isEmpty() ? s+root.val : s+"->"+root.val);
-        dfs(root.right, s.isEmpty() ? s+root.val : s+"->"+root.val);
+        s += root.val + "->";
+
+        dfs(root.left, s);
+        dfs(root.right, s);
     }
 }
