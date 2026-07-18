@@ -3,23 +3,15 @@ class Solution {
         char[] st = s.toCharArray();
         char[] ts = t.toCharArray();
 
-        Map<Character, Integer> map = new HashMap<>();
-
+        char ch = 0;
         for (char c : st) {
-            map.put(c, map.getOrDefault(c, 0) + 1);
+            ch ^= c;
         }
 
         for (char c : ts) {
-            if (map.containsKey(c)) {
-                map.put(c, map.get(c) - 1);
-                if (map.get(c) == 0) {
-                    map.remove(c);
-                }
-            } else {
-                return c;
-            }
+            ch ^= c;
         }
 
-        return '#';
+        return ch;
     }
 }
