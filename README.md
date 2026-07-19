@@ -132,6 +132,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0830-largest-triangle-area](https://github.com/SapChak114/LeetCode/tree/master/0830-largest-triangle-area) |
 | [0831-largest-sum-of-averages](https://github.com/SapChak114/LeetCode/tree/master/0831-largest-sum-of-averages) |
 | [0840-magic-squares-in-grid](https://github.com/SapChak114/LeetCode/tree/master/0840-magic-squares-in-grid) |
+| [0852-peak-index-in-a-mountain-array](https://github.com/SapChak114/LeetCode/tree/master/0852-peak-index-in-a-mountain-array) |
 | [0854-making-a-large-island](https://github.com/SapChak114/LeetCode/tree/master/0854-making-a-large-island) |
 | [0859-design-circular-deque](https://github.com/SapChak114/LeetCode/tree/master/0859-design-circular-deque) |
 | [0861-flipping-an-image](https://github.com/SapChak114/LeetCode/tree/master/0861-flipping-an-image) |
@@ -918,6 +919,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0729-my-calendar-i](https://github.com/SapChak114/LeetCode/tree/master/0729-my-calendar-i) |
 | [0731-my-calendar-ii](https://github.com/SapChak114/LeetCode/tree/master/0731-my-calendar-ii) |
 | [0808-number-of-matching-subsequences](https://github.com/SapChak114/LeetCode/tree/master/0808-number-of-matching-subsequences) |
+| [0852-peak-index-in-a-mountain-array](https://github.com/SapChak114/LeetCode/tree/master/0852-peak-index-in-a-mountain-array) |
 | [0875-koko-eating-bananas](https://github.com/SapChak114/LeetCode/tree/master/0875-koko-eating-bananas) |
 | [0892-shortest-subarray-with-sum-at-least-k](https://github.com/SapChak114/LeetCode/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
 | [0907-koko-eating-bananas](https://github.com/SapChak114/LeetCode/tree/master/0907-koko-eating-bananas) |
