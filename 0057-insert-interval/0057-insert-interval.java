@@ -1,10 +1,10 @@
 class Solution {
-    public int[][] insert(int[][] in, int[] newInv) {
+    public int[][] insert(int[][] intervals, int[] newInv) {
+        int n = intervals.length;
+        
         List<int[]> res = new ArrayList<>();
-
-        int n = in.length;
         for (int i = 0; i<n; i++) {
-            int[] inv = in[i];
+            int[] inv = intervals[i];
 
             if (inv[1] < newInv[0]) {
                 res.add(inv);
@@ -19,11 +19,11 @@ class Solution {
         res.add(newInv);
 
         int[][] ans = new int[res.size()][2];
-        for (int i = 0; i<res.size(); i++) {
+        for (int i = 0; i<ans.length; i++) {
             ans[i][0] = res.get(i)[0];
             ans[i][1] = res.get(i)[1];
         }
 
         return ans;
     }
- }
+}
