@@ -1,20 +1,20 @@
 class Solution {
     public boolean checkSubarraySum(int[] nums, int k) {
-        Map<Integer, Integer> mp = new HashMap<>();
-        mp.put(0, -1);
+        int n = nums.length, sum = 0;
+        Map<Integer, Integer> map = new HashMap<>();
+        map.put(0, -1);
 
-        int sum = 0;
-        for (int i = 0; i<nums.length; i++) {
+        for (int i = 0; i<n; i++) {
             sum += nums[i];
 
-            int key = sum % k; //if I subtract the remainder then I will get a subarray
-
-            if (mp.containsKey(key) && i - mp.get(key) > 1) {
+            int key = sum % k;
+            
+            if (map.containsKey(key) && i - map.get(key) > 1) {
                 return true;
             }
 
-            if (!mp.containsKey(key)) {
-                mp.put(key, i);
+            if (!map.containsKey(key)) {
+                map.put(key, i);
             }
         }
 
