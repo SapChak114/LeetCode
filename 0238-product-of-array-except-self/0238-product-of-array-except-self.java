@@ -1,10 +1,10 @@
 class Solution {
     public int[] productExceptSelf(int[] nums) {
-        int n = nums.length;
+        int n = nums.length, val = 0;
         int[] arr = new int[n];
         Arrays.fill(arr, 1);
 
-        int val = nums[0];
+        val = nums[0];
         for (int i = 1; i<n; i++) {
             arr[i] *= val;
             val *= nums[i];
