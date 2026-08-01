@@ -381,6 +381,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2943-maximize-area-of-square-hole-in-grid](https://github.com/SapChak114/LeetCode/tree/master/2943-maximize-area-of-square-hole-in-grid) |
 | [2946-matrix-similarity-after-cyclic-shifts](https://github.com/SapChak114/LeetCode/tree/master/2946-matrix-similarity-after-cyclic-shifts) |
 | [2976-minimum-cost-to-convert-string-i](https://github.com/SapChak114/LeetCode/tree/master/2976-minimum-cost-to-convert-string-i) |
+| [3026-maximum-good-subarray-sum](https://github.com/SapChak114/LeetCode/tree/master/3026-maximum-good-subarray-sum) |
 | [3047-find-the-largest-area-of-square-inside-two-rectangles](https://github.com/SapChak114/LeetCode/tree/master/3047-find-the-largest-area-of-square-inside-two-rectangles) |
 | [3074-apple-redistribution-into-boxes](https://github.com/SapChak114/LeetCode/tree/master/3074-apple-redistribution-into-boxes) |
 | [3075-maximize-happiness-of-selected-children](https://github.com/SapChak114/LeetCode/tree/master/3075-maximize-happiness-of-selected-children) |
@@ -1127,6 +1128,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2856-count-complete-subarrays-in-an-array](https://github.com/SapChak114/LeetCode/tree/master/2856-count-complete-subarrays-in-an-array) |
 | [2888-minimum-index-of-a-valid-split](https://github.com/SapChak114/LeetCode/tree/master/2888-minimum-index-of-a-valid-split) |
 | [2915-count-of-interesting-subarrays](https://github.com/SapChak114/LeetCode/tree/master/2915-count-of-interesting-subarrays) |
+| [3026-maximum-good-subarray-sum](https://github.com/SapChak114/LeetCode/tree/master/3026-maximum-good-subarray-sum) |
 | [3227-find-missing-and-repeated-values](https://github.com/SapChak114/LeetCode/tree/master/3227-find-missing-and-repeated-values) |
 | [3242-count-elements-with-maximum-frequency](https://github.com/SapChak114/LeetCode/tree/master/3242-count-elements-with-maximum-frequency) |
 | [3265-maximum-good-subarray-sum](https://github.com/SapChak114/LeetCode/tree/master/3265-maximum-good-subarray-sum) |
@@ -2486,6 +2488,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2691-count-vowel-strings-in-ranges](https://github.com/SapChak114/LeetCode/tree/master/2691-count-vowel-strings-in-ranges) |
 | [2848-points-that-intersect-with-cars](https://github.com/SapChak114/LeetCode/tree/master/2848-points-that-intersect-with-cars) |
 | [2915-count-of-interesting-subarrays](https://github.com/SapChak114/LeetCode/tree/master/2915-count-of-interesting-subarrays) |
+| [3026-maximum-good-subarray-sum](https://github.com/SapChak114/LeetCode/tree/master/3026-maximum-good-subarray-sum) |
 | [3265-maximum-good-subarray-sum](https://github.com/SapChak114/LeetCode/tree/master/3265-maximum-good-subarray-sum) |
 | [3427-special-array-ii](https://github.com/SapChak114/LeetCode/tree/master/3427-special-array-ii) |
 | [3432-count-partitions-with-even-sum-difference](https://github.com/SapChak114/LeetCode/tree/master/3432-count-partitions-with-even-sum-difference) |
