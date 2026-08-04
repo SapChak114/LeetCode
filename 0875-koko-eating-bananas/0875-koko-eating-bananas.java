@@ -3,17 +3,17 @@ class Solution {
         int l = 1, r = Arrays.stream(piles).max().getAsInt();
 
         while (l < r) {
-            int k = l + (r - l)/2;
-            int hr = 0;
-
+            int k = l + (r-l)/2;
+            
+            int hrs = 0;
             for (int p : piles) {
-                hr += Math.ceil((double) p / k);
+                hrs += Math.ceil((double)p/k);
             }
 
-            if (hr > h) {
-                l = k + 1;
-            } else {
+            if (hrs <= h) {
                 r = k;
+            } else {
+                l = k + 1;
             }
         }
 
