@@ -2764,4 +2764,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0300-longest-increasing-subsequence](https://github.com/SapChak114/LeetCode/tree/master/0300-longest-increasing-subsequence) |
+## Quicksort
+|  |
+| ------- |
+| [0056-merge-intervals](https://github.com/SapChak114/LeetCode/tree/master/0056-merge-intervals) |
 <!---LeetCode Topics End-->
