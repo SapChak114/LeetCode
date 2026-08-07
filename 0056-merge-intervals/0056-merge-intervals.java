@@ -1,27 +1,27 @@
 class Solution {
-    public int[][] merge(int[][] in) {
-        int n = in.length;
+    public int[][] merge(int[][] inter) {
+        int n = inter.length;
 
-        Arrays.sort(in, (a,b) -> a[0] - b[0]);
+        Arrays.sort(inter, (a,b) -> a[0]-b[0]);
 
-        List<int[]> list = new ArrayList<>();
-        int[] prev = in[0];
+        int[] prev = inter[0];
+        List<int[]> ans = new ArrayList<>();
         for (int i = 1; i<n; i++) {
-            if (prev[1] >= in[i][0]) {
-                prev[1] = Math.max(prev[1], in[i][1]);
+            if (prev[1] >= inter[i][0]) {
+                prev[1] = Math.max(prev[1], inter[i][1]);
             } else {
-                list.add(prev);
-                prev = in[i];
+                ans.add(prev);
+                prev = inter[i];
             }
         }
-        list.add(prev);
+        ans.add(prev);
 
-        int[][] ans = new int[list.size()][2];
-        for (int i = 0; i<list.size(); i++) {
-            ans[i][0] = list.get(i)[0];
-            ans[i][1] = list.get(i)[1];
+        int[][] res = new int[ans.size()][2];
+        for (int i = 0; i<ans.size(); i++) {
+            res[i][0] = ans.get(i)[0];
+            res[i][1] = ans.get(i)[1];
         }
 
-        return ans;
+        return res;
     }
 }
