@@ -7,65 +7,66 @@ class Node {
         this.val = val;
     }
 }
+
 class LRUCache {
-    Map<Integer, Node> cache;
+
+    Node tail, head;
+    Map<Integer, Node> map;
     int capacity;
-    Node head, tail;
+    
     public LRUCache(int capacity) {
-        head = new Node(-1, -1);
         tail = new Node(-1, -1);
-        cache = new HashMap<>();
+        head = new Node(-1, -1);
+        map = new HashMap<>();
         this.capacity = capacity;
+
+        tail.prev = head;
         head.next = tail;
-        tail.prev = head; 
     }
-    
-    public int get(int key) {
-        Node node = cache.get(key);
-
-        if (node == null) {
-            return -1;
-        }
-
-        moveToFront(node);
-        return node.val;
-    }
-    
-    public void put(int key, int value) {
-        Node node = cache.get(key);
-
-        if (node != null) {
-            moveToFront(node);
-            node.val = value;
+    public void put(int key, int val) {
+        if (map.containsKey(key)) {
+            Node node = map.get(key);
+            node.val = val;
+            moveInFront(node);
             return;
         }
 
-        if (cache.size() == capacity) {
-            Node lru = tail.prev;
-            remove(lru);
-            cache.remove(lru.key);
+        if (map.size() == capacity) {
+            Node node = tail.prev;
+            delete(node);
+            map.remove(node.key);
         }
 
-        Node newNode = new Node(key, value);
-        cache.put(key, newNode);
-        addToFront(newNode);
+        Node node = new Node(key, val);
+        map.put(key, node);
+        addInFront(node);
     }
 
-    void remove(Node node) {
-        node.prev.next = node.next;
-        node.next.prev = node.prev;
+    public int get(int key) {
+        if (map.containsKey(key)) {
+            Node node = map.get(key);
+            moveInFront(node);
+            return node.val;
+        } else {
+            return -1;
+        }
     }
 
-    void addToFront(Node node) {
-        node.prev = head;
+    private void moveInFront(Node node) {
+        delete(node);
+        addInFront(node);
+    }
+
+    private void addInFront(Node node) {
         node.next = head.next;
         head.next.prev = node;
+        node.prev = head;
         head.next = node;
     }
 
-    void moveToFront(Node node) {
-        remove(node);
-        addToFront(node);
+    private void delete(Node node) {
+        node.next.prev = node.prev;
+        node.prev.next = node.next;
     }
 }
 
