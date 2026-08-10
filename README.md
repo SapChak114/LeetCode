@@ -215,6 +215,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1511-count-number-of-teams](https://github.com/SapChak114/LeetCode/tree/master/1511-count-number-of-teams) |
 | [1536-minimum-swaps-to-arrange-a-binary-grid](https://github.com/SapChak114/LeetCode/tree/master/1536-minimum-swaps-to-arrange-a-binary-grid) |
 | [1538-maximum-points-you-can-obtain-from-cards](https://github.com/SapChak114/LeetCode/tree/master/1538-maximum-points-you-can-obtain-from-cards) |
+| [1539-kth-missing-positive-number](https://github.com/SapChak114/LeetCode/tree/master/1539-kth-missing-positive-number) |
 | [1548-check-if-all-1s-are-at-least-length-k-places-away](https://github.com/SapChak114/LeetCode/tree/master/1548-check-if-all-1s-are-at-least-length-k-places-away) |
 | [1556-make-two-arrays-equal-by-reversing-subarrays](https://github.com/SapChak114/LeetCode/tree/master/1556-make-two-arrays-equal-by-reversing-subarrays) |
 | [1567-maximum-length-of-subarray-with-positive-product](https://github.com/SapChak114/LeetCode/tree/master/1567-maximum-length-of-subarray-with-positive-product) |
@@ -938,6 +939,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1351-count-negative-numbers-in-a-sorted-matrix](https://github.com/SapChak114/LeetCode/tree/master/1351-count-negative-numbers-in-a-sorted-matrix) |
 | [1468-check-if-n-and-its-double-exist](https://github.com/SapChak114/LeetCode/tree/master/1468-check-if-n-and-its-double-exist) |
 | [1482-minimum-number-of-days-to-make-m-bouquets](https://github.com/SapChak114/LeetCode/tree/master/1482-minimum-number-of-days-to-make-m-bouquets) |
+| [1539-kth-missing-positive-number](https://github.com/SapChak114/LeetCode/tree/master/1539-kth-missing-positive-number) |
 | [1573-find-two-non-overlapping-sub-arrays-each-with-target-sum](https://github.com/SapChak114/LeetCode/tree/master/1573-find-two-non-overlapping-sub-arrays-each-with-target-sum) |
 | [1615-range-sum-of-sorted-subarray-sums](https://github.com/SapChak114/LeetCode/tree/master/1615-range-sum-of-sorted-subarray-sums) |
 | [1621-number-of-subsequences-that-satisfy-the-given-sum-condition](https://github.com/SapChak114/LeetCode/tree/master/1621-number-of-subsequences-that-satisfy-the-given-sum-condition) |
