@@ -13,6 +13,7 @@ class Solution {
             }
 
             maxOfMin = Math.max(maxOfMin, min);
+
             ans += maxOfMin - min;
         }
 
