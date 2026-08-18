@@ -11,26 +11,33 @@ class SummaryRanges {
 
     public int[][] getIntervals() {
         if (values.isEmpty()) {
-            return new int[0][2];
+            return new int[][]{};
         }
 
-        List<int[]> intervals = new ArrayList<>();
-        Iterator<Integer> it = values.iterator();
-        int start = it.next();
+        Iterator<Integer> itr = values.iterator();
+        int start = itr.next();
         int end = start;
 
-        while (it.hasNext()) {
-            int curr = it.next();
+        List<int[]> ans = new ArrayList<>();
+        while (itr.hasNext()) {
+            int curr = itr.next();
             if (curr == end + 1) {
                 end = curr;
             } else {
-                intervals.add(new int[] {start, end});
+                ans.add(new int[]{start, end});
                 start = curr;
                 end = curr;
             }
         }
-        intervals.add(new int[] {start, end});
 
-        return intervals.toArray(new int[0][]);
+        ans.add(new int[]{start, end});
+
+        int[][] res = new int[ans.size()][2];
+        for (int i = 0; i<ans.size(); i++) {
+            res[i][0] = ans.get(i)[0];
+            res[i][1] = ans.get(i)[1];
+        }
+
+        return res;
     }
 }
