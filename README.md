@@ -2804,4 +2804,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/SapChak114/LeetCode/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
+## Brute-Force Search
+|  |
+| ------- |
+| [0139-word-break](https://github.com/SapChak114/LeetCode/tree/master/0139-word-break) |
 <!---LeetCode Topics End-->
