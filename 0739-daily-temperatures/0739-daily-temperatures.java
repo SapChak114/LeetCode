@@ -4,13 +4,13 @@ class Solution {
         int n = temp.length;
 
         int[] ans = new int[n];
-
         for (int i = 0; i<n; i++) {
             while (!st.isEmpty() && temp[st.peek()] < temp[i]) {
                 int idx = st.pop();
-                ans[idx] = i - idx;
+                int diff = i - idx;
+                ans[idx] = diff;
             }
-            st.push(i);
+            st.add(i);
         }
 
         return ans;
