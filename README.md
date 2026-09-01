@@ -213,6 +213,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid](https://github.com/SapChak114/LeetCode/tree/master/1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid) |
 | [1493-longest-subarray-of-1s-after-deleting-one-element](https://github.com/SapChak114/LeetCode/tree/master/1493-longest-subarray-of-1s-after-deleting-one-element) |
 | [1497-design-a-stack-with-increment-operation](https://github.com/SapChak114/LeetCode/tree/master/1497-design-a-stack-with-increment-operation) |
+| [1499-max-value-of-equation](https://github.com/SapChak114/LeetCode/tree/master/1499-max-value-of-equation) |
 | [1510-find-lucky-integer-in-an-array](https://github.com/SapChak114/LeetCode/tree/master/1510-find-lucky-integer-in-an-array) |
 | [1511-count-number-of-teams](https://github.com/SapChak114/LeetCode/tree/master/1511-count-number-of-teams) |
 | [1536-minimum-swaps-to-arrange-a-binary-grid](https://github.com/SapChak114/LeetCode/tree/master/1536-minimum-swaps-to-arrange-a-binary-grid) |
@@ -620,6 +621,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1464-maximum-product-of-two-elements-in-an-array](https://github.com/SapChak114/LeetCode/tree/master/1464-maximum-product-of-two-elements-in-an-array) |
 | [1478-maximum-number-of-events-that-can-be-attended](https://github.com/SapChak114/LeetCode/tree/master/1478-maximum-number-of-events-that-can-be-attended) |
 | [1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid](https://github.com/SapChak114/LeetCode/tree/master/1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid) |
+| [1499-max-value-of-equation](https://github.com/SapChak114/LeetCode/tree/master/1499-max-value-of-equation) |
 | [1753-path-with-minimum-effort](https://github.com/SapChak114/LeetCode/tree/master/1753-path-with-minimum-effort) |
 | [1762-furthest-building-you-can-reach](https://github.com/SapChak114/LeetCode/tree/master/1762-furthest-building-you-can-reach) |
 | [1917-maximum-average-pass-ratio](https://github.com/SapChak114/LeetCode/tree/master/1917-maximum-average-pass-ratio) |
@@ -1874,6 +1876,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0940-fruit-into-baskets](https://github.com/SapChak114/LeetCode/tree/master/0940-fruit-into-baskets) |
 | [1460-number-of-substrings-containing-all-three-characters](https://github.com/SapChak114/LeetCode/tree/master/1460-number-of-substrings-containing-all-three-characters) |
 | [1493-longest-subarray-of-1s-after-deleting-one-element](https://github.com/SapChak114/LeetCode/tree/master/1493-longest-subarray-of-1s-after-deleting-one-element) |
+| [1499-max-value-of-equation](https://github.com/SapChak114/LeetCode/tree/master/1499-max-value-of-equation) |
 | [1538-maximum-points-you-can-obtain-from-cards](https://github.com/SapChak114/LeetCode/tree/master/1538-maximum-points-you-can-obtain-from-cards) |
 | [1573-find-two-non-overlapping-sub-arrays-each-with-target-sum](https://github.com/SapChak114/LeetCode/tree/master/1573-find-two-non-overlapping-sub-arrays-each-with-target-sum) |
 | [1586-longest-subarray-of-1s-after-deleting-one-element](https://github.com/SapChak114/LeetCode/tree/master/1586-longest-subarray-of-1s-after-deleting-one-element) |
@@ -2627,6 +2630,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0387-first-unique-character-in-a-string](https://github.com/SapChak114/LeetCode/tree/master/0387-first-unique-character-in-a-string) |
 | [0859-design-circular-deque](https://github.com/SapChak114/LeetCode/tree/master/0859-design-circular-deque) |
 | [0892-shortest-subarray-with-sum-at-least-k](https://github.com/SapChak114/LeetCode/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
+| [1499-max-value-of-equation](https://github.com/SapChak114/LeetCode/tree/master/1499-max-value-of-equation) |
 | [2180-maximum-number-of-tasks-you-can-assign](https://github.com/SapChak114/LeetCode/tree/master/2180-maximum-number-of-tasks-you-can-assign) |
 | [2408-number-of-people-aware-of-a-secret](https://github.com/SapChak114/LeetCode/tree/master/2408-number-of-people-aware-of-a-secret) |
 | [2527-count-subarrays-with-fixed-bounds](https://github.com/SapChak114/LeetCode/tree/master/2527-count-subarrays-with-fixed-bounds) |
@@ -2638,6 +2642,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0239-sliding-window-maximum](https://github.com/SapChak114/LeetCode/tree/master/0239-sliding-window-maximum) |
 | [0892-shortest-subarray-with-sum-at-least-k](https://github.com/SapChak114/LeetCode/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
+| [1499-max-value-of-equation](https://github.com/SapChak114/LeetCode/tree/master/1499-max-value-of-equation) |
 | [2180-maximum-number-of-tasks-you-can-assign](https://github.com/SapChak114/LeetCode/tree/master/2180-maximum-number-of-tasks-you-can-assign) |
 | [2527-count-subarrays-with-fixed-bounds](https://github.com/SapChak114/LeetCode/tree/master/2527-count-subarrays-with-fixed-bounds) |
 | [2868-continuous-subarrays](https://github.com/SapChak114/LeetCode/tree/master/2868-continuous-subarrays) |
