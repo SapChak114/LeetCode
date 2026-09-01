@@ -274,6 +274,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1993-sum-of-all-subset-xor-totals](https://github.com/SapChak114/LeetCode/tree/master/1993-sum-of-all-subset-xor-totals) |
 | [1995-finding-pairs-with-a-certain-sum](https://github.com/SapChak114/LeetCode/tree/master/1995-finding-pairs-with-a-certain-sum) |
 | [2006-find-the-student-that-will-replace-the-chalk](https://github.com/SapChak114/LeetCode/tree/master/2006-find-the-student-that-will-replace-the-chalk) |
+| [2007-find-original-array-from-doubled-array](https://github.com/SapChak114/LeetCode/tree/master/2007-find-original-array-from-doubled-array) |
 | [2035-count-sub-islands](https://github.com/SapChak114/LeetCode/tree/master/2035-count-sub-islands) |
 | [2048-build-array-from-permutation](https://github.com/SapChak114/LeetCode/tree/master/2048-build-array-from-permutation) |
 | [2054-the-number-of-the-smallest-unoccupied-chair](https://github.com/SapChak114/LeetCode/tree/master/2054-the-number-of-the-smallest-unoccupied-chair) |
@@ -527,6 +528,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1851-maximum-number-of-events-that-can-be-attended-ii](https://github.com/SapChak114/LeetCode/tree/master/1851-maximum-number-of-events-that-can-be-attended-ii) |
 | [1877-minimize-maximum-pair-sum-in-array](https://github.com/SapChak114/LeetCode/tree/master/1877-minimize-maximum-pair-sum-in-array) |
 | [1984-minimum-difference-between-highest-and-lowest-of-k-scores](https://github.com/SapChak114/LeetCode/tree/master/1984-minimum-difference-between-highest-and-lowest-of-k-scores) |
+| [2007-find-original-array-from-doubled-array](https://github.com/SapChak114/LeetCode/tree/master/2007-find-original-array-from-doubled-array) |
 | [2054-two-best-non-overlapping-events](https://github.com/SapChak114/LeetCode/tree/master/2054-two-best-non-overlapping-events) |
 | [2055-describe-the-painting](https://github.com/SapChak114/LeetCode/tree/master/2055-describe-the-painting) |
 | [2092-find-all-people-with-secret](https://github.com/SapChak114/LeetCode/tree/master/2092-find-all-people-with-secret) |
@@ -1106,6 +1108,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1915-check-if-one-string-swap-can-make-strings-equal](https://github.com/SapChak114/LeetCode/tree/master/1915-check-if-one-string-swap-can-make-strings-equal) |
 | [1930-unique-length-3-palindromic-subsequences](https://github.com/SapChak114/LeetCode/tree/master/1930-unique-length-3-palindromic-subsequences) |
 | [1995-finding-pairs-with-a-certain-sum](https://github.com/SapChak114/LeetCode/tree/master/1995-finding-pairs-with-a-certain-sum) |
+| [2007-find-original-array-from-doubled-array](https://github.com/SapChak114/LeetCode/tree/master/2007-find-original-array-from-doubled-array) |
 | [2054-the-number-of-the-smallest-unoccupied-chair](https://github.com/SapChak114/LeetCode/tree/master/2054-the-number-of-the-smallest-unoccupied-chair) |
 | [2055-describe-the-painting](https://github.com/SapChak114/LeetCode/tree/master/2055-describe-the-painting) |
 | [2059-unique-length-3-palindromic-subsequences](https://github.com/SapChak114/LeetCode/tree/master/2059-unique-length-3-palindromic-subsequences) |
@@ -2185,6 +2188,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1877-minimize-maximum-pair-sum-in-array](https://github.com/SapChak114/LeetCode/tree/master/1877-minimize-maximum-pair-sum-in-array) |
 | [1917-maximum-average-pass-ratio](https://github.com/SapChak114/LeetCode/tree/master/1917-maximum-average-pass-ratio) |
 | [1975-maximum-matrix-sum](https://github.com/SapChak114/LeetCode/tree/master/1975-maximum-matrix-sum) |
+| [2007-find-original-array-from-doubled-array](https://github.com/SapChak114/LeetCode/tree/master/2007-find-original-array-from-doubled-array) |
 | [2089-maximum-matrix-sum](https://github.com/SapChak114/LeetCode/tree/master/2089-maximum-matrix-sum) |
 | [2095-minimum-number-of-swaps-to-make-the-string-balanced](https://github.com/SapChak114/LeetCode/tree/master/2095-minimum-number-of-swaps-to-make-the-string-balanced) |
 | [2117-find-original-array-from-doubled-array](https://github.com/SapChak114/LeetCode/tree/master/2117-find-original-array-from-doubled-array) |
