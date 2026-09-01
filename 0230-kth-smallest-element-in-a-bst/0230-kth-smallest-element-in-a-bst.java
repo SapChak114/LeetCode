@@ -34,8 +34,8 @@ class Solution {
             return;
         }
 
-        //if(count < k){
+        if(count < k){
             helper(root.right, k);
-        //}
+        }
     }
 }
