@@ -1,64 +1,62 @@
+class Pair{
+    int node;
+    int weight;
+
+    public Pair(int node, int weight) {
+        this.node = node;
+        this.weight = weight;
+    }
+}
 class Solution {
-
     public int countPaths(int n, int[][] roads) {
-        final int MOD = 1_000_000_007;
+        int mod = (int)1e9 + 7;
+        List<Pair>[] adjList = new ArrayList[n];
 
-        // Build adjacency list
-        List<List<int[]>> graph = new ArrayList<>();
-        for (int i = 0; i < n; i++) {
-            graph.add(new ArrayList<>());
+        for (int i = 0; i<n; i++) {
+            adjList[i] = new ArrayList<>();
         }
+
         for (int[] road : roads) {
-            int startNode = road[0], endNode = road[1], travelTime = road[2];
-            graph.get(startNode).add(new int[] { endNode, travelTime });
-            graph.get(endNode).add(new int[] { startNode, travelTime });
+            int start = road[0], end = road[1], time = road[2];
+
+            adjList[start].add(new Pair(end, time));
+            adjList[end].add(new Pair(start, time));
         }
 
-        // Min-Heap (priority queue) for Dijkstra
-        PriorityQueue<long[]> minHeap = new PriorityQueue<>(
-            Comparator.comparingLong(a -> a[0])
-        );
 
-        // Store shortest time to each node
+        PriorityQueue<long[]> pq = new PriorityQueue<>((a, b) -> Long.compare(a[0], b[0]));
+
         long[] shortestTime = new long[n];
         Arrays.fill(shortestTime, Long.MAX_VALUE);
-        // Number of ways to reach each node in shortest time
         int[] pathCount = new int[n];
 
-        shortestTime[0] = 0; // Distance to source is 0
-        pathCount[0] = 1; // 1 way to reach node 0
+        shortestTime[0] = 0;
+        pathCount[0] = 1;
 
-        minHeap.offer(new long[] { 0, 0 }); // {time, node}
-
-        while (!minHeap.isEmpty()) {
-            long[] top = minHeap.poll();
-            long currTime = top[0]; // Current shortest time
+        pq.add(new long[]{0, 0});
+        while (!pq.isEmpty()) {
+            long[] top = pq.poll();
+            long currTime = top[0];
             int currNode = (int) top[1];
 
-            // Skip outdated distances
             if (currTime > shortestTime[currNode]) {
                 continue;
             }
 
-            for (int[] neighbor : graph.get(currNode)) {
-                int neighborNode = neighbor[0], roadTime = neighbor[1];
+            for (Pair neigh : adjList[currNode]) {
+                int neighNode = neigh.node;
+                int roadTime = neigh.weight;
 
-                // Found a new shortest path → Update shortest time and reset path count
-                if (currTime + roadTime < shortestTime[neighborNode]) {
-                    shortestTime[neighborNode] = currTime + roadTime;
-                    pathCount[neighborNode] = pathCount[currNode];
-                    minHeap.offer(
-                        new long[] { shortestTime[neighborNode], neighborNode }
-                    );
-                }
-                // Found another way with the same shortest time → Add to path count
-                else if (currTime + roadTime == shortestTime[neighborNode]) {
-                    pathCount[neighborNode] =
-                        (pathCount[neighborNode] + pathCount[currNode]) % MOD;
+                if (currTime + roadTime < shortestTime[neighNode]) {
+                    shortestTime[neighNode] = currTime + roadTime;
+                    pathCount[neighNode] = pathCount[currNode];
+                    pq.add(new long[]{shortestTime[neighNode], neighNode});
+                } else if (currTime + roadTime == shortestTime[neighNode]) {
+                    pathCount[neighNode] = (pathCount[neighNode] + pathCount[currNode]) % mod;
                 }
             }
         }
 
-        return pathCount[n - 1];
+        return pathCount[n-1];
     }
 }
