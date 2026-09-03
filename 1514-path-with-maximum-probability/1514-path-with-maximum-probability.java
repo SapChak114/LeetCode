@@ -1,49 +1,46 @@
-class Pair implements Comparable<Pair>{
-    int u;
+class Pair {
+    int node;
     double w;
-    
-    public Pair(int u, double w){
-        this.u=u;
-        this.w=w;
-    }
-    
-    public int compareTo(Pair b){
-        return Double.compare(this.w,b.w);
+
+    public Pair(int node, double w) {
+        this.node = node;
+        this.w = w;
     }
 }
 class Solution {
-    public double maxProbability(int n, int[][] edges, double[] succProb, int start, int end) {
+    public double maxProbability(int n, int[][] edges, double[] succProb, int start_node, int end_node) {
+        
         List<Pair>[] adjList = new ArrayList[n];
-        
-        for(int i = 0; i<n; i++) adjList[i] = new ArrayList<>();
-        
-        for(int i = 0; i<edges.length; i++){
+        for (int i = 0; i<n; i++) {
+            adjList[i] = new ArrayList<>();
+        }
+
+        for (int i = 0; i<edges.length; i++) {
             int u = edges[i][0];
             int v = edges[i][1];
             double w = succProb[i];
-            adjList[u].add(new Pair(v,w));
-            adjList[v].add(new Pair(u,w));
+            adjList[u].add(new Pair(v, w));
+            adjList[v].add(new Pair(u, w));
         }
-        
-        double[] dis = new double[n];
-        Arrays.fill(dis,Double.MIN_VALUE);
-        
-        PriorityQueue<Pair> pq = new PriorityQueue<>(Collections.reverseOrder());
-        pq.add(new Pair(start,1));
-        dis[start]=1;
-        
-        while(!pq.isEmpty()){
+
+        PriorityQueue<Pair> pq = new PriorityQueue<>((a,b)->Double.compare(b.w,a.w));
+        pq.add(new Pair(start_node, 1D));
+
+        double[] maxProb = new double[n];
+
+        while (!pq.isEmpty()) {
             Pair p = pq.poll();
-            
-            for(Pair edge : adjList[p.u]){
-                if(dis[edge.u]<p.w*edge.w){
-                    dis[edge.u]=p.w*edge.w;
-                    pq.add(new Pair(edge.u,dis[edge.u]));
+            int node = p.node;
+            double weight = p.w;
+
+            for (Pair nei : adjList[node]) {
+                if (weight * nei.w > maxProb[nei.node]) {
+                    maxProb[nei.node] = weight * nei.w;
+                    pq.add(new Pair(nei.node, maxProb[nei.node]));
                 }
             }
         }
-        
-        return dis[end];
-        
+
+        return maxProb[end_node];
     }
 }
