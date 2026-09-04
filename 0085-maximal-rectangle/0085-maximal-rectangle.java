@@ -20,29 +20,28 @@ class Solution {
         return max;
     }
 
+
     int lra(int[] A) {
-        int[] leftSmall = leftSmall(A);
-        int[] rightSmall = rightSmall(A);
+        int[] idxL = indexOfNearestSmallerElementToTheLeft(A);
+        int[] idxR = indexOfNearestSmallerElementToTheRight(A);
 
         int max = Integer.MIN_VALUE;
         for (int i = 0; i<A.length; i++) {
-            int val = rightSmall[i] - leftSmall[i] - 1;
-            max = Math.max(max, val * A[i]);
+            int val = idxR[i] - idxL[i] - 1;
+            max = Math.max(max, A[i] * val);
         }
 
         return max;
     }
 
-    int[] leftSmall(int[] A) {
-        int n = A.length;
-        int[] ans = new int[n];
+    int[] indexOfNearestSmallerElementToTheLeft(int[] A) {
+        int[] ans = new int[A.length];
 
         Stack<Integer> st = new Stack<>();
-        for (int i = 0; i<n; i++) {
+        for (int i = 0; i<A.length; i++) {
             while (!st.isEmpty() && A[st.peek()] >= A[i]) {
                 st.pop();
             }
-
             ans[i] = st.isEmpty() ? -1 : st.peek();
             st.push(i);
         }
@@ -50,17 +49,15 @@ class Solution {
         return ans;
     }
 
-    int[] rightSmall(int[] A) {
-        int n = A.length;
-        int[] ans = new int[n];
+    int[] indexOfNearestSmallerElementToTheRight(int[] A) {
+        int[] ans = new int[A.length];
 
         Stack<Integer> st = new Stack<>();
-        for (int i = n-1; i>=0; i--) {
+        for (int i = A.length-1; i>=0; i--) {
             while (!st.isEmpty() && A[st.peek()] >= A[i]) {
                 st.pop();
             }
-
-            ans[i] = st.isEmpty() ? n : st.peek();
+            ans[i] = st.isEmpty() ? A.length : st.peek();
             st.push(i);
         }
 
