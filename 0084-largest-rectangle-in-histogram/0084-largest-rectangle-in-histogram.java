@@ -1,45 +1,46 @@
 class Solution {
-    public int largestRectangleArea(int[] heights) {
-        int[] leftMax = leftSmallest(heights);
-        int[] rightMax = rightSmallest(heights);
-        
-        int ans = 0;
-        
-        for(int i = 0 ; i<heights.length; i++){
-            int left = leftMax[i];
-            int right = rightMax[i];
-            
-            ans = Math.max(ans,heights[i]*(right-left-1));
+    public int largestRectangleArea(int[] h) {
+        int[] leftArr = leftArr(h);
+        int[] rightArr = rightArr(h);
+
+        int max = Integer.MIN_VALUE;
+        for (int i = 0; i<h.length; i++) {
+            int val = rightArr[i] - leftArr[i] - 1;
+            max = Math.max(max, val * h[i]);
         }
-        
+
+        return max;
+    }
+
+    int[] leftArr(int[] h) {
+        int n = h.length;
+
+        Stack<Integer> st = new Stack<>();
+        int[] ans = new int[n];
+        for (int i = 0; i<n; i++) {
+            while (!st.isEmpty() && h[st.peek()] >= h[i]) {
+                st.pop();
+            }
+            ans[i] = st.isEmpty() ? -1 : st.peek();
+            st.push(i);
+        }
+
         return ans;
     }
-    
-    int[] leftSmallest(int[] A){
-        Stack<Integer> stack = new Stack<>();
-        int[] ans = new int[A.length];
-        
-        for(int i=0; i<A.length; i++){
-            while(!stack.isEmpty() && A[stack.peek()]>=A[i]) stack.pop();
-            if(stack.isEmpty()) ans[i]=-1;
-            else ans[i]=stack.peek();
-            stack.push(i);
+
+    int[] rightArr(int[] h) {
+        int n = h.length;
+
+        Stack<Integer> st = new Stack<>();
+        int[] ans = new int[n];
+        for (int i = n-1; i>=0; i--) {
+            while (!st.isEmpty() && h[st.peek()] >= h[i]) {
+                st.pop();
+            }
+            ans[i] = st.isEmpty() ? n : st.peek();
+            st.push(i);
         }
-        
-        return ans;
-    }
-    
-    int[] rightSmallest(int[] A){
-        Stack<Integer> stack = new Stack<>();
-        int[] ans = new int[A.length];
-        
-        for(int i=A.length-1; i>=0; i--){
-            while(!stack.isEmpty() && A[stack.peek()]>=A[i]) stack.pop();
-            if(stack.isEmpty()) ans[i]=A.length;
-            else ans[i]=stack.peek();
-            stack.push(i);
-        }
-        
+
         return ans;
     }
 }
