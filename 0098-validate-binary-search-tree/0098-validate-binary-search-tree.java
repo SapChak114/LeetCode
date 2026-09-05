@@ -23,11 +23,11 @@ class Solution {
             return true;
         }
 
-        if (left != null && root.val <= left) {
+        if (left != null && left >= root.val) {
             return false;
         }
 
-        if (right != null && root.val >= right) {
+        if (right != null && right <= root.val) {
             return false;
         }
 
