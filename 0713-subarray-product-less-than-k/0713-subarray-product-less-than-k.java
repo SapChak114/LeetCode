@@ -5,7 +5,7 @@ class Solution {
         for (int right = 0; right<n; right++) {
             prod *= nums[right];
 
-            while (prod >= k) {
+            while (prod >= k && left < n) {
                 prod /= nums[left++];
             }
 
