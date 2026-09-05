@@ -15,8 +15,8 @@
  */
 class Solution {
     int targ;
-    public boolean hasPathSum(TreeNode root, int targetSum) {
-        this.targ = targetSum;
+    public boolean hasPathSum(TreeNode root, int targ) {
+        this.targ = targ;
         return dfs(root, 0);
     }
 
