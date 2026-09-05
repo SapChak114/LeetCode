@@ -4,14 +4,14 @@ class Solution {
 
         int left = 0, len = 0;
 
-        Map<Character, Integer> map = new HashMap<>();
+        Set<Character> map = new HashSet<>();
         for (int right = 0; right<n; right++) {
-            while (map.containsKey(s.charAt(right))) {
+            while (map.contains(s.charAt(right))) {
                  map.remove(s.charAt(left));
                  left++;
             }
 
-            map.put(s.charAt(right), right);
+            map.add(s.charAt(right));
 
             len = Math.max(len, right - left + 1);
         }
