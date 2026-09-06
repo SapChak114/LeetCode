@@ -1,62 +1,49 @@
-class Pair {
-    int x;
-    int y;
-    int t;
-    public Pair(int x, int y, int t) {
-        this.x = x;
-        this.y = y;
-        this.t = t;
-    }
-}
 class Solution {
-    int[][] grid;
-    boolean[][] vis;
-    int[] X = {0, 1, 0, -1};
-    int[] Y = {1, 0, -1, 0};
-    int n, m;
+    int[] dirX = {0, 1, 0, -1};
+    int[] dirY = {1, 0, -1, 0};
     public int orangesRotting(int[][] grid) {
-        n = grid.length;
-        m = grid[0].length;
+        int n = grid.length;
+        int m = grid[0].length;
+
         int count = 0;
-
-        this.grid = grid;
-        this.vis = new boolean[n][m];
-
-        Queue<Pair> q = new LinkedList<>();
+        Queue<int[]> q = new LinkedList<>();
+        boolean[][] vis = new boolean[n][m];
         for (int i = 0; i<n; i++) {
             for (int j = 0; j<m; j++) {
                 if (grid[i][j] == 2) {
-                    q.add(new Pair(i, j, 0));
+                    q.add(new int[]{i, j, 0});
                 } else if (grid[i][j] == 1) {
                     count++;
                 }
             }
         }
 
-        int time = 0, nCount = 0;
+        int max = 0, nCount = 0;
         while (!q.isEmpty()) {
-            Pair p = q.poll();
-            time = Math.max(time, p.t);
+            int[] vals = q.poll();
+            int x = vals[0];
+            int y = vals[1];
+            int t = vals[2];
+
+            max = Math.max(max, t);
             for (int i = 0; i<4; i++) {
-                int newX = p.x + X[i];
-                int newY = p.y + Y[i];
-                if (!check(newX, newY)) {
+                int newX = x + dirX[i];
+                int newY = y + dirY[i];
+
+                if (newX < 0 || newX >= n || newY < 0 || newY >= m || vis[newX][newY] || grid[newX][newY] != 1) {
                     continue;
                 }
+
                 vis[newX][newY] = true;
-                q.add(new Pair(newX, newY, p.t+1));
+                q.add(new int[]{newX, newY, t + 1});
                 nCount++;
             }
         }
 
-        if (nCount != count) {
-            return -1;
+        if (count == nCount) {
+            return max;
         }
 
-        return time;
-    }
-
-    private boolean check(int x, int y) {
-        return x < n && y < m && x >= 0 && y >= 0 && grid[x][y] == 1 && !vis[x][y];
+        return -1;
     }
 }
