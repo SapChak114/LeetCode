@@ -1,34 +1,32 @@
 class Solution {
-    int WHITE = 0, GREY = 1, BLACK = 2;
-    public boolean canFinish(int nc, int[][] pre) {
-        List<Integer>[] adjList = new ArrayList[nc];
+    public boolean canFinish(int numCourses, int[][] prerequisites) {
+        List<Integer>[] adjList = new ArrayList[numCourses];
 
-        for (int i = 0; i<nc; i++) {
+        for (int i = 0; i<numCourses; i++) {
             adjList[i] = new ArrayList<>();
         }
 
-        int[] inDeg = new int[nc];
-        for (int i = 0; i<pre.length; i++) {
-            int course = pre[i][0];
-            int preCourse = pre[i][1];
+        int[] inDeg = new int[numCourses];
+        for (int i = 0; i<prerequisites.length; i++) {
+            int pre = prerequisites[i][1];
+            int course = prerequisites[i][0];
 
-            adjList[preCourse].add(course);
-
+            adjList[pre].add(course);
             inDeg[course]++;
         }
 
         Queue<Integer> q = new LinkedList<>();
-        for (int i = 0; i<nc; i++) {
+        for (int i = 0; i<numCourses; i++) {
             if (inDeg[i] == 0) {
                 q.add(i);
             }
         }
 
-        int count = 0;
+        int courseCount = 0;
         while (!q.isEmpty()) {
             int node = q.poll();
-            count++;
-            
+
+            courseCount++;
             for (int nei : adjList[node]) {
                 inDeg[nei]--;
 
@@ -38,6 +36,6 @@ class Solution {
             }
         }
 
-        return count == nc;
+        return courseCount == numCourses;
     }
 }
