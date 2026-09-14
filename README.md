@@ -2325,6 +2325,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0805-escape-the-ghosts](https://github.com/SapChak114/LeetCode/tree/master/0805-escape-the-ghosts) |
 | [0826-soup-servings](https://github.com/SapChak114/LeetCode/tree/master/0826-soup-servings) |
 | [0830-largest-triangle-area](https://github.com/SapChak114/LeetCode/tree/master/0830-largest-triangle-area) |
+| [0836-rectangle-overlap](https://github.com/SapChak114/LeetCode/tree/master/0836-rectangle-overlap) |
 | [0840-magic-squares-in-grid](https://github.com/SapChak114/LeetCode/tree/master/0840-magic-squares-in-grid) |
 | [0856-consecutive-numbers-sum](https://github.com/SapChak114/LeetCode/tree/master/0856-consecutive-numbers-sum) |
 | [0867-new-21-game](https://github.com/SapChak114/LeetCode/tree/master/0867-new-21-game) |
@@ -2769,6 +2770,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0830-largest-triangle-area](https://github.com/SapChak114/LeetCode/tree/master/0830-largest-triangle-area) |
+| [0836-rectangle-overlap](https://github.com/SapChak114/LeetCode/tree/master/0836-rectangle-overlap) |
 | [1266-minimum-time-visiting-all-points](https://github.com/SapChak114/LeetCode/tree/master/1266-minimum-time-visiting-all-points) |
 | [3047-find-the-largest-area-of-square-inside-two-rectangles](https://github.com/SapChak114/LeetCode/tree/master/3047-find-the-largest-area-of-square-inside-two-rectangles) |
 | [3623-count-number-of-trapezoids-i](https://github.com/SapChak114/LeetCode/tree/master/3623-count-number-of-trapezoids-i) |
