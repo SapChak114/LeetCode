@@ -8,10 +8,9 @@ class Solution {
                     return res;
                 }
             }
-
             res += strs[0].charAt(i);
         }
-
+        
         return res;
     }
 }
