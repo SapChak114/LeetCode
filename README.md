@@ -1293,6 +1293,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0965-unique-email-addresses](https://github.com/SapChak114/LeetCode/tree/master/0965-unique-email-addresses) |
 | [0981-time-based-key-value-store](https://github.com/SapChak114/LeetCode/tree/master/0981-time-based-key-value-store) |
 | [1006-vowel-spellchecker](https://github.com/SapChak114/LeetCode/tree/master/1006-vowel-spellchecker) |
+| [1047-remove-all-adjacent-duplicates-in-string](https://github.com/SapChak114/LeetCode/tree/master/1047-remove-all-adjacent-duplicates-in-string) |
 | [1058-lexicographically-smallest-equivalent-string](https://github.com/SapChak114/LeetCode/tree/master/1058-lexicographically-smallest-equivalent-string) |
 | [1065-binary-string-with-substrings-representing-1-to-n](https://github.com/SapChak114/LeetCode/tree/master/1065-binary-string-with-substrings-representing-1-to-n) |
 | [1093-recover-a-tree-from-preorder-traversal](https://github.com/SapChak114/LeetCode/tree/master/1093-recover-a-tree-from-preorder-traversal) |
@@ -1524,6 +1525,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0933-increasing-order-search-tree](https://github.com/SapChak114/LeetCode/tree/master/0933-increasing-order-search-tree) |
 | [0957-minimum-add-to-make-parentheses-valid](https://github.com/SapChak114/LeetCode/tree/master/0957-minimum-add-to-make-parentheses-valid) |
 | [1002-maximum-width-ramp](https://github.com/SapChak114/LeetCode/tree/master/1002-maximum-width-ramp) |
+| [1047-remove-all-adjacent-duplicates-in-string](https://github.com/SapChak114/LeetCode/tree/master/1047-remove-all-adjacent-duplicates-in-string) |
 | [1197-parsing-a-boolean-expression](https://github.com/SapChak114/LeetCode/tree/master/1197-parsing-a-boolean-expression) |
 | [1320-remove-all-adjacent-duplicates-in-string-ii](https://github.com/SapChak114/LeetCode/tree/master/1320-remove-all-adjacent-duplicates-in-string-ii) |
 | [1371-minimum-remove-to-make-valid-parentheses](https://github.com/SapChak114/LeetCode/tree/master/1371-minimum-remove-to-make-valid-parentheses) |
