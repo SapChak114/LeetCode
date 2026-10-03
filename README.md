@@ -167,6 +167,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0965-unique-email-addresses](https://github.com/SapChak114/LeetCode/tree/master/0965-unique-email-addresses) |
 | [0967-minimum-falling-path-sum](https://github.com/SapChak114/LeetCode/tree/master/0967-minimum-falling-path-sum) |
 | [0974-subarray-sums-divisible-by-k](https://github.com/SapChak114/LeetCode/tree/master/0974-subarray-sums-divisible-by-k) |
+| [0986-interval-list-intersections](https://github.com/SapChak114/LeetCode/tree/master/0986-interval-list-intersections) |
 | [0994-rotting-oranges](https://github.com/SapChak114/LeetCode/tree/master/0994-rotting-oranges) |
 | [0999-regions-cut-by-slashes](https://github.com/SapChak114/LeetCode/tree/master/0999-regions-cut-by-slashes) |
 | [1002-maximum-width-ramp](https://github.com/SapChak114/LeetCode/tree/master/1002-maximum-width-ramp) |
@@ -1472,6 +1473,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0874-backspace-string-compare](https://github.com/SapChak114/LeetCode/tree/master/0874-backspace-string-compare) |
 | [0881-boats-to-save-people](https://github.com/SapChak114/LeetCode/tree/master/0881-boats-to-save-people) |
 | [0908-middle-of-the-linked-list](https://github.com/SapChak114/LeetCode/tree/master/0908-middle-of-the-linked-list) |
+| [0986-interval-list-intersections](https://github.com/SapChak114/LeetCode/tree/master/0986-interval-list-intersections) |
 | [1002-maximum-width-ramp](https://github.com/SapChak114/LeetCode/tree/master/1002-maximum-width-ramp) |
 | [1129-longest-string-chain](https://github.com/SapChak114/LeetCode/tree/master/1129-longest-string-chain) |
 | [1468-check-if-n-and-its-double-exist](https://github.com/SapChak114/LeetCode/tree/master/1468-check-if-n-and-its-double-exist) |
@@ -2891,4 +2893,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0207-course-schedule](https://github.com/SapChak114/LeetCode/tree/master/0207-course-schedule) |
+## Sweep Line
+|  |
+| ------- |
+| [0986-interval-list-intersections](https://github.com/SapChak114/LeetCode/tree/master/0986-interval-list-intersections) |
 <!---LeetCode Topics End-->
