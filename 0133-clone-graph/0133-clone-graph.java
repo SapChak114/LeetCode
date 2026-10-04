@@ -23,10 +23,9 @@ class Solution {
     public Node cloneGraph(Node node) {
         this.hm = new HashMap<>();
         return dfs(node);
-        //return hm.get(node);
     }
 
-    Node dfs(Node node) {
+   Node dfs(Node node) {
         if (node == null) {
             return null;
         }
@@ -35,13 +34,15 @@ class Solution {
             return hm.get(node);
         }
 
-        Node clone = new Node(node.val);
-        hm.put(node, clone);
+        Node newNode = new Node(node.val);
+
+        hm.put(node, newNode);
 
         for (Node nei : node.neighbors) {
-            clone.neighbors.add(dfs(nei));
+            newNode.neighbors.add(dfs(nei));
         }
 
-        return clone;
-    }
+        return newNode;
+   }
+
 }
