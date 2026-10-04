@@ -1,42 +1,38 @@
 class Solution {
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
-        int n = nums1.length;
-        int m = nums2.length;
-        
-        if(m<n){
-            return findMedianSortedArrays(nums2,nums1);
+        int inf = Integer.MAX_VALUE;
+        int[] A = nums1, B = nums2;
+        int n = A.length, m = B.length;
+        int total = n + m;
+
+        if (n > m) {
+            return findMedianSortedArrays(B, A);
         }
-        
-        
-        int lo = 0, hi = n;
-        
-        int total = n+m+1;
-        
-        while(lo<=hi){
-            int midX = lo + (hi-lo)/2;
-            int midY = total/2 - midX;
-            
-            int minX = midX<=0?Integer.MIN_VALUE:nums1[midX-1];
-            int maxX = midX>=n?Integer.MAX_VALUE:nums1[midX];
-            
-            int minY = midY<=0?Integer.MIN_VALUE:nums2[midY-1];
-            int maxY = midY>=m?Integer.MAX_VALUE:nums2[midY];
-            
-            if(minX<=maxY && minY<=maxX){
-                if((m+n)%2==0){
-                    return ((double)Math.max(minX,minY) + Math.min(maxX,maxY))/2.0;
-                } else{
-                    return (double)Math.max(minX,minY);
+
+        int l = 0, r = n;
+
+        while (l <= r) {
+            int i = (l + r) / 2; // A
+            int j = (total + 1) / 2 - i; // B
+
+            double Aleft = (i == 0) ? -inf : A[i - 1];
+            double Aright = (i == n) ? inf : A[i];
+            double Bleft = (j == 0) ? -inf : B[j - 1];
+            double Bright = (j == m) ? inf : B[j];
+
+            if (Aleft <= Bright && Bleft <= Aright) {
+                if (total % 2 == 1) {
+                    return Math.max(Aleft, Bleft);
+                } else {
+                    return (Math.max(Aleft, Bleft) + Math.min(Aright, Bright)) / 2.0D;
                 }
-            }
-            else if(minY>maxX){
-                lo = midX + 1;
-            } else{
-                hi = midX - 1;
+            } else if (Aleft > Bright) {
+                r = i - 1;
+            } else {
+                l = i + 1;
             }
         }
-        
-        return 0;
-        
+
+        return -1;
     }
 }
