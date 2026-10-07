@@ -1519,6 +1519,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0144-binary-tree-preorder-traversal](https://github.com/SapChak114/LeetCode/tree/master/0144-binary-tree-preorder-traversal) |
 | [0145-binary-tree-postorder-traversal](https://github.com/SapChak114/LeetCode/tree/master/0145-binary-tree-postorder-traversal) |
 | [0155-min-stack](https://github.com/SapChak114/LeetCode/tree/master/0155-min-stack) |
+| [0225-implement-stack-using-queues](https://github.com/SapChak114/LeetCode/tree/master/0225-implement-stack-using-queues) |
 | [0234-palindrome-linked-list](https://github.com/SapChak114/LeetCode/tree/master/0234-palindrome-linked-list) |
 | [0316-remove-duplicate-letters](https://github.com/SapChak114/LeetCode/tree/master/0316-remove-duplicate-letters) |
 | [0331-verify-preorder-serialization-of-a-binary-tree](https://github.com/SapChak114/LeetCode/tree/master/0331-verify-preorder-serialization-of-a-binary-tree) |
@@ -1980,6 +1981,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0146-lru-cache](https://github.com/SapChak114/LeetCode/tree/master/0146-lru-cache) |
 | [0155-min-stack](https://github.com/SapChak114/LeetCode/tree/master/0155-min-stack) |
 | [0211-design-add-and-search-words-data-structure](https://github.com/SapChak114/LeetCode/tree/master/0211-design-add-and-search-words-data-structure) |
+| [0225-implement-stack-using-queues](https://github.com/SapChak114/LeetCode/tree/master/0225-implement-stack-using-queues) |
 | [0295-find-median-from-data-stream](https://github.com/SapChak114/LeetCode/tree/master/0295-find-median-from-data-stream) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/SapChak114/LeetCode/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0352-data-stream-as-disjoint-intervals](https://github.com/SapChak114/LeetCode/tree/master/0352-data-stream-as-disjoint-intervals) |
@@ -2689,6 +2691,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Queue
 |  |
 | ------- |
+| [0225-implement-stack-using-queues](https://github.com/SapChak114/LeetCode/tree/master/0225-implement-stack-using-queues) |
 | [0239-sliding-window-maximum](https://github.com/SapChak114/LeetCode/tree/master/0239-sliding-window-maximum) |
 | [0387-first-unique-character-in-a-string](https://github.com/SapChak114/LeetCode/tree/master/0387-first-unique-character-in-a-string) |
 | [0859-design-circular-deque](https://github.com/SapChak114/LeetCode/tree/master/0859-design-circular-deque) |
