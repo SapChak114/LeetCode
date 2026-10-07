@@ -21,17 +21,17 @@ class Solution {
         return sum;
     }
 
-    void helper(TreeNode node, int path) {
-        if (node == null) {
+    void helper(TreeNode root, int path) {
+        if (root == null) {
             return;
         }
 
-        path = path * 10 + node.val;
-        if (node.left == null && node.right == null) {
+        path = path * 10 + root.val;
+        if (root.left == null && root.right == null) {
             sum += path;
         }
 
-        helper(node.left, path);
-        helper(node.right, path);
+        helper(root.left, path);
+        helper(root.right, path);
     }
 }
