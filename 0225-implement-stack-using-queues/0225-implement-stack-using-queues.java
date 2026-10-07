@@ -11,23 +11,23 @@ class MyStack {
     public int pop() {
         int size = q.size();
         
-        for(int i = 0; i<size-1; i++){
-            push(q.remove());
+        for (int i = 0; i<size-1; i++) {
+            push(q.poll());
         }
-        
-        return q.remove();
+
+        return q.poll();
     }
     
     public int top() {
         int size = q.size();
         
-        for(int i = 0; i<size-1; i++){
-            push(q.remove());
+        for (int i = 0; i<size-1; i++) {
+            push(q.poll());
         }
-        
-        int topVal = q.remove();
-        push(topVal);
-        return topVal;
+
+        int top = q.poll();
+        push(top);
+        return top;
     }
     
     public boolean empty() {
