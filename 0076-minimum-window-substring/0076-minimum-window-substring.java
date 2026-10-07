@@ -1,7 +1,7 @@
 class Solution {
     public String minWindow(String s, String t) {
         Map<Character, Integer> freq = new HashMap<>();
-
+        
         for (char c : t.toCharArray()) {
             freq.put(c, freq.getOrDefault(c, 0) + 1);
         }
@@ -13,7 +13,6 @@ class Solution {
         while (j < n) {
             char endChar = s.charAt(j++);
             if (freq.containsKey(endChar)) {
-                
                 freq.put(endChar, freq.get(endChar) - 1);
                 if (freq.get(endChar) == 0) {
                     need--;
@@ -42,6 +41,6 @@ class Solution {
             }
         }
 
-        return found ? s.substring(minI-1, minJ) : "";
+        return found ? s.substring(minI - 1, minJ) : "";
     }
 }
