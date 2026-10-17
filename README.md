@@ -2939,4 +2939,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0141-linked-list-cycle](https://github.com/SapChak114/LeetCode/tree/master/0141-linked-list-cycle) |
+## Boyer–Moore Majority Vote Algorithm
+|  |
+| ------- |
+| [0169-majority-element](https://github.com/SapChak114/LeetCode/tree/master/0169-majority-element) |
 <!---LeetCode Topics End-->
