@@ -338,6 +338,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2333-minimum-sum-of-squared-difference](https://github.com/SapChak114/LeetCode/tree/master/2333-minimum-sum-of-squared-difference) |
 | [2343-count-unguarded-cells-in-the-grid](https://github.com/SapChak114/LeetCode/tree/master/2343-count-unguarded-cells-in-the-grid) |
 | [2356-largest-combination-with-bitwise-and-greater-than-zero](https://github.com/SapChak114/LeetCode/tree/master/2356-largest-combination-with-bitwise-and-greater-than-zero) |
+| [2357-make-array-zero-by-subtracting-equal-amounts](https://github.com/SapChak114/LeetCode/tree/master/2357-make-array-zero-by-subtracting-equal-amounts) |
 | [2375-minimum-obstacle-removal-to-reach-corner](https://github.com/SapChak114/LeetCode/tree/master/2375-minimum-obstacle-removal-to-reach-corner) |
 | [2387-partition-array-such-that-maximum-difference-is-k](https://github.com/SapChak114/LeetCode/tree/master/2387-partition-array-such-that-maximum-difference-is-k) |
 | [2394-count-subarrays-with-score-less-than-k](https://github.com/SapChak114/LeetCode/tree/master/2394-count-subarrays-with-score-less-than-k) |
@@ -563,6 +564,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2215-finding-3-digit-even-numbers](https://github.com/SapChak114/LeetCode/tree/master/2215-finding-3-digit-even-numbers) |
 | [2256-count-words-obtained-after-adding-a-letter](https://github.com/SapChak114/LeetCode/tree/master/2256-count-words-obtained-after-adding-a-letter) |
 | [2333-minimum-sum-of-squared-difference](https://github.com/SapChak114/LeetCode/tree/master/2333-minimum-sum-of-squared-difference) |
+| [2357-make-array-zero-by-subtracting-equal-amounts](https://github.com/SapChak114/LeetCode/tree/master/2357-make-array-zero-by-subtracting-equal-amounts) |
 | [2387-partition-array-such-that-maximum-difference-is-k](https://github.com/SapChak114/LeetCode/tree/master/2387-partition-array-such-that-maximum-difference-is-k) |
 | [2402-meeting-rooms-iii](https://github.com/SapChak114/LeetCode/tree/master/2402-meeting-rooms-iii) |
 | [2436-make-array-zero-by-subtracting-equal-amounts](https://github.com/SapChak114/LeetCode/tree/master/2436-make-array-zero-by-subtracting-equal-amounts) |
@@ -660,6 +662,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2267-minimum-difference-in-sums-after-removal-of-elements](https://github.com/SapChak114/LeetCode/tree/master/2267-minimum-difference-in-sums-after-removal-of-elements) |
 | [2300-construct-string-with-repeat-limit](https://github.com/SapChak114/LeetCode/tree/master/2300-construct-string-with-repeat-limit) |
 | [2333-minimum-sum-of-squared-difference](https://github.com/SapChak114/LeetCode/tree/master/2333-minimum-sum-of-squared-difference) |
+| [2357-make-array-zero-by-subtracting-equal-amounts](https://github.com/SapChak114/LeetCode/tree/master/2357-make-array-zero-by-subtracting-equal-amounts) |
 | [2375-minimum-obstacle-removal-to-reach-corner](https://github.com/SapChak114/LeetCode/tree/master/2375-minimum-obstacle-removal-to-reach-corner) |
 | [2402-meeting-rooms-iii](https://github.com/SapChak114/LeetCode/tree/master/2402-meeting-rooms-iii) |
 | [2434-design-a-number-container-system](https://github.com/SapChak114/LeetCode/tree/master/2434-design-a-number-container-system) |
@@ -1164,6 +1167,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2300-construct-string-with-repeat-limit](https://github.com/SapChak114/LeetCode/tree/master/2300-construct-string-with-repeat-limit) |
 | [2308-divide-array-into-equal-pairs](https://github.com/SapChak114/LeetCode/tree/master/2308-divide-array-into-equal-pairs) |
 | [2356-largest-combination-with-bitwise-and-greater-than-zero](https://github.com/SapChak114/LeetCode/tree/master/2356-largest-combination-with-bitwise-and-greater-than-zero) |
+| [2357-make-array-zero-by-subtracting-equal-amounts](https://github.com/SapChak114/LeetCode/tree/master/2357-make-array-zero-by-subtracting-equal-amounts) |
 | [2402-meeting-rooms-iii](https://github.com/SapChak114/LeetCode/tree/master/2402-meeting-rooms-iii) |
 | [2434-design-a-number-container-system](https://github.com/SapChak114/LeetCode/tree/master/2434-design-a-number-container-system) |
 | [2436-make-array-zero-by-subtracting-equal-amounts](https://github.com/SapChak114/LeetCode/tree/master/2436-make-array-zero-by-subtracting-equal-amounts) |
@@ -2267,6 +2271,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2237-longest-palindrome-by-concatenating-two-letter-words](https://github.com/SapChak114/LeetCode/tree/master/2237-longest-palindrome-by-concatenating-two-letter-words) |
 | [2300-construct-string-with-repeat-limit](https://github.com/SapChak114/LeetCode/tree/master/2300-construct-string-with-repeat-limit) |
 | [2333-minimum-sum-of-squared-difference](https://github.com/SapChak114/LeetCode/tree/master/2333-minimum-sum-of-squared-difference) |
+| [2357-make-array-zero-by-subtracting-equal-amounts](https://github.com/SapChak114/LeetCode/tree/master/2357-make-array-zero-by-subtracting-equal-amounts) |
 | [2387-partition-array-such-that-maximum-difference-is-k](https://github.com/SapChak114/LeetCode/tree/master/2387-partition-array-such-that-maximum-difference-is-k) |
 | [2395-longest-binary-subsequence-less-than-or-equal-to-k](https://github.com/SapChak114/LeetCode/tree/master/2395-longest-binary-subsequence-less-than-or-equal-to-k) |
 | [2436-make-array-zero-by-subtracting-equal-amounts](https://github.com/SapChak114/LeetCode/tree/master/2436-make-array-zero-by-subtracting-equal-amounts) |
@@ -2478,6 +2483,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2265-partition-array-according-to-given-pivot](https://github.com/SapChak114/LeetCode/tree/master/2265-partition-array-according-to-given-pivot) |
 | [2288-count-operations-to-obtain-zero](https://github.com/SapChak114/LeetCode/tree/master/2288-count-operations-to-obtain-zero) |
 | [2343-count-unguarded-cells-in-the-grid](https://github.com/SapChak114/LeetCode/tree/master/2343-count-unguarded-cells-in-the-grid) |
+| [2357-make-array-zero-by-subtracting-equal-amounts](https://github.com/SapChak114/LeetCode/tree/master/2357-make-array-zero-by-subtracting-equal-amounts) |
 | [2402-meeting-rooms-iii](https://github.com/SapChak114/LeetCode/tree/master/2402-meeting-rooms-iii) |
 | [2408-number-of-people-aware-of-a-secret](https://github.com/SapChak114/LeetCode/tree/master/2408-number-of-people-aware-of-a-secret) |
 | [2411-spiral-matrix-iv](https://github.com/SapChak114/LeetCode/tree/master/2411-spiral-matrix-iv) |
