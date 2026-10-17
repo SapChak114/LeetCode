@@ -4,19 +4,20 @@ class Solution {
             return "";
         }
 
-        StringBuilder sb = new StringBuilder();
-        int numOfNines = sum / 9;
+        int noOfNines = sum / 9;
         int rem = sum % 9;
 
-        for (int i = 0; i<numOfNines; i++) {
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i<noOfNines; i++) {
             sb.append('9');
         }
 
         if (rem > 0) {
-            sb.append((char)('0' + rem));
+            sb.append((char) ('0' + rem));
         }
 
         int zeros = num - sb.length();
+
         for (int i = 0; i<zeros; i++) {
             sb.append('0');
         }
