@@ -1,34 +1,38 @@
 class Solution {
     public String reorganizeString(String s) {
-        int[] freq = new int[26];
-        
-        for(char c : s.toCharArray()){
-            freq[c-'a']++;
+        char[] ch = s.toCharArray();
+
+        Map<Character, Integer> freq = new HashMap<>();
+        for (char c : ch) {
+            freq.put(c, freq.getOrDefault(c, 0) + 1);
         }
-        
-        PriorityQueue<int[]> maxHeap = new PriorityQueue<>((a,b) -> b[1]-a[1]);
-        
-        for(int i = 0; i<freq.length; i++){
-            if(freq[i]>0){
-                maxHeap.add(new int[]{i,freq[i]});
+        //System.out.println(freq);
+        PriorityQueue<Character> pq = new PriorityQueue<>(
+                    (a, b) -> freq.get(b) - freq.get(a));
+
+        for (Map.Entry<Character, Integer> e : freq.entrySet()) {
+            if (e.getValue() > (s.length()+1)/2) {
+                return "";
             }
+            pq.add(e.getKey());
         }
         
-        StringBuilder st = new StringBuilder();
-        
-        int[] prev = new int[2];
-        while(!maxHeap.isEmpty()){
-            int[] now = maxHeap.poll();
-            st.append((char)(now[0]+'a'));
-            
-            if(prev[1]>0){
-                maxHeap.add(new int[]{prev[0],prev[1]});
+        StringBuilder sb = new StringBuilder();
+        char prev = '#';
+        //System.out.println(pq);
+        while (!pq.isEmpty()) {
+            char c = pq.poll();
+            //System.out.println(c);
+            sb.append(c);
+
+            if (freq.getOrDefault(prev, -1) > 0) {
+                pq.add(prev);
             }
-            
-            prev = new int[]{now[0],--now[1]};
-            
+
+            freq.put(c, freq.get(c) - 1);
+            prev = c;
         }
-        
-        return st.length()!=s.length()?"":st.toString();
+
+        return sb.toString();
     }
 }
