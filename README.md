@@ -234,6 +234,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1548-check-if-all-1s-are-at-least-length-k-places-away](https://github.com/SapChak114/LeetCode/tree/master/1548-check-if-all-1s-are-at-least-length-k-places-away) |
 | [1556-make-two-arrays-equal-by-reversing-subarrays](https://github.com/SapChak114/LeetCode/tree/master/1556-make-two-arrays-equal-by-reversing-subarrays) |
 | [1567-maximum-length-of-subarray-with-positive-product](https://github.com/SapChak114/LeetCode/tree/master/1567-maximum-length-of-subarray-with-positive-product) |
+| [1569-number-of-ways-to-reorder-array-to-get-same-bst](https://github.com/SapChak114/LeetCode/tree/master/1569-number-of-ways-to-reorder-array-to-get-same-bst) |
 | [1570-final-prices-with-a-special-discount-in-a-shop](https://github.com/SapChak114/LeetCode/tree/master/1570-final-prices-with-a-special-discount-in-a-shop) |
 | [1573-find-two-non-overlapping-sub-arrays-each-with-target-sum](https://github.com/SapChak114/LeetCode/tree/master/1573-find-two-non-overlapping-sub-arrays-each-with-target-sum) |
 | [1582-special-positions-in-a-binary-matrix](https://github.com/SapChak114/LeetCode/tree/master/1582-special-positions-in-a-binary-matrix) |
@@ -621,6 +622,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0925-construct-binary-tree-from-preorder-and-postorder-traversal](https://github.com/SapChak114/LeetCode/tree/master/0925-construct-binary-tree-from-preorder-and-postorder-traversal) |
 | [0948-sort-an-array](https://github.com/SapChak114/LeetCode/tree/master/0948-sort-an-array) |
 | [1285-balance-a-binary-search-tree](https://github.com/SapChak114/LeetCode/tree/master/1285-balance-a-binary-search-tree) |
+| [1569-number-of-ways-to-reorder-array-to-get-same-bst](https://github.com/SapChak114/LeetCode/tree/master/1569-number-of-ways-to-reorder-array-to-get-same-bst) |
 | [2280-count-good-triplets-in-an-array](https://github.com/SapChak114/LeetCode/tree/master/2280-count-good-triplets-in-an-array) |
 | [3719-longest-balanced-subarray-i](https://github.com/SapChak114/LeetCode/tree/master/3719-longest-balanced-subarray-i) |
 ## Heap (Priority Queue)
@@ -847,6 +849,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1493-longest-subarray-of-1s-after-deleting-one-element](https://github.com/SapChak114/LeetCode/tree/master/1493-longest-subarray-of-1s-after-deleting-one-element) |
 | [1511-count-number-of-teams](https://github.com/SapChak114/LeetCode/tree/master/1511-count-number-of-teams) |
 | [1567-maximum-length-of-subarray-with-positive-product](https://github.com/SapChak114/LeetCode/tree/master/1567-maximum-length-of-subarray-with-positive-product) |
+| [1569-number-of-ways-to-reorder-array-to-get-same-bst](https://github.com/SapChak114/LeetCode/tree/master/1569-number-of-ways-to-reorder-array-to-get-same-bst) |
 | [1573-find-two-non-overlapping-sub-arrays-each-with-target-sum](https://github.com/SapChak114/LeetCode/tree/master/1573-find-two-non-overlapping-sub-arrays-each-with-target-sum) |
 | [1586-longest-subarray-of-1s-after-deleting-one-element](https://github.com/SapChak114/LeetCode/tree/master/1586-longest-subarray-of-1s-after-deleting-one-element) |
 | [1621-number-of-sets-of-k-non-overlapping-line-segments](https://github.com/SapChak114/LeetCode/tree/master/1621-number-of-sets-of-k-non-overlapping-line-segments) |
@@ -2113,6 +2116,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1387-find-elements-in-a-contaminated-binary-tree](https://github.com/SapChak114/LeetCode/tree/master/1387-find-elements-in-a-contaminated-binary-tree) |
 | [1484-linked-list-in-binary-tree](https://github.com/SapChak114/LeetCode/tree/master/1484-linked-list-in-binary-tree) |
 | [1498-find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree](https://github.com/SapChak114/LeetCode/tree/master/1498-find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree) |
+| [1569-number-of-ways-to-reorder-array-to-get-same-bst](https://github.com/SapChak114/LeetCode/tree/master/1569-number-of-ways-to-reorder-array-to-get-same-bst) |
 | [2384-root-equals-sum-of-children](https://github.com/SapChak114/LeetCode/tree/master/2384-root-equals-sum-of-children) |
 | [2493-reverse-odd-levels-of-binary-tree](https://github.com/SapChak114/LeetCode/tree/master/2493-reverse-odd-levels-of-binary-tree) |
 | [2545-height-of-binary-tree-after-subtree-removal-queries](https://github.com/SapChak114/LeetCode/tree/master/2545-height-of-binary-tree-after-subtree-removal-queries) |
@@ -2202,6 +2206,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1387-find-elements-in-a-contaminated-binary-tree](https://github.com/SapChak114/LeetCode/tree/master/1387-find-elements-in-a-contaminated-binary-tree) |
 | [1484-linked-list-in-binary-tree](https://github.com/SapChak114/LeetCode/tree/master/1484-linked-list-in-binary-tree) |
 | [1498-find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree](https://github.com/SapChak114/LeetCode/tree/master/1498-find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree) |
+| [1569-number-of-ways-to-reorder-array-to-get-same-bst](https://github.com/SapChak114/LeetCode/tree/master/1569-number-of-ways-to-reorder-array-to-get-same-bst) |
 | [2384-root-equals-sum-of-children](https://github.com/SapChak114/LeetCode/tree/master/2384-root-equals-sum-of-children) |
 | [2493-reverse-odd-levels-of-binary-tree](https://github.com/SapChak114/LeetCode/tree/master/2493-reverse-odd-levels-of-binary-tree) |
 | [2545-height-of-binary-tree-after-subtree-removal-queries](https://github.com/SapChak114/LeetCode/tree/master/2545-height-of-binary-tree-after-subtree-removal-queries) |
@@ -2344,6 +2349,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0933-increasing-order-search-tree](https://github.com/SapChak114/LeetCode/tree/master/0933-increasing-order-search-tree) |
 | [0975-range-sum-of-bst](https://github.com/SapChak114/LeetCode/tree/master/0975-range-sum-of-bst) |
 | [1285-balance-a-binary-search-tree](https://github.com/SapChak114/LeetCode/tree/master/1285-balance-a-binary-search-tree) |
+| [1569-number-of-ways-to-reorder-array-to-get-same-bst](https://github.com/SapChak114/LeetCode/tree/master/1569-number-of-ways-to-reorder-array-to-get-same-bst) |
 ## Math
 |  |
 | ------- |
@@ -2405,6 +2411,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1500-count-largest-group](https://github.com/SapChak114/LeetCode/tree/master/1500-count-largest-group) |
 | [1523-count-odd-numbers-in-an-interval-range](https://github.com/SapChak114/LeetCode/tree/master/1523-count-odd-numbers-in-an-interval-range) |
 | [1529-max-difference-you-can-get-from-changing-an-integer](https://github.com/SapChak114/LeetCode/tree/master/1529-max-difference-you-can-get-from-changing-an-integer) |
+| [1569-number-of-ways-to-reorder-array-to-get-same-bst](https://github.com/SapChak114/LeetCode/tree/master/1569-number-of-ways-to-reorder-array-to-get-same-bst) |
 | [1621-number-of-sets-of-k-non-overlapping-line-segments](https://github.com/SapChak114/LeetCode/tree/master/1621-number-of-sets-of-k-non-overlapping-line-segments) |
 | [1631-number-of-sub-arrays-with-odd-sum](https://github.com/SapChak114/LeetCode/tree/master/1631-number-of-sub-arrays-with-odd-sum) |
 | [1680-concatenation-of-consecutive-binary-numbers](https://github.com/SapChak114/LeetCode/tree/master/1680-concatenation-of-consecutive-binary-numbers) |
@@ -2724,6 +2731,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0140-word-break-ii](https://github.com/SapChak114/LeetCode/tree/master/0140-word-break-ii) |
 | [0241-different-ways-to-add-parentheses](https://github.com/SapChak114/LeetCode/tree/master/0241-different-ways-to-add-parentheses) |
 | [0397-integer-replacement](https://github.com/SapChak114/LeetCode/tree/master/0397-integer-replacement) |
+| [1569-number-of-ways-to-reorder-array-to-get-same-bst](https://github.com/SapChak114/LeetCode/tree/master/1569-number-of-ways-to-reorder-array-to-get-same-bst) |
 | [2028-the-earliest-and-latest-rounds-where-players-compete](https://github.com/SapChak114/LeetCode/tree/master/2028-the-earliest-and-latest-rounds-where-players-compete) |
 | [2395-longest-binary-subsequence-less-than-or-equal-to-k](https://github.com/SapChak114/LeetCode/tree/master/2395-longest-binary-subsequence-less-than-or-equal-to-k) |
 | [3733-length-of-longest-v-shaped-diagonal-segment](https://github.com/SapChak114/LeetCode/tree/master/3733-length-of-longest-v-shaped-diagonal-segment) |
@@ -2854,6 +2862,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0062-unique-paths](https://github.com/SapChak114/LeetCode/tree/master/0062-unique-paths) |
+| [1569-number-of-ways-to-reorder-array-to-get-same-bst](https://github.com/SapChak114/LeetCode/tree/master/1569-number-of-ways-to-reorder-array-to-get-same-bst) |
 | [1621-number-of-sets-of-k-non-overlapping-line-segments](https://github.com/SapChak114/LeetCode/tree/master/1621-number-of-sets-of-k-non-overlapping-line-segments) |
 | [1993-sum-of-all-subset-xor-totals](https://github.com/SapChak114/LeetCode/tree/master/1993-sum-of-all-subset-xor-totals) |
 | [2221-find-triangular-sum-of-an-array](https://github.com/SapChak114/LeetCode/tree/master/2221-find-triangular-sum-of-an-array) |
@@ -2901,6 +2910,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0684-redundant-connection](https://github.com/SapChak114/LeetCode/tree/master/0684-redundant-connection) |
 | [0695-max-area-of-island](https://github.com/SapChak114/LeetCode/tree/master/0695-max-area-of-island) |
 | [0785-is-graph-bipartite](https://github.com/SapChak114/LeetCode/tree/master/0785-is-graph-bipartite) |
+| [1569-number-of-ways-to-reorder-array-to-get-same-bst](https://github.com/SapChak114/LeetCode/tree/master/1569-number-of-ways-to-reorder-array-to-get-same-bst) |
 | [1584-min-cost-to-connect-all-points](https://github.com/SapChak114/LeetCode/tree/master/1584-min-cost-to-connect-all-points) |
 | [2573-find-the-string-with-lcp](https://github.com/SapChak114/LeetCode/tree/master/2573-find-the-string-with-lcp) |
 ## Minimum Spanning Tree
@@ -2961,4 +2971,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0169-majority-element](https://github.com/SapChak114/LeetCode/tree/master/0169-majority-element) |
+## Fermat's Little Theorem
+|  |
+| ------- |
+| [1569-number-of-ways-to-reorder-array-to-get-same-bst](https://github.com/SapChak114/LeetCode/tree/master/1569-number-of-ways-to-reorder-array-to-get-same-bst) |
 <!---LeetCode Topics End-->
