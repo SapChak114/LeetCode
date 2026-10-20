@@ -343,6 +343,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2375-minimum-obstacle-removal-to-reach-corner](https://github.com/SapChak114/LeetCode/tree/master/2375-minimum-obstacle-removal-to-reach-corner) |
 | [2387-partition-array-such-that-maximum-difference-is-k](https://github.com/SapChak114/LeetCode/tree/master/2387-partition-array-such-that-maximum-difference-is-k) |
 | [2394-count-subarrays-with-score-less-than-k](https://github.com/SapChak114/LeetCode/tree/master/2394-count-subarrays-with-score-less-than-k) |
+| [2398-maximum-number-of-robots-within-budget](https://github.com/SapChak114/LeetCode/tree/master/2398-maximum-number-of-robots-within-budget) |
 | [2402-meeting-rooms-iii](https://github.com/SapChak114/LeetCode/tree/master/2402-meeting-rooms-iii) |
 | [2411-spiral-matrix-iv](https://github.com/SapChak114/LeetCode/tree/master/2411-spiral-matrix-iv) |
 | [2432-number-of-zero-filled-subarrays](https://github.com/SapChak114/LeetCode/tree/master/2432-number-of-zero-filled-subarrays) |
@@ -668,6 +669,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2333-minimum-sum-of-squared-difference](https://github.com/SapChak114/LeetCode/tree/master/2333-minimum-sum-of-squared-difference) |
 | [2357-make-array-zero-by-subtracting-equal-amounts](https://github.com/SapChak114/LeetCode/tree/master/2357-make-array-zero-by-subtracting-equal-amounts) |
 | [2375-minimum-obstacle-removal-to-reach-corner](https://github.com/SapChak114/LeetCode/tree/master/2375-minimum-obstacle-removal-to-reach-corner) |
+| [2398-maximum-number-of-robots-within-budget](https://github.com/SapChak114/LeetCode/tree/master/2398-maximum-number-of-robots-within-budget) |
 | [2402-meeting-rooms-iii](https://github.com/SapChak114/LeetCode/tree/master/2402-meeting-rooms-iii) |
 | [2434-design-a-number-container-system](https://github.com/SapChak114/LeetCode/tree/master/2434-design-a-number-container-system) |
 | [2436-make-array-zero-by-subtracting-equal-amounts](https://github.com/SapChak114/LeetCode/tree/master/2436-make-array-zero-by-subtracting-equal-amounts) |
@@ -1020,6 +1022,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2280-count-good-triplets-in-an-array](https://github.com/SapChak114/LeetCode/tree/master/2280-count-good-triplets-in-an-array) |
 | [2333-minimum-sum-of-squared-difference](https://github.com/SapChak114/LeetCode/tree/master/2333-minimum-sum-of-squared-difference) |
 | [2394-count-subarrays-with-score-less-than-k](https://github.com/SapChak114/LeetCode/tree/master/2394-count-subarrays-with-score-less-than-k) |
+| [2398-maximum-number-of-robots-within-budget](https://github.com/SapChak114/LeetCode/tree/master/2398-maximum-number-of-robots-within-budget) |
 | [2498-smallest-subarrays-with-maximum-bitwise-or](https://github.com/SapChak114/LeetCode/tree/master/2498-smallest-subarrays-with-maximum-bitwise-or) |
 | [2560-house-robber-iv](https://github.com/SapChak114/LeetCode/tree/master/2560-house-robber-iv) |
 | [2586-longest-square-streak-in-an-array](https://github.com/SapChak114/LeetCode/tree/master/2586-longest-square-streak-in-an-array) |
@@ -1966,6 +1969,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2229-maximum-fruits-harvested-after-at-most-k-steps](https://github.com/SapChak114/LeetCode/tree/master/2229-maximum-fruits-harvested-after-at-most-k-steps) |
 | [2255-minimum-swaps-to-group-all-1s-together-ii](https://github.com/SapChak114/LeetCode/tree/master/2255-minimum-swaps-to-group-all-1s-together-ii) |
 | [2394-count-subarrays-with-score-less-than-k](https://github.com/SapChak114/LeetCode/tree/master/2394-count-subarrays-with-score-less-than-k) |
+| [2398-maximum-number-of-robots-within-budget](https://github.com/SapChak114/LeetCode/tree/master/2398-maximum-number-of-robots-within-budget) |
 | [2463-minimum-recolors-to-get-k-consecutive-black-blocks](https://github.com/SapChak114/LeetCode/tree/master/2463-minimum-recolors-to-get-k-consecutive-black-blocks) |
 | [2478-longest-nice-subarray](https://github.com/SapChak114/LeetCode/tree/master/2478-longest-nice-subarray) |
 | [2498-smallest-subarrays-with-maximum-bitwise-or](https://github.com/SapChak114/LeetCode/tree/master/2498-smallest-subarrays-with-maximum-bitwise-or) |
@@ -2619,6 +2623,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2229-maximum-fruits-harvested-after-at-most-k-steps](https://github.com/SapChak114/LeetCode/tree/master/2229-maximum-fruits-harvested-after-at-most-k-steps) |
 | [2249-count-the-hidden-sequences](https://github.com/SapChak114/LeetCode/tree/master/2249-count-the-hidden-sequences) |
 | [2394-count-subarrays-with-score-less-than-k](https://github.com/SapChak114/LeetCode/tree/master/2394-count-subarrays-with-score-less-than-k) |
+| [2398-maximum-number-of-robots-within-budget](https://github.com/SapChak114/LeetCode/tree/master/2398-maximum-number-of-robots-within-budget) |
 | [2465-shifting-letters-ii](https://github.com/SapChak114/LeetCode/tree/master/2465-shifting-letters-ii) |
 | [2483-minimum-penalty-for-a-shop](https://github.com/SapChak114/LeetCode/tree/master/2483-minimum-penalty-for-a-shop) |
 | [2488-divide-intervals-into-minimum-number-of-groups](https://github.com/SapChak114/LeetCode/tree/master/2488-divide-intervals-into-minimum-number-of-groups) |
@@ -2745,6 +2750,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0892-shortest-subarray-with-sum-at-least-k](https://github.com/SapChak114/LeetCode/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
 | [1499-max-value-of-equation](https://github.com/SapChak114/LeetCode/tree/master/1499-max-value-of-equation) |
 | [2180-maximum-number-of-tasks-you-can-assign](https://github.com/SapChak114/LeetCode/tree/master/2180-maximum-number-of-tasks-you-can-assign) |
+| [2398-maximum-number-of-robots-within-budget](https://github.com/SapChak114/LeetCode/tree/master/2398-maximum-number-of-robots-within-budget) |
 | [2408-number-of-people-aware-of-a-secret](https://github.com/SapChak114/LeetCode/tree/master/2408-number-of-people-aware-of-a-secret) |
 | [2527-count-subarrays-with-fixed-bounds](https://github.com/SapChak114/LeetCode/tree/master/2527-count-subarrays-with-fixed-bounds) |
 | [2868-continuous-subarrays](https://github.com/SapChak114/LeetCode/tree/master/2868-continuous-subarrays) |
@@ -2757,6 +2763,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0892-shortest-subarray-with-sum-at-least-k](https://github.com/SapChak114/LeetCode/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
 | [1499-max-value-of-equation](https://github.com/SapChak114/LeetCode/tree/master/1499-max-value-of-equation) |
 | [2180-maximum-number-of-tasks-you-can-assign](https://github.com/SapChak114/LeetCode/tree/master/2180-maximum-number-of-tasks-you-can-assign) |
+| [2398-maximum-number-of-robots-within-budget](https://github.com/SapChak114/LeetCode/tree/master/2398-maximum-number-of-robots-within-budget) |
 | [2527-count-subarrays-with-fixed-bounds](https://github.com/SapChak114/LeetCode/tree/master/2527-count-subarrays-with-fixed-bounds) |
 | [2868-continuous-subarrays](https://github.com/SapChak114/LeetCode/tree/master/2868-continuous-subarrays) |
 | [3578-count-partitions-with-max-min-difference-at-most-k](https://github.com/SapChak114/LeetCode/tree/master/3578-count-partitions-with-max-min-difference-at-most-k) |
