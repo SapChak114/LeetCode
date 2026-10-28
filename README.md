@@ -341,6 +341,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2356-largest-combination-with-bitwise-and-greater-than-zero](https://github.com/SapChak114/LeetCode/tree/master/2356-largest-combination-with-bitwise-and-greater-than-zero) |
 | [2357-make-array-zero-by-subtracting-equal-amounts](https://github.com/SapChak114/LeetCode/tree/master/2357-make-array-zero-by-subtracting-equal-amounts) |
 | [2375-minimum-obstacle-removal-to-reach-corner](https://github.com/SapChak114/LeetCode/tree/master/2375-minimum-obstacle-removal-to-reach-corner) |
+| [2386-find-the-k-sum-of-an-array](https://github.com/SapChak114/LeetCode/tree/master/2386-find-the-k-sum-of-an-array) |
 | [2387-partition-array-such-that-maximum-difference-is-k](https://github.com/SapChak114/LeetCode/tree/master/2387-partition-array-such-that-maximum-difference-is-k) |
 | [2394-count-subarrays-with-score-less-than-k](https://github.com/SapChak114/LeetCode/tree/master/2394-count-subarrays-with-score-less-than-k) |
 | [2398-maximum-number-of-robots-within-budget](https://github.com/SapChak114/LeetCode/tree/master/2398-maximum-number-of-robots-within-budget) |
@@ -568,6 +569,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2256-count-words-obtained-after-adding-a-letter](https://github.com/SapChak114/LeetCode/tree/master/2256-count-words-obtained-after-adding-a-letter) |
 | [2333-minimum-sum-of-squared-difference](https://github.com/SapChak114/LeetCode/tree/master/2333-minimum-sum-of-squared-difference) |
 | [2357-make-array-zero-by-subtracting-equal-amounts](https://github.com/SapChak114/LeetCode/tree/master/2357-make-array-zero-by-subtracting-equal-amounts) |
+| [2386-find-the-k-sum-of-an-array](https://github.com/SapChak114/LeetCode/tree/master/2386-find-the-k-sum-of-an-array) |
 | [2387-partition-array-such-that-maximum-difference-is-k](https://github.com/SapChak114/LeetCode/tree/master/2387-partition-array-such-that-maximum-difference-is-k) |
 | [2402-meeting-rooms-iii](https://github.com/SapChak114/LeetCode/tree/master/2402-meeting-rooms-iii) |
 | [2436-make-array-zero-by-subtracting-equal-amounts](https://github.com/SapChak114/LeetCode/tree/master/2436-make-array-zero-by-subtracting-equal-amounts) |
@@ -669,6 +671,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2333-minimum-sum-of-squared-difference](https://github.com/SapChak114/LeetCode/tree/master/2333-minimum-sum-of-squared-difference) |
 | [2357-make-array-zero-by-subtracting-equal-amounts](https://github.com/SapChak114/LeetCode/tree/master/2357-make-array-zero-by-subtracting-equal-amounts) |
 | [2375-minimum-obstacle-removal-to-reach-corner](https://github.com/SapChak114/LeetCode/tree/master/2375-minimum-obstacle-removal-to-reach-corner) |
+| [2386-find-the-k-sum-of-an-array](https://github.com/SapChak114/LeetCode/tree/master/2386-find-the-k-sum-of-an-array) |
 | [2398-maximum-number-of-robots-within-budget](https://github.com/SapChak114/LeetCode/tree/master/2398-maximum-number-of-robots-within-budget) |
 | [2402-meeting-rooms-iii](https://github.com/SapChak114/LeetCode/tree/master/2402-meeting-rooms-iii) |
 | [2434-design-a-number-container-system](https://github.com/SapChak114/LeetCode/tree/master/2434-design-a-number-container-system) |
