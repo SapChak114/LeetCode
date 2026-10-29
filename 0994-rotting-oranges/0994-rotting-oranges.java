@@ -6,8 +6,8 @@ class Solution {
         int m = grid[0].length;
 
         int count = 0;
+
         Queue<int[]> q = new LinkedList<>();
-        boolean[][] vis = new boolean[n][m];
         for (int i = 0; i<n; i++) {
             for (int j = 0; j<m; j++) {
                 if (grid[i][j] == 2) {
@@ -18,32 +18,34 @@ class Solution {
             }
         }
 
-        int max = 0, nCount = 0;
+        int nCount = 0, max = 0;
+        boolean[][] vis = new boolean[n][m];
         while (!q.isEmpty()) {
-            int[] vals = q.poll();
-            int x = vals[0];
-            int y = vals[1];
-            int t = vals[2];
+            int[] data = q.poll();
+            int x = data[0];
+            int y = data[1];
+            int t = data[2];
 
             max = Math.max(max, t);
+
             for (int i = 0; i<4; i++) {
-                int newX = x + dirX[i];
-                int newY = y + dirY[i];
+                int newX = dirX[i] + x;
+                int newY = dirY[i] + y;
 
                 if (newX < 0 || newX >= n || newY < 0 || newY >= m || vis[newX][newY] || grid[newX][newY] != 1) {
                     continue;
                 }
 
-                vis[newX][newY] = true;
                 q.add(new int[]{newX, newY, t + 1});
+                vis[newX][newY] = true;
                 nCount++;
             }
         }
 
-        if (count == nCount) {
-            return max;
+        if (nCount != count) {
+            return -1;
         }
 
-        return -1;
+        return max;
     }
 }
