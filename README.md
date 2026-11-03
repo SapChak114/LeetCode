@@ -478,6 +478,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3656-minimum-number-of-operations-to-make-elements-in-array-distinct](https://github.com/SapChak114/LeetCode/tree/master/3656-minimum-number-of-operations-to-make-elements-in-array-distinct) |
 | [3657-check-if-grid-can-be-cut-into-sections](https://github.com/SapChak114/LeetCode/tree/master/3657-check-if-grid-can-be-cut-into-sections) |
 | [3661-maximum-walls-destroyed-by-robots](https://github.com/SapChak114/LeetCode/tree/master/3661-maximum-walls-destroyed-by-robots) |
+| [3665-twisted-mirror-path-count](https://github.com/SapChak114/LeetCode/tree/master/3665-twisted-mirror-path-count) |
 | [3685-count-subarrays-of-length-three-with-a-condition](https://github.com/SapChak114/LeetCode/tree/master/3685-count-subarrays-of-length-three-with-a-condition) |
 | [3719-longest-balanced-subarray-i](https://github.com/SapChak114/LeetCode/tree/master/3719-longest-balanced-subarray-i) |
 | [3727-maximum-alternating-sum-of-squares](https://github.com/SapChak114/LeetCode/tree/master/3727-maximum-alternating-sum-of-squares) |
@@ -909,6 +910,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3637-count-number-of-balanced-permutations](https://github.com/SapChak114/LeetCode/tree/master/3637-count-number-of-balanced-permutations) |
 | [3651-minimum-cost-path-with-teleportations](https://github.com/SapChak114/LeetCode/tree/master/3651-minimum-cost-path-with-teleportations) |
 | [3661-maximum-walls-destroyed-by-robots](https://github.com/SapChak114/LeetCode/tree/master/3661-maximum-walls-destroyed-by-robots) |
+| [3665-twisted-mirror-path-count](https://github.com/SapChak114/LeetCode/tree/master/3665-twisted-mirror-path-count) |
 | [3733-length-of-longest-v-shaped-diagonal-segment](https://github.com/SapChak114/LeetCode/tree/master/3733-length-of-longest-v-shaped-diagonal-segment) |
 | [3840-house-robber-v](https://github.com/SapChak114/LeetCode/tree/master/3840-house-robber-v) |
 ## Graph
@@ -1942,6 +1944,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3627-find-minimum-time-to-reach-last-room-i](https://github.com/SapChak114/LeetCode/tree/master/3627-find-minimum-time-to-reach-last-room-i) |
 | [3628-find-minimum-time-to-reach-last-room-ii](https://github.com/SapChak114/LeetCode/tree/master/3628-find-minimum-time-to-reach-last-room-ii) |
 | [3651-minimum-cost-path-with-teleportations](https://github.com/SapChak114/LeetCode/tree/master/3651-minimum-cost-path-with-teleportations) |
+| [3665-twisted-mirror-path-count](https://github.com/SapChak114/LeetCode/tree/master/3665-twisted-mirror-path-count) |
 | [3733-length-of-longest-v-shaped-diagonal-segment](https://github.com/SapChak114/LeetCode/tree/master/3733-length-of-longest-v-shaped-diagonal-segment) |
 ## Sliding Window
 |  |
