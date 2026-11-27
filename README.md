@@ -493,6 +493,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3791-fruits-into-baskets-iii](https://github.com/SapChak114/LeetCode/tree/master/3791-fruits-into-baskets-iii) |
 | [3834-minimum-operations-to-convert-all-elements-to-zero](https://github.com/SapChak114/LeetCode/tree/master/3834-minimum-operations-to-convert-all-elements-to-zero) |
 | [3840-house-robber-v](https://github.com/SapChak114/LeetCode/tree/master/3840-house-robber-v) |
+| [3946-maximum-number-of-items-from-sale-i](https://github.com/SapChak114/LeetCode/tree/master/3946-maximum-number-of-items-from-sale-i) |
 ## Sorting
 |  |
 | ------- |
@@ -914,6 +915,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3665-twisted-mirror-path-count](https://github.com/SapChak114/LeetCode/tree/master/3665-twisted-mirror-path-count) |
 | [3733-length-of-longest-v-shaped-diagonal-segment](https://github.com/SapChak114/LeetCode/tree/master/3733-length-of-longest-v-shaped-diagonal-segment) |
 | [3840-house-robber-v](https://github.com/SapChak114/LeetCode/tree/master/3840-house-robber-v) |
+| [3946-maximum-number-of-items-from-sale-i](https://github.com/SapChak114/LeetCode/tree/master/3946-maximum-number-of-items-from-sale-i) |
 ## Graph
 |  |
 | ------- |
@@ -2332,6 +2334,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3743-reschedule-meetings-for-maximum-free-time-i](https://github.com/SapChak114/LeetCode/tree/master/3743-reschedule-meetings-for-maximum-free-time-i) |
 | [3788-maximum-unique-subarray-sum-after-deletion](https://github.com/SapChak114/LeetCode/tree/master/3788-maximum-unique-subarray-sum-after-deletion) |
 | [3834-minimum-operations-to-convert-all-elements-to-zero](https://github.com/SapChak114/LeetCode/tree/master/3834-minimum-operations-to-convert-all-elements-to-zero) |
+| [3946-maximum-number-of-items-from-sale-i](https://github.com/SapChak114/LeetCode/tree/master/3946-maximum-number-of-items-from-sale-i) |
 ## Doubly-Linked List
 |  |
 | ------- |
